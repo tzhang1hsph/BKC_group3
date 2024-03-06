@@ -1,3 +1,5 @@
 data/raw/202208-bluebikes-tripdata.csv filter=lfs diff=lfs merge=lfs -text
 data/raw/202209 filter=lfs diff=lfs merge=lfs -text
 data/raw/202209-bluebikes-tripdata.csv filter=lfs diff=lfs merge=lfs -text
+data/bluebikes/trips_raw/202208-bluebikes-tripdata.csv filter=lfs diff=lfs merge=lfs -text
+data/bluebikes/trips_raw/202209-bluebikes-tripdata.csv filter=lfs diff=lfs merge=lfs -text
