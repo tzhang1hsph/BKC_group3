@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 def get_nearest_stations(open_space, d=0.3, verbose=False):
-    stations = pd.read_csv('data/bluebikes/stations_with_roundtrip_data.csv')
+    stations = pd.read_csv('data/locations/bluebike_stations.csv')
     open_spaces = pd.read_csv('open_spaces_nearest_stations_k_10_d_0.3.csv')
     station_names = []
     num_stations = open_spaces.loc[open_spaces['Name'] == open_space, 'NUM STATIONS'].iloc[0]
@@ -16,7 +16,7 @@ def get_nearest_stations(open_space, d=0.3, verbose=False):
     return station_names
 
 def get_weighted_roundtrip_ratio(open_space, na_val=0, verbose=False):
-    stations = pd.read_csv('data/bluebikes/stations_with_roundtrip_data.csv')
+    stations = pd.read_csv('data/locations/bluebike_stations.csv')
     open_spaces = pd.read_csv('open_spaces_nearest_stations_k_10_d_0.3.csv')
     station_names = get_nearest_stations(open_space, verbose=verbose)
     if station_names == []:
