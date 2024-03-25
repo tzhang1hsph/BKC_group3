@@ -6,34 +6,36 @@ import Plot from 'react-plotly.js'
 import choroplethJSON from '../../choropleth.json';
 import choroplethscatterJSON from '../../choropleth_with_scatter.json';
 
+import '@mantine/core/styles.css';
+import Cards from "./components/Cards"
+import Intro from "./components/Intro"
+import Title from "./components/Title"
+
+
+import { MantineProvider } from '@mantine/core';
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
+
+  
+
+
+    return <MantineProvider>{
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <Title />
+    <Intro />
+    <Cards />
+
+    <br></br>
+      
       <Plot data={choroplethJSON.data} layout={choroplethJSON.layout}/>
     </>
-  )
+
+    }
+
+</MantineProvider>;
 }
+  
+
 
 export default App
