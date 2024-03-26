@@ -19,7 +19,7 @@ def get_nearest_stations(open_space, d=0.5, verbose=False):
     station_names = []
     num_stations = open_spaces.loc[open_spaces['Name'] == open_space, 'num_objs'].iloc[0]
     for station_id in open_spaces.loc[open_spaces['Name'] == open_space, [f'obj{k}_id' for k in range(1, num_stations + 1)]].iloc[0]:
-        station_names.append(stations.loc[stations['Number'] == station_id, 'Name'].iloc[0])
+        station_names.append(stations.loc[stations['ID'] == station_id, 'Name'].iloc[0])
     if verbose:
         if num_stations == 0:
             print(f'No stations within {d} km of {open_space}')

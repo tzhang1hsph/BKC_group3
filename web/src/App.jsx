@@ -3,8 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Plot from 'react-plotly.js'
-import choroplethJSON from '../../choropleth.json';
-import choroplethscatterJSON from '../../choropleth_with_scatter.json';
+import choroplethJSON from '../../maps/choropleth.json';
+import spaceJSON from '../../maps/Chinatown Park.json'
 
 import '@mantine/core/styles.css';
 import Cards from "./components/Cards"
@@ -29,6 +29,8 @@ function App() {
     <br></br>
       
       <Plot data={choroplethJSON.data} layout={choroplethJSON.layout}/>
+
+      <Plot data={spaceJSON.data} layout={spaceJSON.layout}/>
     </>
 
     }

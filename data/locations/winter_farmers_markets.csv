@@ -1,8 +1,8 @@
-﻿Market Name,Type,Address,Zip code,Latitude,Longitude,Neighborhood,Market days,Market Hours,First day of Market,Last day of Market,WIC and Senior Farmers Market Nutrition Program Vouchers,Accepts City of Boston Coupons
-Brighton Farmers Market ,In-Person,"640 Washington St, Brighton MA 02135",02135,42.34787167457793,-71.15368634382988,Brighton,"Every other Saturday: 01/27, 02/10, 02/24, 03/09, 03/23",11am-2pm,01/27/24,03/30/24,WIC ,NULL
-Dorchester Winter Farmers Market,In-Person,"6 Norfolk St., Dorchester MA, 02124",02124,42.289960,-71.071840,Dorchester,Saturday,11am-2pm,01/27/23,03/30/24,"WIC, SFMNPV",NULL
-East Boston Farmers Market ,In-Person,"250 Sumner St, East Boston MA 02128",02128,42.37523096217105,-71.04067286270865,East Boston,Thursday,2pm-6pm,11/16/23,06/20/24,"WIC, SFMNPV",NULL
-WeGrowMicrogreens,In-Person,"21 Norton St, Hyde Park MA 02136",02136,42.242853655774326,-71.13669254708356,Hyde Park,Friday,1pm-4:30pm,10/27/23,03/08/24,"WIC, SFMNPV",NULL
-JP Centre St Farmers Market,In-Person, 677 Centre St. Bank of America Parking Lot,02130,42.31217347723417,-71.11437003420234,Jamaica Plain,Saturday ,12pm-3pm,11/11/24,03/30/24,"WIC, SFMNPV",NULL
-Roslindale Farmers Market,In-Person,"Adams Park, Roslindale 02131",02131,42.286544565592784,-71.12844091350875,Roslindale,Sunday,11am-2pm,01/7/24,03/31/24,Neither ,NULL
-Dudley Town Common Farmers Market,In-Person,"11 Brook Ave, Roxbury MA 02119",02119,42.32511493677896,-71.07487582035198,Roxbury,Thursday,2:30pm-6:00pm,11/3/23,02/01/24,"WIC, SFMNPV",NULL
+Name,Type,Address,Zip code,Latitude,Longitude,Neighborhood,Market days,Market Hours,First day of Market,Last day of Market,WIC and Senior Farmers Market Nutrition Program Vouchers,Accepts City of Boston Coupons,ID
+Brighton Farmers Market ,In-Person,"640 Washington St, Brighton MA 02135",2135,42.34787167457793,-71.15368634382988,Brighton,"Every other Saturday: 01/27, 02/10, 02/24, 03/09, 03/23",11am-2pm,01/27/24,03/30/24,WIC ,,0
+Dorchester Winter Farmers Market,In-Person,"6 Norfolk St., Dorchester MA, 02124",2124,42.28996,-71.07184,Dorchester,Saturday,11am-2pm,01/27/23,03/30/24,"WIC, SFMNPV",,1
+East Boston Farmers Market ,In-Person,"250 Sumner St, East Boston MA 02128",2128,42.37523096217105,-71.04067286270865,East Boston,Thursday,2pm-6pm,11/16/23,06/20/24,"WIC, SFMNPV",,2
+WeGrowMicrogreens,In-Person,"21 Norton St, Hyde Park MA 02136",2136,42.242853655774326,-71.13669254708356,Hyde Park,Friday,1pm-4:30pm,10/27/23,03/08/24,"WIC, SFMNPV",,3
+JP Centre St Farmers Market,In-Person, 677 Centre St. Bank of America Parking Lot,2130,42.31217347723417,-71.11437003420234,Jamaica Plain,Saturday ,12pm-3pm,11/11/24,03/30/24,"WIC, SFMNPV",,4
+Roslindale Farmers Market,In-Person,"Adams Park, Roslindale 02131",2131,42.286544565592784,-71.12844091350875,Roslindale,Sunday,11am-2pm,01/7/24,03/31/24,Neither ,,5
+Dudley Town Common Farmers Market,In-Person,"11 Brook Ave, Roxbury MA 02119",2119,42.32511493677896,-71.07487582035198,Roxbury,Thursday,2:30pm-6:00pm,11/3/23,02/01/24,"WIC, SFMNPV",,6
