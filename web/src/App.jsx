@@ -10,6 +10,9 @@ import '@mantine/core/styles.css';
 import Cards from "./components/Cards"
 import Intro from "./components/Intro"
 import Title from "./components/Title"
+import Definition from "./components/Definition"
+import Comparison from "./components/Comparison"
+import Poll from "./components/Poll"
 
 
 import { MantineProvider } from '@mantine/core';
@@ -24,6 +27,10 @@ function App() {
     <>
     <Title />
     <Intro />
+    <Definition />
+    <Comparison />
+    <Poll></Poll>
+
     <Cards />
 
     <br></br>
