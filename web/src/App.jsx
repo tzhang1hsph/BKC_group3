@@ -5,6 +5,7 @@ import './App.css'
 import Plot from 'react-plotly.js'
 import choroplethJSON from '../../maps/choropleth.json';
 import spaceJSON from '../../maps/Chinatown Park.json'
+import hourlyJSON from '../../hourly_plots/Boston Common.json';
 
 import '@mantine/core/styles.css';
 import Cards from "./components/Cards"
@@ -34,10 +35,9 @@ function App() {
     <Cards />
 
     <br></br>
-      
       <Plot data={choroplethJSON.data} layout={choroplethJSON.layout}/>
-
       <Plot data={spaceJSON.data} layout={spaceJSON.layout}/>
+      <Plot data={hourlyJSON.data} layout={hourlyJSON.layout}/>
     </>
 
     }
