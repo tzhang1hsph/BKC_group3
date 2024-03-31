@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Plot from 'react-plotly.js'
 import choroplethJSON from '../../maps/choropleth.json';
@@ -21,30 +19,28 @@ function App() {
   const [count, setCount] = useState(0)
 
 
-  
 
 
-    return <MantineProvider>{
+
+  return <MantineProvider>{
     <>
-    <Title />
-    <Intro />
-    <Definition />
-    <Comparison />
-    <Poll></Poll>
-
-    <Cards />
-
-    <br></br>
-      <Plot data={choroplethJSON.data} layout={choroplethJSON.layout}/>
-      <Plot data={spaceJSON.data} layout={spaceJSON.layout}/>
-      <Plot data={hourlyJSON.data} layout={hourlyJSON.layout}/>
+      <Title />
+      <Intro />
+      <Definition />
+      <Comparison />
+      <Poll></Poll>
+      <Cards />
+      <br></br>
+      <Plot data={choroplethJSON.data} layout={choroplethJSON.layout} />
+      <Plot data={spaceJSON.data} layout={spaceJSON.layout} />
+      <Plot data={hourlyJSON.data} layout={hourlyJSON.layout} />
     </>
 
-    }
+  }
 
-</MantineProvider>;
+  </MantineProvider>;
 }
-  
+
 
 
 export default App
