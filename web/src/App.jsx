@@ -22,7 +22,15 @@ function App() {
 
 
 
-  return <MantineProvider>{
+  return <MantineProvider
+  
+  // theme={{
+
+  //   backgroundColor: "#535bf2"
+
+  //   }}
+  
+  >{
     <>
       <Title />
       <Intro />

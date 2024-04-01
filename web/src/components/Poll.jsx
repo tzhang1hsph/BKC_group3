@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { Grid } from '@mantine/core';
+import { Grid, Button } from '@mantine/core';
 
 
 const Poll = () => {
   
   return (
     <Grid>
-    <Grid.Col span={2} style={{ minHeight: 780 }} />
+    <Grid.Col span={2} style={{ minHeight: 230 }} />
 
-      <Grid.Col span={8} style={{ minHeight: 780 }}>
+      <Grid.Col span={8} style={{ minHeight: 230 }}>
 
 
         <h1>Why do you gather?</h1>
@@ -20,7 +20,20 @@ const Poll = () => {
 
       </Grid.Col>
 
-      <Grid.Col span={2} style={{ minHeight: 780 }} />
+      <Grid.Col span={2} style={{ minHeight: 100 }} />
+
+
+      <Grid.Col span={2} ></Grid.Col>
+      <Grid.Col span={4} style={{ minHeight: 100 }}>
+        <Button style={{ minHeight: 100 }} fullWidth>Full width button</Button></Grid.Col>
+      <Grid.Col span={4}><Button style={{ minHeight: 100 }} fullWidth>Full width button</Button></Grid.Col>
+      <Grid.Col span={2}></Grid.Col>
+
+      <Grid.Col span={2}></Grid.Col>
+      <Grid.Col span={4} style={{ minHeight: 100 }}><Button style={{ minHeight: 100 }} fullWidth>Full width button</Button></Grid.Col>
+      <Grid.Col span={4}><Button style={{ minHeight: 100 }} fullWidth>Full width button</Button></Grid.Col>
+      <Grid.Col span={2}></Grid.Col>
+
 
 
     </Grid>

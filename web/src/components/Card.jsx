@@ -1,29 +1,63 @@
 import React, { useState } from 'react';
 
 import { useDisclosure } from '@mantine/hooks';
-import { Image, Flex, Modal, Button } from '@mantine/core';
+import { BackgroundImage, Image, Flex, Modal, Center, Text, Button, Box } from '@mantine/core';
 import { TextInput, FocusTrap } from '@mantine/core';
+
+import Plot from 'react-plotly.js'
+
 
 
 const Card = (props) => {
 
     const [opened, { open, close }] = useDisclosure(false);
 
-    const id = props.id;
+    // const id = props.id;
 
   return (
     <>
-      <Modal opened={opened} onClose={close} title="Open Space Information" centered>
+      <Modal size="100%" opened={opened} onClose={close} 
+      // title={props.name} 
+      centered>
         
-      <h3>Information on { id }</h3>
-        <TextInput label="First input" placeholder="First input" />
-        <TextInput
-          data-autofocus
-          label="Input with initial focus"
-          placeholder="It has data-autofocus attribute"
-          mt="md"
-        />
+      <h1>{ props.name }</h1>
+
+      <Plot data={props.map.data} layout={props.map.layout}/>
+
+      
       </Modal>
+
+
+{/* 
+    <Box maw={100} mx="auto">
+
+
+    <BackgroundImage
+        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-6.png"
+        height="20px"
+        width="20px"
+
+        radius="lg"
+      >
+
+
+<Button>
+
+click me
+
+
+</Button>
+
+</BackgroundImage>
+
+
+      
+
+    </Box>
+    */}
+
+
+     
 
 
     <Image
