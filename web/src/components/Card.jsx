@@ -28,43 +28,14 @@ const Card = (props) => {
       </Modal>
 
 
-{/* 
-    <Box maw={100} mx="auto">
-
-
-    <BackgroundImage
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-6.png"
-        height="20px"
-        width="20px"
-
-        radius="lg"
-      >
-
-
-<Button>
-
-click me
-
-
-</Button>
-
-</BackgroundImage>
-
-
-      
-
-    </Box>
-    */}
-
-
      
 
 
     <Image
       radius="md"
       src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-      h={100}
-      w={100}
+      h={180}
+      w={180}
       onClick={open}
     />    
       

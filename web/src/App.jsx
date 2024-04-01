@@ -12,6 +12,7 @@ import Title from "./components/Title"
 import Definition from "./components/Definition"
 import Comparison from "./components/Comparison"
 import Poll from "./components/Poll"
+import PollResults from "./components/PollResults"
 
 
 import { MantineProvider } from '@mantine/core';
@@ -37,6 +38,7 @@ function App() {
       <Definition />
       <Comparison />
       <Poll></Poll>
+      <PollResults></PollResults>
       <Cards />
       <br></br>
       <Plot data={choroplethJSON.data} layout={choroplethJSON.layout} />
