@@ -1,0 +1,701 @@
+MassGrown Map Export
+
+LocationName,Address,City,State,Zip,Description,Website,Phone
+"Brookfield Farm - CSA Pickup","64 Kenton Rd. ","JAMAICA PLAIN","MA","02130","Pick-up Thursdays, starting in June. See website for details. ","www.brookfieldfarm.org","",
+"Egleston Farmers' Market","179 Amory Street","JAMAICA PLAIN","MA","02130","Dates & Time: July 1 to October 28; Saturday, 10:00 am - 2:00 pm.","www.eglestonfarmersmarket.com","",
+"Jamaica Plain Farmers' Market","677 Centre St.-Bank of America Parking Lot, 677 Centre St.","JAMAICA PLAIN","MA","02130","Dates & Time: Tuesday, 12:00 pm - 5:00 pm, Mid-June to November; Saturday, year-round, Noon - 3:00 pm; WIC & Senior Coupons Accepted; SNAP-EBT Accepted with select vendors.","www.jamaicaplainfarmersmarket.com","",
+"Jamaica Plain Winter Farmers Market","677 Centre Street","JAMAICA PLAIN","MA","02130","Bank of America Parking Lot; Dates & Time: Saturday, year-round, Noon - 3:00 pm; SNAP-EBT Accepted with select vendors.","www.jamaicaplainfarmersmarket.wordpress.com/","",
+"Farmer Dave's - CSA Pick-Up","18 Marbury Terrace","Boston","MA","02130","CSA Pick-up Days: Tuesday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Red Fire Farm - CSA Pick-Up","633 Centre St.","Boston","MA","02130","CSA Pick-up Location: First Baptist Church. CSA Pick-up Days: Thursday, Starting in June.","www.redfirefarm.com/CSA/join.html","413-467-7645",
+"The Fresh Truck Mobile Market","22 Elm Hill Hill Ave. ","DORCHESTER","MA","02121","Date and Time: Thursday, 10:00 am - 12:30 pm. Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Fresh Truck Mobile Market","3 Quincy Street","ROXBURY","MA","02119","Dates and Time: Saturday, 1:00 pm - 3:00 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Fresh Truck Mobile Market","5 Shandon Rd. ","DORCHESTER","MA","02124","Dates and Time: Tuesday, 2:30 pm - 4:30 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Trustees Mobile Market","285 MLK Jr. Boulevard","ROXBURY","MA","02119","Dates and Time: Check website for current schedule. CSA only.  ","www.thetrustees.org/program/mobile-farmers-market/","",
+"The Fresh Truck Mobile Market","198 Geneva Ave. ","Boston","MA","02121","Date and Time: Wednesday, 3:00 pm - 5:00 pm; Check website for updates. Online order and pickup.","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Mass Audubon Boston Nature Center Farmstand","500 Walk Hill Street","MATTAPAN","MA","02126","Date and Time; Thursday, 3:30 pm - 6:30 pm; June 6 to September 28. ","","(617) 983-8500",
+"The Trustees Mobile Market","125 Brookway Road","ROSLINDALE","MA","02131","Date and Time: Check website for current schedule. CSA only.  ","www.thetrustees.org/program/mobile-farmers-market/","",
+"Revision Urban Farmstand","38 Fabyan Street","DORCHESTER","MA","02124","Community-based urban agriculture project that grows produce in its own fields and provides access to affordable, nutritious and culturally appropriate food to residents of our ReVision Family Home and our extended community. ","www.vpi.org/revision-urban-farm/","(617) 822-3276",
+"Dorchester/Arvale Road","9 Arvale Road","DORCHESTER","MA","02121","Dates & Times: July to September; Thursday to Saturday, 8:00 am - 7:00 pm.","www.commongoodcooperatives.com/","",
+"The Fresh Truck Mobile Market","90 Ames Street","DORCHESTER","MA","02121","Dates and Time: Friday, 10:30 am - 12:30 pm. Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"NUBIA Farmstand","100 Malcolm X BLVD","Boston","MA","02119","Justice Gourdin Park I on Malcolm X Blvd in Nubian Sq. Cross street from the police station. Open Tuesday, 2:00 pm - 5:00 pm, July to October. ","","",
+"Roxbury/Roxbury Crossing Farmers' Market","1420 Tremont St.-Roxbury Crossing MBTA Station","JAMAICA PLAIN","MA","02120","Dates & Time: May 2 to November 28; Tuesday and Friday, 11:00 am - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.mhhm.org","",
+"Roxbury/Nubian Square Farmers Market","149 Dudley Street","ROXBURY","MA","02119","Roxbury Public Library; Date and Time: Thursday, 4:00 pm - 7:00 pm and Saturday, 11:00 am - 3:00 pm; July 6 to October 26; EBT-SNAP Accepted. ","www.nubiansquarefarmersmarket.com","",
+"Mission Hill Farmers' Market","725 Huntington Ave.","Boston","MA","02115","Hanlon Square: Dates & Time: May 4 to November 30; Thursday, 11:00 am - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.mhhm.org","",
+"Roxbury/Dudley Winter Market","11 Brook Ave.","ROXBURY","MA","02119","Date and Time: November 2 to January 25; Thursday, 2:30 pm - 6:00 pm; EBT-SNAP Accepted. ","www.facebook.com/dudleygrows/","",
+"The Fresh Truck Mobile Market","Mission Park Apartments, 2 New Whitney St. ","Boston","MA","02115","Dates and Time: Wednesday, 3:00 pm - 5:30 pm; Check website for updates. Online order and pickup. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Fresh Truck Mobile Market","230 Bowdoin Street","DORCHESTER","MA","02122","Dates and Time: Tuesday, 10:30 am - 12:30 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Food Project - CSA Pick-Up","Dudley Town Common (corner of Dudley Street & Blue Hill Ave.)","Boston","MA","02119","CSA Pick-up Days: Thursday, Starting in June.","csa.thefoodproject.org/csa-farm-shares/","617-442-1322",
+"Roxbury/Dudley Town Common Farmers' Market","Blue Hill Ave & Dudley St-Dudley Town Common","Boston","MA","02119","Dates & Time: June 15 to October 26; Thursday, 2:30 pm - 6:15 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. For the month of October, 2023 the market will be located at the Dudley Greenhouse, 11 Brook Ave, Roxbury.","www.facebook.com/dudleygrows/","",
+"The Fresh Truck Mobile Market","99 Kent Street","Brookline","MA","02445","Dates and Time: Friday, 10:00 am- 12:00 pm. Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Oasis on Ballou at Ballou","100 Ballou Ave.","DORCHESTER","MA","02121","Open Monday to Saturday, 8:00 am - 3:00 pm.","","(617) 825-4224",
+"Allandale Farm","259 Allandale Road","Brookline","MA","02445","Have launched online ordering. Orders will be available for pick-up on the farm. To ensure the health and safety of both customers and employees, farm has established a %u201Cdistance shopping%u201D process, which includes online payments & self-loading of your purchases. 60 acres mixed vegetables grown using organic practices; Outdoor Summer Program for children; farm market, wholesale and CSA.
+
+Product Categories Offered: Vegetables, Flowers
+CSA Product Offered: Vegetables, Flowers
+Pick-ups: On Farm (CSA)","www.Allandalefarm.com","(617) 524-1531",
+"The Fresh Truck Mobile Market","57 Magazine Street","ROXBURY","MA","02119","Date and Time: Monday, 1:00 pm - 3:00 pm and Saturday, 1:30 pm - 3:00 pm; Check website for updates. Pre-order and pickup only. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Roslindale Farmers' Market","Washington Street-Adams Park","ROSLINDALE","MA","02131","Dates & Times: June 1 to November 23; Saturday, 9:00 am - 1:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.roslindale.net","",
+"Dorchester/Codman Square Farmers' Market","360 Talbot Ave.-Codman Square Park","DORCHESTER","MA","02124","Dates & Time: July 15 to October 14; Saturday, 11:00 am - 2:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.codmansquarecouncil.org","",
+"Roslindale Winter Farmers' Market","32 Birch Street","ROSLINDALE","MA","02131","Dates & Times: January 7 to March 31; Sunday, 12:00 pm - 2:00 pm; EBT-SNAP Accepted","www.roslindale.net","",
+"Urban Farming Institute of Boston Inc./Fowler Clark Epstein Farmstand","487 Norfolk St.","MATTAPAN","MA","02126","Open Friday, 1:00 pm - 5:00 pm, July 1 to November 18.","urbanfarminginstitute.org","(617) 514-0540",
+"The Fresh Truck Mobile Market","3 Kendall Street","Boston","MA","02118","Date and Time: Friday, 3:00 pm - 5:00 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Dorchester Winter Farmers' Market","6 Norfolk Street","DORCHESTER","MA","02124","The Great Hall; Dates & Times: January 27 to March 30; Saturday, 11:00 am - 2:00 pm; EBT-SNAP Accepted.","www.dorchesterwinterfarmersmarket.org","",
+"Dorchester/Dot House Health Farmers' Market","1353 Dorchester Ave-Dorchester House, Outdoor space next to Kelly House","DORCHESTER","MA","02122","Dates & Time: July 11 to October 10; Tuesday, 11:30 am - 1:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.dorchesterhouse.org/services/farmers_market.html","",
+"The Fresh Truck Mobile Market","1565 Dorchester Ave. ","DORCHESTER","MA","02122","Dates and Time: Saturday, 9:30 am - 12:00 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Dorchester/Fields Corner Farmers' Market","Dorchester Ave & Park St-Shopping Center Parking Lot","DORCHESTER","MA","02122","Dates & Time: July 13 to October 26; Saturday, 9:00 am - Noon; WIC & Senior Coupons Accepted; EBT-SNAP Accepted with select vendors.","","",
+"The Fresh Truck Mobile Market","7 Kimball Street","Boston","MA","02122","Dates and Time: Wednesday, 10:00 am - 1:00 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","",
+"The Fresh Truck Mobile Market","95 Freeport Street","DORCHESTER","MA","02122","Dates and Time: Tuesday, 10:00 am - 12:00 pm; Check website for updates. Online pre-order pickup only. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Oasis on Ballou at Washington St.","857 Washington St.","DORCHESTER","MA","02121","Wednesdays 12:30 pm - 3:00 pm at 857 Washington St. 
+
+OASIS on Ballou represents a unique opportunity to create a special place at 100 Ballou Avenue in the Woodrow-Mountain Neighborhood that supports a culture of opportunity, affirmation, sustainability, inspiration, and success...a place we can all be proud of and reflects the pride in our neighborhood.","","(617) 825-4224",
+"Brookline Farmers' Market","Beacon Street & Centre Street-Coolidge Corner, Center Street West Parking Lot","Brookline","MA","02446","Dates & Times: June 6 to November 21; Thursday, 1:30 pm - 6:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.brooklinefarmersmarket.com","",
+"Dorchester/Ashmont Farmers Market","1900 Dorchester Ave.","DORCHESTER","MA","02124","Droser Plaza; Dates & Time: July 12 to October 25; Friday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.greaterashmont.org/farmers-market","",
+"The Fresh Truck Mobile Market","15 San Juan Street","Boston","MA","02118","Date and Time: Friday, 2:30 pm - 5:30 pm; Check website for updates. Pre-order and pickup.","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Fresh Truck Mobile Market","Beechland Circle","ROSLINDALE","MA","02131","Dates and Time: Tuesday, 3:00 pm - 5:00 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"The Fresh Truck Mobile Market","Sterling Square","Boston","MA","02127","Dates and Time: Thursday, 10:00 am - 12:30 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Round Table Urban Garden","7 Sterling Square","Boston","MA","02127","Open daily, May to October, 10:00 am - 1:00 pm. ","","(617) 777-2585 ",
+"Mattapan Farmers' Market","Municipal Parking Lot # 14, Corner of Cummings Highway and Fairway Street","MATTAPAN","MA","02126","Dates & Times: July 13 to October 26; Saturday, 10:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.mattapanfoodandfit.org/","",
+"Siena Farms Farm Store","106 Waltham Street","Boston","MA","02101","Family farm which cultivates 75 acres of protected farmland in Sudbury & Sterling, MA. Over 100 varieties of vegetables grown for year-round CSA, their farm stores, and select restaurants/chefs.
+Coupons accepted daily 11 am - 7 pm.
+ ","sienafarms.com/","978-261-5365",
+"Siena Farms South End","106 Waltham Street","Boston","MA","02118","Open daily, 11:00 am - 7:00 pm.
+","www.sienafarms.com/farmstore.php","(617) 422-0030",
+"Boston/SOWA Farmers' Market","500 Harrison Ave.","Boston","MA","02118","Dates & Time: May 5 to to October 27; Sunday, 11:00 am - 4:00 pm.","www.sowaboston.com/sowa-open-market/","",
+"Boston/Copley Square Farmers' Market","227-330 Dartmouth Street","Boston","MA","02116","Plaza in Front of the Boston Public Library; Dates & Time: May 21 to November 26; Tuesday and Friday, 11:00 am to 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+ 
+","www.massfarmersmarkets.org","",
+"Red Fire Farm - CSA Pick-Up","227-230 Dartmouth Street","Boston","MA","02116","CSA Pick-up Location: Copley Square Farmers Market. CSA Pick-up Days: Friday, Starting in June.","www.redfirefarm.com/CSA/join.html","",
+"The Fresh Truck Mobile Market","7 Joyce Hayes Way","Boston","MA","02127","Wednesday, 9:30 am - 12:30 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Milton Farmers' Market","Wharf Street and Adams Street-Town Park","Milton","MA","02186","Dates & Time: June 1 to October 12; Thursday, 1:00 pm - 6:00 pm; WIC & Senior Coupons Accepted.","www.facebook.com/miltonmassfarmersmarket/","",
+"The Food Project - CSA Pick-Up","92 Henry Street","Cambridge","MA","02139","CSA Pick-up Days: Tuesday, Starting in June.","csa.thefoodproject.org/csa-farm-shares/","617-442-1322",
+"The Trustees Mobile Market","336B Tremont Street","Boston","MA","02116","Date and Time: Check website for current schedule. CSA only.  ","www.thetrustees.org/program/mobile-farmers-market/","",
+"Cambridgeport Farmers' Market","Magazine Street & Memorial Drive-Morse School Parking lot","Cambridge","MA","02139","Dates & Time: June 3 to November 18 (No Market 10/21); Saturday, 10:00 am - 2:00 pm; WIC & Senior Coupons Accepted; SNAP-EBT Accepted with select vendors.
+
+","","",
+"The Farmacy at Harbor Health","10 Minot Street","DORCHESTER","MA","02122","Dates and Time: Friday, July 8, 15, 22, and 29, 2022; 10:30 am - 1:30 pm. ","www.hhsi.us/Farmacy","",
+"Dick's Market Garden: Minot Street Farmstand","10 Minot Street","DORCHESTER","MA","02122","2023 Dates: 6/16, 6/30, 7/14, 7/28, 8/11, 8/25, 9/8, 9/22, 10/6, 11/17; Friday, 10:30 - 1:30 pm. ","www.dicksmarketgardens.com/","",
+"The Fresh Truck Mobile Market","10 Minot Street","DORCHESTER","MA","02122","Dates & Times: Tuesday, 9:30 am -12:00 pm - check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"South Boston Farmers' Market","446 West Broadway-West Broadway Municipal Front Parking Lot","Boston","MA","02127","Dates & Time: June 5 to October 30; Monday, 10:00 am - 5:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.sbndc.org/south-boston-farmers-market","",
+"The Fresh Truck Mobile Market","1137 River Street","HYDE PARK","MA","02136","Dates and Time: Thursday, 3:00 pm - 5:00 pm; Check website for updates. Pre-order and pickup. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"World Peas CSA Pick-Up","150 Harrison Ave. ","Boston","MA","02101","CSA Pick-up Location: Tufts Friedman School. CSA Pick-up Days: Tuesday, Starting in June.","www.nesfp.org/NewEntryCSA","(978) 349-2080",
+"South Boston Hunnies","524 E. 8th st.","Boston","MA","02127","Honey hive and garden tours by appointment.","instagram.com/SouthBostonHunnies","",
+"Brighton Farmers' Market","Brighton Common, 30 Chestnut Hill Ave.","BRIGHTON","MA","02135","Dates & Time: June 12 to October 30; Wednesday, 2:00 pm - 6:30 pm; Market closes at 6pm in October; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+
+","www.facebook.com/oaksquarefarmersmarket","",
+"Cambridge/Central Square Farmers' Market","Norfolk St & Bishop Allen Dr-Parking lot # 5","Cambridge","MA","02139","Dates & Time: May 20 to November 25; Monday, Noon - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.massfarmersmarkets.org","",
+"Cambridge/Kendall Square Canal District Farmers' Market","350 Kendall Street","Cambridge","MA","02142","Dates & Time: May 11 to November 16; Thursday, 12:00 pm - 6:00 pm.","www.massfarmersmarkets.org","",
+"Red Fire Farm - CSA Pick-Up","765 Massachusetts Ave. ","Cambridge","MA","02139","CSA Pick-up Location: Life Alive Cafe. CSA Pick-up Days: Friday, Starting in June.","www.redfirefarm.com/CSA/join.html","",
+"Red Fire Farm - CSA Pick-Up","181 Devonshire Street","Boston","MA","02110","CSA Pick-up Location: Boston Wine Exchange. CSA Pick-up Days: Thursday, Starting in June.","www.redfirefarm.com/CSA/join.html","",
+"The Trustees Mobile Market","400 Georgetowne Drive","HYDE PARK","MA","02136","Date and Time: Check website for current schedule. CSA only. ","www.thetrustees.org/program/mobile-farmers-market/","",
+"Mahoney's Garden Center","449 Western Avenue","BRIGHTON","MA","02135","Family-run home and garden center with eight retail locations in Winchester, Tewksbury, Concord, Brighton, Falmouth, Osterville and Chelmsford, and a growing facility in Woburn. Full-service garden center dedicated to providing the highest quality and largest selection of garden plants, gardening products, and gardening services. ","mahoneysgarden.com","(617) 787-8885",
+"Boston Public Market on the Greenway Farmers Market","Atlantic Ave. & India St.","Boston","MA","02110","Dates & Time: June 13 to October 24; Thursday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.bostonpublicmarket.org","",
+"Boston Honey Company ","100 Hanover street    ","Boston","MA","02101","Retail store within the Boston Public Market. Honey sampling, year round. Honeybee observation Hive. Pure Beeswax Candles and skin care products all made with our own sustainable harvested Beeswax. Open Wednesday to Sunday 8am to 8pm. Validated parking ($1to$3) with purchase.
+","www.bostonhoneycompany.com","(508) 429-6872",
+"Boston Public Market Farmers' Market","100 Hanover Street -Indoors, on the ground floor above the Haymarket MBTA Station","Boston","MA","02108","Dates & Time: Year-Round; Monday & Tuesday, 8:00 am - 6:00 pm; Wednesday to Saturday, 8:00 am - 8:00 pm; Saturday, Sunday, 10:00 am - 6:00pm; EBT-SNAP Accepted.","www.bostonpublicmarket.org","",
+"Boston Public Market Farmers' Market","100 Hanover Street-Indoors, on the ground floor above the Haymarket MBTA Station","Boston","MA","02109","Dates & Time: Year-Round; Monday & Tuesday, 8:00 am - 6:00 pm; Wednesday to Saturday, 8:00 am - 8:00 pm; Sunday, 10:00 am - 6:00 pm; EBT-SNAP Accepted.
+","www.bostonpublicmarket.org","",
+"Brighton Winter Farmers Market","640 Washington St.","BRIGHTON","MA","02135","Presentation School Foundation Community Center; Dates and Time: January 27 to March 30; Saturday, 10:00 am - 1:30 pm. EBT-SNAP Accepted.","www.psf-inc.org/winterfarmersmarket/","",
+"The Fresh Truck Mobile Market","640 Washington Street","BRIGHTON","MA","02135","Date and Time: Monday, 3:00 pm - 5:00 pm; Check website for updates. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Red Fire Farm - CSA Pick-Up","640 Washington St.","BRIGHTON","MA","02135","CSA Pick-up Location: PSF Community Center. CSA Pick-up Days: Thursday, Starting in June.","www.redfirefarm.com/CSA/join.html","413-467-7645",
+"Red Fire Farm - CSA Pick-Up","1310 Cambridge Street","Cambridge","MA","02139","CSA Pick-up Location: East Cambridge Savings Bank. CSA Pick-up Day: Wednesday, Starting in June.","www.redfirefarm.com/CSA/join.html","",
+"Cambridge/Charles River Farmers' Market","1 Bennett St-Charles Hotel Courtyard at Harvard Square","Cambridge","MA","02138","Dates & Time: June 2 to November 17; Friday, Noon to 6:00 pm and Sunday, 10:00 am - 2:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted with select vendors only. 
+
+","www.charlesriverfarmersmarket.com/","",
+"Cambridge Winter/Charles River Farmers' Market","1 Bennett St-Charles Hotel Courtyard at Harvard Square","Cambridge","MA","02138","Dates & Times: Year-Round; Friday, Noon to 6:00 pm and Sunday, 10:00 am - 3:00 pm; ; EBT-SNAP Accepted with select vendors only. No market, 12/24, 12/31/, 3/31. Closed Easter Sunday.","www.charlesriverfarmersmarket.com","",
+"Farmer Dave's - CSA Pick-Up","1493 Cambridge St.","Cambridge","MA","02139","CSA Pick-up Days: Tuesday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Cambridge/Farmers Market at Harvard","1 Oxford Street","Cambridge","MA","02138","Science Center Plaza: Dates & Times: June 18 to October 29; Tuesday, 11:30 am - 5:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. ","www.dining.harvard.edu/farmers-market","",
+"We Grow Microgreens","21 Norton Street                                                                     ","HYDE PARK","MA","02136","Microgreens, edible flowers, seedlings, unique tropicals and leafy greens. Times can change. Check website or social media for updates, email: wegrowmicrogreens@gmail.com or call for appointment. 
+","www.wegrowmicrogreens.com/","(617) 792-5424",
+"Farmer Dave's - CSA Pick-Up","164 Bellevue Rd.","QUINCY","MA","02171","CSA Pick-up Days: Friday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Somerville/Union Square Farmers' Market","Union Square Plaza","Somerville","MA","02143","Dates & Times: May 11 to October 26; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.unionsquaremain.org","",
+"Quincy Farmers Market","1 Linden Street","QUINCY","MA","02171","Date and Time: June 18 to October 29; Sunday, 12:30 pm - 4:00 pm. EBT-SNAP accepted with select vendors only. ","www.quincyfarmersmarket.com","",
+"Charlestown Farmers' Market","Main St & Austin St-Thompson Square","CHARLESTOWN","MA","02129","Dates & Time: June 26 to October 30; Wednesday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","","",
+"Newton Community Farm","303 Nahanton Street","Newton","MA","02456","Newton Community Farm is an organic practicing community farm that grows vegetables and herbs. Approximately 40% of the produce is distributed through sales at the on-site farm stand and local farmers' market and donations to local food pantries. The farm also has an 80 share CSA Program.
+
+Open Thursday - Friday 1:30 pm to 6:00 pm and Saturday from 9:30 am to 1:00 pm.","www.newtoncommunityfarm.org","",
+"The Food Project - CSA Pick-Up","35 School St.","Somerville","MA","02143","CSA Pick-up Days: Tuesday, Starting in June.","csa.thefoodproject.org/csa-farm-shares/","617-442-1322",
+"Red Fire Farm - CSA Pick-Up","22 Vinal Ave.","Somerville","MA","02143","CSA Pick-up Location: Field and Vine, CSA Pick-up Days: Wednesday, Starting in June.","www.redfirefarm.com/CSA/join.html","413-467-7645",
+"The Fresh Truck Mobile Market","177 Sumner Street","Boston","MA","02128","Dates and Time: Monday, 3:00 pm - 5:00 pm; Check website for updates. On line pre-order and pick-up.","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"East Boston Winter/Spring Farmers Market","250 Sumner Street","Boston","MA","02128","Date and Time: Thursday, 2:00 pm - 6:00 pm; EBT-SNAP Accepted. In Person Markets: Once a month on 11/16, 12/21, 3/21, 4/18, 5/16, 6/20.
+
+Year Round Online Market: Pre-order Friday through Tuesday by 5pm for pick up on Thursdays from 2:00 %u2013 6:00 pm weekly by using the Google Form: https://docs.google.com/forms/d/1LnOMradBxXty-LOvpb6JXUOOxYRQRLRTCF491xQEjp8/edit
+
+
+
+
+","www.ebnhc.org/en/food-access/winterspring-online-farmers-market.html","",
+"Eastie Farm","294 Sumner St","Boston","MA","02101","CSA location #1: 6 Chelsea Terrace, Boston
+Pickup times: 
+Wednesdays 4-7 pm
+Thursdays 9 am-12 pm
+Fridays1-4:30 pm
+
+CSA location #2: 294 Sumner Street, Boston, 9am-12 pm
+","eastiefarm.com","(617) 419-0787",
+"The Fresh Truck Mobile Market","38 O Reilly Way","CHARLESTOWN","MA","02129","Dates and Time: Thursday, 2:30 pm - 5:30 pm; Check website for updates. Pre-order and pickup. ","www.aboutfresh.org/fresh-truck/#schedule","(617) 297-7685",
+"Somerville Mobile Market","50 Cross Street","Somerville","MA","02143","Dates & Time: July 7 to October 27; Friday, 2:30 pm - 4:30 pm.
+","www.somervillemobilefarmersmarket.wordpress.com/","() -",
+"Farmer Dave's - CSA Pick-Up","120 Liverpool St.","Boston","MA","02128","CSA Pick-up Days: Thursday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Newton Farmers' Market","1094 Beacon Street-Cold Spring Park","Newton","MA","02468","Dates & Times: June 18 to October 15; Tuesday, 1:30 pm - 6:00 pm and Saturday, 9:30 am - 12:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.newtonma.gov/government/parks-recreation-culture/recreation-programs/farmers-market","",
+"East Boston Farmers' Market","Central Square Park, Meridian Street","Boston","MA","02128","Dates & Time: July 10 to October 30; Wednesday, 3:00 pm - 6:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.ebnhc.org/en/services/crwc/food-access/farmers-market.html","",
+"Red Fire Farm - CSA Pick-Up","191 Highland Ave. # 1 A","Somerville","MA","02143","CSA Pick-up Location: Arts at the Armory. CSA Pick-up Days: Thursday, Starting in June.","www.redfirefarm.com/CSA/join.html","413-467-7645",
+"Dedham Farmers Market","670 High Street","Dedham","MA","02026","Dates & Time: June 12 to October 30; Wednesday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.dedhamfarmersmarket.org","",
+"Somerville Winter Farmers Market","191 Highland Ave.","Somerville","MA","02143","Dates & Times: Center for the Arts at the Armory, November 4 to April 6, Saturday, 9:30 am - 1:30 pm; EBT-SNAP Accepted. No market 11/25, 12/30.
+
+","www.somwintermarket.org","",
+"Red Fire Farm - CSA Pick-Up","111 Mt. Auburn Street","Watertown","MA","02472","CSA Pick-up Location: Redeemer Fellowship Church. CSA Pick-up Days: Thursday, Starting in June.","www.redfirefarm.com/CSA/join.html","413-467-7645",
+"Dedham Spring Farmers Market","450 Washington Street","Dedham","MA","02026","Town Hall; Dates and Time: Saturday, 10:00 am - 1:00 pm, April 6 to June 8. ","www.dedhamfarmersmarket.org","",
+"Eastie Farm","6 Chelsea Terrace","Boston","MA","02108","CSA location #1: 6 Chelsea Terrace, Boston, MA 02128
+Pickup times: 
+Wednesdays 4-7 pm
+Thursdays 9 am-12 pm
+Fridays1-4:30 pm
+
+CSA location #2: 294 Sumner Street, Boston, 9am-12 pm
+","eastiefarm.com/","(617) 419-0787",
+"Farmer Dave's - CSA Pick-Up","16 Garfield Ave.","Somerville","MA","02145","CSA Pick-up Days: Wednesday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Dedham Winter Artisan Farmers Market","450 Washington Street","Dedham","MA","02026","Town Hall Senior Center; Date and Time: Saturday, 10:00 am - 2:00 pm; November 18 to March 30. EBT-SNAP Accepted.","www.dedhamsquarecircle.org/become-a-vendor-artisan","",
+"Brookfield Farm - CSA Pick-Up","175 Richdale Ave.","Cambridge","MA","02140","CSA Pick-up Days: Thursday, Starting in June. ","www.brookfieldfarm.org/csa/","413-253-7991",
+"Red Fire Farm - CSA Pick-Up","328 Broadway","Somerville","MA","02145","CSA Pick-up Location: Winter Hill Brewing. CSA Pick-up Days: Wednesday, Starting in June.","www.redfirefarm.com/CSA/join.html","",
+"Andrew Thomas & Sons","1237 Randolph Avenue","Milton","MA","02186","Full Service Nursery and Garden Center.","www.athomasandsons.com/","(617) 698-3348",
+"Brookfield Farm - CSA Pick-Up","20 Park Place","Newton","MA","02460","CSA Pick-up Days: Thursday, Starting in June. ","www.brookfieldfarm.org/csa/","413-253-7991",
+"The Thayer Nursery Corp.","270 Hillside Street","Milton","MA","02186","6 acre family owned full service garden center. Stroll our fields where you will find a fantastic display of locally grown plant material, including annuals, perennials, shrubs and trees. Offer a complete selection of organic products including mulches, composts, and soil amendments that promote sustainable land care practices.","www.thayernursery.com","(617) 698-2005",
+"World Peas CSA Pick-Up","Pemberton Farms Marketplace, 2235 Massachusetts Ave.","Cambridge","MA","02140","CSA Pick-Up Location: 2235 Massachusetts Ave. ","www.nesfp.org/NewEntryCSA","",
+"Watertown Farmers' Market","Saltonstall Park next to Town Hall, 149 Main Street","Watertown","MA","02472","Dates & Times: June 12 to October 23; Wednesday, 2:30 pm - 6:30 pm; Market closes as 6:00 pm in October; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.watertownmarket.com","",
+"Newton Farmers Market/Newton North High School","352 Lowell Ave. ","Newton","MA","02460","Dates & Time: June 22 to October 19; Saturday, 9:30 am - 12:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.newtonma.gov/government/parks-recreation-culture/recreation-programs/farmers-market","",
+"Somerville/Davis Square Farmers' Market","Day & Herbert St-Davis Square","Somerville","MA","02144","Dates & Time: May 22 to November 27; Wednesday, Noon - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.massfarmersmarkets.org","",
+"Somerville Mobile Market","25 Memorial Road","Somerville","MA","02145","Mystic Housing: Dates & Time: July 8 to October 28; Saturday, 10:00 am - 12:00 pm.
+","www.somervillemobilefarmersmarket.wordpress.com/","() -",
+"Red Fire Farm - CSA Pick-Up","297 Lowell Ave.","Newton","MA","02460","CSA Pick-up Location: St. John's Episcopal Church. CSA Pick-up Days: Thursday, Starting in June.","www.redfirefarm.com/CSA/join.html","413-467-7645",
+"The Trustees Mobile Market","366 Rindge Avenue","Cambridge","MA","02140","Date and Time: Check website for current schedule. CSA only.  ","www.thetrustees.org/program/mobile-farmers-market/","",
+"Sergi Farm","34 Glenn Road","Belmont","MA","02478","5-acre, family-run farm. Committed to growing the freshest and most diverse produce with sustainable methods, emphasizing disease resistant cultivars and a critical application of organic methods. ","www.belmontacresfarm.com/","(781) 507-6602",
+"Somerville Mobile Market","167 Holland Street","Somerville","MA","02143","Dates & Time: July 7 to October 27; Friday, 10:30 am-12:30 pm.","www.somervillemobilefarmersmarket.wordpress.com/","() -",
+"Farmer Tim's Vegetables","130 Concord Ave.","Belmont","MA","02478","Saturday & Sunday 2:00 pm - 7:00 pm 
+Farmer Tim's currently has about 6.5 acres in mixed vegetable production.","www.farmertims.com/csa","(857) 334-3121",
+"Quincy Kilroy Square Farmers' Market","25 Cottage Ave. ","QUINCY","MA","02169","Dates & Time: June 21 - October 25; Kilroy Square, Friday, 12:00 pm - 5:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP accepted with select vendors only. 
+ ","","",
+"Somerville Mobile Market","1366 Broadway","Somerville","MA","02144","Dates & Time: July 6 to October 26; Thursday, 4:00 pm - 6:00 pm.
+","somervillemobilefarmersmarket.wordpress.com/","() -",
+"Brookwood Community Farm","11 Blue Hill River Road","Canton","MA","02021","Farm uses organic methods on 5 acres of revitalized farm land, providing on-farm educational and community-building opportunities, and actively supporting food access projects. Check website for hours. Coupons are accepted Tuesdays & Thursdays 2 pm - 6:30 pm and Saturdays 9 am - 1 pm.  
+
+
+","www.brookwoodcommunityfarm.org","(857) 345-5528",
+"Belmont Farmers' Market","Cross St. & Channing Rd.-Belmont Center Municipal Parking Lot","Belmont","MA","02478","Dates & Times: June 6 to October 31; Thursday, 2:00 pm - 6:30 pm, Closes at 6:00 pm in October; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. No market 7/4.
+
+","www.belmontfarmersmarket.org","",
+"Needham Farmers' Market","1471 Highland Ave.","Needham","MA","02492","Town Common; Dates & Time: June 16 to October 27; Sunday, 11:00 am - 3:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP accepted.","www.needhamfarmersmarket.org","",
+"Gore Place","52 Gore Street","Waltham","MA","02453","It has 45 acres of gardens, lawns, fields and farmland with a small farm site with historic breeds of sheep and poultry. Visitors can view the animals and tour the mansion. Annual Sheepshearing Festival in April.","www.Goreplace.org","(781) 894-2798",
+"Brookfield Farm - CSA Pick-Up","107 Grafton St.","Arlington","MA","02474","CSA Pick-up Days: Thursday, Starting in June. ","www.brookfieldfarm.org/csa/","413-253-7991",
+"Capen Street Farm","75 Capen St.","Medford","MA","02153","Operate a diversified vegetable farm but everything grown is for the neighbors in Medford Hillside and West Somerville. Seek to enliven the neighborhood through fresh, nutrient-dense produce, festive weekly pickups, summer jobs for local teens and community-wide composting -- and chronicle all of this real-time on the website. 
+","ploughandstarsproject.com","(617) 852-4109",
+"Harlequin Stables","215 High Street","Westwood","MA","02090","Harlequin offers beginner to advanced riding lessons, balance seat, Hunter/Jumper, Dressage and summer camp.","www.horses.harlequinstables.com","(781) 407-0373",
+"Everett Community Growers","548 Broadway ","Everett","MA","02149","Everett Community Growers (ECG) is a program of the Everett Community Health Partnership (ECHP), working to improve health outcomes and increase civic engagement among Everett residents through urban agriculture and other food justice initiatives.
+Saturday 9 am- 12 pm, Wednesday Farm Pick-ups 3 pm- 6 pm.
+FMNP Coupons accepted 2nd Wednesday of the month 4:30 pm - 6:30 pm.
+Accept: P-EBT, SNAP/ HIP, Card, and Cash
+","everettcommunitygrowers.org/","",
+"Winthrop Farmers' Market","Ingleside Park ","Winthrop","MA","02152","Dates & Time: June 11 to October 1; Every other Sunday, 9:00 am - 1:00 pm.","www.winthropfarmersmarket.com","",
+"The Trustees Mobile Market","200 Waldemar Avenue","Boston","MA","02128","Date and Time: Check website for current schedule. CSA only.  ","www.thetrustees.org/program/mobile-farmers-market/","",
+"World Peas CSA Pick-Up","Condon Shell","Medford","MA","02153","CSA Pick-up Location: Condon Shell, Mystic Valley Parkway. ","www.nesfp.org/NewEntryCSA","",
+"Volante Farms","292 Forest Street","Needham","MA","02492","April-May Greenhouses and Garden Center
+June-October Produce, Farm Stand and Greenhouses
+Thanksgiving-Christmas Christmas trees, Wreaths, Poinsettias","www.Volantefarms.com","(781) 444-2351",
+"Pakeen Farm","109 Elm St.","Canton","MA","02021","Multi-farm vegetable and fruit CSA. In fall, pumpkins, cider, apples and doughnuts, and in the winter, offer choose & cut Christmas trees, freshly cut Christmas trees and holiday decorations.
+
+CSA Products offered: Vegetables
+Pickup(s): On Farm ","www.pakeenfarm.com","(781) 828-0111",
+"Medford Farmers' Market","2501 Mystic Valley Parkway-Condon Shell","Medford","MA","02155","Dates & Time: June 6 to October 17; Thursday, 3:00 pm - 7:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. No market 7/4.
+
+","www.medfordfarmersmarket.org","",
+"Waltham Fields Community Farm","240 Beaver Street","Waltham","MA","02451","Open June - October, Waltham Fields Community Farm (WFCF) is a nonprofit agricultural organization that sustainably stewards agricultural land, providing its harvests and educational programming to local and Greater Boston communities. WFCF%u2019s agricultural operations include a Community Supported Agriculture (CSA) program, Barn Store, and education and volunteering programs. 
+
+Subsidized CSA shares are available. For details, go to https://communityfarms.org/csa/csa-overview.
+
+Barn Store hours: Wednesday - Friday 2:30 pm - 6:30 pm, Saturday 9:00 am - 2:30 pm.  
+
+","www.communityfarms.org","(781) 899-2403",
+"Arlington Farmers' Market","Massachusetts Ave & Pleasant St-Russell Common Parking Lot","Arlington","MA","02474","Dates & Time: June 12 to October 30; Wednesday, 2:00 pm - 6:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted with select vendors only. 
+
+","www.farmersmarketarlington.org","",
+"Farmer Dave's - CSA Pick-Up","195 Canal St","Malden","MA","02148","CSA Pick-up Days: Wednesday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Snug Harbor Farmstand","O'Brien Towers, 73 Bicknell Street","QUINCY","MA","02169","Dates and Time: Wednesday, 1:00 pm - 6:00 pm, July to Fall.","","",
+"The Bean Family Farm ","711 Clapboardtree Street ","Westwood","MA","02090","Premier source for farm fresh produce, meat, pumpkin, and Christmas products. Stand open June through Christmas selling all of our farms products as well as other locally sourced agricultural products for both retail as well as wholesale. Large autumn display with beautiful pumpkins, squashes, and apples among other fall items. Sell fresh cut Christmas trees of all sizes, wreaths and many other holiday decorations. ","www.beanfarmfresh.com/","(781) 223-3604",
+"Waltham Farmers Market","65 Lexington Street","Waltham","MA","02453","Dates & Time: June 1 to October 26; Saturday, 9:30 am - 2:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+
+
+ ","www.walthamfarmersmarket.org","",
+"Belmont Bee Company","19 Greensboro Way","Belmont","MA","02478","At the Belmont Bee Company, our focus is on the watchful care of our bees as they work busily to produce one of the most amazing, all-natural, and delicious products on earth.","www.belmontbeecompany.com","(201) 213-9788",
+"Braintree Farmers' Market","1 John F Kennedy Memorial Dr.-Town Hall Mall","Braintree","MA","02184","Dates & Time: June 15 to October 12; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; 
+Holiday Market: 11/23.","www.braintreefarmersmarket.org","",
+"Westwood Farmers' Market","845 High Street","Westwood","MA","02090","Dates & Time: June 7 to October 4; Wednesday, 2:00 pm - 6:00 pm; EBT-SNAP Accepted with select vendors only.","","",
+"Farmer Dave's - CSA Pick-Up","60 Lowell Street","Arlington","MA","02474","CSA Pick-up Days: Friday, 2:00 pm - 6:00 pm.","farmerdaves.csaware.com/store/","978-349-1952",
+"Revere Farmers Market","Revere Beach WaterFront Square at Beachside  ","Revere","MA","02151","Dates & Time: July 26 to September 27; Friday, 12:00 pm - 4:00 pm: WIC & Senior Coupons Accepted; EBT-SNAP Accepted. 
+
+","www.revere.org/departments/public-health-division/healthy-living/revere-farmers-market  ","",
+"Brookfield Farm - CSA Pick-Up","70 Hancock Street","Bedford","MA","01730","CSA Pick-up Days: Thursday, Starting in June. ","www.brookfieldfarm.org/csa/","413-253-7991",
+"Norwood Farmers' Market","Nahatan and Washington Streets-Town Common","Norwood","MA","02062","Dates & Times: June 18 to October 15; Tuesday, 2:00 pm - 6:00pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","","",
+"Capeway Florists","249 North Street","Weymouth","MA","02191","","","781 337-1470",
+"Randolph Farmers' Market","592 North Main Street-","Randolph","MA","02368","Dates & Times: Third Sunday, 10:00 am - 2:00 pm; May 21 to September 17; WIC & Senior Coupons Accepted.","www.facebook.com/people/Main-Street-Farmers-Market/100064057992110/","",
+"Weymouth Farmers' Market","46 Broad Street","Weymouth","MA","02190","Tufts Library, Weston Park; Dates & Time: 6/12, 6/26, 7/10, 7/24, 8/7, 8/21, 9/4, 9/18, 10/2 ; Every other Wednesday, 4:00 pm - 7:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. Special events: Sunday July 28, Artisan Fair, 10am-2pm; Sunday August 11, Kids Day, 10am-2pm.
+","www.weymouthfarmersmarket.com/","",
+"Lexington Community Farm","52 Lowell Street","Lexington","MA","02420","Community-based farm where area residents come to learn about and enjoy food, farming, and nature. Offer hands-on education programs for children and adults, volunteer hours, recreation programs, Farm Stand, CSA, and flower shares.
+
+CSA Product offered: Vegetables, Flowers.
+Pickup(s): On Farm
+
+","www.lexfarm.org","781-862-7247",
+"Lexington Community Farm CSA","52 Lowell Street","Lexington","MA","02420","Community-based farm where area residents come to learn about and enjoy food, farming, and nature. Offer hands-on education programs for children and adults, volunteer hours, recreation programs, CSA, and flower shares.
+
+CSA Product offered: Vegetables, Flowers.
+Pickup(s): On Farm
+
+","www.lexfarm.org","781-862-7247",
+"Wilson Farm","10 Pleasant Street","Lexington","MA","02421","125 year old farm, open year-round, and is multiple %u201CBest of Boston%u201D winner (now a %u201CClassic%u201D recipient). At the farm, you will find impeccable, locally grown produce, house baked bread and sweets, freshly prepared take home meals, their own hen house eggs, top quality meats, dairy and cheeses from New England, beautiful cut flowers, and a huge selection of lush garden and indoor plants. The CSA program offers three types: produce, fresh cut flower, and fresh fish shares. Details at WilsonFarmCSA.com
+
+CSA Products Offered: Produce, Flowers, Fish
+Pickup(s): On Farm","WilsonFarm.com","(781) 862-3900",
+"Wright-Locke Farm","78-82 Ridge Street","Winchester","MA","01890","A historic certified organic farm retailing via a contactless online sales platform, farmers markets, and a CSA (veg, flowers, & herbs) with a PYO raspberry and flower operation and farm stand when raspberries are in season operating on the traditional territory of the Massa-adchu-es-et and Pawtucket peoples. Offer educational classes for kids and adults and tours for school groups. An entrance point to 130 acres of trails in adjacent conservation land. Monthly events welcoming the community.","www.wlfarm.org","(781) 729-8775",
+"Lexington Winter Farmers' Market","739 Massachusetts Ave.-Waldorf School of Lexington (Back entrance)","Lexington","MA","02420","Dates & Times: 1/6, 1/20, 2/3, 2/17, 3/2, 3/16, 3/30, 4/13; Saturday, 11:00 am - 2:00 pm; ; EBT-SNAP Accepted.","www.lexingtonfarmersmarket.org","",
+"Powisset Farm","37 Powisset Street","Dover","MA","02030","Powisset Farm is a property of the Trustees of Reservations. Our farm began in 2007. We operate a 250-person CSA, do a small amount of restaurant sales, as well as weekly donations to local food pantries. We also have volunteer opportunities, educational workshops for children and adults, school tours, cooking classes, walks and hikes, farm dinners, 4H programs for kids and opportunities to volunteer.
+
+CSA Products offered: Vegetables, Fruit, Flowers
+Pickup(s): On Farm, Tuesday, 2:00 pm - 6:00 pm; Thursday, 10:00 am - 6:00 pm; Saturday, 10:00 am - 4:00 pm
+June to December","www.thetrustees.org/program/powisset-farm-stand","(505) 785-0339",
+"Wagon Wheel Farm Stand","927 Waltham Street","Lexington","MA","02421","Farmstand, deli, garden center, much and lawn loam deliveries (local), and landscaping","www.wagonwheelfarmstand.com","(781) 862-2112",
+"Winchester Farmers' Market","Town Common, Laraway Road and Church Street","Winchester","MA","01890","Dates & Time: June 8 to October 26; Saturday, 9:30 am - 1:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. 
+
+","www.winchesterfarmersmarket.org","",
+"Canton Farmers Market","Rodman Building/Canton High School, 960 Washington Street","Canton","MA","02021","Date and Time: June 16 to October 20; Sunday, 10:00 am - 2:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.cantonfarmersmarket.org","",
+"Little Brook Farm and Garden Farmstand/YMCA","497 Main Street","Melrose","MA","02176","Open Saturday, 8:00 am - 1:00 pm, May to October 20","","(781) 231-9663",
+"Land's Sake Farm","90 Wellesley St","Weston","MA","02493","Public farm (used to be part of Arnold Arboretum), host educational programming for all ages, maintain the town forest for recreational and production uses, and care for both public conservation and private land. Picnic tables available. Pick your own flowers only. Open June-October, Tues-Fri 11am to 7pm, Sat and Sun 11am-4pm, closed Mondays.
+
+CSA Products offered: Vegetables, Flowers, occasionally honey
+Pickup(s): On Farm","www.landssake.org","(781) 893-1162",
+"Meadow Mist Farm","12 Bacon Street ","Lexington","MA","02420","Integrated small farm that raises and sells grass fed beef, lamb, pastured chicken and turkey, cage-free fresh eggs, and seasonal garden vegetables and berries. ","www.meadow-mist.com","(781) 354-5037",
+"Mahoney's Garden Center","242 Cambridge Street","Winchester","MA","01890","Committed to locally grown annuals and perennials. Many of the plants are grown locally each season at our growing facility in Woburn. Grow only the best, hardiest varieties and plant them in extra deep pots that promote bigger, healthier root systems. Growing local reduces fuel emissions needed to truck plants in from far away and keeps jobs local.","www.mahoneysgarden.com","(781) 729-5900",
+"Springdale Flower Farm","50 Springdale Avenue","Dover","MA","02030","Orfer local flowers through CSA subscriptions and custom orders, as well as by the bucket for folks who would like to arrange their own flowers for events (ie weddings, baby showers, celebrations). Our flowers are grown using sustainable and organic practices. Our hope is that our flowers will bring joy and happiness to others, while simultaneously providing a home for pollinators.","www.springdaleflowerfarm.com/","(858) 774-0957",
+"Melrose Farmers' Market","West Emerson Street and Cedar Park-Bowden Park","Melrose","MA","02176","Dates & Time: June 6 to October 31; Thursday, 1:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. No market 7/4.
+","www.melrosefarmersmarket.org","",
+"Cochato Nursery ","373 N.Franklin Street","Holbrook","MA","02343","Unique nursery offering quality plants to discriminating gardeners.","www.cochatonursery.com","",
+"Huberman's Greenhouses","111 Vine Street","Saugus","MA","01906","Four generations of the Huberman family have been selling annuals, perennials, vegetable plants, hanging baskets, potted plants and bedding plants. Both wholesale and retail.","www.hubermansgreenhouses.com","(781) 233-4682",
+"Little Brook Farm and Garden","190 Lincoln Ave.","Saugus","MA","01906","Daily 9:00 am - 6:00 pm. Flower arrangements, Memorial services, Weddings services, Plant arrangements, Water fountains, Bird baths, Flower basket hangers, Spring garden plants, Holiday decorations. Also greens and tomatoes.","www.facebook.com/pages/category/Garden-Center/Little-Brook-Farm-Garden-813090225436183/","(781) 231-9663",
+"Weiss Farms","170 Franklin Street","Stoneham","MA","02180","Family owned farm since 1928. Presently wholesale and retail loam, mulch and organic composting. Christmas trees planted 3-4 years ago-immature.","www.weissfarm.com","(781) 438-0689",
+"Holbrook Farmers' Market","231 Union St.-Union Street Lanes","Holbrook","MA","02343","Dates & Time: June 17 to Mid October; Saturday, 10:00 am - 2:00 pm; WIC & Senior Coupons Accepted. ","www.facebook.com/HolbrookFarmersMarket","",
+"Lexington Farmers Market","Worthen Road Practice Fields","Lexington","MA","02420","Dates & Times: May 28 to October 29; Tuesday, 2:00 pm - 6:30 pm; Closes at 6:00 pm in October); WIC & Senior Coupons Accepted; EBT-SNAP Accepted. 
+
+
+
+","www.lexingtonfarmersmarket.org","",
+"Natick Community Organic Farm","117 Eliot Street Route 16","Natick","MA","01760","Non-profit, diversified, certified-organic farm raising mesclun, seedlings, maple syrup, produce, cut flowers. eggs, livestock/meat, and woolen yarn. No admission fee. Self-guided tours. Picnic area. Youth programs, teen employment, and volunteer opportunities. Maple Magic (March), Spring Spectacular (May) and Harvest Dinner (September). ","www.natickfarm.org","(508) 655-2204",
+"Stoneham Farmers' Market","Main Street-Town Common","Stoneham","MA","02180","Dates & Time: June 6 to to September 26; Thursday, 2:30 pm - 6:30 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.stonehamfarmersmarket.com","",
+"Weymouth Winter Market","1 Wildcat Way","SOUTH WEYMOUTH","MA","02190","Weymouth High School Cafeteria; Date and Time: Sunday, 10:00 am-1:00 pm; 11/19, 12/17, 1/28, 2/25, 3/24, 4/14; EBT-SNAP Accepted. January to April Markets will be held at Weymouth Chapman Middle School, 1051 Commercial St. ","www.weymouthfarmersmarket.com","",
+"Hingham Farmers' Market","95 Station Street","Hingham","MA","02043","Dates & Times: May 4 to November 23; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.hinghamfarmersmarket.org","",
+"Lovell Landscape Service, Inc.","160 Main Street","Medfield","MA","02052","","","508 359-4191",
+"Heimlich Nurseries","71 Burlington Street","Woburn","MA","01801","","www.heimlichs.com","(781) 933-9815",
+"Good Roots Farm","153 Lexington Road","Lincoln","MA","01773","USDA certified organic farm who grows a range of vegetables and herbs on three acres, using techniques that protect the soil and surrounding environment. Brian Turnbaugh, the farmer, has been running Good Roots Farm since 2013.
+","www.goodrootsfarm.net","(202) 378-6003",
+"Top Sun Farm","65 Hillwood Ave","Stoughton","MA","02072","Small apiary selling local honey and other bee products. Also produce our own maple syrup harvested from western MA. Call ahead or order online.","www.topsunfarm.com","(617) 515-1942",
+"Stonegate Gardens","339 S. Great Road","Lincoln","MA","01773","","stonegategardens.com/","(781) 259-8884",
+"Natick Winter Farmers' Market","13 Common Street","Natick","MA","01760","Dates & Times: Common Street Spiritual Center, November 4 to April 27; Saturday, 9:00 am - 1:00 pm; EBT-SNAP Accepted with select vendors only.","www.natickfarmersmarket.org","",
+"Natick Farmers' Market","Natick Common","Natick","MA","01760","Dates & Time: May 4 to October 26; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted with select vendors only.
+","www.natickfarmersmarket.org","",
+"Crescent Ridge Dairy","355 Bay Road","Sharon","MA","02067","Since 1932, the family-owned and operated farm has been dedicated to delivering the freshest, tastiest products. Own bottled milk sold at farm store and through home delivery. Nationally and internationally recognized ice cream available at the farm dairy bar and the Boston public market.","www.crescentridge.com","(781) 784-2740",
+"The Neighborhood Farm","Corner of Old Connecticut Path and Forest Hill Rd ","Wayland","MA","01778","All natural vegetables, herbs, cut flowers and plants grown at historic Mainstone Farm in Wayland. Stand offers Mainstone's raised grass fed beef, eggs, chicken and pork along w/produce.
+
+Farm stand available online only.
+
+","www.theneighborhoodfarm.com/","(339) 225-025",
+"Lookout Farm","89 Pleasant Street","Natick","MA","01760","Belkin Family Lookout Farm is one of the oldest continuously working farms in the U.S. PYO strawberries, peaches, nectarines, plums, apples and pumpkins. Families also enjoy train rides, children's play area, picnic tables, hay pyramid, burlap maze and Busy Bee Learning Center. Book a Birthday Party, School or Camp Field Trip, Group Outing or Corporate Event with us! Call U-pick hotline to find out hours and produce available. 508-653-0653","www.Lookoutfarm.com","(508) 651-1539",
+"Yards of Pleasure, Inc.","720 South Franklin Street","Holbrook","MA","02343","","www.yardsofpleasure.com/gardencenter.html","(781) 767-4242",
+"McGuire's Mushrooms","18 Turkey Hill Lane","Hingham","MA","02018","Family operated, local farm w/full-service gourmet and medicinal mushroom farm serving local chefs, individuals and farmers markets. Offer cultivation supplies such as grain spawn, liquid cultures and mushroom grow kits. For all orders and inquiries call Kevin McGuire, or email mcguiresmushrooms@gmail.com.  ","mcguiresmushrooms.com","(781) 664-4248",
+"Medfield Farmers Market","26 North Street","Medfield","MA","02052","Montrose School; Dates & Times: May 19 to October; Sunday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted.","www.medfieldcommunitymarket.com","",
+"The Food Project - CSA Pick-Up","120 Munroe St.","Lynn","MA","01901","CSA Pick-up Location: The Food Project Office. CSA Pick-up Days: Tuesday, Starting in June.","csa.thefoodproject.org/csa-farm-shares/","617-442-1322",
+"Lynn Farmers' Market","North and South Common St. ","Lynn","MA","01901","Lynn Commons Park; Dates & Time: July 11 to November 21; Thursday, 11:00 am - 4:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.lynngrows.org/markets-in-lynn","",
+"Drumlin Farm Stand / Mass Audubon","208 South Great Road","Lincoln","MA","01773","Farm store and wildlife sanctuary with walking trails to explore the fields, forest, and wetlands. CSA and "flex-shares" are available. Coupons accepted Saturday & Sunday from 10:00 am - 4:00 pm. ","drumlinfarmstand.org/","781-259-2200",
+"Lincoln Arts and Farmers Farmers Market","145 Lincoln Road","Lincoln","MA","01773","Date and Time: Saturday, 9:00 am - 1:00 pm, June to September. ","www.matlockfarm.org","",
+"Walpole Farmers' Market","East Street, Downtown","Walpole","MA","02081","Spring Brook Park; Dates & Time: June 8 to October 19; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted. ","www.facebook.com/walpolefarmersmarketma","",
+"The Food Project","10 Lewis Street","Lincoln","MA","01773","Non-profit organization that does youth development work with 14-16 year olds from Boston and the surrounding suburbs. We work with hundreds of volunteers throughout the year. We are located near Walden Pond, Minute Man National Historic Park, and Codman Community Farm.
+
+CSA Products offered: Vegetables, Fruit, Flowers
+Pickup(s): Farmers Markets","www.thefoodproject.org","(781) 259-8621",
+"Wild Robbins Farm","42 Everett Street","Sherborn","MA","01770","Small family-run farm selling farm-raised pork, chicken, turkey, lamb, and eggs.","Wildrobbinsfarm.com ","(617) 417-1260",
+"Lynn Winter Farmers Market","8 Silsbee Street","Lynn","MA","01901","Dates and Time: 12/9, 1/13, 1/27, 2/10, 2/24, 3/9, 3/23, 4/13, 4/27, 5/11, 5/25, 6/8, 6/22; Saturday, 11:00 am - 3:00 pm; From April to June, the market will be located at 20 Exchange Street.
+
+","www.thefoodproject.org/farmers-markets/","(617) 326-3755",
+"Drumlin Farm Wildlife Sanctuary","208 South Great Road","Lincoln","MA","01773","At Mass Audubon%u2019s Drumlin Farm Wildlife Sanctuary, you can experience life on a working farm and explore a wildlife sanctuary at the same time. With pigs, sheep, goats, chickens, cows, a CSA program and 206 acres of wildlife sanctuary to explore, there%u2019s something for everyone to enjoy.
+
+CSA Product offered: Vegetables, Eggs, Meats, Fruits.
+CSA starts in Mid-May - Pick-up at the farm: Wednesdays noon-6:00
+Accepting coupons Saturdays & Sundays 10 am - 4 pm.
+
+","www.Massaudubon.org/drumlinfarm","(781) 259-2200",
+"Weir River Farm","140 Turkey Hill Lane","Hingham","MA","02018","Small diversified farm on the South Shore. Farm property of The Trustees of Reservations, offers self-guided hiking trails, visiting and volunteer opportunities, educational programs, vegetable CSA, and retail meat and egg sales.
+
+CSA Products offered: Vegetables
+Pickup(s): On Farm","thetrustees.org/program/weir-river-farm-market/","(781) 740-7233",
+"Mass Audubon The Farm at Moose Hill","4 Moose Hill St                                                                         ","Sharon","MA","02067","100 member vegetable and fruit CSA; free range eggs; farm stand; walking trails with views of the Boston skyline.
+
+CSA Products offered: Vegetables
+Pickup(s): On Farm","www.massaudubon.org/get-outdoors/wildlife-sanctuaries/moose-hill/the-farm-at-moose-hill","(508) 981-6025",
+"Codman Community Farms","58 Codman Road","Lincoln","MA","01773","Community farm committed to using sustainable farming methods. 100% grass-fed, which includes any lambs or goats we raise and our closed herd of Red Devon Cattle. Raise/grow cows, pigs, lambs, laying hens, meat chickens, turkeys, hay, and a growing amount of produce, flowers, and fruit. Open year-round, 9-6 pm, daily. Coupons accepted on Wednesdays from 1 pm - 3:30 pm. Seasonally, the barnyard and nearby fields host a variety of poultry, pigs, lambs, cows, and gardens for exploration.","www.codmanfarm.org","(781) 259-0456",
+"Calareso's Farmstand and Garden Center","122 Main St.","Reading","MA","01867","Year round farm stand garden center with bakery.","calaresosfarmstand.com/","(781) 944-6010",
+"Wakefield Farmers' Market","468 North Ave.","Wakefield","MA","01880","Hall Park; Dates & Time: June 15 to October 26; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. ","www.wakefieldfarmersmarket.org","",
+"Hingham Winter Farmers' Market","204 Union Street ","Hingham","MA","02043","Wompatuck State Park Visitor Center; Dates & Times: January 6 to March 30; Saturday, 10:00 am - 1:00pm; EBT-SNAP Accepted. ","www.hinghamfarmersmarket.org","",
+"Nessralla's Landscape and Irrigation Services","719 West Main Street","Avon","MA","02322","Grow and sell annual flats and hanging baskets, along with large variety of perennials. Sell shrubs, trees, mulch, and loam.","nessrallainc.com/index.html","(508) 587-4229",
+"The Farm at Moose Hill","4 Moose Hill Street","Sharon","MA","02067","Partnered with Ward%u2019s Berry Farm for over 15 years to offer organic vegetables to our surrounding communities.
+
+CSA Products offered: Vegetables
+Pickup(s): On Farm","www.massaudubon.org/get-outdoors/wildlife-sanctuaries/moose-hill/the-farm-at-moose-hill","(781) 784-5691",
+"Dowse Orchards","98 North Main Street","Sherborn","MA","01770","200 year old family farm operation, all natural cider, cider press viewing, 25 varieties of apples, fruit stand, PYO apples, pumpkins of every shape & size. Christmas trees, greenhouses.","www.Dowseorchards.com","(508) 653-2639",
+"Weston Nurseries of Hingham","1099 Main St.","Hingham","MA","02018","Formerly Lambert%u2019s Garden Center, Weston%u2019s Hingham Garden Center offers a full selection of lawn and garden products, decorative gifts, and indoor plants, a full selection of high quality trees, shrubs, perennials and edible plants. Offer homeowners and trade professionals the same outstanding plants, personalized service, landscape design, mulch and soils, and the best horticultural advice that our Hopkinton customers have relied on since 1923. ","www.westonnurseries.com/garden-centers-hingham/","(781) 749-3773",
+"Wayland Winter Farmers' Market","397 Boston Post Road-Russell's Garden Center","Wayland","MA","01778","Dates & Times: January 6 to March 9; Saturday, 10:30 am - 2:00 pm. EBT-SNAP Accepted. 
+","www.russellsgc.com/farmersmarket ","",
+"Iron Horse Farm","29 Coolidge Street","Sherborn","MA","01770","Iron Horse Farm ~ A little bit of "country" to raise angora rabbits, 3 breeds of sheep, llamas and angora goats in Sherborn, Massachusetts. Visit the Iron Horse Farm Artisans' Gift Store- products from our animals and more. 
+","www.ironhorsefarm.org","(508) 653-3433",
+"Russell's Garden Center","397 Boston Post Road","Wayland","MA","01778","Family owned business for more than 145 years - Growing since 1876! Host the Wayland Farmers' Market.","www.russellsgardencenter.com","(508) 358-2283",
+"Wayland Farmers' Market","397 Boston Post Rd-Russell's Garden Center Rt. 20","Wayland","MA","01778","Dates & Times: June 26 to October 9; Wednesday, Noon - 4:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.russellsgardencenter.com/html/farmersMarket.html","",
+"Spence Hill Farm","39 Coolidge Street","Sherborn","MA","01770","","","(508) 653-8939",
+"Digger Foods Mobile Market","202 Chatham West Drive","Brockton","MA","02301","Chatham West; Thursday, 4:00 pm - 6:00 pm.","www.diggerfoods.org","",
+"Pleasant Meadow Farm","1150 Main Street","Hingham","MA","02043","Beginning, intermediate, advanced. Summer day camp, Therapeutic instruction. Ages 5-65.","www.pleasantmeadowfarmhingham.com","(781) 704-5307",
+"Lindentree Farm","10 Old Concord Road","Lincoln","MA","01773","Certified organic farm since 1993, currently pursuing biological growing methods, has shares available for the 2015 season. Three pick up days to choose from, Tuesday and Thursday 1:30-7:30 and Saturday 12-4. Two size shares, small and large. Families commit to a total of eight hours of work for the season, new members need to attend a pre-season orientation. Those who are interested but cannot make the orientation should call and arrange a meeting. Shares include in-season vegetables harvested fresh and pick your own items as well (eg. berries, cherry tomatoes, beans, flowers). Lindentree Farm supports 200 shares, the Lincoln Farmers' Market, the Field of Greens for a food security group in Cambridge and some restaurant clients.
+
+CSA Products offered: Vegetables, Fruit, Flowers, herbs
+Pickup(s): On Farm","www.facebook.com/profile.php?id=440595046051393&paipv=0&eav=AfZxISfzr5Jpe6kX9IaII4P7nH24mc4Q","(781) 259-8311",
+"Digger Foods Mobile Market","469 Pine Grove Drive","Brockton","MA","02301","The Pines; Tuesday, 4:00 pm - 6:00 pm.","www.diggerfoods.org","",
+"Sun Forest Farm","1251 West St","Stoughton","MA","02072","Honey. Call ahead.","","(617) 894-1464",
+"Swampscott Farmers' Market","22 Monument Ave.","Swampscott","MA","01907","Town Hall; Dates & Time: June 9 to October 27; Sunday, 10:00 am - 1:00 pm; WIC & Senior Coupons Accepted.","www.swampscottfarmersmarket.org","",
+"Digger Foods Mobile Market","125 Oak Street","Brockton","MA","02301","Raymond Elementary School; First and Third Saturdays, 1:30 pm - 3:30 pm.","www.diggerfoods.org","",
+"Columbia Farm","9 Kendall Ave.","Sherborn","MA","01770","Sale of hay & Herford cattle.","","(508) 655-6778",
+"Sunshine Farm","41 Kendall Avenue","Sherborn","MA","01770","3rd generation farm. Ice Cream window May-October. PYO strawberries, blueberries, raspberries, peaches and apples! May flower sales-annuals, vegetables, hanging baskets. Homegrown fruits and vegetables and baked goods. Check website for events and pyo conditions. IPM, naturally grown. 
+
+CSA product categories offered: Fruits and Vegetables
+Pickup(s): On Farm. 
+","sunshinefarmma.com/","(508) 655-5022",
+"World Peas CSA Pick-Up","Flatbread Company, 213 Burlington Rd. ","Bedford","MA","01730","CSA Pick-up Location: 213 Burlington Rd. ","www.nesfp.org/NewEntryCSA ","",
+"Farmer Dave's - CSA Pick-Up","6 Salem St.","Reading","MA","01867","CSA Pick-up Days: Old South United Methodist Church, Thursday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Friends of Holly Hill Farm","236 Jerusalem Road","Cohasset","MA","02025","Certified Organic Farmstand. Value added products and produce from local sources. Plants and organic gardening supplies. Education programs for school groups, summer camps, and adult workshops. Barn yard animals and 130 acres of woods with trails to walk.
+
+Coupons accepted Saturdays from 9:00 am - 3:00 pm.","www.hollyhillfarm.org","(781) 383-6565",
+"Chestnut Hill Farm - CSA Pick-Up","Framingham YMCA, 280 Old Connecticut Path","Framingham","MA","01701","CSA Pick-Up Days: Thursday, starting in June","www.thetrustees.org/places-to-visit/csa/chestnut-hill-farm-csa","(413) 212-8492",
+"Digger Foods Mobile Market","105 Belair Street","Brockton","MA","02301","Belair Tower; Thursday, 12:30 pm - 2:30 pm. ","www.diggerfoods.org","",
+"Farmer Dave's - CSA Pick-Up","335 Cambridge St.","Burlington","MA","01803","CSA Pick-up Location: Burlington Presbyterian Church. CSA Pick-up Days: Monday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Rockland Farmers Market","146 Hingham Street","Rockland","MA","02370","Dates & Time: 4/22, 5/6, 5/20, 6/10, 8/5, 8/19, 9/16; Saturday, 11:00 am - 3:00 pm.","www.facebook.com/farmersmarket02370/","",
+"Newhall Fields Community Farm","193 Lynn St","Peabody","MA","01960","Nonprofit organic practicing farm. 140 perennial herbs and 40 varieties of vegetables, herbs, and fruits. On-farm programs for all ages and abilities through volunteering, internships, youth programs, field trips, farm tours, and farm-based education programs. Open June - October bi-weekly on Thursday 11:30 am - 1 pm and 4:00 pm - 6:00 pm.  ","newhallfieldscommunityfarm.org","(978) 595-1778",
+"Ward's Berry Farm","614 South Main Street","Sharon","MA","02067","Family-run farm & market. PYO strawberries, blueberries, peaches, raspberries & pumpkins in season. Hayrides in strawberry & pumpkin seasons. Year-round: fresh produce, home-baked goods, gourmet cheeses, aritisan breads, sandwiches, smoothies, ice cream, farm animals, picnic & children's play areas. Corn maze & hay-pyramid in fall.","wardsberryfarm.com","(781) 784-3600",
+"Sharon View Nursery","630 South Main Street","Sharon","MA","02067","Boutique Nursery/Garden center. 5 acres large caliper trees, mature shrubs, topiary, and rare varieties. Garden ornament of high quality. Handcrafted pottery, organic fertilizers, and pest control.","www.facebook.com/TheSharonViewNursery","(781) 784-5858",
+"New England Nurseries","216 Concord Road","Bedford","MA","01730","","www.newenglandnurseries.com","(781) 275-2525",
+"Mahoney's Garden Center","1625 Sudbury Road","Concord ","MA","01742","Family-run home and garden center with eight retail locations in Winchester, Tewksbury, Concord, Brighton, Falmouth, Osterville and Chelmsford, and a growing facility in Woburn. Full-service garden center dedicated to providing the highest quality and largest selection of garden plants, gardening products, and gardening services. ","mahoneysgarden.com","(978) 371-1214",
+"North Gate Farm","999 Concord Road","Sudbury ","MA","01776","Riding lessons and show stable. Beginner thru rated shows. 2016 IEA National Champion, Upper and Middle School teams. Boarding and Leasing available.","www.northgatefarm.net","(978) 443-0999",
+"Bogastow Farm Project","245 Ridge Street","Millis","MA","02054","Lamb, wool, blueberries.","bogastowfarmproject.com/","(508) 794-9003",
+"Tree House Farms","243 Ridge st","Millis","MA","02054","Farm stand open by appointment","www.facebook.com/TreeHouseFarmsMA/","(469) 733-8581",
+"Cohasset Farmers' Market","Cohasset Common","Cohasset","MA","02025","Dates & Time: June 8 to October 5; Thursday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted with select vendors only. ","www.facebook.com/cohassetfarmersmarket","",
+"Verrill Farms","11 Wheeler Road","Concord ","MA","01742","Farmstand, tented picnic area, events during summer in historical agricultural area. June, Strawberry Fest; July, Blueberry Pancake Breakfast; Aug., Corn Fest; Sept., Barbeque; October, Harvest Day. Tent area rental for parties. ","www.Verrillfarm.com","(978) 369-4494",
+"Hopestill Farm","117 Mill St.","Sherborn","MA","01770","Certified organic vegetables and small fruits; cut-your-own Christmas trees. Daily May to December. Spring and summer CSA. Tag and cut certified organic Christmas trees; tagging begins in November. Call for appt.","www.hopestill.com","(508) 653-5421",
+"Maitland Mountain Farm","23 Cedarcrest Avenue","Salem","MA","01947","Started as a pickle operation has evolved into a full line of artisan goods. Produce over twenty different pickled products, a handful of fermented offerings, fresh eggs and a large selection of seasonal produce selection. Also offer large selection of native & exotic plants on the farm. ","www.maitlandfarms.com","(978) 548-8455",
+"Run and Gun Ranch","123 Seekonk Street","Norfolk","MA","02056","Train and sell Western horses, cows, barrels, poles, CMS, pleasure. Board horses and hold events at our arenas.","www.runandgunranch.com/index.htm","617-930-9004",
+"Eric's Flower and Plant Emporium","1090 Main Street","Reading","MA","01867","","www.ericsfloweremporium.com/index.html","(781) 944-0547",
+"Blue Stem Natives","376 Washington Street","Norwell","MA","02061","A women-owned native plant nursery, and garden center, focused on increasing accessibility and knowledge of native plants of New England.","www.bluestemnatives.com","(781) 738-4869",
+"Colonial Gardens Florist and Greenhouses","442 Fitchburg Tpk. Route 117","Concord ","MA","01742","Family owned florist and greenhouse grower operating garden center year round. Grow the majority of the plants we sell, and seasonally grow cut flowers in our greenhouses for our florist shop as well!","www.colonialgardensflorist.com/","(978) 369-2554",
+"Hornstra Dairy Farm","246 Prospect St","Norwell","MA","02061","Opened in 1915, Hornstra is one of the last working dairy farms on the "South Shore". Offer a variety of fresh dairy and food products through home delivery and the farm store (open year round). Seasonal Dairy Bar scoops our handcrafted ice creams from April through mid-October.","hornstrafarms.com","(781) 749-1222",
+"Brockton Farmers' Market","45 School Street","Brockton","MA","02301","City Hall Plaza; Dates & Time: June 7 to October 25; Friday 10:00 am - 2:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.brockton.ma.us","",
+"Langwater Farm","209 Washington St","Easton","MA","02356","Family owned, certified organic fruit and vegetable farm in North Easton, MA. Offer a wide variety of delicious certified organic produce. Hayrides, field trips, and other farm events. Farmstand open from early May to late December. Pick your own certified organic strawberries weekends in June! Email for more information
+
+CSA Products offered: Fruits and Vegetables
+Pickup(s): On Farm
+
+","www.langwaterfarm.com","(508) 205-9665",
+"Digger Foods Mobile Market","464 Centre Street","Brockton","MA","02302","East Middle School; Second and Fourth Saturdays, 10:00 am - 12:00 pm.","www.diggerfoods.org","",
+"North Easton Farmers' Market","209 Washington Street","NORTH EASTON","MA","02356","Dates & Time: May 2 to October 24; Thursday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted with select vendors. ","www.langwaterfarm.com/langwater-farmers-market","",
+"Kilkern Farm","172 Ridge Street","Millis","MA","02054","Boarding, lesson, and training facility, competition training and show preparation. Welcome all ages and experience.","www.kilkernfarm.com","561-797-6716",
+"Digger Foods Mobile Market","135 Belmont Street","Brockton","MA","02301","Arnone Elementary School; First and Third Saturdays, 10:00 am - 12:00 pm.","www.diggerfoods.org","",
+"Silverwood Organic Farm","195 Western Ave","Sherborn","MA","01770","USDA Certified Organic CSA Produce & Flower Shares Available
+Pickup(s): On Farm","www.silverwoodorganicfarm.com","(508) 545-1380",
+"Digger Foods Mobile Market","250 Crescent Street","Brockton","MA","02302","Plouffe Middle School; Second and Fourth Saturdays, 1:30 pm - 3:30 pm. ","www.diggerfoods.org","",
+"Langwater Winter Farmers Market","215 Washington Street","Easton","MA","02356","Langwater Farm; Dates & Times: November 4 to April 27; Saturday, 10:00 am - 2:00 pm. ","www.langwaterfarm.com/langwater-farmers-market/ ","",
+"Billerica Farmers' Market","793 Boston Road","Billerica","MA","01821","Dates & Time: June 17 to October 14; Monday, 3:00 pm - 7:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.billericacommunityfarmersmarket.org","",
+"Native Plant Trust/Garden in the Woods","180 Hemenway Road","Framingham","MA","01701","Nation%u2019s first plant conservation organization and the only one solely focused on New England%u2019s native plants. Open daily: 10am-5pm. ","www.nativeplanttrust.org/","(508) 877-7630",
+"Tangerini's Spring Street Farm","139 Spring Street","Millis","MA","02054","A 67 acre working family farm. The famers diverse operation include the growing and selling of a wide variety fresh fruits and vegetable (using organic methods), cut flower, annuals, perennials and hanging basket. The farm has a farmstand, a 200 member CSA, an ice cream shop. We offer PYO, birthday parties, hayrides, (evening too!), farm tours. 
+
+CSA Product offered: Vegetables, Fruit, Flowers
+Pickup(s): On Farm
+SNAP accepted at the farmstand Sunday to Friday through November 22
+Coupons accepted daily 9 am - 7 pm.","www.Tangerinisfarm.com","(978) 906-3230",
+"North Star Farm","342 Mt. Blue Street","Norwell","MA","02061","Lessons beginner to advanced. Ages 4-90. Dressage, Western, Saddleseat, Huntseat. Day Summer camps. Boarding, 4-H, Horse shows. Breeding/Foaling. Intro to Rodeo.","www.northstar-farm.com","(781) 834-5740",
+"Eleazer Davis Farm","255 Davis Road","Bedford","MA","01730","Breeding, Boarding, Training, Competition of Olympic Discipline Sport horses","www.edfarm.net","(781) 640-8488",
+"Brockton Fairgrounds Farmers' Market","600 Belmont St-Brockton Fairgrounds","Brockton","MA","02301","Dates & Times: July 13 to October 26; Saturday, 9:00 am - 12:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","","",
+"Cohasset & Village Greenery","805 Chief Justic Hwy","Cohasset","MA","02025","","www.cohassetvillagegreenery.com/","(781) 383-2333",
+"Natural Resources Trust-Sheep Pasture Farm","307 Main Street","Easton","MA","02356","NRT's Sheep Pasture Farm is home to sheep, goats, chickens, turkeys, and ducks. Open to the public & have walking trails. NRT of Easton is a non-profit, member & donation supported organization. Also offer hay for sale.","www.nrtofeaston.org","(508) 238-6049",
+"Cross Street Flower Farm","4 Jacobs Lane","Norwell","MA","02061","Grow over 50 varieties of specialty cut flowers on 7 acres at the historic Jacobs Farm in Norwell, MA. We offer a flower CSA, and a seasonal retail flower shop in the historic barn from April to October. We host Cut Your Own Bouquet events and educational workshops on the farm during the growing season. ","www.crossstreetflowerfarm.com","(617) 259-0896",
+"Framingham/Village Green Farmers' Market","Edgell Rd, Village Green at Framingham Center","Framingham","MA","01701","Dates & Times: June to 20 to October 10; Thursday, 3:00 pm - 7:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.framinghamma.gov/3520/Farmers-Market","",
+"North Road Fairview Road","206 North Road","Sudbury ","MA","01776","","www.northroadfairviewfarm.com/","(978) 369-4328",
+"Clodhopper Farm","140 Causeway Street","Millis","MA","02054","Family owned, focused on sustainable, responsible growing. Greens, radishes, beets, carrots, onions, garlic, zucchini, summer squash, cabbage, tomatoes, cucumbers, peaches, potatoes, eggplant, peppers, sweet corn, winter squash, pumpkins and more. Free home delivery within 10 miles of Millis. Proudly accept both SNAP & HIP. ","www.clodhopper.farm","(617) 899-7250",
+"Edgebrook Homestead ","5 Edgebrook Rd","Framingham","MA","01701","Small-scale farm producer of fresh chicken/duck/quail eggs, herbs, produce, 100% pure honey, and value-added products. Cayuga and Welsh Harlequin duck breeding stock. New products are added yearly. ","www.facebook.com/EdgebrookHomestead/ ","(617) 610-6199",
+"Hutchins Farm","754 Monument Street","Concord ","MA","01742","Hutchins Farm is one of the oldest Certified Organic farms in the region with a wide variety of seasonal produce. We grow all the produce we sell, and all our edible crops are Certified Organic. The farm stand is open seasonally with beautiful views of our production fields.
+
+Open: Tuesday - Saturday 11:00 am - 6:00 pm,  Sunday 11:00 am - 5:00 pm, June to October, closed 7/4.","www.hutchinsfarm.com","(978) 369-5041",
+"Blue Meadow Farm","120 Nobscot Road","Sudbury ","MA","01776","Offer horseback riding lessons, training-sales of horses open year round. Blueberries PYO. Please call ahead for availability.","www.bluemeadowfarm.net","(978) 443-3880",
+"Earth Landscape","6 Tulip St.","Salem","MA","01970","","www.organicearthcare.com","(978) 744-1475",
+"Hanover Farmers Market","287 Cedar Street","Hanover","MA","02339","Dates and Time: Third Sundays of the month, 10:00 am - 2:00 pm; May 19 to November 17.","www.thehalelife.com/hanover-farmers-market","",
+"Twillingate Gardens & Flower Shop","136 Hudson Road","Sudbury ","MA","01776","Sudbury%u2019s oldest flower shop with the newest ideas. Have been serving the Boston Metrowest area for more than 50 years, following tradition.","www.facebook.com/p/Twillingate-Gardens-Flower-Shop-100063723215284/","(978) 443-6643",
+"Chris' Farmstand","11 Lake St","Peabody","MA","01960","Fresh fruits and vegetables, meat & eggs at our farmstands. May to November. Daily 10 am -6 pm.","www.chrisfarmstand.com","(978) 994-4315",
+"Siena Farms ","113 Haynes Road ","Sudbury ","MA","01776","Family-farm in its 14th year of operation, cultivating 50 acres of protected farmland in Sudbury and Concord, MA. All of Siena Farms produce is grown using traditionally sustainable farming practices: free of chemical herbicides, pesticides, fungicides and fertilizers. Over 100 varieties of vegetables grown for 500+ member CSA community, farmstores in Boston, and select restaurants and chefs. 
+
+CSA products offered: Vegetables, Pantry Items, Sunflowers. Pickup available on farm and various locations throughout the Greater Boston Area. Home delivery also available. 
+
+","www.sienafarms.com","(978) 261-5365",
+"Norfolk Farmers Market","2 Liberty Lane","Norfolk","MA","02056","Town Hill; Dates & Time: June 5 to September 25; Wednesday, 3:00 pm - 7:00 pm. ","www.facebook.com/norfolkmafarmersmarket","",
+"Wilmington Farmers' Market","142 Middlesex Ave","Wilmington","MA","01887","Swain Green; Dates & Time: June 2 to October 6; Sunday, 10:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.
+
+","www.wilmingtonfarmersmarket.com/","",
+"Farmer Dave's - CSA Pick-Up","175 Middlesex Ave.","Wilmington","MA","01887","CSA Pick-up Days: Thursday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Oake Knoll Farms","70 North Street","Foxborough","MA","02035","Local dairy farm that offers harvested grass fed raw milk, cheese, beef along with veal. Farm stand open daily from 10am-6pm.","www.oakeknollfarms.com/","(866) 472-9645",
+"Walsh's Greenhouse","225 Main Street","Norfolk","MA","02056","Family run greenhouse since 1987! Grow all our own annuals, veggies, perennials, mums, and cut flowers too!","www.facebook.com/WalshsGreenhouse/","508 528-3387",
+"Northeast Nursery","234 Newbury Street","Peabody","MA","01960","For over 39 years Northeast Nursery has been supplying landscapers and homeowners with the finest bulk goods, plant materials, and gardening supplies that the industry has to offer.  Design Services and In Store Consultation. A designer is always on hand to help you create your perfect masterpiece, or simply choose from our collection of pre-planted containers.","www.northeastnursery.com/","(978) 535-6550",
+"MacArthur Farm","137 Concord Street","Holliston","MA","01746","Prize winning tomatoes and farm fresh fruits and vegetables, bedding plants, perennials, hanging plants, potted and vegetable plants. Mums, pumpkins, fall decorations, Christmas trees, wreaths, roping and poinsettias. 
+
+Open May to November: daily from 8:30 am-6:30 pm. Produce starting in June. October and November hours: 9:00 am - 6:00 pm. Open in December for Christmas Trees only, 7 days a week, 9:00 am to 9:00 pm. ","www.macarthurfarm.com","(508) 429-4873",
+"Camp Sewataro","One Liberty Ledge","Sudbury ","MA","01776","Traditional day camp with on site riding lessons","www.sewataro.com","(508)259-0901",
+"Brooksby Farm","54 Felton Street","Peabody","MA","01960","Pick-your-own strawberries, blueberries, peaches and apples; walking trails; cross-country ski area & rentals; hayrides; retail store; Harvest Festival; pumpkins; gift baskets. Close to historic Salem and its attractions. Have your Birthday party here. Call the store for daily picking information 
+
+","www.brooksbyfarm.org","(978) 531-7456",
+"Holmestead Harvest","30 Temple Street","Whitman","MA","02382","","www.holmesteadharvest.com/","(774) 240-7581",
+"Griggs Farm","599 Boston Road","Billerica","MA","01821","58 acre farm established 1943. Greenhouse, plants, vegetables for retail and wholesale.","www.griggsfarmbillerica.com","(978) 667-9111",
+"Merrimack Valley Apiaries","96 Dudley Road","Billerica","MA","01821","Honeybee Farm - wholesale + pail + jar honey.","www.mvabeepunchers.com","(978) 667-5380",
+"Digger Foods Mobile Market","1380 Main Street","Brockton","MA","02301","Campello High Rise; Tuesday, 12:30 pm - 2:30 pm. ","www.diggerfoods.org","",
+"Arcadian Farms","258 Norfolk Street","Holliston","MA","01746","Annuals, perennials, fresh corn, apples, peaches, pears, fresh cider.","www.arcadianfarms.com/","(508) 429-4439",
+"Marblehead Gardens","164 W Shore Dr","Marblehead","MA","01945","Extensive range of plants, products, materials, and supplies we have available. Local delivery is available for certain products.","www.marbleheadgardens.com","(781) 631-8558",
+"Marblehead Farmers' Market","217 Pleasant St. ","Marblehead","MA","01945","Veterans Middle School; Dates & Time: June 1 to November 23; Saturday, 9:00 am - Noon; WIC & Senior Coupons Accepted;  EBT-SNAP Accepted.
+
+ ","www.marbleheadfm.com","",
+"Greenwood Tree Farm","96 Dudley Rd","Billerica","MA","01821","Tree farms with a scenic location featuring colonial farmhouse and Christmas shop. Free hot cider, and tasting of our own honey. A traditional Christmas experience. Dogs are welcome on a leash. Stroll through our fields with your family, and make this your family tradition like so many others. ","www.greenwoodtreefarm.com","(978) 667-5380",
+"Happy Goats Farm","400 Norfolk St.","Holliston","MA","01746","Milk is available daily in the self serve sales room at the farm. Message Diana at 617-272-0170 if you have a larger order, or would like your milk in a glass jar. Goat milk soap and herbal tinctures.","www.happygoatsfarm.com/","617-272-0170",
+"Beverly Bees","24 New Derby Street #2","Salem","MA","01970","100% Pure Raw Honey from local Massachusetts hives; hand poured beeswax candles; honey and beeswax lip balms and lotions from our own bees. We sell at farmer%u2019s markets, online and at our farm stand in Salem. Open from Wednesday to Sunday 11:00 am - 6:00 pm.
+","www.beverlybees.com","(978) 778-8276",
+"Sweet Autumn Farm","180 Prospect Street","Carlisle","MA","01741","Certified organic veggies, seedlings, chicken eggs and duck eggs. Farm stand hours: Tues. 2-6pm, Sat. 10-2pm.
+","","(978) 287-0025",
+"Salem Farmers' Market","Derby Square","Salem","MA","01970","Dates and Time: June 13 to October 10; Thursday, 3:00 pm - 7:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.salemfarmersmarket.org","",
+"Barrett's Mill Farm","449 Barretts Mill Road","Concord ","MA","01742","Grow over 50 types of vegetables on the historic McGrath Farmstead, which we lease from the town of Concord. Produce is grown using sustainable methods and sold through our farm stand and CSA. Farm stand generally open Late May to last Saturday in October. Check website for days and hours. 
+
+CSA products offered: Vegetables, fruit and flowers
+CSA Pickup(s): On Farm Tuesdays, Thursdays and Saturdays
+CSA Pickup Days: Tuesday, Thursday, Saturday, Starting in June
+","www.barrettsmillfarm.com","(978) 254-5609",
+"Marshall Farms","171 Harrington Ave","Concord ","MA","01742","Specialize in annuals and perennials, freshly grown produce, including an extensive selection of heirloom tomatoes in season. Firewood and seasonal items such as Christmas trees. Open 7 days a week, 9-6 from May-December.","www.marshall-farms.com","(978) 369-4069",
+"Kanes Flower World","64 Andover Street","Danvers","MA","01923","Family owned and operated full service garden center. Opened in 1964. 10-acre property with 17 greenhouses. Kanes slogan "Nobody Beats our Quality." ","www.facebook.com/KanesFlowerWorld/","(978) 774-6911",
+"Salt Box Nursery","562 Boston Road","Billerica","MA","01821","Great selection of seasonal perennials as well as roses, vines, flowering trees and shrubs and so much more.","www.saltboxnursery.com","(978) 663-4348",
+"Eastleigh Farm","1062 Edmands Rd","Framingham","MA","01701","Ice cream, wagon rides, farm animals, and picnic area. Visit and enjoy the summer farmers market, music festival, and more - Love hosting events for our community! Best way to contact is to email eastleighfarmcow@gmail.com","eastleighfarm.com","(508) 656-0063",
+"Foxboro Farmers Market","Town Common","FOXBORO","MA","02035","Dates & Time: June 1 to September 7; Thursday, 5:00 pm - 8:00 pm.","www.facebook.com/Foxboroughfarmersmarket/","",
+"Beaver Brook Farm","645 Summer Street","East Bridgewater","MA","02333","PYO pumpkins and ceramic products seasonal. Hay rides.","beaverbrookfarm.wordpress.com/","(508) 583-0502",
+"Ashland Farmers' Market","125 Front Street-Across from the Ashland Public Library","Ashland","MA","01721","Dates & Time: June 8 to October 19; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. 
+
+","www.ashlandfarmersmarket.org","",
+"Honey Pot Maple Farm","28 Marjorie Rd","Wilmington","MA","01887","Apiary, pollination services, Honey, and maple syrup production. Open by appt. only.","www.honeypotmaplefarm.com/","(978) 361-0808",
+"Scituate Farmers' Market","655 Chief Justice Cushing Hwy.","Scituate","MA","02066","Acres to Grow Farm: Dates & Time: Last Friday of the month, June to July; 4:00 pm - 8:00 pm; WIC & Senior Coupons Accepted.","www.facebook.com/ScituateFarmersMarket/","",
+"Medway Winter Farmers Market","123 Holliston Street","Medway","MA","02053","Medway VFW; Dates and Time: Bi-Weekly, November 16 to April 18; Thursday, 2:00 pm - 6:00 pm.","","",
+"Saltbox Farm","40 Westford Road","Concord ","MA","01742","Offer a wide variety of vegetables, raise sheep, chickens and bees. Offer catering, and cooking classes.","www.saltboxfarmconcord.com ","(978) 610-6020",
+"Stearns Farm CSA","862 Edmands Road","Framingham","MA","01701","Strive to preserve the historic Stearns farm as a sustainable garden while providing locally and naturally grown food in partnership between the land, the farmer, and the community.
+
+CSA Products offered: Vegetables, Berries, Flowers
+Pickup(s): On Farm ","www.stearnsfarmcsa.org","(508) 202-0367",
+"Redbrook Farm","153 Brooks Place","West Bridgewater","MA","02379","Boarding stable where Western riding lessons are giving. Riding rings, miles of trails. All levels of riders from beginner to advanced. We compete in Rodeo and Barrel racing and Cattle Sorting events.","","(774) 259-9964",
+"Lyon Landscape Nursery","250 Bent St","Franklin","MA","02038","Choose and cut Christmas Trees.","lyonlandscapenursery.com/","(508) 533-4085",
+"Hanson Farm","20 Nixon Road","Framingham","MA","01701","Fifth generation family farm offering PYO - strawberries, blueberries, raspberries, pumpkins, flowers. Growing 180 varieties of fruits and vegetables offered at our roadside stand and farmers' markets. C.S.A. shares available. Herb and vegetable seedlings in spring. Hayrides, Corn Maze and Haunted House, Horse boarding. Check our website for festivals/current events.
+Open May through October, Monday - Saturday 9:00 am - 6:00 pm (closes at 5:30 pm on Sundays).
+CSA Products offered: Vegetables
+Pickup(s): On Farm","Hansonsfarmframingham.com","(508) 877-1658",
+"Carlisle Farmers' Market","343 Bedford Rd-Kimballs Ice Cream Stand, Rt. 225","Carlisle","MA","01741","Dates & Time: June 24 to October 7; Saturday, 8:00 am - Noon; WIC & Senior Coupons Accepted. ","www.carlislefarmersmarket.org","",
+"Indian Rock Farm","25 Prospect Street","Foxborough","MA","02035","We offer choose and cut Christmas trees.  We grow only fraser fir, balsam fir, and concolor fir varities for choose and cut sales. We also make our own wreaths and swags.   We are open weekends only starting with the first weekend after Thanksgiving.  We also have an antique sleigh in which people can sit and take pictures.","www.indianrockfarm.com","(508) 543-7081",
+"Clark Farm","163 Hobart Street","Danvers","MA","01923","Historic 1728 Farm. Vegetables, cut flowers, and herb crops grown on our farm for Farmers Markets at Salem, Marblehead, and Swampscott. Limited sales at our farmstand by the street. Compost, loam and bark mulch are sold on site or delivered to local towns. 
+","www.clarkfarmdanvers.com","(978) 774-0550",
+"Franklin Winter Farmers Market","887 Lincoln Street","Franklin","MA","02038","Fairmount Fruit Farm; Dates & Time:11/18, 12/2, 12/16, 1/6, 1/20, 2/3, 2/17, 3/2, 3/16; Saturday, 10:00 am - 2:00 pm.
+","www.fairmountfruit.com/farmer-s-market","",
+"Outpost Farm","300 Prentice Street","Holliston","MA","01746","Turkey farm producing own fresh dressed or ready to serve roasted turkey, turkey pot pies, turkey sandwiches and fruit pies for take out services. Have a picnic area in September as well as farm grown pumpkins, apples, corn and tomatoes.
+
+CSA Products offered: Vegetables
+Pickup(s): On Farm ","www.outpostfarm.net","(508) 429-5244",
+"Fairmount Fruit Farm","885 Lincoln Street","Franklin","MA","02038","Bedding plants, combination pots, hanging baskets, perennials. Open April - December daily 9 am - 5 pm. ","www.fairmountfruit.com/","(508) 533-8737",
+"Clark Farm Market","201 Bedford Road","Carlisle","MA","01741","USDA Certified Organic Farm offering local produce, pasture-raised meats, dairy and dry goods.","www.clarkfarmmarket.com","(978) 254-5427",
+"Patrick Lyons Greenhouses","303 Central Street","Foxborough","MA","02035","","www.facebook.com/pages/Lyons%20Greenhouses/186588558135818/","(508) 543-4113",
+"Stonecroft Farm","108 Belmont Street","West Bridgewater","MA","02379","Beginner to advanced lessons on quality horses and ponies that are competitive at the local "A" shows. Starting at ages 4 and up. Teach correct Dressage flat basics that enable students to be successful at Jumping or to higher Dressage levels. Workshops","www.ridestonecroft.com","(508) 587-3758",
+"Curran Brothers Greenhouses, Inc.","15 Park Street","Danvers","MA","01923","Retail Florists and Greenhouses.","www.curransflowers.com/","(978) 774-1446",
+"Medway Community Farm","50 Winthrop St","Medway","MA","02053","Enrollment for 2024 CSA is now open! Stand will reopen in April of 2024.","www.medwaycommunityfarm.org","(508) 321-1286",
+"Richardson's Farms","156 South Main Street","Middleton","MA","01949","Over 300 years old, this dairy farm produces their own milk and ice cream which is served at their ice cream stand year-round. Also on site is a driving range, batting cages, mini-golf, and an all season dining room and outdoor patio.","www.richardsonsicecream.com","(978) 774-5450",
+"Guerrini Landscape, Inc.","703 East Street (Rte 106)","Mansfield","MA","02031","","","508 339-2220",
+"Cucurbit Farm","32 Parker Street","Acton","MA","01720","Our roots come from the Christopherson family dating back to 1896. Farm began on School St. and has remained in the family through what is now the current 4th and 5th generations. Grow annuals, perennials, tomatoes, corn, pumpkins and a wide variety of vegetables.","www.cucurbitfarm.com/","(978) 621-7054",
+"Shady Oaks Farm","38 Winthrop Street","Medway","MA","02053","Sell feed, hay, petfood as well as other products. AGWAY feeds and supplies, bagged shavings, bulk sawdust, Hay delivered or picked up at the farm, Bliss ice cream, chicken and turkey pot pies. ","www.Shadyoaksfarm.com","(508) 533-8905",
+"Maynard Maple","6 Windmill Drive","Maynard","MA","01754","Maple syrup, Maple candy.","www.maynardmaple.com","978) 897-4518",
+"Flint Farm","789 East St.","Mansfield","MA","02048","Flint Farm is a family owned and operated business that offers a variety of goods and services from early spring to late fall. The farm also have a selection of Christmas trees and wreaths to kick off the holiday season.","www.flintfarmstand.com/","(508) 337-6473",
+"Eight Fences Farm","78 Danials Street","Franklin","MA","02038","Hunter/Jumper training. Showing, USEF","https://m.facebook.com/profile.php?id=460976147325152","(508) 561-1298",
+"Farmer Dave's - CSA Pick-Up","Rantoul St. and Railroad St.","Beverly","MA","01915","CSA Pick-up Location: Beverly Farmers Market, Veteran's Park. CSA Pick-up Days: Monday, Starting in June.","farmerdaves.csaware.com/store/","978-349-1952",
+"Beverly Farmers' Market","Rantoul St. & Railroad Ave.-Veteran's Park","Beverly","MA","01915","Dates & Time: June 10 to October 7; Monday, 3:00 pm - 7:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. No market 9/2/24.
+
+","www.beverlyfarmersmarket.org","",
+"Matfield Maple Farm","107 Matfield St.","West Bridgewater","MA","02379","","www.matfieldmaplefarm.com","(508) 588-9858",
+"Maynard Farmers' Market","Main Street, Mill Pond Parking Lot","Maynard","MA","01754","Dates & Time: June 29 to September 28; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted. ","www.maynardfarmersmarket.com/","",
+"Tree-Berry Farm","Rt. 123, 135 Cornet Stetson Rd.","Scituate","MA","02066","PYO blueberries and Christmas trees.","www.treeberryfarm.com","(781) 545-7750",
+"Rising Star Equestrian Center","149 Summer Street","Medway","MA","02053","Full service Hunter/Jumper facility. Boarding, training, lessons, workshops, clinics, sales, and leases.","www.risingstarequestriancenter.com","(508) 533-8551",
+"Boston Honey Company Farmstand","45 Chestnut St","Holliston","MA","01746","Honey bee farm with picnic area. Farmstand also offers our eggs, as well as locally raised chicken, pork, beef and lamb. Offer school tours. Located on Holliston Rail Trail w/plenty of bicycle parking. Educational display/observational hive with honeybees.","bostonhoneycompany.com/holliston-farm.html","(508) 429-6872",
+"Every Bloomin' Thing","118 Cornet Stetson Road","Scituate","MA","02066","","www.everybloominthing.com","(781) 544-3320",
+"Linda's Tomatoes at Terrapin Farm","555 Lincoln Street","Franklin","MA","02038","Focus on growing delicious tomatoes! Perfectly ripened and lovingly harvested beefsteak and heirloom tomatoes are grown with love and nothing else! Pesticide-free, vine-ripened and simply delicious! ","www.lindastomatoes.com/","(774) 571-1107",
+"The Blueberry Farm","698 West Washington Street","Hanson","MA","02341","Relaxed atmosphere. Children are welcome with supervision. Picking pails and take-home bags provided. Free recipes, freezing and storage instructions. Reasonable prices. Open Mid-July through August. Call ahead for hours and picking conditions. Rte(s) 18, 58, or 27 to Rte. 14 Hanson, MA.","www.mcbga.com/farms/the_blueberry_farm.html","(781) 447-1584",
+"First Light Farm","466 Highland Street","Hamilton","MA","01936","CSA Product offered: Vegetables, Fruit
+Pickup(s): Farmer Markets","www.firstlightfarmcsa.com/","(781) 710-6749",
+"West Bridgewater Farmers Market","First Congregational Church, 29 Howard Street","West Bridgewater","MA","02379","Dates and Time: June 11 to October 1; Every other Tuesday, 4:00 pm - 7:00 pm.","www.facebook.com/WBFarmersMarket","",
+"Mansfield Farmers Market","6 Park Row","Mansfield","MA","02048","Dates & Time: Saturday, June 22 to September 28; 9:00 am -1:00 pm; WIC & Senior Coupons Accepted.","www.facebook.com/mansfieldmarket/","",
+"Krochmal Farm","81 Jennies Way","Tewksbury","MA","01876","Offer corn maze, pumpkins, horse-drawn hayrides, pony rides, pick your own pumpkin patch. Field Trips, group outings.","www.krochmalfarms.com/","(978) 658-0507",
+"MNC Farm","150 West Center St","West Bridgewater","MA","02379","Farmstand selling variety of fresh vegetables, fruits, eggs along w/farm fresh beef and poultry. Small petting zoo and tractor hayrides by appt.","app.barn2door.com/e/3e1nD/all","(774) 381-7495",
+"Vineyard Farm","175 East Center St.","West Bridgewater","MA","02379","75-acre farm with a farm stand, PYO, and CSA and Christmas Trees. Offer hay rides, kid train rides, picnic areas and more! Flowers, farm-raised eggs, and variety of fruit & vegetables. Visit or call the farm for wholesale list of the week.","www.vineyardfarm.com/","(774) 310-5959",
+"Patt's Blueberries","577 Gorwin Drive","Holliston","MA","01746","","www.facebook.com/Patts-Blueberries-199622883500358/","(508) 429-6795",
+"Griffin Greenhouse & Nursery Supplies, Inc.","1619 Main Street","Tewksbury","MA","01876","","www.griffins.com","(978) 851-4346 ",
+"Mahoney's Garden Center","1609 Main Street","Tewksbury","MA","01876","","mahoneysgarden.com/","(978) 851-2712",
+"Flynn%u2019s Family Farm and Nursery ","492 Bay Road","Easton","MA","02334","Farm grown flowers and fresh mulch. Maintain a small Farm/Nursery to supply many of our customer%u2019s needs with locally grown plant materials and shrubs.","seanflynnlandscape.com/about/","(508) 219-0304",
+"Russo's Greenhouses, Inc.","134 Lincoln Street","West Bridgewater","MA","02379","We have three acres of greenhouses and are always open to tours and for public information and education on planting and growing. Christmas open house and Santa visits. Please call for events listing.","www.russosgreenhouse.com","(508) 559-9388",
+"Komarnisky Bros., Inc","1034 E. Central Street","East Bridgewater","MA","02333","DairyFarm - In continuous production for 75 years.","","(508) 378-2408",
+"Tewksbury Community Farmers' Market","288 Livington Street","Tewksbury","MA","01876","Dates & Time: June 15 to September 28; Thursday, 4:00 pm - 7:00 pm. WIC & Senior Coupons Accepted.","www.tewksburymarket.com","",
+"Kennedy's Country Gardens","85 Chief Justice Cushing Hwy.","Scituate","MA","02066","Our Nursery, Greenhouses, Landscape Design Center and Garden Center are all situated on five beautiful acres overlooking the North River. Kennedy's has display gardens and attractions for kids such as talking birds and a very friendly cat named Tigger.","www.kennedyscountrygardens.com","(781) 545-1266",
+"Stonefield Farm","91 Martin Street","Acton","MA","01720","Family owned vegetable farm with greenhouse and garden plant sales in spring, summer and fall. Known for quality, selection and prices of the products it raises and sells. Grow a solid collection of New England annuals and perennial plants as well as an extensive selection of vegetable and herb plants. Colorful and unique hanging baskets and container gardens provide easy and attractive additions to patios and gardens.","stonefieldfarmacton.com/","(978) 263-5572",
+"The Leonhards Florist and Greenhouse","82 Corning Street","Beverly","MA","01915","","","978 922-4295",
+"Weston Nurseries","93 East Main Street (Rte 135)","Hopkinton","MA","01748","Since 1923, have been providing homeowners and landscapers with exceptional customer service and the highest quality trees, shrubs, annuals and perennials, including introductions of azaleas and rhododendrons. Also sell houseplants and tropical plants at all of our retail stores and wholesale locations. 
+","www.westonnurseries.com","(508) 435-3414",
+"Woolyvale Farm","713 Union Street","Marshfield","MA","02050","","","(781) 837-2361",
+"White Pond Farm","26 White Pond Road","Stow","MA","01775","Small family farm using biological methods to grow vegetables. Farmstand offering homemade jams and jellies and seasonal vegetables. CSA U-Pick shares available. Granite Bird Baths and Garden Sculptures.","www.whitepondfarm.com","(978) 897-6262",
+"Great Brook Farm State Park","247 North Road","Carlisle","MA","01741","Dairy farm located on state park property with 130 dairy animals and over 1000 acres of land and 20 miles of walking/mountain biking trails. Guided farm tours available. Ice cream stand on site with our own honey, cow gifts and cranberries for sale. Bus tours welcome!","www.cabotcheese.coop/great-brook-farm","(978) 371-7083",
+"The Pumpkin Farm","72 Milford Street","Medway","MA","02053","Farmstand open Monday, 3:00 pm - 8:00 pm, June to November.","www.thepumpkinfarmmedway.com","(508) 404-5701",
+"White Barn Farm","431 South Street","Wrentham","MA","02093","Small vegetable farm with a farm stand and CSA.
+CSA Products offered: Vegetables, Flowers
+Pickup(s): On Farm.
+
+HIP processed at Farm Stand: Open Spring - Fall, Tuesday to Friday 9 am to 6 pm; Saturday/Sunday, 9 am to 4 pm.","www.whitebarnfarm.org","(508) 307-3315",
+"Mistletoe Acres Tree Farm","296 Whitman St","East Bridgewater","MA","02333","Cut your own Christmas trees and pre-cut trees. Evergreen trees, including Canaan Fir, Serbian Spruce, Balsam Fir, Fraser Fir and Silver Fir.   ","www.mistletoeacres.com","(617) 918-3941",
+"Franklin Farmers Market","Main and Union Streets-Town Common","Franklin","MA","02038","Dates & Time: June 7 to October 25; Friday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. ","www.franklinfarmersmarketma.com/","",
+"Alfalfa Farm Winery","267 Rowley Bridge Road","Topsfield","MA","01983","Grape production-winery-functions and events-wetland plants-firewood-see website-www.alfalfafarmwinery.com","www.Alfalfafarmwinery.com","(978) 395-7937",
+"Taproot Tree Farm","Capt. Sargent Conservation Land - 36 Tuttle Lane","Stow","MA","01775","Started the farm in 2014 and have been looking forward to sharing our trees with you since. Growing a variety of fir, spruce and pine for you to choose from as a cut your own farm. ","www.taproottreefarm.com/","",
+"Moraine Farm, The Trustees of Reservations","733 Cabot Street","Beverly","MA","01915","Year-round CSA farm shares. Volunteer and educational opportunities for schools, community groups, families and individuals. Seasonal celebrations and annual Open House at the farm.
+
+CSA Products offered: Dairy, Fruits, Flowers, Vegetables
+Pickup(s): On Farm","ttor.org/morainefarm","(978) 969-1738",
+"Connemara House Farm","252 Rowley Bridge Road","Topsfield","MA","01983","The Connemara House Farm is a 36-acre farm located in Topsfield, MA. The farm features a variety of apples, peaches and Asian pears for picking. ","connemarahousefarm.com/","(978) 777-5682",
+"World Peas CSA Pick-Up","Waldorf School, 701 Cabot St. ","Beverly","MA","01915","CSA Pick-Up Location: 701 Cabot St. ","www.nesfp.org/NewEntryCSA ","",
+"Gulbankian Farms Garden Ctr and florist","40 Mt. Vickery Rd.","Southborough","MA","01772","Growers of annuals, perennials, vegetable plants.
+Full Florist Shop.
+Gift Shop. Greeting Cards.","gulbankianfarms.com/","(508) 485-8979",
+"Milliken Farm","26 Cross St","Pembroke","MA","02327","Seasonal market/farmstand. Hours varied. Milliken Farm is a small farm located in Pembroke Massachusetts and offers organically grown market produce through a on site farm stand. ","www.facebook.com/MillikenFarmMass/","(617) 620-6288",
+"East Street Farm","460 East Street","Tewksbury","MA","01876","Offer spring flowers, summer vegetables, and fall pumpkin picking. CSA Products offered: Fruits, Vegetables. Pickup(s): On Farm, Farmer Markets. Farmstand: Check website for hours. 
+
+
+","www.farmerdaves.net","(978) 851-2048",
+"Farmer Dave's CSA Tewksbury","460 East St.","Tewksbury","MA","01876","CSA offers high quality produce grown at the farm in Dracut. With the earth in mind, the farm is certified IPM and implements organic growing practices first. Offer spring shares, summer vegetable and fruit shares, and late fall shares for 9 months. 100% of the vegetables in the CSA shares are grown by Farmer Dave's.
+ 
+CSA Product offered: Vegetables, Fruit
+CSA Pickup(s): On Farm, Farmer Markets
+CSA Pickup Days: Wednesday, Thursday.","farmerdaves.csaware.com/store/","(978) 349-1952",
+"Southborough/Fay School","Fay School, 25 Middle Road","Southborough","MA","01745","Dates and Times: Saturday, 9:00 am - Noon (Noon - 3:00 pm on May 13), May 13 and September 9 to October 28","","",
+"Second Nature Farm ","39 Burt St","Norton","MA","02766","CSA Products offered: Vegetables, Fruit, Eggs
+Pickup(s): On Farm, Farmer's Market ","secondnaturefarm.com","(774) 266-0431",
+"Whipple Bee Flower Farm ","733 Cabot Street","Beverly","MA","01915","Fostering a local connection to flowers while celebrating kindness in our communities. Our specialty tulips and sunflowers are grown at Moraine Farm in Beverly, Mass through the New Entry Sustainable Farming Project.","www.whipplebeeflowerfarm.com","(617) 529-1099",
+"Hopkinton Farmers' Market","6 Hayden Rowe Street","Hopkinton","MA","01748","Town Common; Dates & Times: June 9 to October 13; Sunday, 1:00 pm - 5:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.hopkintonfarmersmarket.com","",
+"Connors Farm","30 Valley Road","Danvers","MA","01923","PYO fruits and vegetables, picnic area, farm bakery, ice cream stand and CSA. Farm uses IPM to grow fresh fruits and vegetables. Opening mid-September is famous corn maze--bring the whole family for some fall fun!
+Open daily 8am to 6pm. ","www.Connorsfarm.com","(978) 777-1245",
+"Honey Pot Hill Orchard","138 Sudbury Road","Stow","MA","01775","Honey Pot Hill Orchards have a 25 variety apple orchard/cider press and farmstand. Visit with the friendly farm animals & get lost in the Hedge Maze. Offer picnic area and hayrides on weekends during P.Y.O season. Host school tours and company outings by appointment.","www.Honeypothill.com","(978) 562-5666",
+"Mistletoe Christmas Tree Farm","141 Whitman Street","Stow","MA","01775","Christmas Tree Farm, pre-cut and cut-your-own. 
+Open SUNDAY, November 19th for folks who want to get their tree up prior to Thanksgiving.","www.mistletoechristmastreefarm.com/","(978) 298-5688",
+"Carver Hill Orchards","101 Brookside Avenue","Stow","MA","01775","Variety of fruits, vegetables & ice cream available at our farmstand.","www.carverhillorchard.com/","(978) 897-6117",
+"Ferjulian's Farm","7 Lewis Street","Hudson","MA","01749","70-acre family owned and operated farm. For 82 years it%u2019s been our privilege to grow flowers, fruits and vegetables for our community and to carry on the only working farm in Hudson. Very large PYO flower field!","www.ferjulians.com","(978) 562-3447",
+"C.N. Smith Farm, Inc.","325 South Street","East Bridgewater","MA","02333","Family owned farm for over 80 years. Raise wide variety of fruits and vegetables for sale and PYO. Garden center. Hayrides in fall, and group tours by appt.
+Open Monday to Sunday 9am to 5pm.
+
+
+","www.cnsmithfarminc.com","(508) 378-2270",
+"Shelburne Farm","106 West Acton Road","Stow","MA","01775","Pick-Your-Own apples, asian pears and pumpkin operation and homemade baked goods. Come visit the Country Store and bring a picnic. Children can pick apples from miniature trees. Birthday parties, company picnics. Moon Bounce, Pedal Tractors, Hay Ride, Farm Animals, and Hay Climbing Mountain.
+","www.Shelburnefarm.com","(978) 897-9287",
+"Acton-Boxborough Farmers' Market","Elm Street Playground, 19 Elm Street","Acton","MA","01720","Dates & Time: June 16 to October 13; Sunday, 10:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. Holiday market 11/24/23.","www.abfarmersmarket.org","",
+"Small Farm","184 Gleasondale Rd. (Rt. 62)","Stow","MA","01775","Family farm producing fresh vegetables grown without pesticides, including tomatoes, lettuce, greens, onions, garlic, and hot peppers. PYO flowers and herbs are popular. Families welcome.
+
+Open biweekly November to April, Weekends in May, Wednesday to Sunday June to October.
+Coupons accepted Wednesdays 10 am - 6 pm, Thursday - Saturday 10 am - 5 pm, & Sunday 12 pm - 5 pm. ","small-farm.com","(978) 201-0052",
+"Gianetti%u2019s U-Pick Blueberries","557 Union Street   ","Franklin","MA","02038","U-Pick Blueberries.","gianettis.com","508-528-9430",
+"Holiday Tree Farm","132 Salem Rd","Topsfield","MA","01983","Choose and cut Christmas tree farm open 9-3pm daily from Friday after Thanksgiving thru 2nd weekend in Dec. Greenhouses open 9-5 daily starting Mothers Day weekend.","www.facebook.com/holidaytreefarmtopsfield","(978) 887-2670",
+"The Farm on Farm St","185 Farm St","Bellingham","MA","02019","Offer blueberries, eggs, and various vegetables in season.","","(774) 292-0225",
+"Idylwilde Farm","366 Central Street","Acton","MA","01720","Year round full service farm stand greenhouse.","www.idylwildefarm.com","(978) 263-1662",
+"Derby Ridge Farm","438 Great Road","Stow","MA","01775","Fifth generation family farm. An I.P.M orchard which means minimal pesticide application. Press Derby Ridge's own cider that is unpasteurized with no preservatives. Grow over 30 varieties of apples, peaches and pears and also have pumpkins, gourds and squash. Offer many varieties of native vegetables and Christmas trees and wreaths, which are all available at the farm stand.","derbyridgefarm.com/","(978) 897-7507",
+"Marlborough Farmers' Market","19 Weed Street","Marlborough","MA","01752","Behind City Hall; Dates & Times: June 15 to October 5; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. ","www.lostshoebrews.com/farmers-market","",
+"Raiano Garden And Greenhouses"," 280 South Street","Marlborough","MA","01752","Full Greenhouse in Spring then a Vegetable and Fruit Stand, Pumpkin Stand and Christmas Trees.","www.facebook.com/raianogardens","(508) 485-0943",
+"Tender Crop Farm","93 Main Street","Wenham","MA","01984","Since 1985, have provided the highest quality selection of produce available year-round. Offer our own Beef, Chicken, Turkey, Pork, Bacon, Eggs, Fruit Pies, Turnovers, Meat Pies: Chicken, Turkey, Beef, Dips, Salsa, Pesto, and more!","www.tendercropfarm.com","(508) 468-1554",
+"Chestnut Hill Farm ","9 Chestnut Hill Road","Southborough","MA","01745","12 acres of mixed vegetables, herd of dairy goats and farmstand open to the public. School tours, walks and hikes, farm dinners, kid's programs and opportunities to volunteer offered. 
+
+Hours: Tuesday, Thursday, Friday, 2:00 pm - 6:00 pm; Saturday, 9:00 am - 2:00 pm
+CSA Pick-Up Days: Tuesday, Thursday, Friday, June 12 - October 28","www.thetrustees.org/places-to-visit/csa/chestnut-hill-farm-csa","(508) 785-0339",
+"Valley View Farm","278 High Street","Topsfield","MA","01983","A small herd of Nubian goats produce sweet milk, especially suited to fresh farmstead cheeses crafted. Make Chèvre, Feta, New Meadows Camembert, cave-aged Pingree Hill Tomme as well as Harmony Camembert cheese is a blend of our goat milk and Jersey cow%u2019s milk from Appleton Farms in Ipswich which is owned by Trustees of Reservations.","www.valleyviewcheese.com","(978) 887-8215",
+"Jones Farm","246 Acton Road","Chelmsford","MA","01824","","www.jonesfarm.net/","978 256-8065",
+"Chelmsford/Maxwell's Winter Farmers' Market","24 Maple Road","Chelmsford","MA","01824","Dates & Times: November 4 to February 24; Saturday, 10:00 am - 1:00 pm; EBT-SNAP Accepted with select vendors only. ","www.maxwellsofchelmsford.com/maxwellswinterfarmersmarket","",
+"Boston Equine","167  W. Elm Street","Pembroke","MA","02359","Beginner through advanced dressage, jumping, western, dressage, event, summer extended riding program, showing, boarding, 30 acres, lots of turn out, farrier, training, sales.","www.bostonequineassociates.com","(781) 799-7544",
+"Scott/Goyea Farm","175 Oak Street","Mansfield","MA","02048","The land is town-owned and there are hiking trails all through the woods open to public. Managed by Natural Resources Trust of Mansfield Inc. and Mansfield Conservation Commission.
+
+The land is now Conservation land, open to the public for passive recreation. The fields are used for growing hay and bird fledgling. No motorized vehicles are allowed.","","(508) 261-7378",
+"The Food Project - CSA Pick-Up","572 Essex St.","Beverly","MA","01915","CSA Pick-up Days: Tuesday, Thursday, Starting in June.","csa.thefoodproject.org/csa-farm-shares/","617-442-1322",
+"Boston Hill Farm","1370 Turnpike Street","North Andover","MA","01845","A 12 generation family owned and operated farm in North Andover, Massachusetts. Farm Stand, Pick Your Own and Home Grown with a wide variety of flowers, fruits, and vegetables. 
+
+","www.Bostonhillfarm.com","(978) 681-8556",
+"Osborne Nursery & Landscaping","80 Washington Street","Plainville","MA","02762","Provides Contractors and Home Owners premium landscape supplies to beautify your business, home and garden. ","osbornenursery.com","(508) 695-8272",
+"Hopkinton Stone & Gardens, Inc.","32 Lumber Street","Hopkinton","MA","01748","","www.hopstonegarden.com/","(508) 435-7376",
+"Middlesex County 4-H Fair","So. Chelmsford Rd. & Old Lowell Rd (Middlesex County 4-H Fairgrounds)","Westford","MA","01886","Dates & Times: August 23-25, 2024. Fri.& Sat.9:00am-6:00pm. Sun. 9:00am-4:00pm.","www.4hmiddlesexfair.org/","781- 844-7951",
+"Topsfield Fair","207 Boston St (Rte. 1)","Topsfield","MA","01983","Dates & Times: October 4-14, 2024. Opens Daily at 10:00 AM","www.topsfieldfair.org","978- 887-5000",
+"Wolf Hill Farm","30 Jericho Hill Road","Southborough","MA","01772","Cut your own Christmas trees. Christmas shop in antique barn with farm made swags, wreaths, and ornaments. Also, honey, beeswax candles, and herb vinegars. Open in Spring for herb plants & heirloom tomato plants.","www.facebook.com/WolfHillFarmMA","(508) 485-5087",
+"Hanson Farm","600 Pleasant Street","Bridgewater","MA","02324","Family owned and operated-3rd generation.","hansonfarm.com","(508) 697-4003",
+"Four Season's Riding School","68 Plain Street","Norton","MA","02766","Beginner thru advanced. Hunter/Jumper/Dressage. Ages 6 to adult. Showing from schooling to A rated.","","(617) 899-2987",
+"Bondeson & Sons","31 Golden Cove Road","Chelmsford","MA","01824","","","(978) 256-0662",
+"Carpe Bee%u2019m ","21 S. Chelmsford Road                                                                          ","Westford","MA","01886","Raw local honey varietals, hive goodies, hive tours for all ages, Great Brook Farm and Kimball Farm are within 5 miles.","www.carpebeem.com","(978) 496-1500",
+"Chelmsford Farmers' Market","Town Common, 7 Academy Street","Chelmsford","MA","01824","Dates & Time: May 25 to October 12; Saturday, 11:00 am - 2:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted. ","www.townofchelmsford.us/971/Chelmsford-Market-on-the-Common","",
+"Peterson Farm & Greenhouse","535 South Street","Bridgewater","MA","02324","Farm fresh locally grown produce, free range eggs, fruit, jellies, honey, hanging baskets, and herbs. Farmstand is open daily 10:30 am - 5:30 pm.","www.facebook.com/p/Peterson-Farm-Greenhouse-100063118605889/","(508) 509-6649",
+"Pickard Farm","160 Great Road","Littleton","MA","01460","PYO pumpkins, premium horse hay and land and excavation services. Produces quality cut and split seasoned firewood available for year round delivery.","www.pickardfarm.com","(978) 486-4141",
+"Applefield Farm","Route 117 - 722 Great Rd.","Stow","MA","01775","Retail Farm, 2 Farmer's Markets, and Farmstand. We have 8 greenhouses and sell lots of bedding plants and potted flowers.","applefieldfarms.com","(978) 897-2699",
+"Riverview Farms","77 Perkins Row","Topsfield","MA","01983","English riding instruction for beginners and intermediate students. The focus is on centered riding and all ages are accepted. Summer day program for girls and boys ages 7-15 is also offered.","www.riverviewfarms77.com","(978) 887-5620",
+"Andover Farmers' Market","41 Central Street, South Church Parking Lot","Andover","MA","01810","Dates & Time: June 15 to October 12; Saturday, 9:00 am - 1:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted.","www.andoverfarmersmarket.com","",
+"The Christmas Tree Farm","254 Taylor St","Pembroke","MA","02327","Farm fresh products, wreaths, Christmas Shop, farm animals. Offer to shake and bale trees. Choose and cut as well as fresh pre-cut trees.","www.thechristmastreefarm.net","(508) 414-8500",
+"Dorbill Stables, Inc.","1140 Pleasant Street","Bridgewater","MA","02324","Dorbill Stables offers beginner to advanced lessons in Dressage and Huntseat. Boarding facility with a friendly, helpful staff. We also have an indoor and outdoor riding arena and individual paddocks.","www.facebook.com/DorbillStablesEquestrianCenter","(508) 697-8400",
+"Woodville Maples","217 Wood Street","Hopkinton","MA","01748","Family-run sugar house producing local pure maple syrup and raw honey. Find our products at area farmers markets or you can email us to arrange for a porch pick up. Visit website for products and prices and check out our FB page for the latest updates. ","www.woodvillemaples.com","(508) 341-5108",
+"The Big Apple","207 Arnold Street","Wrentham","MA","02093","Farmstand selling our own produce - apples, peaches, plums, blueberries, raspberries, squash, tomatoes, etc. PYO blueberries, raspberries. Public can watch apples being sorted. Bakery. Hayrides on weekends in Sept. & Oct.","www.thebigapplefarm.com","(508) 384-3055",
+"Hamilton-Wenham Farmers Market","284 Bay Road","SOUTH HAMILTON","MA","01982","Date and Time: Friday, 3:00 pm - 7:00 pm; July 12 to October 11 and 11/23 & 12/6.","www.communityhouse.org/hamilton-wenham-farmers-market/","",
+"Weston Nurseries of Chelmsford","160 Pine Hill Rd","Chelmsford","MA","01824","Weston Nurseries Chelmsford location offers homeowners and trade professionals the same outstanding plants, personalized service, landscape design, bulk delivery of mulch and soils, and the best horticultural advice that our Hopkinton customers have relied on since 1923.","www.westonnurseries.com/garden-centers-chelmsford/","(978) 349-0055",
+"Parlee's Farm","135 Pine Hill Road","Chelmsford","MA","01824","","www.facebook.com/ParleeFarm/?ref=page_internal","(978) 256-2859",
+"Ferrucci's Farm","86 Howard Street","Milford","MA","01757","By appointment only.","www.facebook.com/ferruccifarm","(508) 473-7015",
+"Houde's Christmas Tree Farm","167 Berlin Road","Marlborough","MA","01752","","houdetreefarm.com/","(508) 485-1609",
+"Hudson Farmers Market","Town Hall, 78 Main Street","Hudson","MA","01749","Dates & Time: June 18 to September 24; Tuesday, 3:30 pm - 6:30 pm; WIC & Senior Coupons Accepted. EBT-SNAP Accepted with Select Vendors Only. No market 7/2.","www.facebook.com/hudsonsfarmersmarket","",
+"Marshfield Farmers' Market","140 Main St.-Field adjacent to Marshfield Fairgrounds, Rt. 3A","Marshfield","MA","02050","Dates & Time: June 2 to September 29; Friday, 2:00 pm - 6:00 pm; WIC & Senior Coupons Accepted; EBT-SNAP Accepted
+
+","www.marshfieldfair.org/farmers-market/","",
+"Marshfield Winter Farmers' Market","140 Main Street-Marshfield Fairgrounds under the grandstand (enter from Rt. 3A)","Marshfield","MA","02050","Dates & Times: Third Saturday of the month, October to May; 10:00 am - 1:00 pm; EBT-SNAP Accepted.
+","www.marshfieldfair.org/farmers-market/","",
+"Marshfield Fair","140 Main St. (Rte. 3A.)","Marshfield","MA","02050","Dates & Times: August 16-25, 2024. Noon-10:00pm.","www.Marshfieldfair.org","781- 834-6629",
+"Windrush Farm Therap. Equitation","479 Lacy Street","North Andover","MA","01845","Therapeutic riding. Equine assisted activities.","www.windrushfarm.org","(978) 682-7855",
+"Drew Farm ","31 Tadmuck Road","Westford","MA","01886","Family owned farm that specializes in providing a family atmosphere for apple picking. Located on a hill that provides spectacular fall foliage viewing. Weekends provide a free tractor drawn trailer ride to the orchard. Great fun for the kids (and pretty fun for the adults, too)! Offer a large selection of pumpkins and hardy mums. Fresh pressed apple cider, bottled water, and old-fashioned root beer available. ","www.drewfarm.com","(978) 807-0719",
+"Night Owl Farm","49 Prospect Street","Franklin","MA","02038","Veggies grown using only organic practices. Some grocery items and flower arrangements. Farmstand is open Tuesdays 1 pm - 7 pm and Saturdays & Sundays 10 am - 4 pm.","night-owl-farm.square.site/","(508) 740-2327",
+"Long Life Farm","205 Winter St","Hopkinton","MA","01748","Certified Organic CSA and sell veggies at the farmers%u2019 market in Hopkinton and Ashland.
+
+CSA Pick up at farm on Tuesday and Friday, downtown Hopkinton on Tuesday and Friday, and Upton on Fridays and Ashland on Saturdays.
+","www.longlifefarm.com","(508) 596-1651",
+"Dancing Goats Dairy","48 Topsfield Road","Boxford","MA","01885","Small goat dairy using the milk from our pastured-raised, mixed breed herd, we make small, artisan batches of fresh and aged cheese that combine old world techniques with a modern flair.","www.dancinggoatsdairy.com","(978)255-3218",
+"Iron Ox Farm","656 Asbury Street","Hamilton","MA","01982","New owners after acquired by Greenbelt%u2019s farmland program.  Our farm stand is self serve, only open seasonally and on the weekends. SNAP/HIP: Please call number posted so we can come up to process SNAP/HIP transactions.
+
+CSA Product offered: Fruits, Vegetables, Flowers, Meat
+Pickup(s): On Farm","ironoxfarming.com/","(978) 317-8148",

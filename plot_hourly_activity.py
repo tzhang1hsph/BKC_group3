@@ -28,6 +28,13 @@ def get_nearest_stations(space_name, d=0.5, verbose=False):
             print(f'{num_stations} nearest station{"s" if num_stations > 1 else ""} to {space_name}: {", ".join(station_names)}')
     return station_names
 
+def get_daily_roundtrips(space_name, na_val=0, verbose=False):
+    station_names = get_nearest_stations(space_name, verbose=verbose)
+    if station_names == []:
+        return na_val
+    selected_stations = stations.loc[stations['Name'].isin(station_names)]
+    return np.sum(selected_stations['roundtrip_ratio'] * selected_stations['trips']) / TOTAL_DAYS
+
 def get_weighted_roundtrip_ratio(space_name, na_val=0, verbose=False):
     station_names = get_nearest_stations(space_name, verbose=verbose)
     if station_names == []:

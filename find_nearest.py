@@ -3,7 +3,7 @@ import geopandas as gpd
 def get_distances(space, peripheral_df, k, d):
     nearest_to_space = peripheral_df['Geometry'].distance(space['Geometry']).sort_values()[:k] / 1000
     return [
-        (nearest_to_space < d).sum(),
+        (nearest_to_space <= d).sum(),
         *peripheral_df.loc[nearest_to_space.index, 'ID'],
         *nearest_to_space
     ]
