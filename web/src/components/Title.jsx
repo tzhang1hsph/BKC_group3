@@ -1,9 +1,10 @@
 import React from 'react'
-import { Button, Overlay, AspectRatio, Grid, Skeleton } from '@mantine/core';
+import { Button, Overlay, AspectRatio, Image, Space, Grid, Skeleton } from '@mantine/core';
 
 import videoBg from '../assets/videoBg.mp4'
 
-const HEIGHT = 720;
+const HEIGHT = 2120;
+const WIDTH = 3840;
 
 const Title = () => {
   return (
@@ -13,12 +14,21 @@ const Title = () => {
 
     <Grid.Col span={9} style={{ minHeight: HEIGHT }}>
 
-      <Skeleton height={HEIGHT} radius="md" animate={true} ></Skeleton>
+      {/* <Skeleton height={HEIGHT} radius="md" animate={true} visible={false}></Skeleton> */}
+      {/* <Image src={"../assets/bstoncommon.jpg"}> </Image> */}
 
-
+      <Image
+      radius="100px"
+      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+      h={HEIGHT}
+      w={WIDTH * 9 / 12}
+    />    
     </Grid.Col>
       <Grid.Col span={3} style={{ minHeight: HEIGHT }}>
-      <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton>
+
+      <Space h={HEIGHT / 3} />
+      <h1>jdnvkdvnvkndkvndkvndkvdkvkn</h1>
+      {/* <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton> */}
 
       </Grid.Col>
 

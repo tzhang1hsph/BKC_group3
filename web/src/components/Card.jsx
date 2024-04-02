@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { useDisclosure } from '@mantine/hooks';
-import { BackgroundImage, Image, Flex, Modal, Center, Text, Button, Box } from '@mantine/core';
+import { BackgroundImage, Image, Flex, Modal, Center, Container, Text, Button, Box, Grid } from '@mantine/core';
 import { TextInput, FocusTrap } from '@mantine/core';
 
 import Plot from 'react-plotly.js'
@@ -22,13 +22,24 @@ const Card = (props) => {
         
       <h1>{ props.name }</h1>
 
+
       <Plot data={props.map.data} layout={props.map.layout}/>
+
+<Plot data={props.hourly.data} layout={props.hourly.layout}/>
+
+
+
+      
+
+
+
+
+
+      
+
 
       
       </Modal>
-
-
-     
 
 
     <Image
