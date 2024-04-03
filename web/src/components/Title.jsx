@@ -3,10 +3,14 @@ import { Button, Overlay, AspectRatio, Image, Space, Grid, Skeleton } from '@man
 
 import videoBg from '../assets/videoBg.mp4'
 
-const HEIGHT = 2120;
-const WIDTH = 3840;
 
-const Title = () => {
+
+const Title = (props) => {
+
+  const HEIGHT = props.height - 40;
+  const WIDTH = props.width;
+
+
   return (
 
 
@@ -14,11 +18,8 @@ const Title = () => {
 
     <Grid.Col span={9} style={{ minHeight: HEIGHT }}>
 
-      {/* <Skeleton height={HEIGHT} radius="md" animate={true} visible={false}></Skeleton> */}
-      {/* <Image src={"../assets/bstoncommon.jpg"}> </Image> */}
-
       <Image
-      radius="100px"
+      radius={HEIGHT / 20}
       src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
       h={HEIGHT}
       w={WIDTH * 9 / 12}
