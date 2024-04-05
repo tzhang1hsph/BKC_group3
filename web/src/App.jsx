@@ -17,7 +17,7 @@ import PollResults from "./components/PollResults"
 
 
 
-import { MantineProvider } from '@mantine/core';
+import { MantineProvider, rem } from '@mantine/core';
 
 const getWindowDimensions = () => {
   const { innerWidth: width, innerHeight: height } = window;
@@ -48,14 +48,16 @@ function App() {
 
 
   return <MantineProvider
-  
-  // theme={{
-
-  //   backgroundColor: "#535bf2"
-
-  //   }}
-  
-  >{
+  theme={{
+    fontSizes: {
+      xs: rem(10 / 1080 * height),
+      sm: rem(11 / 1080 * height),
+      md: rem(18 / 1080 * height),
+      lg: rem(24 / 1080 * height),
+      xl: rem(28 / 1080 * height),
+    },
+  }}
+>{
     <>
       <Title height={height} width={width} />
       <Intro />

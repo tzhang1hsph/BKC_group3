@@ -16,15 +16,6 @@ const Card = (props) => {
 
     const [ text, setText ] = useState();
 
-
-  //   const load = function(){
-  //     fetch( './final_data_table.csv' )
-  //         .then( response => response.text() )
-  //         .then( responseText => {
-  //             setText( responseText );
-  //         })
-  // };
-
   async function GetData(artist) {
     const data = Papa.parse(await fetchCsv());
     console.log("this")
@@ -61,20 +52,28 @@ async function fetchCsv() {
       <h1>{ props.name }</h1>
 
 
-      {text.data[props.id].map(function(object, i){
+      { !text ? <div></div> : 
+
+      <div>
+
+{text.data[props.id].map(function(object, i){
         return <p>i: {i}, value: {object},  </p>;
     })}
+
+      </div>
+      
+      
+    
+    }
+
+
+      
 
 
 
       <Plot data={props.map.data} layout={props.map.layout}/>
 
 <Plot data={props.hourly.data} layout={props.hourly.layout}/>
-
-
-
-      
-
 
 
 

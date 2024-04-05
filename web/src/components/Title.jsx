@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Overlay, AspectRatio, Image, Space, Grid, Skeleton } from '@mantine/core';
+import { Button, Overlay, AspectRatio, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
 
 import videoBg from '../assets/videoBg.mp4'
 
@@ -22,13 +22,21 @@ const Title = (props) => {
       radius={HEIGHT / 20}
       src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
       h={HEIGHT}
-      w={WIDTH * 9 / 12}
+      w={WIDTH * 8.5 / 12}
     />    
     </Grid.Col>
-      <Grid.Col span={3} style={{ minHeight: HEIGHT }}>
+
+    {/* <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
+
+</Grid.Col> */}
+
+    
+      <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
 
       <Space h={HEIGHT / 3} />
-      <h1>jdnvkdvnvkndkvndkvndkvdkvkn</h1>
+      <Text ta="left" fz="lg">jdnvkdvnvkkvdkvkn</Text>
+
+      <Text ta="left" fz="lg">jdnvkdvnvkndkvdkvkn</Text>
       {/* <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton> */}
 
       </Grid.Col>
