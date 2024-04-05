@@ -1,11 +1,16 @@
 import React from 'react'
-import { Button, Overlay, AspectRatio, Grid, Skeleton } from '@mantine/core';
+import { Button, Overlay, AspectRatio, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
 
 import videoBg from '../assets/videoBg.mp4'
 
-const HEIGHT = 720;
 
-const Title = () => {
+
+const Title = (props) => {
+
+  const HEIGHT = props.height - 40;
+  const WIDTH = props.width;
+
+
   return (
 
 
@@ -13,12 +18,26 @@ const Title = () => {
 
     <Grid.Col span={9} style={{ minHeight: HEIGHT }}>
 
-      <Skeleton height={HEIGHT} radius="md" animate={true} ></Skeleton>
-
-
+      <Image
+      radius={HEIGHT / 20}
+      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+      h={HEIGHT}
+      w={WIDTH * 8.5 / 12}
+    />    
     </Grid.Col>
-      <Grid.Col span={3} style={{ minHeight: HEIGHT }}>
-      <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton>
+
+    {/* <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
+
+</Grid.Col> */}
+
+    
+      <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
+
+      <Space h={HEIGHT / 3} />
+      <Text ta="left" fz="lg">jdnvkdvnvkkvdkvkn</Text>
+
+      <Text ta="left" fz="lg">jdnvkdvnvkndkvdkvkn</Text>
+      {/* <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton> */}
 
       </Grid.Col>
 

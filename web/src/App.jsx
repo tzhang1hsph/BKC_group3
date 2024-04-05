@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Plot from 'react-plotly.js'
 import choroplethJSON from '../../maps/choropleth.json';
@@ -15,25 +15,51 @@ import Poll from "./components/Poll"
 import PollResults from "./components/PollResults"
 
 
-import { MantineProvider } from '@mantine/core';
+
+
+import { MantineProvider, rem } from '@mantine/core';
+
+const getWindowDimensions = () => {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height
+  };
+};
+const useWindowDimensions = () => {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+  window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return windowDimensions;
+};
+
+
 function App() {
   const [count, setCount] = useState(0)
-
-
+  const { height, width } = useWindowDimensions();
 
 
 
   return <MantineProvider
-  
-  // theme={{
-
-  //   backgroundColor: "#535bf2"
-
-  //   }}
-  
-  >{
+  theme={{
+    fontSizes: {
+      xs: rem(10 / 1080 * height),
+      sm: rem(11 / 1080 * height),
+      md: rem(18 / 1080 * height),
+      lg: rem(24 / 1080 * height),
+      xl: rem(28 / 1080 * height),
+    },
+  }}
+>{
     <>
-      <Title />
+      <Title height={height} width={width} />
       <Intro />
       <Definition />
       <Comparison />

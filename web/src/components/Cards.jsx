@@ -7,9 +7,18 @@ import Card from "./Card";
 import ChinatownPark from '../../../maps/Chinatown Park.json'
 // import ChinatownParkH from '..'
 
-import CityHall from '../../../maps/City Hall Plaza.json'
+import ChinatownParkH from '../../../hourly_plots/Chinatown Park.json';
+
+
+import CityHall from '../../../maps/City Hall Plaza.json';
+import CityHallH from '../../../hourly_plots/Chinatown Park.json';
+
 import BostonCommon from '../../../maps/Boston Common.json'
+import BostonCommonH from '../../../hourly_plots/Chinatown Park.json';
+
 import FranklinPark from '../../../maps/Franklin Park.json'
+import FranklinParkH from '../../../hourly_plots/Chinatown Park.json';
+
 
 
 const HEIGHT = 180;
@@ -32,7 +41,10 @@ const Cards = () => {
       <Card 
     id={1} 
     name={"Chinatown Park"} 
-    map={ChinatownPark}></Card>
+    map={ChinatownPark}
+    hourly={ChinatownParkH}
+    >
+    </Card>
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -40,7 +52,12 @@ const Cards = () => {
 <Card 
     id={2} 
     name={"City Hall Plaza"}
-    map={CityHall}></Card>
+    map={CityHall}
+    hourly={CityHallH}
+
+    
+    ></Card>
+
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -48,7 +65,9 @@ const Cards = () => {
 <Card 
     id={3} 
     name={"Boston Common"}
-    map={BostonCommon}></Card>
+    map={BostonCommon}
+    hourly={BostonCommonH}
+    ></Card>
 
 
 </Grid.Col>
@@ -56,16 +75,22 @@ const Cards = () => {
 
 <Card id={4} 
     name={"Franklin Park"}
-    map={FranklinPark}></Card>
+    map={FranklinPark}
+    hourly={FranklinParkH}
+    ></Card>
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
 
 <Card id={4} 
     name={"Franklin Park"}
-    map={FranklinPark}></Card>
+    map={FranklinPark}
+    hourly={FranklinParkH}
 
+    ></Card>
+ 
 </Grid.Col>
+
 
 <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
       </Grid.Col>
@@ -73,7 +98,13 @@ const Cards = () => {
 
 
 
-      <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
+
+
+
+
+
+
+<Grid.Col span={1} style={{ minHeight: HEIGHT }}>
       </Grid.Col>
 
       <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -82,7 +113,10 @@ const Cards = () => {
       <Card 
     id={1} 
     name={"Chinatown Park"} 
-    map={ChinatownPark}></Card>
+    map={ChinatownPark}
+    hourly={ChinatownParkH}
+    >
+    </Card>
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -90,7 +124,12 @@ const Cards = () => {
 <Card 
     id={2} 
     name={"City Hall Plaza"}
-    map={CityHall}></Card>
+    map={CityHall}
+    hourly={CityHallH}
+
+    
+    ></Card>
+
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -98,7 +137,9 @@ const Cards = () => {
 <Card 
     id={3} 
     name={"Boston Common"}
-    map={BostonCommon}></Card>
+    map={BostonCommon}
+    hourly={BostonCommonH}
+    ></Card>
 
 
 </Grid.Col>
@@ -106,33 +147,43 @@ const Cards = () => {
 
 <Card id={4} 
     name={"Franklin Park"}
-    map={FranklinPark}></Card>
+    map={FranklinPark}
+    hourly={FranklinParkH}
+    ></Card>
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
 
 <Card id={4} 
     name={"Franklin Park"}
-    map={FranklinPark}></Card>
+    map={FranklinPark}
+    hourly={FranklinParkH}
+
+    ></Card>
 
 </Grid.Col>
+
 
 <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
       </Grid.Col>
 
 
-
-
-      <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
+      
+<Grid.Col span={1} style={{ minHeight: HEIGHT }}>
       </Grid.Col>
 
+      
       <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
 
 
       <Card 
     id={1} 
     name={"Chinatown Park"} 
-    map={ChinatownPark}></Card>
+    map={ChinatownPark}
+    hourly={ChinatownParkH}
+    
+    >
+    </Card>
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -140,7 +191,12 @@ const Cards = () => {
 <Card 
     id={2} 
     name={"City Hall Plaza"}
-    map={CityHall}></Card>
+    map={CityHall}
+    hourly={CityHallH}
+
+    
+    ></Card>
+
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
@@ -148,7 +204,9 @@ const Cards = () => {
 <Card 
     id={3} 
     name={"Boston Common"}
-    map={BostonCommon}></Card>
+    map={BostonCommon}
+    hourly={BostonCommonH}
+    ></Card>
 
 
 </Grid.Col>
@@ -156,19 +214,26 @@ const Cards = () => {
 
 <Card id={4} 
     name={"Franklin Park"}
-    map={FranklinPark}></Card>
+    map={FranklinPark}
+    hourly={FranklinParkH}
+    ></Card>
 
 </Grid.Col>
 <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
 
 <Card id={4} 
     name={"Franklin Park"}
-    map={FranklinPark}></Card>
+    map={FranklinPark}
+    hourly={FranklinParkH}
+
+    ></Card>
 
 </Grid.Col>
+
 
 <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
       </Grid.Col>
+
 
 
 

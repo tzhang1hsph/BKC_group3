@@ -1,8 +1,15 @@
 import React, { useState } from 'react';
-import { Grid, Button } from '@mantine/core';
+import { Grid, Button, Image } from '@mantine/core';
 import { PieChart, Pie, ScatterChart, Scatter, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Label } from 'recharts';
 
 
+const renderLabel = (props) => {
+    return (
+      <g>
+        <image href={require("https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png").default} width={60} height={60} x={40} y={40} />
+      </g>
+    );
+};
 
 const data01 = [
     {
@@ -72,8 +79,15 @@ const PollResults = () => {
 
 
       <PieChart width={780} height={780}>
-  <Pie data={data01} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={90} fill="#8884d8" label />
-  {/* <Pie data={data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label /> */}
+
+      <text x={400} y={200} textAnchor="middle" dominantBaseline="middle">
+    Donut
+   </text>
+   <Label content={renderLabel} position="center" />
+
+
+  {/* <Pie data={data01} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={90} fill="#8884d8" label /> */}
+  <Pie data={data02} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
 </PieChart>
 
 
