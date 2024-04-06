@@ -1,14 +1,20 @@
 import React from 'react'
 import { Button, Overlay, AspectRatio, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
-
-import videoBg from '../assets/videoBg.mp4'
+import { useNavigate } from "react-router-dom";
 
 
 
 const Title = (props) => {
 
-  const HEIGHT = props.height - 40;
+  const HEIGHT = props.height * 0.94;
   const WIDTH = props.width;
+
+
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/intro`; 
+    navigate(path);
+  }
 
 
   return (
@@ -25,49 +31,48 @@ const Title = (props) => {
       w={WIDTH * 8.5 / 12}
     />    
     </Grid.Col>
-
-    {/* <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
-
-</Grid.Col> */}
-
     
-      <Grid.Col span={2} style={{ minHeight: HEIGHT }}>
+      <Grid.Col span={2.8} style={{ minHeight: HEIGHT }}>
 
-      <Space h={HEIGHT / 3} />
-      <Text ta="left" fz="lg">jdnvkdvnvkkvdkvkn</Text>
+      <Space h={HEIGHT / 4} />
+      <Text ta="left" fz="lg">Boston has 999 open spaces.</Text>
+      <br></br>
 
-      <Text ta="left" fz="lg">jdnvkdvnvkndkvdkvkn</Text>
+      <Text ta="left" fz="lg">Why do we gather at certain spaces</Text>
+
+      <Image
+      mt={HEIGHT / 80}
+      radius={HEIGHT / 50}
+      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+      h={HEIGHT / 7.5}
+      w={WIDTH * 2.8 / 12}
+    />    
+    <Image
+      mt={HEIGHT / 80}
+      radius={HEIGHT / 50}
+      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+      h={HEIGHT / 7.5}
+      w={WIDTH * 2.8 / 12}
+    />    
       {/* <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton> */}
+
+      <Text mt={HEIGHT / 100} ta="right" fz="lg">...but not others?</Text>
+
+
+      <Space h={HEIGHT / 8} />
+
+
+      <Button variant="light" color="orange" fz="xl" 
+      onClick={routeChange}
+    
+      style={{  minHeight: HEIGHT / 8 }} fullWidth>CLICK TO EXPLORE </Button>
+
 
       </Grid.Col>
 
       
 
     </Grid>
-//     <div className='main'>
-
-
-// <AspectRatio ratio={16 / 9} maw={1200} mx="auto">
-
-// <video src={videoBg} autoPlay loop muted />
-
-//         {/* <img
-//           src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-1.png"
-//           alt="Demo"
-//         /> */}
-//         {<Overlay color="#000" backgroundOpacity={0.2} />}
-
-//         <div className="content">
-//             <h1>Why We Gather</h1>
-//        </div>
-//       </AspectRatio>
-
-
-
-//         <div className="overlay"></div>
-
-        
-//     </div>
   )
 }
 

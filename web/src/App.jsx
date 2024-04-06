@@ -16,6 +16,10 @@ import PollResults from "./components/PollResults"
 
 
 
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+
+
 
 import { MantineProvider, rem } from '@mantine/core';
 
@@ -52,25 +56,46 @@ function App() {
     fontSizes: {
       xs: rem(10 / 1080 * height),
       sm: rem(11 / 1080 * height),
-      md: rem(18 / 1080 * height),
+      md: rem(20 / 1080 * height),
       lg: rem(24 / 1080 * height),
       xl: rem(28 / 1080 * height),
     },
   }}
 >{
-    <>
-      <Title height={height} width={width} />
-      <Intro />
-      <Definition />
-      <Comparison />
-      <Poll></Poll>
-      <PollResults></PollResults>
-      <Cards />
-      <br></br>
-      <Plot data={choroplethJSON.data} layout={choroplethJSON.layout} />
-      <Plot data={spaceJSON.data} layout={spaceJSON.layout} />
-      <Plot data={hourlyJSON.data} layout={hourlyJSON.layout} />
-    </>
+
+<div>
+<Router>
+<Routes>
+  {/* <Route path="/contact">
+    <Contact />
+  </Route>
+  <Route path="/capital-campaign">
+    <CapitalCampaign />
+  </Route>          */}
+
+  <Route path="/intro" element={<Intro height={height} width={width}/>}>
+  </Route>
+  <Route path="/" element={<Title height={height} width={width} />}>
+  </Route>
+</Routes>
+</Router>
+
+</div>
+
+
+    // <>
+    //   <Title height={height} width={width} />
+    //   <Intro />
+    //   <Definition />
+    //   <Comparison />
+    //   <Poll></Poll>
+    //   <PollResults></PollResults>
+    //   <Cards />
+    //   <br></br>
+    //   <Plot data={choroplethJSON.data} layout={choroplethJSON.layout} />
+    //   <Plot data={spaceJSON.data} layout={spaceJSON.layout} />
+    //   <Plot data={hourlyJSON.data} layout={hourlyJSON.layout} />
+    // </>
 
   }
 
