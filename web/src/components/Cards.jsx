@@ -43,6 +43,7 @@ const Cards = () => {
     name={"Chinatown Park"} 
     map={ChinatownPark}
     hourly={ChinatownParkH}
+    height={HEIGHT}
     >
     </Card>
 
@@ -54,6 +55,7 @@ const Cards = () => {
     name={"City Hall Plaza"}
     map={CityHall}
     hourly={CityHallH}
+    height={HEIGHT}
 
     
     ></Card>
@@ -67,6 +69,8 @@ const Cards = () => {
     name={"Boston Common"}
     map={BostonCommon}
     hourly={BostonCommonH}
+    height={HEIGHT}
+
     ></Card>
 
 
@@ -77,6 +81,8 @@ const Cards = () => {
     name={"Franklin Park"}
     map={FranklinPark}
     hourly={FranklinParkH}
+    height={HEIGHT}
+
     ></Card>
 
 </Grid.Col>
@@ -86,6 +92,8 @@ const Cards = () => {
     name={"Franklin Park"}
     map={FranklinPark}
     hourly={FranklinParkH}
+    height={HEIGHT}
+
 
     ></Card>
  
@@ -94,11 +102,6 @@ const Cards = () => {
 
 <Grid.Col span={1} style={{ minHeight: HEIGHT }}>
       </Grid.Col>
-
-
-
-
-
 
 
 

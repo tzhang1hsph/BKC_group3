@@ -9,6 +9,9 @@ import '@mantine/core/styles.css';
 import Cards from "./components/Cards"
 import Intro from "./components/Intro"
 import Title from "./components/Title"
+import Spaces from "./components/Spaces"
+import Tutorial from "./components/Tutorial"
+
 import Definition from "./components/Definition"
 import Comparison from "./components/Comparison"
 import Poll from "./components/Poll"
@@ -66,16 +69,14 @@ function App() {
 <div>
 <Router>
 <Routes>
-  {/* <Route path="/contact">
-    <Contact />
-  </Route>
-  <Route path="/capital-campaign">
-    <CapitalCampaign />
-  </Route>          */}
 
   <Route path="/intro" element={<Intro height={height} width={width}/>}>
   </Route>
   <Route path="/" element={<Title height={height} width={width} />}>
+  </Route>
+  <Route path="/spaces" element={<Spaces height={height} width={width} />}>
+  </Route>
+  <Route path="/tutorial" element={<Tutorial height={height} width={width} />}>
   </Route>
 </Routes>
 </Router>

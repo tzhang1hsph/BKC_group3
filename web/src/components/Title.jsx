@@ -35,6 +35,8 @@ const Title = (props) => {
       <Grid.Col span={2.8} style={{ minHeight: HEIGHT }}>
 
       <Space h={HEIGHT / 4} />
+
+      
       <Text ta="left" fz="lg">Boston has 999 open spaces.</Text>
       <br></br>
 
@@ -65,7 +67,7 @@ const Title = (props) => {
       <Button variant="light" color="orange" fz="xl" 
       onClick={routeChange}
     
-      style={{  minHeight: HEIGHT / 8 }} fullWidth>CLICK TO EXPLORE </Button>
+      style={{  minHeight: HEIGHT / 8 }} fullWidth> CLICK TO BEGIN </Button>
 
 
       </Grid.Col>

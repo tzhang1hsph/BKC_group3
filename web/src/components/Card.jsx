@@ -56,7 +56,7 @@ async function fetchCsv() {
 
       <div>
 
-{text.data[props.id].map(function(object, i){
+    {text.data[props.id].map(function(object, i){
         return <p>i: {i}, value: {object},  </p>;
     })}
 
@@ -67,33 +67,24 @@ async function fetchCsv() {
     }
 
 
-      
-
-
-
       <Plot data={props.map.data} layout={props.map.layout}/>
 
 <Plot data={props.hourly.data} layout={props.hourly.layout}/>
 
 
-
-
-      
       </Modal>
 
 
     <Image
       radius="md"
       src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-      h={180}
-      w={180}
+      fullWidth
+      fullHeight
       onClick={open}
+      h={props.height / 4}
+      w={props.height / 4}
+
     />    
-      
-
-
-    
-    
     
     </>
  
