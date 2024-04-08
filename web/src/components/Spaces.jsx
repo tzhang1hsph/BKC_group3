@@ -50,8 +50,12 @@ const Spaces = (props) => {
   const WIDTH = props.width;
 
   let navigate = useNavigate();
-  const routeChange = () => {
-    let path = `/intro`;
+  const routeChangeNext = () =>{ 
+    let path = `/poll`; 
+    navigate(path);
+  }
+  const routeChangeBack = () =>{ 
+    let path = `/tutorial`; 
     navigate(path);
   }
 
@@ -192,7 +196,7 @@ const Spaces = (props) => {
 
 
               <Button variant="light" color="orange" fz="xl"
-                onClick={routeChange}
+                onClick={routeChangeBack}
 
                 style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
 
@@ -201,7 +205,7 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
 
               <Button variant="light" color="orange" fz="xl"
-                onClick={routeChange}
+                onClick={routeChangeNext}
 
                 style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
             </Grid.Col>
