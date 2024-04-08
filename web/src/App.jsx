@@ -77,6 +77,8 @@ function App() {
             </Route>
             <Route path="/tutorial" element={<Tutorial height={height} width={width} />}>
             </Route>
+            <Route path="/poll" element={<Poll height={height} width={width} />}>
+            </Route>
           </Routes>
         </Router>
 
