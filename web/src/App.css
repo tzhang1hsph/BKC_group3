@@ -41,3 +41,38 @@
 .read-the-docs {
   color: #888;
 }
+
+.polar-bar-chart {
+  outline: 2px dotted black;
+  width: 400px; /* Adjust the width as needed */
+  height: 400px; /* Adjust the height as needed */
+}
+
+.segment {
+  position: absolute;
+}
+
+
+.segment:nth-child(1) {
+  background-color: #237c9c;
+}
+
+.segment:nth-child(2) {
+  background-color: #5aafa9;
+}
+
+.segment:nth-child(3) {
+  background-color: #f89c5a;
+}
+
+.segment:nth-child(4) {
+  background-color: #e3685b;
+}
+
+.center-image {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  clip-path: circle(50px);
+  transform: translate(-50px, 150px);
+}

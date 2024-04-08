@@ -11,10 +11,10 @@ import Papa from 'papaparse';
 
 const Card = (props) => {
 
-    const [opened, { open, close }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
 
 
-    const [ text, setText ] = useState();
+  const [text, setText] = useState();
 
   async function GetData(artist) {
     const data = Papa.parse(await fetchCsv());
@@ -22,9 +22,9 @@ const Card = (props) => {
     console.log(data);
     setText(data);
     return data;
-}
+  }
 
-async function fetchCsv() {
+  async function fetchCsv() {
     const response = await fetch('./final_data_table.csv');
     const reader = response.body.getReader();
     const result = await reader.read();
@@ -32,7 +32,7 @@ async function fetchCsv() {
     const csv = await decoder.decode(result.value);
     // console.log('csv', csv);
     return csv;
-}
+  }
 
 
   useEffect(() => {
@@ -41,53 +41,53 @@ async function fetchCsv() {
   }, []);
 
 
-    // const id = props.id;
+  // const id = props.id;
 
   return (
     <>
-      <Modal size="100%" opened={opened} onClose={close} 
-      // title={text} 
-      centered>
-        
-      <h1>{ props.name }</h1>
+      <Modal size="100%" opened={opened} onClose={close}
+        // title={text} 
+        centered>
+
+        <h1>{props.name}</h1>
 
 
-      { !text ? <div></div> : 
+        {!text ? <div></div> :
 
-      <div>
+          <div>
 
-    {text.data[props.id].map(function(object, i){
-        return <p>i: {i}, value: {object},  </p>;
-    })}
+            {text.data[props.id].map(function (object, i) {
+              return <p>i: {i}, value: {object},  </p>;
+            })}
 
-      </div>
-      
-      
-    
-    }
+          </div>
 
 
-      <Plot data={props.map.data} layout={props.map.layout}/>
 
-<Plot data={props.hourly.data} layout={props.hourly.layout}/>
+        }
+
+
+        <Plot data={props.map.data} layout={props.map.layout} />
+
+        <Plot data={props.hourly.data} layout={props.hourly.layout} />
 
 
       </Modal>
 
 
-    <Image
-      radius="md"
-      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-      fullWidth
-      fullHeight
-      onClick={open}
-      h={props.height / 4}
-      w={props.height / 4}
+       <Image
+        radius="md"
+        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+        fullWidth
+        fullHeight
+        onClick={open}
+        h={props.height / 4}
+        w={props.height / 4}
 
-    />    
-    
+      />
+
     </>
- 
+
   );
 };
 
