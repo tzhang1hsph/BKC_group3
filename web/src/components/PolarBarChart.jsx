@@ -3,6 +3,8 @@ import { useDisclosure } from '@mantine/hooks';
 import { Modal } from '@mantine/core';
 import final_data_table from '../../../final_data_table.json';
 import Plot from 'react-plotly.js';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const PolarBarChart = (props) => {
     const [opened, { open, close }] = useDisclosure(false);
@@ -59,7 +61,39 @@ const PolarBarChart = (props) => {
                 <div className="segment" style={envStyle}></div>
                 <div className="segment" style={foodStyle}></div>
                 <div className="segment" style={artStyle}></div>
-                <img className="center-image" src={data['Image']} onClick={open}></img>
+                <div className="inner-tick-container">
+                    <CircularProgressbar
+                        value={96}
+                        strokeWidth={0.3}
+                        styles={buildStyles({
+                            pathColor: '#888888',
+                            trailColor: 'rgba(0, 0, 0, 0)'
+                        })}
+                    />
+                </div>
+                <div className="outer-tick-container">
+                    <CircularProgressbar
+                        value={97}
+                        strokeWidth={0.3}
+                        styles={buildStyles({
+                            pathColor: '#888888',
+                            trailColor: 'rgba(0, 0, 0, 0)'
+                        })}
+                    />
+                </div>
+                <div className="activity-bar-container">
+                    <CircularProgressbar
+                        value={data['Activity Score'] * 100}
+                        strokeWidth={0.5}
+                        styles={buildStyles({
+                            pathColor: '#000000',
+                            trailColor: 'rgba(0, 0, 0, 0)'
+                        })}
+                    />
+                </div>
+                <div className="center-image-container">
+                    <img className="center-image" src={data['Image']} onClick={open}></img>
+                </div>
             </div>
         </>
     );

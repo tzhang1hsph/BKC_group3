@@ -69,10 +69,36 @@
   background-color: #e3685b;
 }
 
-.center-image {
-  position: absolute;
+.center-image-container {
   height: 200px;
   width: 200px;
-  clip-path: circle(100px);
-  transform: translate(-100px, 170px);
+  transform: translate(170px, 170px)
+}
+
+.center-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  clip-path: circle(100px at center);
+}
+
+.inner-tick-container {
+  position: absolute;
+  height: 275px;
+  width: 275px;
+  transform: translate(132.5px, 132.5px);
+}
+
+.outer-tick-container {
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  transform: translate(95px, 95px);
+}
+
+.activity-bar-container {
+  position: absolute;
+  height: 450px;
+  width: 450px;
+  transform: translate(45px, 45px);
 }
