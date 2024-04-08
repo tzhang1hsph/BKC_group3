@@ -8,37 +8,37 @@ const PolarBarChart = (props) => {
     const [opened, { open, close }] = useDisclosure(false);
     const data = final_data_table[props.name]
 
-    const env = data['Environment Score'] * 100;
-    const food = data['Food Score'] * 100;
-    const play = data['Play Score'] * 100;
-    const art = data['Art Score'] * 100;
+    const env = data['Environment Score'] * 75;
+    const food = data['Food Score'] * 75;
+    const play = data['Play Score'] * 75;
+    const art = data['Art Score'] * 75;
 
     const playStyle = {
-        height: `${play + 50}px`,
-        width: `${play + 50}px`,
-        clipPath: `circle(${play + 50}px at 100% 100%)`,
-        transform: `translate(${150 - play}px, ${150 - play}px)`
+        height: `${play + 100}px`,
+        width: `${play + 100}px`,
+        clipPath: `circle(${play + 100}px at 100% 100%)`,
+        transform: `translate(${170 - play}px, ${170 - play}px)`
     };
 
     const envStyle = {
-        height: `${env + 50}px`,
-        width: `${env + 50}px`,
-        clipPath: `circle(${env + 50}px at 0% 100%)`,
-        transform: `translate(200px, ${150 - env}px)`
+        height: `${env + 100}px`,
+        width: `${env + 100}px`,
+        clipPath: `circle(${env + 100}px at 0% 100%)`,
+        transform: `translate(270px, ${170 - env}px)`
     };
 
     const foodStyle = {
-        height: `${food + 50}px`,
-        width: `${food + 50}px`,
-        clipPath: `circle(${food + 50}px at 0% 0%)`,
-        transform: `translate(200px, 200px)`
+        height: `${food + 100}px`,
+        width: `${food + 100}px`,
+        clipPath: `circle(${food + 100}px at 0% 0%)`,
+        transform: `translate(270px, 270px)`
     };
 
     const artStyle = {
-        height: `${art + 50}px`,
-        width: `${art + 50}px`,
-        clipPath: `circle(${art + 50}px at 100% 0%)`,
-        transform: `translate(${150 - art}px, 200px)`
+        height: `${art + 100}px`,
+        width: `${art + 100}px`,
+        clipPath: `circle(${art + 100}px at 100% 0%)`,
+        transform: `translate(${170 - art}px, 270px)`
     };
 
 

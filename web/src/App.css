@@ -44,8 +44,8 @@
 
 .polar-bar-chart {
   outline: 2px dotted black;
-  width: 400px; /* Adjust the width as needed */
-  height: 400px; /* Adjust the height as needed */
+  width: 540px;
+  height: 540px;
 }
 
 .segment {
@@ -71,8 +71,8 @@
 
 .center-image {
   position: absolute;
-  height: 100px;
-  width: 100px;
-  clip-path: circle(50px);
-  transform: translate(-50px, 150px);
+  height: 200px;
+  width: 200px;
+  clip-path: circle(100px);
+  transform: translate(-100px, 170px);
 }
