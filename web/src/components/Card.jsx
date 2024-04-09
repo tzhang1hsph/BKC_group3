@@ -49,15 +49,34 @@ const PolarBarChart = (props) => {
         <>
             <Modal size="100%" opened={opened} onClose={close} centered>
                 <h1>{props.name}</h1>
-                <h2>{data['Description']}</h2>
+                <h3>{data['Description']}</h3>
                 <Plot data={props.map.data} layout={props.map.layout} />
-                <h3>Area: {data['Acres'].toFixed(2)} acres</h3>
-                <h3>Canopy Cover: {data['Acres'].toFixed(2)} acres</h3>
-                <div>
-                    {Object.keys(data).map(function (key) { return <p>{key}: {data[key]}</p> })}
-                </div>
 
+                <h2>Environment Score: {data['Environment Score']}</h2>
+                <h3>Area: {data['Acres'].toFixed(2)} acres</h3>
+                <h3>Canopy Cover: {(data['Canopy Cover Proportion'] * 100).toFixed(1)}%</h3>
+                
+                <h2>Safety Score: {data['Safety Score']}</h2>
+                <h3>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</h3>
+                
+                <h2>Activity Score: {data['Activity Score']}</h2>
+                <h3>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</h3>
+                <h3>Average Daily Roundtrips at Nearby Bluebike Stations: {data['Daily Roundtrips'].toFixed(2)}</h3>
+                <h3>Proportion of Roundtrips at Nearby Bluebike Stations: {(data['Weighted Roundtrip Ratio'] * 100).toFixed(1)}%</h3>
                 <Plot data={props.hourly.data} layout={props.hourly.layout} />
+                
+                <h2>Food Score: {data['Food Score']}</h2>
+                <h3>Number of Restaurants Within 0.5 km: {data['Number of Nearby Restaurants']}</h3>
+                <h3>Near Food Trucks: {data['Near Food Trucks'] ? 'Yes' : 'No'}</h3>
+                <h3>Near Farmers Markets: {data['Near Farmers Markets'] ? 'Yes' : 'No'}</h3>
+                
+                <h2>Play Score: {data['Play Score']}</h2>
+                <h3>Has Athletic Field: {data['Has Athletic Field'] ? 'Yes' : 'No'}</h3>
+                <h3>Has Playground: {data['Has Playground'] ? 'Yes' : 'No'}</h3>
+                
+                <h2>Art Score: {data['Art Score']}</h2>
+                <h3>Near Murals: {data['Near Murals'] ? 'Yes' : 'No'}</h3>
+
             </Modal>
 
             <div className="polar-bar-chart">
