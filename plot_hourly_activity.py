@@ -14,7 +14,7 @@ for i in range(1, 25):
     trips.append(pd.read_pickle(f'data/bluebikes/trips_combined_boston/{i}.pkl'))
 combined_trips = pd.concat(trips)
 stations = pd.read_csv('data/locations/bluebike_stations.csv')
-open_spaces = pd.read_csv('nearest_bluebike_stations_k_10_d_0.5.csv')
+open_spaces = pd.read_csv('nearest_bluebike_stations_k_20_d_0.5.csv')
 
 def get_nearest_stations(space_name, d=0.5, verbose=False):
     station_names = []
