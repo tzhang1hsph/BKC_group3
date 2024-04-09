@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { useDisclosure } from '@mantine/hooks';
 import { Image, Flex, Modal, Button, Grid } from '@mantine/core';
-import Card from "./Card";
+import Card from "./Card-Old";
 
 import ChinatownPark from '../../../maps/Chinatown Park.json'
 // import ChinatownParkH from '..'

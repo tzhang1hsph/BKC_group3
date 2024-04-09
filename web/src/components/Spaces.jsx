@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
 
-import PolarBarChart from './PolarBarChart';
+import PolarBarChart from './Card';
 
 import BostonCommon from '../../../maps/Boston Common.json'
 import BostonCommonH from '../../../hourly_plots/Boston Common.json';

@@ -1,94 +1,118 @@
-import React, { useState, useEffect } from 'react';
-
+import React from 'react';
 import { useDisclosure } from '@mantine/hooks';
-import { BackgroundImage, Image, Flex, Modal, Center, Container, Text, Button, Box, Grid } from '@mantine/core';
-import { TextInput, FocusTrap } from '@mantine/core';
-
+import { Modal } from '@mantine/core';
+import final_data_table from '../../../final_data_table.json';
 import Plot from 'react-plotly.js';
-import Papa from 'papaparse';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
+const PolarBarChart = (props) => {
+    const [opened, { open, close }] = useDisclosure(false);
+    const data = final_data_table[props.name]
+
+    const env = data['Environment Score'];
+    const food = data['Food Score'];
+    const play = data['Play Score'];
+    const art = data['Art Score'];
+    const activity = data['Activity Score'];
+
+    const playStyle = {
+        height: `${play * 0.75 + 100}px`,
+        width: `${play * 0.75 + 100}px`,
+        clipPath: `circle(${play * 0.75 + 100}px at 100% 100%)`,
+        transform: `translate(${170 - play * 0.75}px, ${170 - play * 0.75}px)`
+    };
+
+    const envStyle = {
+        height: `${env * 0.75 + 100}px`,
+        width: `${env * 0.75 + 100}px`,
+        clipPath: `circle(${env * 0.75 + 100}px at 0% 100%)`,
+        transform: `translate(270px, ${170 - env * 0.75}px)`
+    };
+
+    const foodStyle = {
+        height: `${food * 0.75 + 100}px`,
+        width: `${food * 0.75 + 100}px`,
+        clipPath: `circle(${food * 0.75 + 100}px at 0% 0%)`,
+        transform: `translate(270px, 270px)`
+    };
+
+    const artStyle = {
+        height: `${art * 0.75 + 100}px`,
+        width: `${art * 0.75 + 100}px`,
+        clipPath: `circle(${art * 0.75 + 100}px at 100% 0%)`,
+        transform: `translate(${170 - art * 0.75}px, 270px)`
+    };
 
 
+    return (
+        <>
+            <Modal size="100%" opened={opened} onClose={close} centered>
+                <h1>{props.name}</h1>
+                <h2>{data['Description']}</h2>
+                <Plot data={props.map.data} layout={props.map.layout} />
+                <h3>Area: {data['Acres'].toFixed(2)} acres</h3>
+                <h3>Canopy Cover: {data['Acres'].toFixed(2)} acres</h3>
+                <div>
+                    {Object.keys(data).map(function (key) { return <p>{key}: {data[key]}</p> })}
+                </div>
 
-const Card = (props) => {
+                <Plot data={props.hourly.data} layout={props.hourly.layout} />
+            </Modal>
 
-  const [opened, { open, close }] = useDisclosure(false);
-
-
-  const [text, setText] = useState();
-
-  async function GetData(artist) {
-    const data = Papa.parse(await fetchCsv());
-    console.log("this")
-    console.log(data);
-    setText(data);
-    return data;
-  }
-
-  async function fetchCsv() {
-    const response = await fetch('./final_data_table.csv');
-    const reader = response.body.getReader();
-    const result = await reader.read();
-    const decoder = new TextDecoder('utf-8');
-    const csv = await decoder.decode(result.value);
-    // console.log('csv', csv);
-    return csv;
-  }
-
-
-  useEffect(() => {
-    GetData("no");
-    console.log(text);
-  }, []);
-
-
-  // const id = props.id;
-
-  return (
-    <>
-      <Modal size="100%" opened={opened} onClose={close}
-        // title={text} 
-        centered>
-
-        <h1>{props.name}</h1>
-
-
-        {!text ? <div></div> :
-
-          <div>
-
-            {text.data[props.id].map(function (object, i) {
-              return <p>i: {i}, value: {object},  </p>;
-            })}
-
-          </div>
-
-
-
-        }
-
-
-        <Plot data={props.map.data} layout={props.map.layout} />
-
-        <Plot data={props.hourly.data} layout={props.hourly.layout} />
-
-
-      </Modal>
-
-
-       <Image
-        radius="md"
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-        fullWidth
-        fullHeight
-        onClick={open}
-        h={props.height / 4}
-        w={props.height / 4}
-
-      />
-
-    </>
-
-  );
+            <div className="polar-bar-chart">
+                <div className="segment" style={playStyle}></div>
+                <div className="segment" style={envStyle}></div>
+                <div className="segment" style={foodStyle}></div>
+                <div className="segment" style={artStyle}></div>
+                <div className="inner-tick-container">
+                    <CircularProgressbar
+                        value={100}
+                        strokeWidth={0.3}
+                        styles={buildStyles({
+                            pathColor: 'black',
+                            trailColor: 'rgba(0, 0, 0, 0)'
+                        })}
+                    />
+                    <p className="ticks" position='absolute' style={{
+                        transform: 'translate(-11px, -310px) rotate(-3deg)'
+                    }}>50</p>
+                </div>
+                <div className="outer-tick-container">
+                    <CircularProgressbar
+                        value={100}
+                        strokeWidth={0.3}
+                        styles={buildStyles({
+                            pathColor: 'black',
+                            trailColor: 'rgba(0, 0, 0, 0)'
+                        })}
+                    />
+                    <p className="ticks" position='absolute' style={{
+                        transform: 'translate(-13px, -385px) rotate(-3deg)'
+                    }}>100</p>
+                </div>
+                <div className="activity-bar-container">
+                    <CircularProgressbar
+                        value={activity}
+                        strokeWidth={0.5}
+                        styles={buildStyles({
+                            pathColor: 'black',
+                            trailColor: 'rgba(0, 0, 0, 0)'
+                        })}
+                    />
+                    <img className="activity-biker-icon" src='/src/assets/BikerIcon.svg' style={{
+                        transform: `translate(
+                            ${240*Math.cos(Math.PI/2 - activity*Math.PI/50 + Math.PI/60)}px,
+                            ${-240*Math.sin(Math.PI/2 - activity*Math.PI/50 + Math.PI/60) - 245}px
+                        ) rotate(${activity*Math.PI/50 - Math.PI/60}rad)`
+                    }}></img>
+                </div>
+                <div className="center-image-container">
+                    <img className="center-image" src={data['Image']} onClick={open}></img>
+                </div>
+            </div>
+        </>
+    );
 };
 
-export default Card;
+export default PolarBarChart;
