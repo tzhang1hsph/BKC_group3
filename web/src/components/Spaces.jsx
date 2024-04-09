@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
@@ -31,6 +31,7 @@ import RossPlaygroundH from '../../../hourly_plots/Ross Playground.json';
 
 
 const Spaces = (props) => {
+  const [mode, setMode] = useState('all');
 
   const HEIGHT = props.height * 0.94;
 
@@ -50,12 +51,12 @@ const Spaces = (props) => {
   const WIDTH = props.width;
 
   let navigate = useNavigate();
-  const routeChangeNext = () =>{ 
-    let path = `/poll`; 
+  const routeChangeNext = () => {
+    let path = `/poll`;
     navigate(path);
   }
-  const routeChangeBack = () =>{ 
-    let path = `/tutorial`; 
+  const routeChangeBack = () => {
+    let path = `/tutorial`;
     navigate(path);
   }
 
@@ -77,6 +78,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Boston Common"
                 map={BostonCommon}
                 hourly={BostonCommonH}
@@ -85,6 +87,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Chinatown Park"
                 map={ChinatownPark}
                 hourly={ChinatownParkH}
@@ -93,6 +96,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="City Hall Plaza"
                 map={CityHall}
                 hourly={CityHallH}
@@ -101,6 +105,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Dewey Square Parks"
                 map={DeweySquare}
                 hourly={DeweySquareH}
@@ -115,6 +120,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Fallon Field"
                 map={FallonField}
                 hourly={FallonFieldH}
@@ -123,6 +129,7 @@ const Spaces = (props) => {
             </Grid.Col>
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Olmsted Park"
                 map={OlmstedPark}
                 hourly={OlmstedParkH}
@@ -131,6 +138,7 @@ const Spaces = (props) => {
             </Grid.Col>
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Faneuil Square"
                 map={FaneuilSquare}
                 hourly={FaneuilSquareH}
@@ -139,6 +147,7 @@ const Spaces = (props) => {
             </Grid.Col>
             <Grid.Col span={2.5}>
               <PolarBarChart
+                mode={mode}
                 name="Ross Playground"
                 map={RossPlayground}
                 hourly={RossPlaygroundH}
@@ -150,11 +159,6 @@ const Spaces = (props) => {
 
           </Grid>
 
-
-
-
-
-
           <Image
             mt={HEIGHT / 15}
             radius={HEIGHT / 50}
@@ -162,54 +166,94 @@ const Spaces = (props) => {
             fullWidth
             h={HEIGHT / 60}
           />
-
-
         </Grid.Col>
 
 
-
         <Grid.Col span={2.8}>
-
           <Text fz="lg">Instructions</Text>
-
-
-          <Skeleton height={HEIGHT / 2} visible={false}>
-
-
+          <Skeleton height={HEIGHT / 6} visible={false}>
             <Text fz="md">
-
               {hovered1 ? "sample instructions for play" : ""}
               {hovered2 ? "sample instructions for environment" : ""}
               {hovered3 ? "sample instructions for art" : ""}
               {hovered4 ? "sample instructions for food\ndkvndkvndkvndkvndkn" : ""}
-
-
-
             </Text>
-
-
           </Skeleton>
 
+          <Grid.Col>
+          <Button
+            color='#10445c'
+            fz="xl"
+            onClick={() => setMode('all')}
+            style={{ minHeight: HEIGHT / 8 }}
+            fullWidth
+          > All </Button>
+          </Grid.Col>
+
           <Grid>
+            <Grid.Col span={6}>
+              <Button
+                color='#237c9c'
+                fz="xl"
+                onClick={() => setMode('play')}
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > Play </Button>
+            </Grid.Col>
 
             <Grid.Col span={6}>
+              <Button
+                color='#5aafa9'
+                fz="xl"
+                onClick={() => setMode('env')}
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > Environment </Button>
+            </Grid.Col>
 
+            <Grid.Col span={6}>
+              <Button
+                color='#e3685b'
+                fz="xl"
+                onClick={() => setMode('art')}
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > Art </Button>
+            </Grid.Col>
 
-              <Button variant="light" color="orange" fz="xl"
+            <Grid.Col span={6}>
+              <Button
+                color='#f89c5a'
+                fz="xl"
+                onClick={() => setMode('food')}
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > Food </Button>
+            </Grid.Col>
+          </Grid>
+
+          <Grid>
+            <Grid.Col span={6}>
+              <Button
+                variant="light"
+                color="orange"
+                fz="xl"
                 onClick={routeChangeBack}
-
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
-
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > &#60; </Button>
             </Grid.Col>
 
             <Grid.Col span={6}>
-
-              <Button variant="light" color="orange" fz="xl"
+              <Button
+                variant="light"
+                color="orange"
+                fz="xl"
                 onClick={routeChangeNext}
-
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > &#62; </Button>
             </Grid.Col>
-
           </Grid>
 
         </Grid.Col>

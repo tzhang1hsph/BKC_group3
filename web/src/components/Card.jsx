@@ -9,7 +9,6 @@ import 'react-circular-progressbar/dist/styles.css';
 const PolarBarChart = (props) => {
     const [opened, { open, close }] = useDisclosure(false);
     const data = final_data_table[props.name]
-    const mode = 'all' /* turn this into state? */
 
     const env = data['Environment Score'];
     const food = data['Food Score'];
@@ -120,17 +119,17 @@ const PolarBarChart = (props) => {
             </Modal>
 
             <div className="polar-bar-chart">
-                {mode === 'all' ?
+                {props.mode === 'all' ?
                     <>
                         <div className="segment" style={playStyle}></div>
                         <div className="segment" style={envStyle}></div>
                         <div className="segment" style={foodStyle}></div>
                         <div className="segment" style={artStyle}></div>
                     </>
-                    : mode === 'play' ?
+                    : props.mode === 'play' ?
                         <div className="segment" style={playStyleFull}></div>
-                        : mode === 'env' ? <div className="segment" style={envStyleFull}></div>
-                            : mode === 'food' ? <div className="segment" style={foodStyleFull}></div>
+                        : props.mode === 'env' ? <div className="segment" style={envStyleFull}></div>
+                            : props.mode === 'food' ? <div className="segment" style={foodStyleFull}></div>
                                 : <div className="segment" style={artStyleFull}></div>}
                 <div className="inner-tick-container">
                     <CircularProgressbar
@@ -163,7 +162,7 @@ const PolarBarChart = (props) => {
                         value={activity}
                         strokeWidth={0.5}
                         styles={buildStyles({
-                            pathColor: 'black',
+                            pathColor: '#10445c',
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
