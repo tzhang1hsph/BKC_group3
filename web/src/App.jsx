@@ -79,25 +79,12 @@ function App() {
             </Route>
             <Route path="/poll" element={<Poll height={height} width={width} />}>
             </Route>
+            <Route path="/pollresults" element={<PollResults height={height} width={width} />}>
+            </Route>
           </Routes>
         </Router>
 
       </div>
-
-
-      // <>
-      //   <Title height={height} width={width} />
-      //   <Intro />
-      //   <Definition />
-      //   <Comparison />
-      //   <Poll></Poll>
-      //   <PollResults></PollResults>
-      //   <Cards />
-      //   <br></br>
-      //   <Plot data={choroplethJSON.data} layout={choroplethJSON.layout} />
-      //   <Plot data={spaceJSON.data} layout={spaceJSON.layout} />
-      //   <Plot data={hourlyJSON.data} layout={hourlyJSON.layout} />
-      // </>
 
     }
 

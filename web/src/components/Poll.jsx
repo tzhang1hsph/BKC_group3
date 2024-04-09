@@ -20,7 +20,7 @@ const Poll = (props) => {
 
   async function getVotes() {
     const { data } = await supabase.from("responses").select();
-    console.log(data);
+    // console.log(data);
     setVotes(data);
   }
 
@@ -111,12 +111,12 @@ const Poll = (props) => {
     <Grid >
       <Grid.Col span={9}>
 
-        <Text fz="lg">poll text</Text>
-        <ul>
+        <Text fz="lg">insert poll text</Text>
+        {/* <ul>
         {votes.map((country) => (
           <li key={country.id}>{country.option} and {country.count}</li>
         ))}
-      </ul>
+      </ul> */}
 
         <Space h={HEIGHT / 20} />
 
@@ -199,7 +199,7 @@ const Poll = (props) => {
 <div>
 
 
-<   Button 
+< Button 
       color={food ? "#000" : "#ff9321"}
       onClick={clickFood}
       radius={HEIGHT / 50}
