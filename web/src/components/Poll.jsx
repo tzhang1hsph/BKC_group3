@@ -1,12 +1,28 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
 
+import { createClient } from "@supabase/supabase-js";
+
+
+const supabase = createClient(import.meta.env.VITE_APP_URL, import.meta.env.VITE_APP_ANON_KEY);
 
 
 const Poll = (props) => {
 
+
+  const [votes, setVotes] = useState([]);
+
+  useEffect(() => {
+    getVotes();
+  }, []);
+
+  async function getVotes() {
+    const { data } = await supabase.from("responses").select();
+    console.log(data);
+    setVotes(data);
+  }
 
 
   const [play, setPlay] = useState(false);
@@ -18,8 +34,40 @@ const Poll = (props) => {
   const WIDTH = props.width;
 
   let navigate = useNavigate(); 
+
+  async function mod(curr, id)
+  {
+    const { error } = await supabase
+    .from('responses')
+    .update({ count: curr + 1 })
+    .eq('id', id);
+  }
+
   const routeChangeNext = () =>{ 
-    let path = `/`; 
+
+
+    if (play)
+    {
+      let curr = votes[0].count;
+      mod(curr, 1);
+    }
+
+    else if (env)
+    {
+      let curr = votes[1].count;
+      mod(curr, 2);
+    }
+    else if (art)
+    {
+      let curr = votes[2].count;
+      mod(curr, 3);
+    }
+    else if (food)
+    {
+      let curr = votes[3].count;
+      mod(curr, 4);
+    }
+    let path = `/pollresults`; 
     navigate(path);
   }
   const routeChangeBack = () =>{ 
@@ -64,6 +112,12 @@ const Poll = (props) => {
       <Grid.Col span={9}>
 
         <Text fz="lg">poll text</Text>
+        <ul>
+        {votes.map((country) => (
+          <li key={country.id}>{country.option} and {country.count}</li>
+        ))}
+      </ul>
+
         <Space h={HEIGHT / 20} />
 
 
