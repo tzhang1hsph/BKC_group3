@@ -122,7 +122,7 @@ const PolarBarChart = (props) => {
                     <img className="activity-biker-icon" src='/assets/BikerIcon.svg' style={{
                         transform: `translate(
                             ${240*Math.cos(Math.PI/2 - activity*Math.PI/50 + Math.PI/60)}px,
-                            ${-240*Math.sin(Math.PI/2 - activity*Math.PI/50 + Math.PI/60) - 245}px
+                            ${-240*Math.sin(Math.PI/2 - activity*Math.PI/50 + Math.PI/60) - 251}px
                         ) rotate(${activity*Math.PI/50 - Math.PI/60}rad)`
                     }}></img>
                 </div>
