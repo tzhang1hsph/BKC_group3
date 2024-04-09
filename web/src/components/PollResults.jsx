@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
+ import { PieChart, Pie, ScatterChart, Scatter, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Label } from 'recharts';
 
 import { createClient } from "@supabase/supabase-js";
 
@@ -13,6 +14,7 @@ const PollResults = (props) => {
 
 
   const [votes, setVotes] = useState([]);
+  
 
   useEffect(() => {
     getVotes();
@@ -37,6 +39,10 @@ const PollResults = (props) => {
     navigate(path);
   }
 
+  let renderLabel = function(entry) {
+    return entry.name;
+}
+
   
   return (
 
@@ -48,114 +54,25 @@ const PollResults = (props) => {
     <Grid >
       <Grid.Col span={9}>
 
-        <Text fz="lg">poll text</Text>
-        <ul>
-        {countries.map((country) => (
-          <li key={country.id}>{country.option}</li>
-        ))}
-      </ul>
+        <Text fz="lg">insert poll results</Text>
+
+      <Center>
+      <PieChart 
+      width={HEIGHT * 1 / 2} 
+      height={HEIGHT * 2 / 3}
+      >
+
+
+  <Pie data={votes} dataKey="count" nameKey="option" cx="50%" cy="50%" 
+  isAnimationActive={true} innerRadius={HEIGHT / 20} outerRadius={HEIGHT / 5} fill="#82ca9d" label={renderLabel} />
+ </PieChart>
 
         <Space h={HEIGHT / 20} />
 
 
-      <Grid 
-       gutter={HEIGHT / 20}>
-
-<Grid.Col span={1} ></Grid.Col>
-<Grid.Col span={5}>
+        </Center>
 
 
-
-  <div>
-
-
-  <Button 
-      color={play ? "#000" : "#1297b1"}
-      onClick={clickPlay}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Play</Text>
-
-    </Button>
-
-
-  </div>
-
-  
-  
-  </Grid.Col>
-<Grid.Col span={5}>
-
-  <div>
-
-
-  <Button 
-      color={env ? "#000" : "#4c8680"}
-      onClick={clickEnv}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Environment</Text>
-      
-    </Button>
-  
-
-
-    </div>
-
-  </Grid.Col>
-<Grid.Col span={1}></Grid.Col>
-
-<Grid.Col span={1} ></Grid.Col>
-<Grid.Col span={5}>
-    <div>
-
-    <Button 
-      color={art ? "#000" : "#a41e34"}
-      onClick={clickArt}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Art</Text>
-      
-    </Button>
-
-    </div>
-
-</Grid.Col>
-
-<Grid.Col span={5}>
-
-<div>
-
-
-<   Button 
-      color={food ? "#000" : "#ff9321"}
-      onClick={clickFood}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Food</Text>
-      
-    </Button>
-  
-
-  </div>
-
-</Grid.Col>
-<Grid.Col span={1}></Grid.Col>
-
-
-</Grid>
 
 
 <Image 
