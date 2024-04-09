@@ -49,6 +49,7 @@ const PolarBarChart = (props) => {
         <>
             <Modal size="100%" opened={opened} onClose={close} centered>
                 <h1>{props.name}</h1>
+                <img width='auto' height='800px' src={data['Image']}></img>
                 <h3>{data['Description']}</h3>
                 <Plot data={props.map.data} layout={props.map.layout} />
 
@@ -58,6 +59,7 @@ const PolarBarChart = (props) => {
                 
                 <h2>Safety Score: {data['Safety Score']}</h2>
                 <h3>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</h3>
+                <h3>Crime Density: work in progress</h3>
                 
                 <h2>Activity Score: {data['Activity Score']}</h2>
                 <h3>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</h3>
