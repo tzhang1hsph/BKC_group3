@@ -11,7 +11,7 @@
       }
 
       .cls-2 {
-        fill: #fff;
+        fill-opacity: 0;
       }
     </style>
   </defs>

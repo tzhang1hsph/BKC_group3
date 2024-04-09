@@ -10,37 +10,38 @@ const PolarBarChart = (props) => {
     const [opened, { open, close }] = useDisclosure(false);
     const data = final_data_table[props.name]
 
-    const env = data['Environment Score'] * 75;
-    const food = data['Food Score'] * 75;
-    const play = data['Play Score'] * 75;
-    const art = data['Art Score'] * 75;
+    const env = data['Environment Score'];
+    const food = data['Food Score'];
+    const play = data['Play Score'];
+    const art = data['Art Score'];
+    const activity = data['Activity Score'];
 
     const playStyle = {
-        height: `${play + 100}px`,
-        width: `${play + 100}px`,
-        clipPath: `circle(${play + 100}px at 100% 100%)`,
-        transform: `translate(${170 - play}px, ${170 - play}px)`
+        height: `${play * 0.75 + 100}px`,
+        width: `${play * 0.75 + 100}px`,
+        clipPath: `circle(${play * 0.75 + 100}px at 100% 100%)`,
+        transform: `translate(${170 - play * 0.75}px, ${170 - play * 0.75}px)`
     };
 
     const envStyle = {
-        height: `${env + 100}px`,
-        width: `${env + 100}px`,
-        clipPath: `circle(${env + 100}px at 0% 100%)`,
-        transform: `translate(270px, ${170 - env}px)`
+        height: `${env * 0.75 + 100}px`,
+        width: `${env * 0.75 + 100}px`,
+        clipPath: `circle(${env * 0.75 + 100}px at 0% 100%)`,
+        transform: `translate(270px, ${170 - env * 0.75}px)`
     };
 
     const foodStyle = {
-        height: `${food + 100}px`,
-        width: `${food + 100}px`,
-        clipPath: `circle(${food + 100}px at 0% 0%)`,
+        height: `${food * 0.75 + 100}px`,
+        width: `${food * 0.75 + 100}px`,
+        clipPath: `circle(${food * 0.75 + 100}px at 0% 0%)`,
         transform: `translate(270px, 270px)`
     };
 
     const artStyle = {
-        height: `${art + 100}px`,
-        width: `${art + 100}px`,
-        clipPath: `circle(${art + 100}px at 100% 0%)`,
-        transform: `translate(${170 - art}px, 270px)`
+        height: `${art * 0.75 + 100}px`,
+        width: `${art * 0.75 + 100}px`,
+        clipPath: `circle(${art * 0.75 + 100}px at 100% 0%)`,
+        transform: `translate(${170 - art * 0.75}px, 270px)`
     };
 
 
@@ -63,33 +64,45 @@ const PolarBarChart = (props) => {
                 <div className="segment" style={artStyle}></div>
                 <div className="inner-tick-container">
                     <CircularProgressbar
-                        value={96}
+                        value={100}
                         strokeWidth={0.3}
                         styles={buildStyles({
-                            pathColor: '#888888',
+                            pathColor: 'black',
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
+                    <p className="ticks" position='absolute' style={{
+                        transform: 'translate(-11px, -310px) rotate(-3deg)'
+                    }}>50</p>
                 </div>
                 <div className="outer-tick-container">
                     <CircularProgressbar
-                        value={97}
+                        value={100}
                         strokeWidth={0.3}
                         styles={buildStyles({
-                            pathColor: '#888888',
+                            pathColor: 'black',
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
+                    <p className="ticks" position='absolute' style={{
+                        transform: 'translate(-13px, -385px) rotate(-3deg)'
+                    }}>100</p>
                 </div>
                 <div className="activity-bar-container">
                     <CircularProgressbar
-                        value={data['Activity Score'] * 100}
+                        value={activity}
                         strokeWidth={0.5}
                         styles={buildStyles({
-                            pathColor: '#000000',
+                            pathColor: 'black',
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
+                    <img className="activity-biker-icon" src='/src/assets/BikerIcon.svg' style={{
+                        transform: `translate(
+                            ${240*Math.cos(Math.PI/2 - activity*Math.PI/50 + Math.PI/60)}px,
+                            ${-240*Math.sin(Math.PI/2 - activity*Math.PI/50 + Math.PI/60) - 245}px
+                        ) rotate(${activity*Math.PI/50 - Math.PI/60}rad)`
+                    }}></img>
                 </div>
                 <div className="center-image-container">
                     <img className="center-image" src={data['Image']} onClick={open}></img>
