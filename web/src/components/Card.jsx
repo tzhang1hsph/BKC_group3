@@ -100,7 +100,7 @@ const PolarBarChart = (props) => {
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
-                    <img className="activity-biker-icon" src='/src/assets/BikerIcon.svg' style={{
+                    <img className="activity-biker-icon" src='../../public/assets/BikerIcon.svg' style={{
                         transform: `translate(
                             ${240*Math.cos(Math.PI/2 - activity*Math.PI/50 + Math.PI/60)}px,
                             ${-240*Math.sin(Math.PI/2 - activity*Math.PI/50 + Math.PI/60) - 245}px

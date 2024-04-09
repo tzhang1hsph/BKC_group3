@@ -70,7 +70,7 @@ const Spaces = (props) => {
 
         <Grid.Col span={9}>
 
-          <Grid grow gutter={HEIGHT / 20} align="center">
+          <Grid grow gutter={HEIGHT / 40} align="center">
 
             <Grid.Col span={1}>
             </Grid.Col>
