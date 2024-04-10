@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+// import '.././Engage/Engage.css'
+
 import Plot from 'react-plotly.js'
 import choroplethJSON from '../../maps/choropleth.json';
 import spaceJSON from '../../maps/Chinatown Park.json'
@@ -18,13 +20,18 @@ import Poll from "./components/Poll"
 import PollResults from "./components/PollResults"
 
 
+// import '../public/Engage/Engage.css';
+// import '../Engage/Engage.css'
+
+
+
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 
 
-import { MantineProvider, rem } from '@mantine/core';
+import { MantineProvider, DEFAULT_THEME, rem } from '@mantine/core';
 
 const getWindowDimensions = () => {
   const { innerWidth: width, innerHeight: height } = window;
@@ -56,6 +63,11 @@ function App() {
 
   return <MantineProvider
     theme={{
+      fontFamily: 'Inter, sans-serif',
+      // headings: {
+      //   // Use default theme if you want to provide default Mantine fonts as a fallback
+      //   fontFamily: `Engage, ${DEFAULT_THEME.fontFamily}`,
+      // },
       fontSizes: {
         xs: rem(10 / 1080 * height),
         sm: rem(11 / 1080 * height),
