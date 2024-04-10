@@ -58,7 +58,7 @@ const Intro = (props) => {
     <AspectRatio h={HEIGHT / 3.8}>
       <Image 
         radius={HEIGHT / 50}
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+        src="/assets/Play.jpeg"
         fullWidth
         h={HEIGHT / 3.2}
       />
@@ -95,7 +95,7 @@ const Intro = (props) => {
     <AspectRatio h={HEIGHT / 3.2}>
       <Image 
         radius={HEIGHT / 50}
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+        src="/assets/Environment.jpeg"
         fullWidth
         h={HEIGHT / 3.2}
       />
@@ -132,7 +132,7 @@ const Intro = (props) => {
     <AspectRatio h={HEIGHT / 3.2}>
       <Image 
         radius={HEIGHT / 50}
-        src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+        src="/assets/Art.jpeg"
         fullWidth
         h={HEIGHT / 3.2}
       />
@@ -167,7 +167,7 @@ const Intro = (props) => {
   <AspectRatio h={HEIGHT / 3.2}>
     <Image 
       radius={HEIGHT / 50}
-      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+      src="/assets/Food.jpeg"
       fullWidth
       h={HEIGHT / 3.2}
     />

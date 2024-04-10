@@ -58,7 +58,7 @@ const Tutorial = (props) => {
     {mode == 'all' ?
       <Image 
       radius={HEIGHT / 50}
-      src= "../../public/assets/all.png"
+      src= "/assets/all.png"
       w={WIDTH * 3/4}
       h={HEIGHT *3/4}
       />
@@ -69,7 +69,7 @@ const Tutorial = (props) => {
 {mode == 'play' ?
       <Image 
       radius={HEIGHT / 50}
-      src= "../../public/assets/play.png"
+      src= "/assets/play.png"
       w={WIDTH * 3/4}
       h={HEIGHT *3/4}
       />
@@ -80,7 +80,7 @@ const Tutorial = (props) => {
       {mode == 'food' ?
       <Image 
       radius={HEIGHT / 50}
-      src= "../../public/assets/food.png"
+      src= "/assets/food.png"
       w={WIDTH * 3/4}
       h={HEIGHT *3/4}
       />
@@ -91,7 +91,7 @@ const Tutorial = (props) => {
 {mode == 'env' ?
       <Image 
       radius={HEIGHT / 50}
-      src= "../../public/assets/environment.png"
+      src= "/assets/environment.png"
       w={WIDTH * 3/4}
       h={HEIGHT *3/4}
       />
@@ -102,7 +102,7 @@ const Tutorial = (props) => {
 {mode == 'art' ?
       <Image 
       radius={HEIGHT / 50}
-      src= "../../public/assets/art.png"
+      src= "/assets/art.png"
       w={WIDTH * 3/4}
       h={HEIGHT *3/4}
       />

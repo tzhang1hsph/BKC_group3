@@ -26,7 +26,7 @@ const Title = (props) => {
 
         <Image
           radius={HEIGHT / 20}
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+          src="/assets/Cover.png"
           h={HEIGHT}
           w={WIDTH * 8.5 / 12}
         />
@@ -45,14 +45,14 @@ const Title = (props) => {
         <Image
           mt={HEIGHT / 80}
           radius={HEIGHT / 50}
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+          src="/assets/FaneuilSquare.jpeg"
           h={HEIGHT / 7.5}
           w={WIDTH * 2.8 / 12}
         />
         <Image
           mt={HEIGHT / 80}
           radius={HEIGHT / 50}
-          src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
+          src="/assets/CityHallPlazaCrop.jpeg"
           h={HEIGHT / 7.5}
           w={WIDTH * 2.8 / 12}
         />
