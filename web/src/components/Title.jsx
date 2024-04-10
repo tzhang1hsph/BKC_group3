@@ -37,7 +37,7 @@ const Title = (props) => {
         <Space h={HEIGHT / 4} />
 
 
-        <Text ta="left" fz="lg">Boston has 999 open spaces.</Text>
+        <Text ta="left" fz="lg">Boston has 453 open spaces.</Text>
         <br></br>
 
         <Text ta="left" fz="lg">Why do we gather at certain spaces</Text>
