@@ -166,10 +166,12 @@ const Spaces = (props) => {
             fullWidth
             h={HEIGHT / 60}
           />
+
         </Grid.Col>
 
 
         <Grid.Col span={2.8}>
+
           <Text fz="lg">Instructions</Text>
           <Skeleton height={HEIGHT / 6} visible={false}>
             <Text fz="md">
@@ -180,17 +182,17 @@ const Spaces = (props) => {
             </Text>
           </Skeleton>
 
-          <Grid.Col>
-          <Button
-            color='#10445c'
-            fz="xl"
-            onClick={() => setMode('all')}
-            style={{ minHeight: HEIGHT / 8 }}
-            fullWidth
-          > All </Button>
-          </Grid.Col>
-
           <Grid>
+            <Grid.Col span={12}>
+              <Button
+                color='#10445c'
+                fz="xl"
+                onClick={() => setMode('all')}
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > All </Button>
+            </Grid.Col>
+
             <Grid.Col span={6}>
               <Button
                 color='#237c9c'
@@ -230,9 +232,7 @@ const Spaces = (props) => {
                 fullWidth
               > Food </Button>
             </Grid.Col>
-          </Grid>
 
-          <Grid>
             <Grid.Col span={6}>
               <Button
                 variant="light"
