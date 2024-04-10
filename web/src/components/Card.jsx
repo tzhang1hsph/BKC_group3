@@ -97,6 +97,7 @@ const PolarBarChart = (props) => {
                 <h2>Safety Score: {data['Safety Score']}</h2>
                 <h3>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</h3>
                 <h3>Crime Density: {(data['Nearby Crimes Per Acre Per Year']).toFixed(2)} crimes per acre per year</h3>
+                <h3>Vehicle Accident Density: {(data['Nearby Vehicle Accidents Per Acre Per Year']).toFixed(2)} vehicle accidents per acre per year</h3>
 
                 <h2>Activity Score: {data['Activity Score']}</h2>
                 <h3>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</h3>
