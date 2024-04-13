@@ -24,28 +24,27 @@ const TitleCard = (props) => {
     <Grid my="sm">
 
       <Grid.Col span={9} style={{ minHeight: HEIGHT }}>
-        <Image
-          ml='-2rem'
-          mt='-2.8rem'
+        <img
+          style={{'margin-left': '-2rem', 'margin-top': '-2.8rem', 'clip-path': 'inset(0 27% 0 0)'}}
           src="/assets/Cover.png"
-          h='100vh'
-          w='100vw'
+          h={HEIGHT / 0.94}
+          w={WIDTH / 12}
         />
         <Overlay
-          h={HEIGHT}
+          h={HEIGHT / 0.94}
           w={WIDTH * 8.5 / 12}
           backgroundOpacity={0}
         >
           <Text ta='left'
-            mt={rem(190 / 1080 * HEIGHT)}
-            ml={rem(100 / 1080 * HEIGHT)}
+            mt={rem(168 / 1080 * HEIGHT)}
+            ml={rem(113 / 1080 * HEIGHT)}
             c='#fffcf2'
             style={{ fontFamily: 'Engage Regular, sans-serif' }}
-            fz={rem(80 / 1080 * HEIGHT)}
+            fz={rem(97 / 1080 * HEIGHT)}
           >Why We Gather</Text>
 
           <Text ta='left'
-            ml={rem(100 / 1080 * HEIGHT)}
+            ml={rem(113 / 1080 * HEIGHT)}
             c='#fffcf2'
             fz={rem(36 / 1080 * HEIGHT)}
           >How can gathering spaces change a community?</Text>
@@ -66,14 +65,14 @@ const TitleCard = (props) => {
           mt={HEIGHT / 80}
           radius={HEIGHT / 50}
           src="/assets/FaneuilSquare.jpeg"
-          h={HEIGHT / 7.5}
+          h={HEIGHT / 6}
           w={WIDTH * 2.8 / 12}
         />
         <Image
           mt={HEIGHT / 80}
           radius={HEIGHT / 50}
           src="/assets/CityHallPlazaCrop.jpeg"
-          h={HEIGHT / 7.5}
+          h={HEIGHT / 6}
           w={WIDTH * 2.8 / 12}
         />
         {/* <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton> */}
