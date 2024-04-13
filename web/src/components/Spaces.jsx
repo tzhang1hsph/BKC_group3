@@ -81,6 +81,7 @@ const Spaces = (props) => {
                 name="Boston Common"
                 map={BostonCommon}
                 hourly={BostonCommonH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -90,6 +91,7 @@ const Spaces = (props) => {
                 name="Chinatown Park"
                 map={ChinatownPark}
                 hourly={ChinatownParkH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -99,6 +101,7 @@ const Spaces = (props) => {
                 name="City Hall Plaza"
                 map={CityHall}
                 hourly={CityHallH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -108,6 +111,7 @@ const Spaces = (props) => {
                 name="Dewey Square Parks"
                 map={DeweySquare}
                 hourly={DeweySquareH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -122,6 +126,7 @@ const Spaces = (props) => {
                 name="Fallon Field"
                 map={FallonField}
                 hourly={FallonFieldH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -131,6 +136,7 @@ const Spaces = (props) => {
                 name="Olmsted Park"
                 map={OlmstedPark}
                 hourly={OlmstedParkH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -140,6 +146,7 @@ const Spaces = (props) => {
                 name="Faneuil Square"
                 map={FaneuilSquare}
                 hourly={FaneuilSquareH}
+                height={HEIGHT}
               />
             </Grid.Col>
 
@@ -149,6 +156,7 @@ const Spaces = (props) => {
                 name="Ross Playground"
                 map={RossPlayground}
                 hourly={RossPlaygroundH}
+                height={HEIGHT}
               />
             </Grid.Col>
 

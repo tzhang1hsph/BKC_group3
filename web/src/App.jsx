@@ -3,14 +3,11 @@ import './App.css'
 import '/public/Engage/Engage.css';
 
 import '@mantine/core/styles.css';
-import Cards from "./components/Cards"
 import Intro from "./components/Intro"
 import TitleCard from "./components/TitleCard"
 import Spaces from "./components/Spaces"
 import Tutorial from "./components/Tutorial"
 
-import Definition from "./components/Definition"
-import Comparison from "./components/Comparison"
 import Poll from "./components/Poll"
 import PollResults from "./components/PollResults"
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDisclosure } from '@mantine/hooks';
-import { Grid, Modal } from '@mantine/core';
+import { Grid, Modal, Title, Text, rem } from '@mantine/core';
 import final_data_table from '../../../final_data_table.json';
 import Plot from 'react-plotly.js';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
@@ -84,43 +84,43 @@ const PolarBarChart = (props) => {
 
     return (
         <>
-            <Modal size="100%" opened={opened} onClose={close} centered>
-                <h1>{props.name}</h1>
-                <h3>{data['Description']}</h3>
+            <Modal size="100%" opened={opened} onClose={close} radius={props.height / 80} centered>
+                <Title order={1} ta="center" size={120}>{props.name}</Title>
+                <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>{data['Description']}</b></Text>
                 <Grid>
                     <Grid.Col span={6}>
                         <img width='auto' height='900px' src={data['Image']} style={{ 'display': 'block', 'margin': 'auto' }}></img>
 
-                        <h2>Activity Score: {data['Activity Score']}</h2>
-                        <h3>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</h3>
-                        <h3>Average Daily Roundtrips at Nearby Bluebike Stations: {data['Daily Roundtrips'].toFixed(2)}</h3>
-                        <h3>Proportion of Roundtrips at Nearby Bluebike Stations: {(data['Weighted Roundtrip Ratio'] * 100).toFixed(1)}%</h3>
+                        <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Activity Score: {data['Activity Score']}</b></Text>
+                        <Text>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</Text>
+                        <Text>Average Daily Roundtrips at Nearby Bluebike Stations: {data['Daily Roundtrips'].toFixed(2)}</Text>
+                        <Text>Proportion of Roundtrips at Nearby Bluebike Stations: {(data['Weighted Roundtrip Ratio'] * 100).toFixed(1)}%</Text>
                         <Plot data={props.hourly.data} layout={props.hourly.layout} />
 
-                        <h2>Environment Score: {data['Environment Score']}</h2>
-                        <h3>Area: {data['Acres'].toFixed(2)} acres</h3>
-                        <h3>Canopy Cover: {(data['Canopy Cover Proportion'] * 100).toFixed(1)}%</h3>
-
-                        <h2>Play Score: {data['Play Score']}</h2>
-                        <h3>Has Athletic Field: {data['Has Athletic Field'] ? 'Yes' : 'No'}</h3>
-                        <h3>Has Playground: {data['Has Playground'] ? 'Yes' : 'No'}</h3>
+                        <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Environment Score: {data['Environment Score']}</b></Text>
+                        <Text>Area: {data['Acres'].toFixed(2)} acres</Text>
+                        <Text>Canopy Cover: {(data['Canopy Cover Proportion'] * 100).toFixed(1)}%</Text>
                     </Grid.Col>
 
                     <Grid.Col span={6}>
                         <Plot data={props.map.data} layout={props.map.layout} style={{ 'margin': 'auto' }} />
 
-                        <h2>Safety Score: {data['Safety Score']}</h2>
-                        <h3>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</h3>
-                        <h3>Crime Density: {(data['Nearby Crimes Per Acre Per Year']).toFixed(2)} crimes per acre per year</h3>
-                        <h3>Vehicle Accident Density: {(data['Nearby Vehicle Accidents Per Acre Per Year']).toFixed(2)} vehicle accidents per acre per year</h3>
+                        <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Safety Score: {data['Safety Score']}</b></Text>
+                        <Text>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</Text>
+                        <Text>Crime Density: {(data['Nearby Crimes Per Acre Per Year']).toFixed(2)} crimes per acre per year</Text>
+                        <Text>Vehicle Accident Density: {(data['Nearby Vehicle Accidents Per Acre Per Year']).toFixed(2)} vehicle accidents per acre per year</Text>
 
-                        <h2>Food Score: {data['Food Score']}</h2>
-                        <h3>Number of Restaurants Within 0.5 km: {data['Number of Nearby Restaurants']}</h3>
-                        <h3>Near Food Trucks: {data['Near Food Trucks'] ? 'Yes' : 'No'}</h3>
-                        <h3>Near Farmers Markets: {data['Near Farmers Markets'] ? 'Yes' : 'No'}</h3>
+                        <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Food Score: {data['Food Score']}</b></Text>
+                        <Text>Number of Restaurants Within 0.5 km: {data['Number of Nearby Restaurants']}</Text>
+                        <Text>Near Food Trucks: {data['Near Food Trucks'] ? 'Yes' : 'No'}</Text>
+                        <Text>Near Farmers Markets: {data['Near Farmers Markets'] ? 'Yes' : 'No'}</Text>
 
-                        <h2>Art Score: {data['Art Score']}</h2>
-                        <h3>Near Murals: {data['Near Murals'] ? 'Yes' : 'No'}</h3>
+                        <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Art Score: {data['Art Score']}</b></Text>
+                        <Text>Near Murals: {data['Near Murals'] ? 'Yes' : 'No'}</Text>
+
+                        <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Play Score: {data['Play Score']}</b></Text>
+                        <Text>Has Athletic Field: {data['Has Athletic Field'] ? 'Yes' : 'No'}</Text>
+                        <Text>Has Playground: {data['Has Playground'] ? 'Yes' : 'No'}</Text>
                     </Grid.Col>
                 </Grid>
             </Modal>
