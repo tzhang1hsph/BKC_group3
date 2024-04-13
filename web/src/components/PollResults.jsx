@@ -75,15 +75,6 @@ const PollResults = (props) => {
 
 
 
-<Image 
-      mt={ HEIGHT / 15 }
-      radius={HEIGHT / 50}
-      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-      fullWidth
-      h={HEIGHT / 60}
-    />
-
-
       </Grid.Col>
 
       

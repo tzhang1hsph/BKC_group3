@@ -1,10 +1,11 @@
 import React from 'react'
-import { Button, Overlay, AspectRatio, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
+import { Button, Overlay, AspectRatio, Image, Title, Space, Text, Grid, Skeleton } from '@mantine/core';
 import { useNavigate } from "react-router-dom";
 
+import '../../public/Engage/Engage.css';
 
 
-const Title = (props) => {
+const TitleCard = (props) => {
 
   const HEIGHT = props.height * 0.94;
   const WIDTH = props.width;
@@ -36,8 +37,7 @@ const Title = (props) => {
 
         <Space h={HEIGHT / 4} />
 
-
-        <Text ta="left" fz="lg">Boston has 453 open spaces.</Text>
+        <Text ta="left" fontFamily={'Engage, sans-serif'}fz="lg">Boston has 453 open spaces.</Text>
         <br></br>
 
         <Text ta="left" fz="lg">Why do we gather at certain spaces</Text>
@@ -67,7 +67,7 @@ const Title = (props) => {
         <Button variant="light" color="orange" fz="xl"
           onClick={routeChange}
 
-          style={{ minHeight: HEIGHT / 8 }} fullWidth> CLICK TO BEGIN </Button>
+          style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 8 }} fullWidth> CLICK TO BEGIN </Button>
 
 
       </Grid.Col>
@@ -78,4 +78,4 @@ const Title = (props) => {
   )
 }
 
-export default Title
+export default TitleCard
