@@ -44,17 +44,11 @@ const Intro = (props) => {
       <Grid >
         <Grid.Col span={9}>
 
-          <Grid
-            gutter={HEIGHT / 20}>
-
+          <Grid gutter={HEIGHT / 20}>
             <Grid.Col span={1} ></Grid.Col>
+
             <Grid.Col span={5}>
-
-
-
-
               <div ref={ref1}>
-
                 <AspectRatio h={HEIGHT / 3.8}>
                   <Image
                     radius={HEIGHT / 50}
@@ -62,7 +56,6 @@ const Intro = (props) => {
                     fullWidth
                     h={HEIGHT / 3.2}
                   />
-
 
                   <Overlay
                     h={HEIGHT / 3.2}
@@ -78,20 +71,12 @@ const Intro = (props) => {
                       </div>
                     }
                   </Overlay>
-
-
                 </AspectRatio>
-
               </div>
-
-
-
             </Grid.Col>
+
             <Grid.Col span={5}>
-
               <div ref={ref2}>
-
-
                 <AspectRatio h={HEIGHT / 3.2}>
                   <Image
                     radius={HEIGHT / 50}
@@ -99,8 +84,6 @@ const Intro = (props) => {
                     fullWidth
                     h={HEIGHT / 3.2}
                   />
-
-
                   <Overlay
                     h={HEIGHT / 3.2}
                     radius={HEIGHT / 50}
@@ -115,20 +98,17 @@ const Intro = (props) => {
                       </div>
                     }
                   </Overlay>
-
-
                 </AspectRatio>
-
               </div>
-
             </Grid.Col>
+
             <Grid.Col span={1}></Grid.Col>
 
+
             <Grid.Col span={1} ></Grid.Col>
+
             <Grid.Col span={5}>
               <div ref={ref3}>
-
-
                 <AspectRatio h={HEIGHT / 3.2}>
                   <Image
                     radius={HEIGHT / 50}
@@ -136,7 +116,6 @@ const Intro = (props) => {
                     fullWidth
                     h={HEIGHT / 3.2}
                   />
-
 
                   <Overlay
                     h={HEIGHT / 3.2}
@@ -152,18 +131,12 @@ const Intro = (props) => {
                       </div>
                     }
                   </Overlay>
-
-
                 </AspectRatio>
-
               </div>
-
             </Grid.Col>
+
             <Grid.Col span={5}>
-
               <div ref={ref4}>
-
-
                 <AspectRatio h={HEIGHT / 3.2}>
                   <Image
                     radius={HEIGHT / 50}
@@ -171,7 +144,6 @@ const Intro = (props) => {
                     fullWidth
                     h={HEIGHT / 3.2}
                   />
-
 
                   <Overlay
                     h={HEIGHT / 3.2}
@@ -187,16 +159,11 @@ const Intro = (props) => {
                       </div>
                     }
                   </Overlay>
-
-
                 </AspectRatio>
-
               </div>
-
             </Grid.Col>
+
             <Grid.Col span={1}></Grid.Col>
-
-
           </Grid>
 
           {/* 
