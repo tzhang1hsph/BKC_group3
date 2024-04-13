@@ -110,9 +110,11 @@ const Tutorial = (props) => {
             : ""}
 
 
+      </Grid.Col>
 
+      
 
-
+      <Grid.Col span={2.8}>
 
 
           <Image

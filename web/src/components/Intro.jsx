@@ -70,7 +70,7 @@ const Intro = (props) => {
         color="#1297b1" backgroundOpacity={0.8}>
           {hovered1 ? 
           <div>
-            <Text c="#ffffff">insert text here about play</Text>
+            <Text c="#ffffff" fz={rem(25 / 1080 * HEIGHT)}>Open spaces are great places to play! You can find playgrounds, sports fields, and fun activities that let you run, jump, and have a good time. Playing outside with friends and family is not only fun but also helps you stay healthy and make new friends.</Text>
           </div>
           :
           <div>
@@ -107,7 +107,7 @@ const Intro = (props) => {
         color="#4c8680" backgroundOpacity={0.8}>
           {hovered2 ? 
           <div>
-            <Text c="#ffffff">insert text here about environment</Text>
+            <Text c="#ffffff" fz={rem(25 / 1080 * HEIGHT)}>The way open spaces are designed is important for making them enjoyable places to spend time. Having natural features like trees, water, and comfortable seating areas makes these spaces welcoming and inviting for everyone to enjoy.</Text>
           </div>
           :
           <div>
@@ -144,7 +144,7 @@ const Intro = (props) => {
         color="#a41e34" backgroundOpacity={0.8}>
           {hovered3 ? 
           <div>
-            <Text c="#ffffff">insert text here about art</Text>
+            <Text c="#ffffff" fz={rem(25 / 1080 * HEIGHT)}>Open spaces can be like big outdoor canvases where artists can create amazing artwork like sculptures, murals, or interactive installations. Having art in public spaces makes the community feel more alive and helps people connect with each other.</Text>
           </div>
           :
           <div>
@@ -179,7 +179,7 @@ const Intro = (props) => {
       color="#ff9321" backgroundOpacity={0.8}>
         {hovered4 ? 
         <div>
-          <Text c="#ffffff">insert text here about food</Text>
+          <Text c="#ffffff" fz={rem(25 / 1080 * HEIGHT)}>Food brings people together, and open spaces with outdoor dining areas, food trucks, or farmer's markets are perfect spots for communities to gather. You can try delicious local foods, meet new people, and celebrate your community's food traditions.</Text>
         </div>
         :
         <div>
@@ -199,14 +199,14 @@ const Intro = (props) => {
 
 </Grid>
 
-
+{/* 
 <Image 
       mt={ HEIGHT / 15 }
       radius={HEIGHT / 50}
       src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
       fullWidth
       h={HEIGHT / 60}
-    />
+    /> */}
 
 
       </Grid.Col>

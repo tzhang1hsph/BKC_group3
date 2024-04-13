@@ -10,7 +10,7 @@ import hourlyJSON from '../../hourly_plots/Boston Common.json';
 import '@mantine/core/styles.css';
 import Cards from "./components/Cards"
 import Intro from "./components/Intro"
-import Title from "./components/Title"
+import TitleCard from "./components/TitleCard"
 import Spaces from "./components/Spaces"
 import Tutorial from "./components/Tutorial"
 
@@ -20,11 +20,7 @@ import Poll from "./components/Poll"
 import PollResults from "./components/PollResults"
 
 
-// import '../public/Engage/Engage.css';
-// import '../Engage/Engage.css'
-
-
-
+import '../public/Engage/Engage.css';
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -64,10 +60,10 @@ function App() {
   return <MantineProvider
     theme={{
       fontFamily: 'Inter, sans-serif',
-      // headings: {
-      //   // Use default theme if you want to provide default Mantine fonts as a fallback
-      //   fontFamily: `Engage, ${DEFAULT_THEME.fontFamily}`,
-      // },
+      headings: {
+        // Use default theme if you want to provide default Mantine fonts as a fallback
+        fontFamily: 'Engage Regular, sans-serif',
+      },
       fontSizes: {
         xs: rem(10 / 1080 * height),
         sm: rem(11 / 1080 * height),
@@ -83,7 +79,7 @@ function App() {
           <Routes>
             <Route path="/intro" element={<Intro height={height} width={width} />}>
             </Route>
-            <Route path="/" element={<Title height={height} width={width} />}>
+            <Route path="/" element={<TitleCard height={height} width={width} />}>
             </Route>
             <Route path="/spaces" element={<Spaces height={height} width={width} />}>
             </Route>
