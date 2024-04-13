@@ -4,6 +4,7 @@ import { Button, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
 
 import PolarBarChart from './Card';
+import BikerProgress from './BikerProgress';
 
 import BostonCommon from '../../../maps/Boston Common.json'
 import BostonCommonH from '../../../hourly_plots/Boston Common.json';
@@ -69,12 +70,10 @@ const Spaces = (props) => {
 
       <Grid>
 
-        <Grid.Col span={9}>
+        <Grid.Col span={9} style={{ minHeight: 0.84 * HEIGHT }}>
 
           <Grid grow gutter={HEIGHT / 40} align="center">
-
-            <Grid.Col span={1}>
-            </Grid.Col>
+            <Grid.Col span={1}></Grid.Col>
 
             <Grid.Col span={2.5}>
               <PolarBarChart
@@ -112,11 +111,10 @@ const Spaces = (props) => {
               />
             </Grid.Col>
 
-            <Grid.Col span={1}>
-            </Grid.Col>
+            <Grid.Col span={1}></Grid.Col>
 
-            <Grid.Col span={1}>
-            </Grid.Col>
+
+            <Grid.Col span={1}></Grid.Col>
 
             <Grid.Col span={2.5}>
               <PolarBarChart
@@ -125,8 +123,8 @@ const Spaces = (props) => {
                 map={FallonField}
                 hourly={FallonFieldH}
               />
-
             </Grid.Col>
+
             <Grid.Col span={2.5}>
               <PolarBarChart
                 mode={mode}
@@ -134,8 +132,8 @@ const Spaces = (props) => {
                 map={OlmstedPark}
                 hourly={OlmstedParkH}
               />
-
             </Grid.Col>
+
             <Grid.Col span={2.5}>
               <PolarBarChart
                 mode={mode}
@@ -143,8 +141,8 @@ const Spaces = (props) => {
                 map={FaneuilSquare}
                 hourly={FaneuilSquareH}
               />
-
             </Grid.Col>
+
             <Grid.Col span={2.5}>
               <PolarBarChart
                 mode={mode}
@@ -154,28 +152,41 @@ const Spaces = (props) => {
               />
             </Grid.Col>
 
-            <Grid.Col span={1}>
-            </Grid.Col>
-
+            <Grid.Col span={1}></Grid.Col>
           </Grid>
 
+          <Space h={HEIGHT / 6.39} />
+
+          <Grid>
+            <Grid.Col span={1}></Grid.Col>
+
+            <Grid.Col span={10}>
+              <BikerProgress progress={0.6} height={HEIGHT} width={WIDTH} />
+            </Grid.Col>
+
+            <Grid.Col span={1}></Grid.Col>
+          </Grid>
 
 
         </Grid.Col>
 
 
-        <Grid.Col span={2.8}>
+        <Grid.Col span={2.8} style={{ minHeight: 0.84 * HEIGHT }}>
 
-          <Text fz="lg">Instructions</Text>
-          <Skeleton height={HEIGHT / 3} visible={true}>
-            <Text fz="md">
-              {hovered1 ? "sample instructions for play" : ""}
-              {hovered2 ? "sample instructions for environment" : ""}
-              {hovered3 ? "sample instructions for art" : ""}
-              {hovered4 ? "sample instructions for food\ndkvndkvndkvndkvndkn" : ""}
-            </Text>
+          <Text fz="lg"><b>Instructions</b></Text>
+
+          <Skeleton height={HEIGHT / 4} visible={true}>
+            {mode == 'all' ?
+              <Text fz="md">
+                sample text for all<br></br>
+                second line
+              </Text>
+              : ""}
+            {mode == 'play' ? "sample text for play" : ""}
+            {mode == 'env' ? "sample text for environment" : ""}
+            {mode == 'art' ? "sample text for art" : ""}
+            {mode == 'food' ? "sample text for food" : ""}
           </Skeleton>
-
           <Grid gutter="xs">
             <Grid.Col span={12}>
               <Button
@@ -236,7 +247,11 @@ const Spaces = (props) => {
                 fullWidth
               > Food </Button>
             </Grid.Col>
+          </Grid>
 
+          <Space h={HEIGHT / 4.87} />
+
+          <Grid gutter="xs">
             <Grid.Col span={6}>
               <Button
                 variant="light"
@@ -261,6 +276,7 @@ const Spaces = (props) => {
               > &#62; </Button>
             </Grid.Col>
           </Grid>
+
 
         </Grid.Col>
 

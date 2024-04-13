@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
+import BikerProgress from './BikerProgress';
 
 
 
@@ -50,7 +51,7 @@ const Tutorial = (props) => {
         explanation (static image please!) goes here
     </Center> */}
 
-      <Grid >
+      <Grid>
         <Grid.Col span={9} style={{ minHeight: 0.94 * HEIGHT }}>
           {mode == 'all' ?
             <Image
@@ -96,18 +97,25 @@ const Tutorial = (props) => {
               h={HEIGHT * 3 / 4}
             />
             : ""}
+
+
+          <Space h={HEIGHT / 15.75} />
+
+          <Grid>
+            <Grid.Col span={1}></Grid.Col>
+
+            <Grid.Col span={10}>
+              <BikerProgress progress={0.4} height={HEIGHT} width={WIDTH} />
+            </Grid.Col>
+
+            <Grid.Col span={1}></Grid.Col>
+          </Grid>
         </Grid.Col>
 
         <Grid.Col span={2.8} style={{ minHeight: 0.94 * HEIGHT }}>
-          <Image
-            mt={HEIGHT / 15}
-            radius={HEIGHT / 50}
-            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-            fullWidth
-            h={HEIGHT / 60}
-          />
+          <Space h={HEIGHT / 10} />
 
-          <Text><b>Let's explore an open space!</b></Text>
+          <Text fz="lg"><b>Let's explore an open space!</b></Text>
 
           <Skeleton height={HEIGHT / 4} visible={true}>
             {mode == 'all' ?
@@ -183,7 +191,7 @@ const Tutorial = (props) => {
             </Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 4.38} />
+          <Space h={HEIGHT / 4.87} />
 
           <Grid gutter="xs">
             <Grid.Col span={6}>

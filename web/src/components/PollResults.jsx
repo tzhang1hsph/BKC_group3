@@ -2,8 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
- import { PieChart, Pie, ScatterChart, Scatter, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Label } from 'recharts';
+import { PieChart, Pie } from 'recharts';
 
+import BikerProgress from './BikerProgress';
 import { createClient } from "@supabase/supabase-js";
 
 
@@ -26,7 +27,7 @@ const PollResults = (props) => {
     setVotes(data);
   }
 
-  const HEIGHT = props.height;
+  const HEIGHT = props.height * 0.94;
   const WIDTH = props.width;
 
   let navigate = useNavigate(); 
@@ -46,88 +47,85 @@ const PollResults = (props) => {
   
   return (
 
-    
-    
     <div>
-    <Space h={HEIGHT / 10} />
+      <Space h={HEIGHT / 5} />
 
-    <Grid my="sm">
-      <Grid.Col span={9} style={{ minHeight: 9 * HEIGHT / 10 }}>
+      <Grid>
+        <Grid.Col span={9} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
 
-        <Text fz="lg">insert poll results</Text>
+          <Text fz="lg">insert poll results</Text>
 
-      <Center>
-      <PieChart 
-      width={HEIGHT * 1 / 2} 
-      height={HEIGHT * 2 / 3}
-      >
+          <Center>
+            <PieChart 
+              width={HEIGHT * 1 / 2} 
+              height={HEIGHT * 2 / 3}
+            >
+              <Pie
+                data={votes}
+                dataKey="count"
+                nameKey="option"
+                cx="50%"
+                cy="50%"
+                isAnimationActive={true}
+                innerRadius={HEIGHT / 20}
+                outerRadius={HEIGHT / 5}
+                fill="#82ca9d"
+                label={renderLabel}
+              />
+            </PieChart>
+          </Center>
 
+          <Space h={HEIGHT / 99} />
 
-  <Pie data={votes} dataKey="count" nameKey="option" cx="50%" cy="50%" 
-  isAnimationActive={true} innerRadius={HEIGHT / 20} outerRadius={HEIGHT / 5} fill="#82ca9d" label={renderLabel} />
- </PieChart>
+          <Grid>
+            <Grid.Col span={1}></Grid.Col>
 
-        <Space h={HEIGHT / 20} />
+            <Grid.Col span={10}>
+              <BikerProgress progress={1} height={HEIGHT} width={WIDTH} />
+            </Grid.Col>
 
-
-        </Center>
-
-
-
-
-      </Grid.Col>
-
-      
-
-      <Grid.Col span={2.8} style={{ minHeight: 9 * HEIGHT / 10 }}>
-      <Space h={HEIGHT / 20} />
-
-
-        <Text fz="lg">Instructions</Text>
-
-
-        <Skeleton height={HEIGHT/2} visible={true}>
-
-
-        <Text fz="md">
-
-
-
-        </Text>
-
-
-        </Skeleton>
-
-        <Grid>
-
-        <Grid.Col span={6}>
-
-
-      <Button variant="light" color="orange" fz="xl" 
-      onClick={routeChangeBack}
-      radius={HEIGHT / 80}
-      style={{  minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
+            <Grid.Col span={1}></Grid.Col>
+          </Grid>
 
         </Grid.Col>
 
-        <Grid.Col span={6}>
+        
 
-      <Button variant="light" color="orange" fz="xl" 
-      onClick={routeChangeNext}
-      radius={HEIGHT / 80}
-      style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+        <Grid.Col span={2.8} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
+          <Text fz="lg"><b>Instructions</b></Text>
+
+          <Skeleton height={HEIGHT/2} visible={true}>
+            <Text fz="md">
+
+
+
+            </Text>
+          </Skeleton>
+
+          <Space h={HEIGHT / 6.55} />
+
+          <Grid gutter="xs">
+            <Grid.Col span={6}>
+              <Button variant="light" color="orange" fz="xl" 
+                onClick={routeChangeBack}
+                radius={HEIGHT / 80}
+                style={{  minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
+            </Grid.Col>
+
+            <Grid.Col span={6}>
+              <Button variant="light" color="orange" fz="xl" 
+                onClick={routeChangeNext}
+                radius={HEIGHT / 80}
+                style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+            </Grid.Col>
+        </Grid>
+
+
         </Grid.Col>
 
+        
 
       </Grid>
-
-
-      </Grid.Col>
-
-      
-
-    </Grid>
-
     </div>
  
   );
