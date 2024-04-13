@@ -185,7 +185,7 @@ const Spaces = (props) => {
           <Grid>
             <Grid.Col span={12}>
               <Button
-                color='#10445c'
+                color='#07455d'
                 fz="xl"
                 onClick={() => setMode('all')}
                 style={{ minHeight: HEIGHT / 8 }}
@@ -195,7 +195,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={6}>
               <Button
-                color='#237c9c'
+                color='#007c9c'
                 fz="xl"
                 onClick={() => setMode('play')}
                 style={{ minHeight: HEIGHT / 8 }}

@@ -29,152 +29,151 @@ const Tutorial = (props) => {
   const WIDTH = props.width;
 
 
-  let navigate = useNavigate(); 
-  const routeChangeNext = () =>{ 
-    let path = `/spaces`; 
+  let navigate = useNavigate();
+  const routeChangeNext = () => {
+    let path = `/spaces`;
     navigate(path);
   }
-  const routeChangeBack = () =>{ 
-    let path = `/intro`; 
+  const routeChangeBack = () => {
+    let path = `/intro`;
     navigate(path);
   }
-  
+
   return (
 
-    
-    
-    <div>
-    <Space h={HEIGHT / 10} />
 
-    {/* <Center>
+
+    <div>
+      <Space h={HEIGHT / 10} />
+
+      {/* <Center>
         explanation (static image please!) goes here
     </Center> */}
 
-    <Grid >
-      <Grid.Col span={9}>
+      <Grid >
+        <Grid.Col span={9}>
 
 
 
-    {mode == 'all' ?
-      <Image 
-      radius={HEIGHT / 50}
-      src= "/assets/all.png"
-      w={WIDTH * 3/4}
-      h={HEIGHT *3/4}
-      />
+          {mode == 'all' ?
+            <Image
+              radius={HEIGHT / 50}
+              src="/assets/all.png"
+              w={WIDTH * 3 / 4}
+              h={HEIGHT * 3 / 4}
+            />
 
-      : ""}
-
-
-{mode == 'play' ?
-      <Image 
-      radius={HEIGHT / 50}
-      src= "/assets/play.png"
-      w={WIDTH * 3/4}
-      h={HEIGHT *3/4}
-      />
-
-      : ""}
-      
-
-      {mode == 'food' ?
-      <Image 
-      radius={HEIGHT / 50}
-      src= "/assets/food.png"
-      w={WIDTH * 3/4}
-      h={HEIGHT *3/4}
-      />
-
-      : ""}
+            : ""}
 
 
-{mode == 'env' ?
-      <Image 
-      radius={HEIGHT / 50}
-      src= "/assets/environment.png"
-      w={WIDTH * 3/4}
-      h={HEIGHT *3/4}
-      />
+          {mode == 'play' ?
+            <Image
+              radius={HEIGHT / 50}
+              src="/assets/play.png"
+              w={WIDTH * 3 / 4}
+              h={HEIGHT * 3 / 4}
+            />
 
-      : ""}
+            : ""}
 
 
-{mode == 'art' ?
-      <Image 
-      radius={HEIGHT / 50}
-      src= "/assets/art.png"
-      w={WIDTH * 3/4}
-      h={HEIGHT *3/4}
-      />
+          {mode == 'food' ?
+            <Image
+              radius={HEIGHT / 50}
+              src="/assets/food.png"
+              w={WIDTH * 3 / 4}
+              h={HEIGHT * 3 / 4}
+            />
 
-      : ""}
-    
- 
+            : ""}
 
-      
+
+          {mode == 'env' ?
+            <Image
+              radius={HEIGHT / 50}
+              src="/assets/environment.png"
+              w={WIDTH * 3 / 4}
+              h={HEIGHT * 3 / 4}
+            />
+
+            : ""}
+
+
+          {mode == 'art' ?
+            <Image
+              radius={HEIGHT / 50}
+              src="/assets/art.png"
+              w={WIDTH * 3 / 4}
+              h={HEIGHT * 3 / 4}
+            />
+
+            : ""}
 
 
 
-      <Image 
-      mt={ HEIGHT / 15 }
-      radius={HEIGHT / 50}
-      src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
-      fullWidth
-      h={HEIGHT / 60}
-    />
 
 
-      </Grid.Col>
-
-      
-
-      <Grid.Col span={2.8}>
 
 
-        <Text><b>Let's explore an open space!</b></Text>
-
-
-        <Skeleton height={1 * HEIGHT / 4} visible={false}>
-
-
-          {mode == 'all' ? 
-
-
-        <Text fz="md">
-
-          
-          
-          sample text for all<br></br>
-          second line
-          
-          
-          </Text>
-          
-          : ""}
-
-          {mode == 'play' ? "sample text for play" : ""}
-          {mode == 'env' ? "sample text for environment" : ""}
-          {mode == 'art' ? "sample text for art" : ""}
-          {mode == 'food' ? "sample text for food"  : ""}
-
-
-        </Skeleton>
-
-
-        <Grid.Col>
-          <Button
-            color='#10445c'
-            fz="xl"
-            onClick={() => setMode('all')}
-            style={{ minHeight: HEIGHT / 8 }}
+          <Image
+            mt={HEIGHT / 15}
+            radius={HEIGHT / 50}
+            src="https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-7.png"
             fullWidth
-          > All </Button>
-          </Grid.Col>
+            h={HEIGHT / 60}
+          />
+
+
+        </Grid.Col>
+
+
+
+        <Grid.Col span={2.8}>
+
+
+          <Text><b>Let's explore an open space!</b></Text>
+
+
+          <Skeleton height={1 * HEIGHT / 4} visible={false}>
+
+
+            {mode == 'all' ?
+
+
+              <Text fz="md">
+
+
+
+                sample text for all<br></br>
+                second line
+
+
+              </Text>
+
+              : ""}
+
+            {mode == 'play' ? "sample text for play" : ""}
+            {mode == 'env' ? "sample text for environment" : ""}
+            {mode == 'art' ? "sample text for art" : ""}
+            {mode == 'food' ? "sample text for food" : ""}
+
+
+          </Skeleton>
 
           <Grid>
+            <Grid.Col span={12}>
+              <Button
+                color='#07455d'
+                fz="xl"
+                onClick={() => setMode('all')}
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > All </Button>
+            </Grid.Col>
+
             <Grid.Col span={6}>
               <Button
-                color='#237c9c'
+                color='#007c9c'
                 fz="xl"
                 onClick={() => setMode('play')}
                 style={{ minHeight: HEIGHT / 8 }}
@@ -204,7 +203,7 @@ const Tutorial = (props) => {
 
             <Grid.Col span={6}>
               <Button
-                color='#f89c5a'
+                color='#fe9c5a'
                 fz="xl"
                 onClick={() => setMode('food')}
                 style={{ minHeight: HEIGHT / 8 }}
@@ -213,38 +212,38 @@ const Tutorial = (props) => {
             </Grid.Col>
           </Grid>
 
-        <Grid>
+          <Grid>
 
-        <Grid.Col span={6}>
+            <Grid.Col span={6}>
 
 
-      <Button variant="light" color="orange" fz="xl" 
-      onClick={routeChangeBack}
+              <Button variant="light" color="orange" fz="xl"
+                onClick={routeChangeBack}
 
-      style={{  minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
+                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
+
+            </Grid.Col>
+
+            <Grid.Col span={6}>
+
+              <Button variant="light" color="orange" fz="xl"
+                onClick={routeChangeNext}
+
+                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+            </Grid.Col>
+
+
+          </Grid>
+
 
         </Grid.Col>
 
-        <Grid.Col span={6}>
-
-      <Button variant="light" color="orange" fz="xl" 
-      onClick={routeChangeNext}
-
-      style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
-        </Grid.Col>
 
 
       </Grid>
 
-
-      </Grid.Col>
-
-      
-
-    </Grid>
-
     </div>
- 
+
   );
 };
 
