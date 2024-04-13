@@ -51,10 +51,7 @@ const Tutorial = (props) => {
     </Center> */}
 
       <Grid >
-        <Grid.Col span={9}>
-
-
-
+        <Grid.Col span={9} style={{ minHeight: 0.94 * HEIGHT }}>
           {mode == 'all' ?
             <Image
               radius={HEIGHT / 50}
@@ -62,9 +59,7 @@ const Tutorial = (props) => {
               w={WIDTH * 3 / 4}
               h={HEIGHT * 3 / 4}
             />
-
             : ""}
-
 
           {mode == 'play' ?
             <Image
@@ -73,9 +68,7 @@ const Tutorial = (props) => {
               w={WIDTH * 3 / 4}
               h={HEIGHT * 3 / 4}
             />
-
             : ""}
-
 
           {mode == 'food' ?
             <Image
@@ -84,9 +77,7 @@ const Tutorial = (props) => {
               w={WIDTH * 3 / 4}
               h={HEIGHT * 3 / 4}
             />
-
             : ""}
-
 
           {mode == 'env' ?
             <Image
@@ -95,9 +86,7 @@ const Tutorial = (props) => {
               w={WIDTH * 3 / 4}
               h={HEIGHT * 3 / 4}
             />
-
             : ""}
-
 
           {mode == 'art' ?
             <Image
@@ -106,17 +95,10 @@ const Tutorial = (props) => {
               w={WIDTH * 3 / 4}
               h={HEIGHT * 3 / 4}
             />
-
             : ""}
-
-
         </Grid.Col>
 
-
-
-        <Grid.Col span={2.8}>
-
-
+        <Grid.Col span={2.8} style={{ minHeight: 0.94 * HEIGHT }}>
           <Image
             mt={HEIGHT / 15}
             radius={HEIGHT / 50}
@@ -125,36 +107,20 @@ const Tutorial = (props) => {
             h={HEIGHT / 60}
           />
 
-
           <Text><b>Let's explore an open space!</b></Text>
 
-
-          <Skeleton height={HEIGHT / 4} visible={false}>
-
-
+          <Skeleton height={HEIGHT / 4} visible={true}>
             {mode == 'all' ?
-
-
               <Text fz="md">
-
-
-
                 sample text for all<br></br>
                 second line
-
-
               </Text>
-
               : ""}
-
             {mode == 'play' ? "sample text for play" : ""}
             {mode == 'env' ? "sample text for environment" : ""}
             {mode == 'art' ? "sample text for art" : ""}
             {mode == 'food' ? "sample text for food" : ""}
-
-
           </Skeleton>
-
           <Grid gutter="xs">
             <Grid.Col span={12}>
               <Button
@@ -215,7 +181,11 @@ const Tutorial = (props) => {
                 fullWidth
               > Food </Button>
             </Grid.Col>
+          </Grid>
 
+          <Space h={HEIGHT / 4.38} />
+
+          <Grid gutter="xs">
             <Grid.Col span={6}>
               <Button
                 variant="light"

@@ -72,15 +72,15 @@ const Poll = (props) => {
     <div>
       <Space h={HEIGHT / 10} />
 
-      <Grid >
-        <Grid.Col span={9}>
+      <Grid my="sm">
+        <Grid.Col span={9} style={{ minHeight: 9 * HEIGHT / 10 }}>
 
           <Text fz="lg">insert poll text</Text>
           {/* <ul>
-        {votes.map((country) => (
-          <li key={country.id}>{country.option} and {country.count}</li>
-        ))}
-      </ul> */}
+          {votes.map((country) => (
+            <li key={country.id}>{country.option} and {country.count}</li>
+          ))}
+          </ul> */}
 
           <Space h={HEIGHT / 20} />
 
@@ -175,7 +175,7 @@ const Poll = (props) => {
             </Grid.Col>
 
             <Grid.Col span={5}>
-            <AspectRatio h={HEIGHT / 3.2}>
+              <AspectRatio h={HEIGHT / 3.2}>
                 <Image
                   radius={HEIGHT / 50}
                   src="/assets/Food.jpeg"
@@ -205,21 +205,14 @@ const Poll = (props) => {
           </Grid>
 
 
-
-
-
         </Grid.Col>
 
 
 
-        <Grid.Col span={2.8}>
+        <Grid.Col span={2.8} style={{ minHeight: 9 * HEIGHT / 10 }}>
           <Space h={HEIGHT / 20} />
-
-
           <Text fz="lg">Instructions</Text>
-
-
-          <Skeleton height={HEIGHT / 2} visible={false}>
+          <Skeleton height={HEIGHT / 2} visible={true}>
 
 
             <Text fz="md">

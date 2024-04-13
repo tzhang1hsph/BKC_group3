@@ -2,11 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import '/public/Engage/Engage.css';
 
-import Plot from 'react-plotly.js'
-import choroplethJSON from '../../maps/choropleth.json';
-import spaceJSON from '../../maps/Chinatown Park.json'
-import hourlyJSON from '../../hourly_plots/Boston Common.json';
-
 import '@mantine/core/styles.css';
 import Cards from "./components/Cards"
 import Intro from "./components/Intro"

@@ -51,8 +51,8 @@ const PollResults = (props) => {
     <div>
     <Space h={HEIGHT / 10} />
 
-    <Grid >
-      <Grid.Col span={9}>
+    <Grid my="sm">
+      <Grid.Col span={9} style={{ minHeight: 9 * HEIGHT / 10 }}>
 
         <Text fz="lg">insert poll results</Text>
 
@@ -79,14 +79,14 @@ const PollResults = (props) => {
 
       
 
-      <Grid.Col span={2.8}>
+      <Grid.Col span={2.8} style={{ minHeight: 9 * HEIGHT / 10 }}>
       <Space h={HEIGHT / 20} />
 
 
         <Text fz="lg">Instructions</Text>
 
 
-        <Skeleton height={HEIGHT/2} visible={false}>
+        <Skeleton height={HEIGHT/2} visible={true}>
 
 
         <Text fz="md">

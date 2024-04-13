@@ -23,18 +23,12 @@ const TitleCard = (props) => {
 
     <Grid my="sm">
 
-      <Grid.Col span={9} style={{ minHeight: HEIGHT }}>
+      <Grid.Col span={9} style={{ minHeight: 0.94 * HEIGHT }}>
         <img
           style={{'margin-left': '-2rem', 'margin-top': '-2.8rem', 'clip-path': 'inset(0 27% 0 0)'}}
           src="/assets/Cover.png"
-          h={HEIGHT / 0.94}
-          w={WIDTH / 12}
         />
-        <Overlay
-          h={HEIGHT / 0.94}
-          w={WIDTH * 8.5 / 12}
-          backgroundOpacity={0}
-        >
+        <Overlay w={0.72 * WIDTH} backgroundOpacity={0}>
           <Text ta='left'
             mt={rem(168 / 1080 * HEIGHT)}
             ml={rem(113 / 1080 * HEIGHT)}
@@ -52,7 +46,7 @@ const TitleCard = (props) => {
 
       </Grid.Col>
 
-      <Grid.Col span={2.8} style={{ minHeight: HEIGHT }}>
+      <Grid.Col span={2.8} style={{ minHeight: 0.94 * HEIGHT }}>
 
         <Space h={HEIGHT / 4} />
 
@@ -79,9 +73,7 @@ const TitleCard = (props) => {
 
         <Text mt={HEIGHT / 100} ta="right" fz="lg">...but not others?</Text>
 
-
         <Space h={HEIGHT / 8} />
-
 
         <Button variant="light" color="orange" fz="xl"
           onClick={routeChange}

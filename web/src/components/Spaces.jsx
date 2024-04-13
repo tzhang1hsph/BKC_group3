@@ -167,7 +167,7 @@ const Spaces = (props) => {
         <Grid.Col span={2.8}>
 
           <Text fz="lg">Instructions</Text>
-          <Skeleton height={HEIGHT / 3} visible={false}>
+          <Skeleton height={HEIGHT / 3} visible={true}>
             <Text fz="md">
               {hovered1 ? "sample instructions for play" : ""}
               {hovered2 ? "sample instructions for environment" : ""}
