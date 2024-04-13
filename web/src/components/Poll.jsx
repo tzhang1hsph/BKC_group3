@@ -25,260 +25,188 @@ const Poll = (props) => {
   }
 
 
-  const [play, setPlay] = useState(false);
-  const [env, setEnv] = useState(false);
-  const [art, setArt] = useState(false);
-  const [food, setFood] = useState(false);
+  const [mode, setMode] = useState('');
 
   const HEIGHT = props.height;
   const WIDTH = props.width;
 
-  let navigate = useNavigate(); 
+  let navigate = useNavigate();
 
-  async function mod(curr, id)
-  {
+  async function mod(curr, id) {
     const { error } = await supabase
-    .from('responses')
-    .update({ count: curr + 1 })
-    .eq('id', id);
+      .from('responses')
+      .update({ count: curr + 1 })
+      .eq('id', id);
   }
 
-  const routeChangeNext = () =>{ 
+  const routeChangeNext = () => {
 
 
-    if (play)
-    {
+    if (mode === 'play') {
       let curr = votes[0].count;
       mod(curr, 1);
     }
 
-    else if (env)
-    {
+    else if (mode === 'env') {
       let curr = votes[1].count;
       mod(curr, 2);
     }
-    else if (art)
-    {
+    else if (mode === 'art') {
       let curr = votes[2].count;
       mod(curr, 3);
     }
-    else if (food)
-    {
+    else if (mode === 'food') {
       let curr = votes[3].count;
       mod(curr, 4);
     }
-    let path = `/pollresults`; 
+    let path = `/pollresults`;
     navigate(path);
   }
-  const routeChangeBack = () =>{ 
-    let path = `/spaces`; 
+  const routeChangeBack = () => {
+    let path = `/spaces`;
     navigate(path);
   }
 
-
-  const clickPlay = () =>{
-    setPlay(true);
-    setEnv(false);
-    setArt(false);
-    setFood(false);
-  }
-  const clickEnv = () =>{
-    setPlay(false);
-    setEnv(true);
-    setArt(false);
-    setFood(false);
-  }
-  const clickArt = () =>{
-    setPlay(false);
-    setEnv(false);
-    setArt(true);
-    setFood(false);
-  }
-  const clickFood = () =>{
-    setPlay(false);
-    setEnv(false);
-    setArt(false);
-    setFood(true);
-  }
-  
   return (
 
-    
-    
     <div>
-    <Space h={HEIGHT / 10} />
+      <Space h={HEIGHT / 10} />
 
-    <Grid >
-      <Grid.Col span={9}>
+      <Grid >
+        <Grid.Col span={9}>
 
-        <Text fz="lg">insert poll text</Text>
-        {/* <ul>
+          <Text fz="lg">insert poll text</Text>
+          {/* <ul>
         {votes.map((country) => (
           <li key={country.id}>{country.option} and {country.count}</li>
         ))}
       </ul> */}
 
-        <Space h={HEIGHT / 20} />
+          <Space h={HEIGHT / 20} />
 
 
-      <Grid 
-       gutter={HEIGHT / 20}>
+          <Grid gutter={HEIGHT / 20}>
+            <Grid.Col span={1} ></Grid.Col>
 
-<Grid.Col span={1} ></Grid.Col>
-<Grid.Col span={5}>
+            <Grid.Col span={5}>
+              <Button
+                color='#007c9c'
+                onClick={() => setMode('play')}
+                variant={mode === 'play' ? 'light' : ''}
+                radius={HEIGHT / 50}
+                fullWidth
+                h={HEIGHT / 3.2}
+                fz={rem(50 / 1080 * HEIGHT)}
+                style={{ fontFamily: 'Engage Regular, sans-serif' }}
+              > Play </Button>
+            </Grid.Col>
 
+            <Grid.Col span={5}>
+              <Button
+                color='#5aafa9'
+                onClick={() => setMode('env')}
+                variant={mode === 'env' ? 'light' : ''}
+                radius={HEIGHT / 50}
+                fullWidth
+                h={HEIGHT / 3.2}
+                fz={rem(50 / 1080 * HEIGHT)}
+                style={{ fontFamily: 'Engage Regular, sans-serif' }}
+              > Environment </Button>
+            </Grid.Col>
 
-
-  <div>
-
-
-  <Button 
-      color={play ? "#000" : "#1297b1"}
-      onClick={clickPlay}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Play</Text>
-
-    </Button>
-
-
-  </div>
-
-  
-  
-  </Grid.Col>
-<Grid.Col span={5}>
-
-  <div>
+            <Grid.Col span={1}></Grid.Col>
 
 
-  <Button 
-      color={env ? "#000" : "#4c8680"}
-      onClick={clickEnv}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Environment</Text>
-      
-    </Button>
-  
+            <Grid.Col span={1} ></Grid.Col>
+            
+            <Grid.Col span={5}>
+              <Button
+                color='#e3685b'
+                onClick={() => setMode('art')}
+                variant={mode === 'art' ? 'light' : ''}
+                radius={HEIGHT / 50}
+                fullWidth
+                h={HEIGHT / 3.2}
+                fz={rem(50 / 1080 * HEIGHT)}
+                style={{ fontFamily: 'Engage Regular, sans-serif' }}
+              > Art </Button>
+            </Grid.Col>
 
+            <Grid.Col span={5}>
+              <Button
+                color='#f89c5a'
+                onClick={() => setMode('food')}
+                variant={mode === 'food' ? 'light' : ''}
+                radius={HEIGHT / 50}
+                fullWidth
+                h={HEIGHT / 3.2}
+                fz={rem(50 / 1080 * HEIGHT)}
+                style={{ fontFamily: 'Engage Regular, sans-serif' }}
+              > Food </Button>
+            </Grid.Col>
 
-    </div>
-
-  </Grid.Col>
-<Grid.Col span={1}></Grid.Col>
-
-<Grid.Col span={1} ></Grid.Col>
-<Grid.Col span={5}>
-    <div>
-
-    <Button 
-      color={art ? "#000" : "#a41e34"}
-      onClick={clickArt}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Art</Text>
-      
-    </Button>
-
-    </div>
-
-</Grid.Col>
-
-<Grid.Col span={5}>
-
-<div>
-
-
-< Button 
-      color={food ? "#000" : "#ff9321"}
-      onClick={clickFood}
-      radius={HEIGHT / 50}
-      fullWidth
-      h={HEIGHT / 3.2}
-      >
-      
-      <Text c="#ffffff" fz={rem(60 / 1080 * HEIGHT)}>Food</Text>
-      
-    </Button>
-  
-
-  </div>
-
-</Grid.Col>
-<Grid.Col span={1}></Grid.Col>
-
-
-</Grid>
+            <Grid.Col span={1}></Grid.Col>
+          </Grid>
 
 
 
 
-
-      </Grid.Col>
-
-      
-
-      <Grid.Col span={2.8}>
-      <Space h={HEIGHT / 20} />
-
-
-        <Text fz="lg">Instructions</Text>
-
-
-        <Skeleton height={HEIGHT/2} visible={false}>
-
-
-        <Text fz="md">
-
-
-
-        </Text>
-
-
-        </Skeleton>
-
-        <Grid>
-
-        <Grid.Col span={6}>
-
-
-      <Button variant="light" color="orange" fz="xl" 
-      onClick={routeChangeBack}
-
-      style={{  minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
 
         </Grid.Col>
 
-        <Grid.Col span={6}>
 
-      <Button variant="light" color="orange" fz="xl" 
-      onClick={routeChangeNext}
 
-      style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+        <Grid.Col span={2.8}>
+          <Space h={HEIGHT / 20} />
+
+
+          <Text fz="lg">Instructions</Text>
+
+
+          <Skeleton height={HEIGHT / 2} visible={false}>
+
+
+            <Text fz="md">
+
+
+
+            </Text>
+
+
+          </Skeleton>
+
+          <Grid>
+
+            <Grid.Col span={6}>
+
+
+              <Button variant="light" color="orange" fz="xl"
+                onClick={routeChangeBack}
+                radius={HEIGHT / 80}
+                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
+
+            </Grid.Col>
+
+            <Grid.Col span={6}>
+
+              <Button variant="light" color="orange" fz="xl"
+                onClick={routeChangeNext}
+                radius={HEIGHT / 80}
+                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+            </Grid.Col>
+
+
+          </Grid>
+
+
         </Grid.Col>
+
 
 
       </Grid>
 
-
-      </Grid.Col>
-
-      
-
-    </Grid>
-
     </div>
- 
+
   );
 };
 

@@ -110,11 +110,11 @@ const Tutorial = (props) => {
             : ""}
 
 
-      </Grid.Col>
+        </Grid.Col>
 
-      
 
-      <Grid.Col span={2.8}>
+
+        <Grid.Col span={2.8}>
 
 
           <Image
@@ -126,17 +126,10 @@ const Tutorial = (props) => {
           />
 
 
-        </Grid.Col>
-
-
-
-        <Grid.Col span={2.8}>
-
-
           <Text><b>Let's explore an open space!</b></Text>
 
 
-          <Skeleton height={1 * HEIGHT / 4} visible={false}>
+          <Skeleton height={HEIGHT / 4} visible={false}>
 
 
             {mode == 'all' ?
@@ -162,13 +155,15 @@ const Tutorial = (props) => {
 
           </Skeleton>
 
-          <Grid>
+          <Grid gutter="xs">
             <Grid.Col span={12}>
               <Button
                 color='#07455d'
-                fz="xl"
+                variant={mode === 'all' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('all')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > All </Button>
             </Grid.Col>
@@ -176,9 +171,11 @@ const Tutorial = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#007c9c'
-                fz="xl"
+                variant={mode === 'play' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('play')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Play </Button>
             </Grid.Col>
@@ -186,9 +183,11 @@ const Tutorial = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#5aafa9'
-                fz="xl"
+                variant={mode === 'env' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('env')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Environment </Button>
             </Grid.Col>
@@ -196,45 +195,50 @@ const Tutorial = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#e3685b'
-                fz="xl"
+                variant={mode === 'art' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('art')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Art </Button>
             </Grid.Col>
 
             <Grid.Col span={6}>
               <Button
-                color='#fe9c5a'
-                fz="xl"
+                color='#f89c5a'
+                variant={mode === 'food' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('food')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Food </Button>
             </Grid.Col>
-          </Grid>
-
-          <Grid>
 
             <Grid.Col span={6}>
-
-
-              <Button variant="light" color="orange" fz="xl"
+              <Button
+                variant="light"
+                radius={HEIGHT / 80}
+                color="orange"
+                fz="xl"
                 onClick={routeChangeBack}
-
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
-
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > &#60; </Button>
             </Grid.Col>
 
             <Grid.Col span={6}>
-
-              <Button variant="light" color="orange" fz="xl"
+              <Button
+                variant="light"
+                radius={HEIGHT / 80}
+                color="orange"
+                fz="xl"
                 onClick={routeChangeNext}
-
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+                style={{ minHeight: HEIGHT / 8 }}
+                fullWidth
+              > &#62; </Button>
             </Grid.Col>
-
-
           </Grid>
 
 

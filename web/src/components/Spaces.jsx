@@ -167,7 +167,7 @@ const Spaces = (props) => {
         <Grid.Col span={2.8}>
 
           <Text fz="lg">Instructions</Text>
-          <Skeleton height={HEIGHT / 6} visible={false}>
+          <Skeleton height={HEIGHT / 3} visible={false}>
             <Text fz="md">
               {hovered1 ? "sample instructions for play" : ""}
               {hovered2 ? "sample instructions for environment" : ""}
@@ -176,13 +176,15 @@ const Spaces = (props) => {
             </Text>
           </Skeleton>
 
-          <Grid>
+          <Grid gutter="xs">
             <Grid.Col span={12}>
               <Button
                 color='#07455d'
-                fz="xl"
+                variant={mode === 'all' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('all')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > All </Button>
             </Grid.Col>
@@ -190,9 +192,11 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#007c9c'
-                fz="xl"
+                variant={mode === 'play' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('play')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Play </Button>
             </Grid.Col>
@@ -200,9 +204,11 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#5aafa9'
-                fz="xl"
+                variant={mode === 'env' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('env')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Environment </Button>
             </Grid.Col>
@@ -210,9 +216,11 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#e3685b'
-                fz="xl"
+                variant={mode === 'art' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('art')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Art </Button>
             </Grid.Col>
@@ -220,9 +228,11 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
               <Button
                 color='#f89c5a'
-                fz="xl"
+                variant={mode === 'food' ? 'light' : ''}
+                radius={HEIGHT / 80}
+                fz="md"
                 onClick={() => setMode('food')}
-                style={{ minHeight: HEIGHT / 8 }}
+                style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Food </Button>
             </Grid.Col>
@@ -230,6 +240,7 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
               <Button
                 variant="light"
+                radius={HEIGHT / 80}
                 color="orange"
                 fz="xl"
                 onClick={routeChangeBack}
@@ -241,6 +252,7 @@ const Spaces = (props) => {
             <Grid.Col span={6}>
               <Button
                 variant="light"
+                radius={HEIGHT / 80}
                 color="orange"
                 fz="xl"
                 onClick={routeChangeNext}

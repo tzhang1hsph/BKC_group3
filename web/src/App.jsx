@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-// import '.././Engage/Engage.css'
+import '/public/Engage/Engage.css';
 
 import Plot from 'react-plotly.js'
 import choroplethJSON from '../../maps/choropleth.json';
@@ -18,9 +18,6 @@ import Definition from "./components/Definition"
 import Comparison from "./components/Comparison"
 import Poll from "./components/Poll"
 import PollResults from "./components/PollResults"
-
-
-import '../public/Engage/Engage.css';
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 

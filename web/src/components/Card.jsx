@@ -141,29 +141,27 @@ const PolarBarChart = (props) => {
                 <div className="inner-tick-container">
                     <CircularProgressbar
                         value={100}
-                        strokeWidth={0.5}
+                        strokeWidth={0.3}
                         styles={buildStyles({
-                            pathColor: '#f3d7be',
+                            pathColor: 'black',
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
                     <p className="ticks" position='absolute' style={{
-                        transform: 'translate(-11px, -310px) rotate(-3deg)',
-                        color: '#f3d7be'
+                        transform: 'translate(11px, -310px) rotate(2deg)'
                     }}>50</p>
                 </div>
                 <div className="outer-tick-container">
                     <CircularProgressbar
                         value={100}
-                        strokeWidth={0.5}
+                        strokeWidth={0.3}
                         styles={buildStyles({
-                            pathColor: '#f3d7be',
+                            pathColor: 'black',
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
                     <p className="ticks" position='absolute' style={{
-                        transform: 'translate(-13px, -385px) rotate(-3deg)',
-                        color: '#f3d7be'
+                        transform: 'translate(13px, -385px) rotate(4deg)'
                     }}>100</p>
                 </div>
                 <div className="activity-bar-container">

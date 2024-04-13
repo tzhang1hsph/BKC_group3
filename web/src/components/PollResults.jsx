@@ -105,7 +105,7 @@ const PollResults = (props) => {
 
       <Button variant="light" color="orange" fz="xl" 
       onClick={routeChangeBack}
-
+      radius={HEIGHT / 80}
       style={{  minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
 
         </Grid.Col>
@@ -114,7 +114,7 @@ const PollResults = (props) => {
 
       <Button variant="light" color="orange" fz="xl" 
       onClick={routeChangeNext}
-
+      radius={HEIGHT / 80}
       style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
         </Grid.Col>
 
