@@ -198,7 +198,7 @@ const Spaces = (props) => {
               </Text> */}
 
 
-            Take the time to look through eight open spaces spread across Boston, and click through what makes each so special. Some of them may be familiar, but think about what stands out to you: whether it’s the environment, the playgrounds, the artwork, or the delicious food. Think about the four themes!
+            Take the time to look through eight open spaces spread across Boston, and click through what makes each so special. Some of them may be familiar, but think about what stands out to you, whether it’s the environment, the playgrounds, the artwork, or the delicious food. Think about the four themes!
             {/* {mode == 'all' ?
               <Text fz="md">
                 sample text for all<br></br>

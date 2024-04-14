@@ -2,7 +2,7 @@ import React from 'react'
 import { Button, Overlay, AspectRatio, Image, Title, Space, rem, Text, Grid, Skeleton, Center } from '@mantine/core';
 import { useNavigate } from "react-router-dom";
 import Plot from 'react-plotly.js';
-import spacesPlot from '/public/assets/choropleth.json'
+import spacesPlot from '../../../maps/choropleth.json'
 
 import '/public/Engage/Engage.css';
 

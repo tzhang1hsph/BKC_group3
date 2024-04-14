@@ -36,197 +36,178 @@ const Intro = (props) => {
   }
 
   return (
+    <>
+      <img
+        style={{ 'margin-left': '-4rem', 'margin-top': '-27.8rem', 'clip-path': 'inset(16% 0 0 0)' }}
+        height='102.6%'
+        width='102.6%'
+        src="/assets/intro_background.jpeg"
+      />
 
-    <div>
-      <Space h={HEIGHT / 5} />
+      <Overlay color='#dddddd' backgroundOpacity={0.5}>
+        <img
+          style={{
+            'position': 'absolute',
+            'opacity': 1,
+            'margin-left': '-4rem',
+            'margin-top': '-27.8rem',
+            'transform': 'translate(-1888px, 30px)',
+            'clip-path': 'circle(285px at 1232px 1929.5px)'
+          }}
+          height='119.6%'
+          width='100.8%'
+          src="/assets/intro_background.jpeg"
+        />
+        <div style={{
+          position: 'absolute',
+          height: `570px`,
+          width: `570px`,
+          clipPath: `circle(50%)`,
+          transform: `translate(915px, 1230px)`,
+          background: `radial-gradient(rgba(0, 124, 156, 0) 66.96%, rgba(0, 124, 156, ${hovered1 ? 0.8 : 1}) 66.9%)`
+        }}>
+        </div>
+        <div ref={ref1} style={{
+          position: 'absolute',
+          height: `540px`,
+          width: `540px`,
+          opacity: `${hovered1 ? 0.8 : 0}`,
+          clipPath: `circle(50%)`,
+          transform: `translate(930px, 1245px)`,
+          backgroundColor: '#007c9c',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Play</Center>
+        </div>
 
-      <Grid >
-        <Grid.Col span={9} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
+        <img
+          style={{
+            'position': 'absolute',
+            'opacity': 1,
+            'margin-left': '-4rem',
+            'margin-top': '-27.8rem',
+            'transform': 'translate(-1888px, 30px)',
+            'clip-path': 'circle(285px at 2802px 1820px)'
+          }}
+          height='119.6%'
+          width='100.8%'
+          src="/assets/intro_background.jpeg"
+        />
+        <div style={{
+          position: 'absolute',
+          height: `570px`,
+          width: `570px`,
+          clipPath: `circle(50%)`,
+          transform: `translate(2485px, 1120px)`,
+          background: `radial-gradient(rgba(90, 175, 169, 0) 66.96%, rgba(90, 175, 169, ${hovered2 ? 0.8 : 1}) 66.9%)`
+        }}></div>
+        <div ref={ref2} style={{
+          position: 'absolute',
+          height: `540px`,
+          width: `540px`,
+          opacity: `${hovered2 ? 0.8 : 0}`,
+          clipPath: `circle(50%)`,
+          transform: `translate(2500px, 1135px)`,
+          backgroundColor: '#5aafa9',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Environment</Center>
+        </div>
 
-          <Grid gutter={HEIGHT / 20}>
-            <Grid.Col span={1} ></Grid.Col>
+        <img
+          style={{
+            'position': 'absolute',
+            'opacity': 1,
+            'margin-left': '-4rem',
+            'margin-top': '-27.8rem',
+            'transform': 'translate(-1888px, 30px)',
+            'clip-path': 'circle(285px at 1592px 1230px)'
+          }}
+          height='119.6%'
+          width='100.8%'
+          src="/assets/intro_background.jpeg"
+        />
+        <div style={{
+          position: 'absolute',
+          height: `570px`,
+          width: `570px`,
+          clipPath: `circle(50%)`,
+          transform: `translate(1275px, 530px)`,
+          background: `radial-gradient(rgba(254, 156, 90, 0) 66.96%, rgba(254, 156, 90, ${hovered3 ? 0.8 : 1}) 66.9%)`
+        }}></div>
+        <div ref={ref3} style={{
+          position: 'absolute',
+          height: `540px`,
+          width: `540px`,
+          opacity: `${hovered3 ? 0.8 : 0}`,
+          clipPath: `circle(50%)`,
+          transform: `translate(1290px, 545px)`,
+          backgroundColor: '#fe9c5a',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Food</Center>
+        </div>
 
-            <Grid.Col span={5}>
-              <div ref={ref1}>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Play.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
+        <img
+          style={{
+            'position': 'absolute',
+            'opacity': 1,
+            'margin-left': '-4rem',
+            'margin-top': '-27.8rem',
+            'transform': 'translate(-1888px, 30px)',
+            'clip-path': 'circle(285px at 1980px 2199px)'
+          }}
+          height='119.6%'
+          width='100.8%'
+          src="/assets/intro_background.jpeg"
+        />
+        <div style={{
+          position: 'absolute',
+          height: `570px`,
+          width: `570px`,
+          clipPath: `circle(50%)`,
+          transform: `translate(1665px, 1500px)`,
+          background: `radial-gradient(rgba(227, 104, 91, 0) 66.96%, rgba(227, 104, 91, ${hovered4 ? 0.8 : 1}) 66.9%)`
+        }}></div>
+        <div ref={ref4} style={{
+          position: 'absolute',
+          height: `540px`,
+          width: `540px`,
+          opacity: `${hovered4 ? 0.8 : 0}`,
+          clipPath: `circle(50%)`,
+          transform: `translate(1680px, 1515px)`,
+          backgroundColor: '#e3685b',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Art</Center>
+        </div>
 
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#007c9c" backgroundOpacity={0.8}>
-                    {hovered1 ?
-                      <div>
-                        <Text m='2rem' c="white" fz={rem(25 / 1080 * HEIGHT)}>
-                          Open spaces are great places to play! You can find playgrounds, sports fields, and fun activities that let you run, jump, and have a good time. Playing outside with friends and family is not only fun but also helps you stay healthy and make new friends.
-                        </Text>
-                      </div>
-                      :
-                      <div>
-                        <Text c="white" fz={rem(50 / 1080 * HEIGHT)} style={{ fontFamily: 'Engage Regular, sans-serif' }}>Play</Text>
-                      </div>
-                    }
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
+        <Grid>
+          <Grid.Col offset={8.9512} span={2.749}>
+            <Space h={0.906 * HEIGHT}></Space>
+            <Grid gutter="xs">
+              <Grid.Col span={6}>
+                <Button color="orange" fz="xl"
+                  onClick={routeChangeBack}
+                  radius={HEIGHT / 80}
+                  style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60; </Button>
+              </Grid.Col>
 
-            <Grid.Col span={5}>
-              <div ref={ref2}>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Environment.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#5aafa9" backgroundOpacity={0.8}>
-                    {hovered2 ?
-                      <div>
-                        <Text m='2rem' c="white" fz={rem(25 / 1080 * HEIGHT)}>
-                          The way open spaces are designed is important for making them enjoyable places to spend time. Having natural features like trees, water, and comfortable seating areas makes these spaces welcoming and inviting for everyone to enjoy.
-                        </Text>
-                      </div>
-                      :
-                      <div>
-                        <Text c="white" fz={rem(50 / 1080 * HEIGHT)} style={{ fontFamily: 'Engage Regular, sans-serif' }}>Environment</Text>
-                      </div>
-                    }
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
-
-            <Grid.Col span={1}></Grid.Col>
-
-
-            <Grid.Col span={1} ></Grid.Col>
-
-            <Grid.Col span={5}>
-              <div ref={ref3}>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Art.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#e3685b" backgroundOpacity={0.8}>
-                    {hovered3 ?
-                      <div>
-                        <Text m='2rem' c="white" fz={rem(25 / 1080 * HEIGHT)}>
-                          Open spaces can be like big outdoor canvases where artists can create amazing artwork like sculptures, murals, or interactive installations. Having art in public spaces makes the community feel more alive and helps people connect with each other.
-                        </Text>
-                      </div>
-                      :
-                      <div>
-                        <Text c="white" fz={rem(50 / 1080 * HEIGHT)} style={{ fontFamily: 'Engage Regular, sans-serif' }}>Art</Text>
-                      </div>
-                    }
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
-
-            <Grid.Col span={5}>
-              <div ref={ref4}>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Food.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#f89c5a" backgroundOpacity={0.8}>
-                    {hovered4 ?
-                      <div>
-                        <Text m='2rem' c="white" fz={rem(25 / 1080 * HEIGHT)}>
-                          Food brings people together, and open spaces with outdoor dining areas, food trucks, or farmer's markets are perfect spots for communities to gather. You can try delicious local foods, meet new people, and celebrate your community's food traditions.
-                        </Text>
-                      </div>
-                      :
-                      <div>
-                        <Text c="white" fz={rem(50 / 1080 * HEIGHT)} style={{ fontFamily: 'Engage Regular, sans-serif' }}>Food</Text>
-                      </div>
-                    }
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
-
-            <Grid.Col span={1}></Grid.Col>
-          </Grid>
-
-          <Space h={HEIGHT / 26} />
-
-          <Grid>
-            <Grid.Col span={1}></Grid.Col>
-
-            <Grid.Col span={10}>
-              <BikerProgress progress={0.2} height={HEIGHT} width={WIDTH} />
-            </Grid.Col>
-
-            <Grid.Col span={1}></Grid.Col>
-          </Grid>
-
-
-        </Grid.Col>
-
-
-
-        <Grid.Col span={2.8} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
-
-          <Text ta="left" fz="xl"><b>Instructions</b></Text>
-
-          <Skeleton height={HEIGHT / 2} visible={false}>
-            <Text ta="left" fz="lg">
-              Hover your mouse over each of the theme tiles to learn more about them! Take the time to explore what makes an open space so important to a community.
-            </Text>
-          </Skeleton>
-
-          <Space h={HEIGHT / 6.77} />
-
-          <Grid gutter="xs">
-            <Grid.Col span={6}>
-              <Button variant="light" color="orange" fz="xl"
-                onClick={routeChangeBack}
-                radius={HEIGHT / 80}
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60;  </Button>
-            </Grid.Col>
-
-            <Grid.Col span={6}>
-              <Button variant="light" color="orange" fz="xl"
-                onClick={routeChangeNext}
-                radius={HEIGHT / 80}
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
-            </Grid.Col>
-          </Grid>
-
-
-        </Grid.Col>
-
-
-
-      </Grid>
-
-    </div>
+              <Grid.Col span={6}>
+                <Button color="orange" fz="xl"
+                  onClick={routeChangeNext}
+                  radius={HEIGHT / 80}
+                  style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+              </Grid.Col>
+            </Grid>
+          </Grid.Col>
+        </Grid>
+      </Overlay>
+    </>
 
   );
 };

@@ -51,7 +51,7 @@ const PolarBarChart = (props) => {
     const playStyleFull = {
         height: `${play * 1.5 + 200}px`,
         width: `${play * 1.5 + 200}px`,
-        clipPath: `circle(50% at center)`,
+        clipPath: `circle(50%)`,
         transform: `translate(${170 - play * 0.75}px, ${170 - play * 0.75}px)`,
         backgroundColor: '#007c9c'
     };
@@ -59,7 +59,7 @@ const PolarBarChart = (props) => {
     const envStyleFull = {
         height: `${env * 1.5 + 200}px`,
         width: `${env * 1.5 + 200}px`,
-        clipPath: `circle(50% at center)`,
+        clipPath: `circle(50%)`,
         transform: `translate(${170 - env * 0.75}px, ${170 - env * 0.75}px)`,
         backgroundColor: '#5aafa9'
     };
@@ -68,7 +68,7 @@ const PolarBarChart = (props) => {
     const foodStyleFull = {
         height: `${food * 1.5 + 200}px`,
         width: `${food * 1.5 + 200}px`,
-        clipPath: `circle(50% at center)`,
+        clipPath: `circle(50%)`,
         transform: `translate(${170 - food * 0.75}px, ${170 - food * 0.75}px)`,
         backgroundColor: '#fe9c5a'
     };
@@ -76,7 +76,7 @@ const PolarBarChart = (props) => {
     const artStyleFull = {
         height: `${art * 1.5 + 200}px`,
         width: `${art * 1.5 + 200}px`,
-        clipPath: `circle(50% at center)`,
+        clipPath: `circle(50%)`,
         transform: `translate(${170 - art * 0.75}px, ${170 - art * 0.75}px)`,
         backgroundColor: '#e3685b'
     };
@@ -84,7 +84,7 @@ const PolarBarChart = (props) => {
 
     return (
         <>
-            <Modal class="modal" size="100%" opened={opened} onClose={close} radius={props.height / 80} centered>
+            <Modal class="modal" size="90%" opened={opened} onClose={close} radius={props.height / 80} centered>
                 <Title order={1} ta="center" size={120}>{props.name}</Title>
                 <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>{data['Description']}</b></Text>
                 <Grid>
@@ -126,7 +126,7 @@ const PolarBarChart = (props) => {
             </Modal>
 
             <div className="polar-bar-chart">
-                <Text ta="center">{props.name}</Text>
+                <Text ta="center" fz={rem(24 / 1080 * props.height)}>{props.name}</Text>
                 {props.mode === 'all' ?
                     <>
                         <div className="segment" style={playStyle}></div>
