@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button, Overlay, AspectRatio, Image, Title, Space, rem, Text, Grid, Skeleton, Center } from '@mantine/core';
 import { useNavigate } from "react-router-dom";
+import Plot from 'react-plotly.js';
+import spacesPlot from '/public/assets/choropleth.json'
 
 import '/public/Engage/Engage.css';
 
@@ -25,10 +27,10 @@ const TitleCard = (props) => {
 
       <Grid.Col span={9} style={{ minHeight: 0.94 * HEIGHT }}>
         <img
-          style={{'margin-left': '-2rem', 'margin-top': '-2.8rem', 'clip-path': 'inset(0 27% 0 0)'}}
+          style={{ 'margin-left': '-2rem', 'margin-top': '-2.8rem', 'clip-path': 'inset(0 27% 0 0)' }}
           src="/assets/Cover.png"
         />
-        <Overlay w={0.72 * WIDTH} backgroundOpacity={0}>
+        <Overlay w={0.73 * WIDTH} backgroundOpacity={0}>
           <Text ta='left'
             mt={rem(168 / 1080 * HEIGHT)}
             ml={rem(113 / 1080 * HEIGHT)}
@@ -48,32 +50,14 @@ const TitleCard = (props) => {
 
       <Grid.Col span={2.8} style={{ minHeight: 0.94 * HEIGHT }}>
 
-        <Space h={HEIGHT / 4} />
+        <Space h={HEIGHT / 10} />
 
-        <Text ta="left" fz="lg">Boston has 453 open spaces.</Text>
-        <br></br>
+        <Text ta="left" fz="lg">Boston has <b>453</b> open spaces.</Text>
 
-        <Text ta="left" fz="lg">Why do we gather at certain spaces...</Text>
+        <Plot data={spacesPlot.data} layout={spacesPlot.layout} />
+        <Text ta="left" fz="lg">Why do we gather at certain spaces but not others?</Text>
 
-        <Image
-          mt={HEIGHT / 80}
-          radius={HEIGHT / 50}
-          src="/assets/FaneuilSquare.jpeg"
-          h={HEIGHT / 6}
-          w={WIDTH * 2.8 / 12}
-        />
-        <Image
-          mt={HEIGHT / 80}
-          radius={HEIGHT / 50}
-          src="/assets/CityHallPlazaCrop.jpeg"
-          h={HEIGHT / 6}
-          w={WIDTH * 2.8 / 12}
-        />
-        {/* <Skeleton height={HEIGHT} radius="md" animate={false} ></Skeleton> */}
-
-        <Text mt={HEIGHT / 100} ta="right" fz="lg">...but not others?</Text>
-
-        <Space h={HEIGHT / 8} />
+        <Space h={HEIGHT / 21.85} />
 
         <Button variant="light" color="orange" fz="xl"
           onClick={routeChange}

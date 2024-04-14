@@ -83,6 +83,7 @@ const Spaces = (props) => {
                 hourly={BostonCommonH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={2.5}>
@@ -93,6 +94,7 @@ const Spaces = (props) => {
                 hourly={ChinatownParkH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={2.5}>
@@ -103,6 +105,7 @@ const Spaces = (props) => {
                 hourly={CityHallH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={2.5}>
@@ -113,6 +116,7 @@ const Spaces = (props) => {
                 hourly={DeweySquareH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={1}></Grid.Col>
@@ -128,6 +132,7 @@ const Spaces = (props) => {
                 hourly={FallonFieldH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={2.5}>
@@ -138,6 +143,7 @@ const Spaces = (props) => {
                 hourly={OlmstedParkH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={2.5}>
@@ -148,6 +154,7 @@ const Spaces = (props) => {
                 hourly={FaneuilSquareH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={2.5}>
@@ -158,12 +165,13 @@ const Spaces = (props) => {
                 hourly={RossPlaygroundH}
                 height={HEIGHT}
               />
+              <Space h={HEIGHT / 15}></Space>
             </Grid.Col>
 
             <Grid.Col span={1}></Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 6.39} />
+          <Space h={HEIGHT / 43.17} />
 
           <Grid>
             <Grid.Col span={1}></Grid.Col>
@@ -181,16 +189,16 @@ const Spaces = (props) => {
 
         <Grid.Col span={2.8} style={{ minHeight: 0.84 * HEIGHT }}>
 
-          <Text fz="lg"><b>Your turn!</b></Text>
+          <Text ta="left" fz="xl"><b>Your turn!</b></Text>
 
-          <Skeleton height={HEIGHT / 4} visible={false}>
-          {/* <Text fz="md">
+          <Skeleton ta="left" fz="lg" height={HEIGHT / 3} visible={false}>
+            {/* <Text fz="md">
                 sample text for all<br></br>
                 second line
               </Text> */}
 
 
-              Take the time to look through eight open spaces spread across Boston, and click through what makes each so special. Some of them may be familiar, but think about what stands out to you: whether it’s the environment, or the delicious food. Think about the four themes!
+            Take the time to look through eight open spaces spread across Boston, and click through what makes each so special. Some of them may be familiar, but think about what stands out to you: whether it’s the environment, the playgrounds, the artwork, or the delicious food. Think about the four themes!
             {/* {mode == 'all' ?
               <Text fz="md">
                 sample text for all<br></br>
@@ -264,7 +272,7 @@ const Spaces = (props) => {
             </Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 4.87} />
+          <Space h={HEIGHT / 8.55} />
 
           <Grid gutter="xs">
             <Grid.Col span={6}>

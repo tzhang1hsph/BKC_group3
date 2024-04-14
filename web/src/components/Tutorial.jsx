@@ -112,47 +112,19 @@ const Tutorial = (props) => {
           </Grid>
         </Grid.Col>
 
-        <Grid.Col span={2.8} style={{ minHeight: 0.94 * HEIGHT }}>
+        <Grid.Col span={2.8} style={{ minHeight: 0.84 * HEIGHT }}>
           <Space h={HEIGHT / 10} />
 
-          <Text fz="lg"><b>Let's explore an open space!</b></Text>
+          <Text ta="left" fz="xl"><b>Let's explore an open space!</b></Text>
 
-          <Skeleton height={HEIGHT / 4} visible={false}>
-
-            {mode == 'all' ?
-              <Text fz="md">
-                Click through the four themes to learn more  <br></br>
-                about what each of these open spaces offer.               
-                </Text>
-              : ""}
-              {mode == 'play' ?
-              <Text fz="md">
-                The parks and playgrounds around an open <br></br>
-                space create opportunities for families  <br></br> and friends to enjoy their time. 
-
-              </Text>
-              : ""}
-              {mode == 'env' ?
-              <Text fz="md">
-                The environment, including the surrounding<br></br>
-                trees and greenery invite people to spend<br></br>
-                time in their open spaces.
-              </Text>
-              : ""}
-              {mode == 'art' ?
-              <Text fz="md">
-                Many of our public spaces have murals<br></br>
-                or sculptures that bring people together.<br></br>
-                They foster community and learning.
-              </Text>
-              : ""}
-              {mode == 'food' ?
-              <Text fz="md">
-                Food, whether it be in a five-star <br></br>
-                restaurant or a small truck, excites people  <br></br>
-                and helps gather them in the <br></br>open spaces we often visit.             
-                </Text>
-              : ""}
+          <Skeleton height={HEIGHT / 3} visible={false}>
+            <Text ta="left" fz="lg">
+              {mode == "all" ? "Click through the four themes to learn more about what each of these open spaces offer." :
+                mode == "play" ? "The parks and playgrounds around an open space create opportunities for families and friends to enjoy their time." :
+                  mode == "env" ? "The environment, including the surrounding trees and greenery, invite people to spend time in their open spaces." :
+                    mode == "art" ? "Many of our public spaces have murals or sculptures that bring people together. They foster community and learning." :
+                      "Food, whether it be in a five-star restaurant or a small truck, excites people and helps gather them in the open spaces we often visit."}
+            </Text>
           </Skeleton>
           <Grid gutter="xs">
             <Grid.Col span={12}>
@@ -216,7 +188,7 @@ const Tutorial = (props) => {
             </Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 4.87} />
+          <Space h={HEIGHT / 8.55} />
 
           <Grid gutter="xs">
             <Grid.Col span={6}>

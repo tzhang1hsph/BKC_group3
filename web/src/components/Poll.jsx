@@ -228,13 +228,19 @@ const Poll = (props) => {
 
 
         <Grid.Col span={2.8} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
-          <Text fz="lg"><b>Poll</b></Text>
+          <Text ta="left" fz="xl"><b>Poll</b></Text>
 
-          <Skeleton height={HEIGHT / 2} visible={false}>
-          Now that you’ve learned more about your community, and what parts make it so special, take a step back and think. Which theme is most important to you? What do you think makes open spaces such an amazing place to socialize? Why do you gather?
+          <Skeleton ta="left" fz="lg" height={HEIGHT / 2} visible={false}>
+          Now that you’ve learned more about your community, and what parts make it so special, take a step back and think.
+          <br></br>
+          Which theme is most important to you?
+          <br></br>
+          What do you think makes open spaces such an amazing place to socialize?
+          <br></br>
+          Why do you gather?
           </Skeleton>
 
-          <Space h={HEIGHT / 6.55} />
+          <Space h={HEIGHT / 6.77} />
 
           <Grid gutter="xs">
             <Grid.Col span={6}>

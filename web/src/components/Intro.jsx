@@ -85,7 +85,7 @@ const Intro = (props) => {
                     fullWidth
                     h={HEIGHT / 3.2}
                   />
-                  
+
                   <Overlay
                     h={HEIGHT / 3.2}
                     radius={HEIGHT / 50}
@@ -180,7 +180,7 @@ const Intro = (props) => {
             <Grid.Col span={1}></Grid.Col>
 
             <Grid.Col span={10}>
-              <BikerProgress progress={0.2} height={HEIGHT} width={WIDTH}/>
+              <BikerProgress progress={0.2} height={HEIGHT} width={WIDTH} />
             </Grid.Col>
 
             <Grid.Col span={1}></Grid.Col>
@@ -193,18 +193,15 @@ const Intro = (props) => {
 
         <Grid.Col span={2.8} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
 
-          <Text fz="lg"><b>Instructions</b></Text>
+          <Text ta="left" fz="xl"><b>Instructions</b></Text>
 
-          <Skeleton height={HEIGHT / 2} visible={true}>
-            <Text fz="md">
-              {hovered1 ? "sample instructions for play" : ""}
-              {hovered2 ? "sample instructions for environment" : ""}
-              {hovered3 ? "sample instructions for art" : ""}
-              {hovered4 ? "sample instructions for food\ndkvndkvndkvndkvndkn" : ""}
+          <Skeleton height={HEIGHT / 2} visible={false}>
+            <Text ta="left" fz="lg">
+              Hover your mouse over each of the theme tiles to learn more about them! Take the time to explore what makes an open space so important to a community.
             </Text>
           </Skeleton>
 
-          <Space h={HEIGHT / 6.55} />
+          <Space h={HEIGHT / 6.77} />
 
           <Grid gutter="xs">
             <Grid.Col span={6}>

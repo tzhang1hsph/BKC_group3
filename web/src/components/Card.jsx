@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDisclosure } from '@mantine/hooks';
 import { Grid, Modal, Title, Text, rem } from '@mantine/core';
 import final_data_table from '../../../final_data_table.json';
@@ -103,7 +103,7 @@ const PolarBarChart = (props) => {
                     </Grid.Col>
 
                     <Grid.Col span={6}>
-                        <Plot data={props.map.data} layout={props.map.layout} style={{ 'margin': 'auto' }} />
+                        <Plot data={props.map.data} layout={props.map.layout} style={{ 'display': 'block', 'margin': 'auto' }} />
 
                         <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Safety Score: {data['Safety Score']}</b></Text>
                         <Text>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</Text>
@@ -126,6 +126,7 @@ const PolarBarChart = (props) => {
             </Modal>
 
             <div className="polar-bar-chart">
+                <Text ta="center">{props.name}</Text>
                 {props.mode === 'all' ?
                     <>
                         <div className="segment" style={playStyle}></div>

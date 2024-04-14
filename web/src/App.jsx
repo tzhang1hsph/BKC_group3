@@ -66,9 +66,9 @@ function App() {
       <div>
         <Router>
           <Routes>
-            <Route path="/intro" element={<Intro height={height} width={width} />}>
-            </Route>
             <Route path="/" element={<TitleCard height={height} width={width} />}>
+            </Route>
+            <Route path="/intro" element={<Intro height={height} width={width} />}>
             </Route>
             <Route path="/spaces" element={<Spaces height={height} width={width} />}>
             </Route>
