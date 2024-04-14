@@ -92,14 +92,12 @@ const PollResults = (props) => {
         
 
         <Grid.Col span={2.8} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
-          <Text fz="lg"><b>Instructions</b></Text>
+          <Text fz="lg"><b>Poll Results</b></Text>
 
-          <Skeleton height={HEIGHT/2} visible={true}>
-            <Text fz="md">
-
-
-
-            </Text>
+          <Skeleton height={HEIGHT/2} visible={false}>
+          Wow! It’s amazing to see the qualities that make open spaces so appealing to different people. As you cycled through the themes and the amazing gatherings across Boston, think about what stood out to you. What you didn’t think of before.
+          
+          The next time you go to an open space, we invite you to explore. Consider what makes your public space beautiful
           </Skeleton>
 
           <Space h={HEIGHT / 6.55} />

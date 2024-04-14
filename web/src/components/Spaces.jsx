@@ -181,10 +181,17 @@ const Spaces = (props) => {
 
         <Grid.Col span={2.8} style={{ minHeight: 0.84 * HEIGHT }}>
 
-          <Text fz="lg"><b>Instructions</b></Text>
+          <Text fz="lg"><b>Your turn!</b></Text>
 
-          <Skeleton height={HEIGHT / 4} visible={true}>
-            {mode == 'all' ?
+          <Skeleton height={HEIGHT / 4} visible={false}>
+          {/* <Text fz="md">
+                sample text for all<br></br>
+                second line
+              </Text> */}
+
+
+              Take the time to look through eight open spaces spread across Boston, and click through what makes each so special. Some of them may be familiar, but think about what stands out to you: whether it’s the environment, or the delicious food. Think about the four themes!
+            {/* {mode == 'all' ?
               <Text fz="md">
                 sample text for all<br></br>
                 second line
@@ -193,7 +200,7 @@ const Spaces = (props) => {
             {mode == 'play' ? "sample text for play" : ""}
             {mode == 'env' ? "sample text for environment" : ""}
             {mode == 'art' ? "sample text for art" : ""}
-            {mode == 'food' ? "sample text for food" : ""}
+            {mode == 'food' ? "sample text for food" : ""} */}
           </Skeleton>
           <Grid gutter="xs">
             <Grid.Col span={12}>

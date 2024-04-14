@@ -117,17 +117,42 @@ const Tutorial = (props) => {
 
           <Text fz="lg"><b>Let's explore an open space!</b></Text>
 
-          <Skeleton height={HEIGHT / 4} visible={true}>
+          <Skeleton height={HEIGHT / 4} visible={false}>
+
             {mode == 'all' ?
               <Text fz="md">
-                sample text for all<br></br>
-                second line
+                Click through the four themes to learn more  <br></br>
+                about what each of these open spaces offer.               
+                </Text>
+              : ""}
+              {mode == 'play' ?
+              <Text fz="md">
+                The parks and playgrounds around an open <br></br>
+                space create opportunities for families  <br></br> and friends to enjoy their time. 
+
               </Text>
               : ""}
-            {mode == 'play' ? "sample text for play" : ""}
-            {mode == 'env' ? "sample text for environment" : ""}
-            {mode == 'art' ? "sample text for art" : ""}
-            {mode == 'food' ? "sample text for food" : ""}
+              {mode == 'env' ?
+              <Text fz="md">
+                The environment, including the surrounding<br></br>
+                trees and greenery invite people to spend<br></br>
+                time in their open spaces.
+              </Text>
+              : ""}
+              {mode == 'art' ?
+              <Text fz="md">
+                Many of our public spaces have murals<br></br>
+                or sculptures that bring people together.<br></br>
+                They foster community and learning.
+              </Text>
+              : ""}
+              {mode == 'food' ?
+              <Text fz="md">
+                Food, whether it be in a five-star <br></br>
+                restaurant or a small truck, excites people  <br></br>
+                and helps gather them in the <br></br>open spaces we often visit.             
+                </Text>
+              : ""}
           </Skeleton>
           <Grid gutter="xs">
             <Grid.Col span={12}>
