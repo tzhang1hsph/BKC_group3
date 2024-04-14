@@ -84,7 +84,7 @@ const PolarBarChart = (props) => {
 
     return (
         <>
-            <Modal size="100%" opened={opened} onClose={close} radius={props.height / 80} centered>
+            <Modal class="modal" size="100%" opened={opened} onClose={close} radius={props.height / 80} centered>
                 <Title order={1} ta="center" size={120}>{props.name}</Title>
                 <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>{data['Description']}</b></Text>
                 <Grid>

@@ -42,6 +42,11 @@
   color: #888;
 }
 
+.modal {
+  background-color: green;
+  color: #07455d;
+}
+
 .polar-bar-chart {
   width: 540px;
   height: 540px;

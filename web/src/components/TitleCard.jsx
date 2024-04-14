@@ -53,7 +53,7 @@ const TitleCard = (props) => {
         <Text ta="left" fz="lg">Boston has 453 open spaces.</Text>
         <br></br>
 
-        <Text ta="left" fz="lg">Why do we gather at certain spaces</Text>
+        <Text ta="left" fz="lg">Why do we gather at certain spaces...</Text>
 
         <Image
           mt={HEIGHT / 80}
