@@ -60,6 +60,10 @@ const Spaces = (props) => {
     let path = `/tutorial`;
     navigate(path);
   }
+  const restart = () => {
+    let path = `/`;
+    navigate(path);
+  }
 
   return (
 
@@ -272,9 +276,19 @@ const Spaces = (props) => {
             </Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 8.55} />
+          <Space h={HEIGHT * 0.7 / 8.55} />
 
           <Grid gutter="xs">
+          <Grid.Col span={12}>
+            <Button
+                variant="light"
+                radius={HEIGHT / 80}
+                color="orange"
+                fz="xl"
+                onClick={restart}
+                style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
+              > &#8635; </Button>
+            </Grid.Col>
             <Grid.Col span={6}>
               <Button
                 variant="light"
@@ -298,6 +312,9 @@ const Spaces = (props) => {
                 fullWidth
               > &#62; </Button>
             </Grid.Col>
+
+
+
           </Grid>
 
 
