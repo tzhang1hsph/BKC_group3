@@ -35,6 +35,11 @@ const Intro = (props) => {
     navigate(path);
   }
 
+  const restart = () => {
+    let path = `/`;
+    navigate(path);
+  }
+
   return (
     <>
       <img
@@ -190,6 +195,16 @@ const Intro = (props) => {
           <Grid.Col offset={8.9512} span={2.749}>
             <Space h={0.906 * HEIGHT}></Space>
             <Grid gutter="xs">
+              <Grid.Col span={12}>
+                <Button
+                  variant="light"
+                  radius={HEIGHT / 80}
+                  color="orange"
+                  fz="xl"
+                  onClick={restart}
+                  style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
+                > &#8635; </Button>
+              </Grid.Col>
               <Grid.Col span={6}>
                 <Button color="orange" fz="xl"
                   onClick={routeChangeBack}

@@ -68,6 +68,11 @@ const Poll = (props) => {
     navigate(path);
   }
 
+  const restart = () => {
+    let path = `/`;
+    navigate(path);
+  }
+
   return (
 
     <div>
@@ -240,9 +245,19 @@ const Poll = (props) => {
           Why do you gather?
           </Skeleton>
 
-          <Space h={HEIGHT / 6.77} />
+          <Space h={HEIGHT * 0.75 / 6.77} />
 
           <Grid gutter="xs">
+          <Grid.Col span={12}>
+            <Button
+                variant="light"
+                radius={HEIGHT / 80}
+                color="orange"
+                fz="xl"
+                onClick={restart}
+                style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
+              > &#8635; </Button>
+            </Grid.Col>
             <Grid.Col span={6}>
               <Button variant="light" color="orange" fz="xl"
                 onClick={routeChangeBack}
