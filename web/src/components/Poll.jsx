@@ -245,7 +245,7 @@ const Poll = (props) => {
           Why do you gather?
           </Skeleton>
 
-          <Space h={HEIGHT * 0.75 / 6.77} />
+          <Space h={HEIGHT * 0.75 / 6.66} />
 
           <Grid gutter="xs">
           <Grid.Col span={12}>

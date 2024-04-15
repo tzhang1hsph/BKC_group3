@@ -57,9 +57,9 @@ const TitleCard = (props) => {
         <Plot data={spacesPlot.data} layout={spacesPlot.layout} />
         <Text ta="left" fz="lg">Why do we gather at certain spaces but not others?</Text>
 
-        <Space h={HEIGHT / 21.85} />
+        <Space h={HEIGHT / 15.3} />
 
-        <Button variant="light" color="orange" fz="xl"
+        <Button variant='light' color="orange" fz="xl"
           onClick={routeChange}
           radius={HEIGHT / 80}
           style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 8 }} fullWidth> CLICK TO BEGIN </Button>

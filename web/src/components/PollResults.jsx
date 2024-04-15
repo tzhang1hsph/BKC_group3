@@ -98,7 +98,7 @@ const PollResults = (props) => {
           The next time you go to an open space, we invite you to explore. Consider what makes your public space beautiful.
           </Skeleton>
 
-          <Space h={HEIGHT * 0.75 / 6.77} />
+          <Space h={HEIGHT * 0.75 / 6.66} />
 
           <Grid gutter="xs">
           <Grid.Col span={12}>

@@ -193,11 +193,10 @@ const Intro = (props) => {
 
         <Grid>
           <Grid.Col offset={8.9512} span={2.749}>
-            <Space h={0.906 * HEIGHT}></Space>
+            <Space h={0.871 * HEIGHT}></Space>
             <Grid gutter="xs">
               <Grid.Col span={12}>
                 <Button
-                  variant="light"
                   radius={HEIGHT / 80}
                   color="orange"
                   fz="xl"
@@ -205,6 +204,7 @@ const Intro = (props) => {
                   style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
                 > &#8635; </Button>
               </Grid.Col>
+
               <Grid.Col span={6}>
                 <Button color="orange" fz="xl"
                   onClick={routeChangeBack}
