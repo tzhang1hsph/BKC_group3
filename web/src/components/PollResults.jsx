@@ -73,7 +73,7 @@ const PollResults = (props) => {
             </PieChart>
           </Center>
 
-          <Space h={HEIGHT / 21.5} />
+          <Space h={HEIGHT / 21.3} />
 
           <Grid>
             <Grid.Col span={1}></Grid.Col>

@@ -47,9 +47,9 @@ const Intro = (props) => {
         height='102.6%'
         width='102.6%'
         src="/assets/intro_background.jpeg"
-      />
+      ></img>
 
-      <Overlay color='#dddddd' backgroundOpacity={0.5}>
+      <Overlay color='#dddddd' backgroundOpacity={0.7}>
         <img
           style={{
             'position': 'absolute',
@@ -62,21 +62,21 @@ const Intro = (props) => {
           height='119.6%'
           width='100.8%'
           src="/assets/intro_background.jpeg"
-        />
+        ></img>
         <div style={{
           position: 'absolute',
           height: `570px`,
           width: `570px`,
           clipPath: `circle(50%)`,
           transform: `translate(915px, 1230px)`,
-          background: `radial-gradient(rgba(0, 124, 156, 0) 66.96%, rgba(0, 124, 156, ${hovered1 ? 0.8 : 1}) 66.9%)`
+          background: `radial-gradient(rgba(0, 124, 156, 0) 66.96%, rgba(0, 124, 156, ${hovered1 ? 0.9 : 1}) 66.9%)`
         }}>
         </div>
         <div ref={ref1} style={{
           position: 'absolute',
           height: `540px`,
           width: `540px`,
-          opacity: `${hovered1 ? 0.8 : 0}`,
+          opacity: `${hovered1 ? 0.9 : 0}`,
           clipPath: `circle(50%)`,
           transform: `translate(930px, 1245px)`,
           backgroundColor: '#007c9c',
@@ -98,20 +98,20 @@ const Intro = (props) => {
           height='119.6%'
           width='100.8%'
           src="/assets/intro_background.jpeg"
-        />
+        ></img>
         <div style={{
           position: 'absolute',
           height: `570px`,
           width: `570px`,
           clipPath: `circle(50%)`,
           transform: `translate(2485px, 1120px)`,
-          background: `radial-gradient(rgba(90, 175, 169, 0) 66.96%, rgba(90, 175, 169, ${hovered2 ? 0.8 : 1}) 66.9%)`
+          background: `radial-gradient(rgba(90, 175, 169, 0) 66.96%, rgba(90, 175, 169, ${hovered2 ? 0.9 : 1}) 66.9%)`
         }}></div>
         <div ref={ref2} style={{
           position: 'absolute',
           height: `540px`,
           width: `540px`,
-          opacity: `${hovered2 ? 0.8 : 0}`,
+          opacity: `${hovered2 ? 0.9 : 0}`,
           clipPath: `circle(50%)`,
           transform: `translate(2500px, 1135px)`,
           backgroundColor: '#5aafa9',
@@ -133,20 +133,20 @@ const Intro = (props) => {
           height='119.6%'
           width='100.8%'
           src="/assets/intro_background.jpeg"
-        />
+        ></img>
         <div style={{
           position: 'absolute',
           height: `570px`,
           width: `570px`,
           clipPath: `circle(50%)`,
           transform: `translate(1275px, 530px)`,
-          background: `radial-gradient(rgba(254, 156, 90, 0) 66.96%, rgba(254, 156, 90, ${hovered3 ? 0.8 : 1}) 66.9%)`
+          background: `radial-gradient(rgba(254, 156, 90, 0) 66.96%, rgba(254, 156, 90, ${hovered3 ? 0.9 : 1}) 66.9%)`
         }}></div>
         <div ref={ref3} style={{
           position: 'absolute',
           height: `540px`,
           width: `540px`,
-          opacity: `${hovered3 ? 0.8 : 0}`,
+          opacity: `${hovered3 ? 0.9 : 0}`,
           clipPath: `circle(50%)`,
           transform: `translate(1290px, 545px)`,
           backgroundColor: '#fe9c5a',
@@ -163,25 +163,25 @@ const Intro = (props) => {
             'margin-left': '-4rem',
             'margin-top': '-27.8rem',
             'transform': 'translate(-1888px, 30px)',
-            'clip-path': 'circle(285px at 1980px 2199px)'
+            'clip-path': 'circle(285px at 1982px 2200px)'
           }}
           height='119.6%'
           width='100.8%'
           src="/assets/intro_background.jpeg"
-        />
+        ></img>
         <div style={{
           position: 'absolute',
           height: `570px`,
           width: `570px`,
           clipPath: `circle(50%)`,
           transform: `translate(1665px, 1500px)`,
-          background: `radial-gradient(rgba(227, 104, 91, 0) 66.96%, rgba(227, 104, 91, ${hovered4 ? 0.8 : 1}) 66.9%)`
+          background: `radial-gradient(rgba(227, 104, 91, 0) 66.96%, rgba(227, 104, 91, ${hovered4 ? 0.9 : 1}) 66.9%)`
         }}></div>
         <div ref={ref4} style={{
           position: 'absolute',
           height: `540px`,
           width: `540px`,
-          opacity: `${hovered4 ? 0.8 : 0}`,
+          opacity: `${hovered4 ? 0.9 : 0}`,
           clipPath: `circle(50%)`,
           transform: `translate(1680px, 1515px)`,
           backgroundColor: '#e3685b',
@@ -190,6 +190,13 @@ const Intro = (props) => {
         }}>
           <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Art</Center>
         </div>
+
+        <img src='/assets/avatar.svg' style={{
+          position: 'absolute',
+          width: '800px',
+          height: '800px',
+          transform: 'translate(-2000px, 1300px)'
+        }}></img>
 
         <Grid>
           <Grid.Col offset={8.9512} span={2.749}>

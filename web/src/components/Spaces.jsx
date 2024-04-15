@@ -175,7 +175,7 @@ const Spaces = (props) => {
             <Grid.Col span={1}></Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 43.17} />
+          <Space h={HEIGHT / 41.3} />
 
           <Grid>
             <Grid.Col span={1}></Grid.Col>
