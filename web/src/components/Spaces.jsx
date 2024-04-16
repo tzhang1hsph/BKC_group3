@@ -196,23 +196,20 @@ const Spaces = (props) => {
           <Text ta="left" fz="xl"><b>Your turn!</b></Text>
 
           <Skeleton ta="left" fz="lg" height={HEIGHT / 3} visible={false}>
-            {/* <Text fz="md">
-                sample text for all<br></br>
-                second line
-              </Text> */}
-
-
-            Take the time to look through eight open spaces spread across Boston, and click through what makes each so special. Some of them may be familiar, but think about what stands out to you, whether it’s the environment, the playgrounds, the artwork, or the delicious food. Think about the four themes!
-            {/* {mode == 'all' ?
-              <Text fz="md">
-                sample text for all<br></br>
-                second line
-              </Text>
-              : ""}
-            {mode == 'play' ? "sample text for play" : ""}
-            {mode == 'env' ? "sample text for environment" : ""}
-            {mode == 'art' ? "sample text for art" : ""}
-            {mode == 'food' ? "sample text for food" : ""} */}
+            {mode === 'all' ? <>
+              Take the time to look through eight open spaces spread across Boston,
+              and click through what makes each so special. Some of them may be familiar,
+              but think about what stands out to you, whether it’s the environment,
+              the playgrounds, the artwork, or the delicious food. Think about the four themes!
+            </> : mode === 'play' ? <>
+              This score is calculated based on the number of play features the open space has.
+            </> : mode === 'env' ? <>
+              This score is calculated based on the size of the open space and the amount of its canopy cover (area covered by trees).
+            </> : mode === 'art' ? <>
+              This score is calculated based on the number of murals and sculptures near the open space.
+            </> : <>
+              This score is calculated based on the number of restaurants, food trucks, and farmers markets near the open space.
+            </>}
           </Skeleton>
           <Grid gutter="xs">
             <Grid.Col span={12}>
@@ -279,8 +276,8 @@ const Spaces = (props) => {
           <Space h={HEIGHT * 0.7 / 8.55} />
 
           <Grid gutter="xs">
-          <Grid.Col span={12}>
-            <Button
+            <Grid.Col span={12}>
+              <Button
                 variant="light"
                 radius={HEIGHT / 80}
                 color="orange"

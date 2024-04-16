@@ -30,7 +30,7 @@ const Tutorial = (props) => {
     navigate(path);
   }
 
-    const restart = () => {
+  const restart = () => {
     let path = `/`;
     navigate(path);
   }
@@ -40,61 +40,13 @@ const Tutorial = (props) => {
 
 
     <div>
+      <img src={`/assets/${mode}.png`} style={{ position: 'absolute', top: '0px', left: '0px' }}></img>
       <Space h={HEIGHT / 10} />
-
-      {/* <Center>
-        explanation (static image please!) goes here
-    </Center> */}
 
       <Grid>
         <Grid.Col span={9} style={{ minHeight: 0.94 * HEIGHT }}>
-          {mode == 'all' ?
-            <Image
-              radius={HEIGHT / 50}
-              src="/assets/all.png"
-              w={WIDTH * 3 / 4}
-              h={HEIGHT * 3 / 4}
-            />
-            : ""}
 
-          {mode == 'play' ?
-            <Image
-              radius={HEIGHT / 50}
-              src="/assets/play.png"
-              w={WIDTH * 3 / 4}
-              h={HEIGHT * 3 / 4}
-            />
-            : ""}
-
-          {mode == 'food' ?
-            <Image
-              radius={HEIGHT / 50}
-              src="/assets/food.png"
-              w={WIDTH * 3 / 4}
-              h={HEIGHT * 3 / 4}
-            />
-            : ""}
-
-          {mode == 'env' ?
-            <Image
-              radius={HEIGHT / 50}
-              src="/assets/environment.png"
-              w={WIDTH * 3 / 4}
-              h={HEIGHT * 3 / 4}
-            />
-            : ""}
-
-          {mode == 'art' ?
-            <Image
-              radius={HEIGHT / 50}
-              src="/assets/art.png"
-              w={WIDTH * 3 / 4}
-              h={HEIGHT * 3 / 4}
-            />
-            : ""}
-
-
-          <Space h={HEIGHT / 15.75} />
+          <Space h={HEIGHT / 1.228} />
 
           <Grid>
             <Grid.Col span={1}></Grid.Col>
@@ -114,11 +66,21 @@ const Tutorial = (props) => {
 
           <Skeleton height={HEIGHT / 3} visible={false}>
             <Text ta="left" fz="lg">
-              {mode == "all" ? "Click through the four themes to learn more about what each of these open spaces offer." :
-                mode == "play" ? "The parks and playgrounds around an open space create opportunities for families and friends to enjoy their time." :
-                  mode == "env" ? "The environment, including the surrounding trees and greenery, invite people to spend time in their open spaces." :
-                    mode == "art" ? "Many of our public spaces have murals or sculptures that bring people together. They foster community and learning." :
-                      "Food, whether it be in a five-star restaurant or a small truck, excites people and helps gather them in the open spaces we often visit."}
+              {mode == "all" ? <>The chart to the right shows the characteristics of one open space in the four themes we saw earlier.
+                <br></br>
+                Click through the four themes to learn more about what each of these open spaces offer.</> :
+                mode == "play" ? <>The parks and playgrounds around an open space create opportunities for families and friends to enjoy their time.
+                  <br></br>
+                  This score is calculated based on the number of play features the open space has.</> :
+                  mode == "env" ? <>The environment, including the surrounding trees and greenery, invite people to spend time in their open spaces.
+                    <br></br>
+                    This score is calculated based on the size of the open space and the amount of its canopy cover (area covered by trees).</> :
+                    mode == "art" ? <>Many of our public spaces have murals or sculptures that bring people together. They foster community and learning.
+                      <br></br>
+                      This score is calculated based on the number of murals and sculptures near the open space.</> :
+                      <>Food, whether it be in a five-star restaurant or a small truck, excites people and helps gather them in the open spaces we often visit.
+                        <br></br>
+                        This score is calculated based on the number of restaurants, food trucks, and farmers markets near the open space.</>}
             </Text>
           </Skeleton>
           <Grid gutter="xs">
@@ -142,7 +104,7 @@ const Tutorial = (props) => {
                 fz="md"
                 onClick={() => {
                   setMode('play');
-                  setVisited({...visited, play: true});
+                  setVisited({ ...visited, play: true });
                 }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
@@ -157,7 +119,7 @@ const Tutorial = (props) => {
                 fz="md"
                 onClick={() => {
                   setMode('env');
-                  setVisited({...visited, env: true});
+                  setVisited({ ...visited, env: true });
                 }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
@@ -172,7 +134,7 @@ const Tutorial = (props) => {
                 fz="md"
                 onClick={() => {
                   setMode('art');
-                  setVisited({...visited, art: true});
+                  setVisited({ ...visited, art: true });
                 }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
@@ -187,7 +149,7 @@ const Tutorial = (props) => {
                 fz="md"
                 onClick={() => {
                   setMode('food');
-                  setVisited({...visited, food: true});
+                  setVisited({ ...visited, food: true });
                 }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
@@ -199,8 +161,8 @@ const Tutorial = (props) => {
 
           <Grid gutter="xs">
 
-          <Grid.Col span={12}>
-            <Button
+            <Grid.Col span={12}>
+              <Button
                 variant="light"
                 radius={HEIGHT / 80}
                 color="orange"

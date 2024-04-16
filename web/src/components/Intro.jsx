@@ -230,26 +230,30 @@ const Intro = (props) => {
           <div style={{
             backgroundColor: '#fffcf2',
             borderRadius: `${HEIGHT / 40}px`,
-            height: `${HEIGHT / 2}px`,
-            transform: `translate(0px, -${HEIGHT / 5}px)`
+            height: `${HEIGHT / 1.7}px`,
+            transform: `translate(0px, -${HEIGHT / 6}px)`
           }}>
             <Text ta='left' fz='lg' m='10%'>
               {hovered1 ? <>
                 <Text fz='xl'><b>PLAY</b></Text>
-                The parks and playgrounds around an open space create opportunities
-                for families and friends to enjoy their time.
+                Open spaces are great places to play! You can find playgrounds, sports fields,
+                and fun activities that let you run, jump, and have a good time. Playing outside
+                with friends and family is not only fun but also helps you stay healthy and make new friends.
               </> : hovered2 ? <>
                 <Text fz='xl'><b>ENVIRONMENT</b></Text>
-                The environment, including the surrounding trees and greenery,
-                invites people to spend time in their open spaces.
+                The way open spaces are designed is important for making them enjoyable places to spend time.
+                Having natural features like trees, water, and comfortable seating areas makes these spaces
+                welcoming and inviting for everyone to enjoy.
               </> : hovered3 ? <>
                 <Text fz='xl'><b>FOOD</b></Text>
-                Food, whether it be in a five-star restaurant or a small truck,
-                excites people and helps gather them in the open spaces we often visit.
+                Food brings people together, and open spaces with outdoor dining areas, food trucks, or
+                farmer's markets are perfect spots for communities to gather. You can try delicious local
+                foods, meet new people, and celebrate your community's food traditions.
               </> : hovered4 ? <>
                 <Text fz='xl'><b>ART</b></Text>
-                Many of our public spaces have murals or sculptures that bring people together.
-                They foster community and learning.
+                Open spaces can be like big outdoor canvases where artists can create amazing
+                artwork like sculptures, murals, or interactive installations. Having art in public
+                spaces makes the community feel more alive and helps people connect with each other.
               </> :
                 <>
                   Welcome to my city—Boston!
