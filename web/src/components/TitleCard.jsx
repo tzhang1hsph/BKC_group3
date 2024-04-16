@@ -61,7 +61,7 @@ const TitleCard = (props) => {
         <Plot data={spacesPlot.data} layout={spacesPlot.layout} />
         <Text ta="left" fz="lg">Why do we gather at certain spaces but not others?</Text>
 
-        <Space h={HEIGHT / 15.3} />
+        <Space h={HEIGHT / 20} />
 
         <Button color="orange" fz="xl"
           onClick={routeChange}

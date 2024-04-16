@@ -268,7 +268,7 @@ const Intro = (props) => {
 
         <Grid>
           <Grid.Col offset={8.9512} span={2.749}>
-            <Space h={0.871 * HEIGHT}></Space>
+            <Space h={0.853 * HEIGHT}></Space>
             <Grid gutter="xs">
               <Grid.Col span={12}>
                 <Button

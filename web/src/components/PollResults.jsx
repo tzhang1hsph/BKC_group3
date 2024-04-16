@@ -56,7 +56,7 @@ const PollResults = (props) => {
       <Space h={HEIGHT / 5} />
 
       <Grid>
-        <Grid.Col span={9} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
+        <Grid.Col offset={0.002} span={9} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
           <Center>
             <PieChart width={HEIGHT * 3 / 4} height={HEIGHT * 2 / 3}>
               <Pie
@@ -73,7 +73,7 @@ const PollResults = (props) => {
             </PieChart>
           </Center>
 
-          <Space h={HEIGHT / 21.3} />
+          <Space h={HEIGHT / 21} />
 
           <Grid>
             <Grid.Col span={1}></Grid.Col>
@@ -100,7 +100,7 @@ const PollResults = (props) => {
           <b>Click the <span style={{color: 'orange'}}>&#8635;</span> button to restart the story!</b>
           </Skeleton>
 
-          <Space h={HEIGHT * 0.75 / 6.66} />
+          <Space h={HEIGHT * 0.75 / 8.1} />
 
           <Grid gutter="xs">
           <Grid.Col span={12}>

@@ -66,7 +66,7 @@ const Tutorial = (props) => {
 
           <Skeleton height={HEIGHT / 3} visible={false}>
             <Text ta="left" fz="lg">
-              {mode == "all" ? <>The chart to the right shows the characteristics of one open space in the four themes we saw earlier.
+              {mode == "all" ? <>The chart to the left shows the characteristics of one open space in the four themes we saw earlier.
                 <br></br>
                 Click through the four themes to learn more about what each of these open spaces offer.</> :
                 mode == "play" ? <>The parks and playgrounds around an open space create opportunities for families and friends to enjoy their time.
@@ -157,7 +157,7 @@ const Tutorial = (props) => {
             </Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT * 0.7 / 8.55} />
+          <Space h={HEIGHT * 0.063} />
 
           <Grid gutter="xs">
 

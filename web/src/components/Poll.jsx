@@ -79,15 +79,7 @@ const Poll = (props) => {
       <Space h={HEIGHT / 5} />
 
       <Grid>
-        <Grid.Col span={9} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
-
-          {/* <Text fz="lg">insert poll text</Text> */}
-          {/* <ul>
-          {votes.map((country) => (
-            <li key={country.id}>{country.option} and {country.count}</li>
-          ))}
-          </ul> */}
-
+        <Grid.Col offset={0.002} span={9.07} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
 
           <Grid gutter={HEIGHT / 20}>
             <Grid.Col span={1} ></Grid.Col>
@@ -216,7 +208,7 @@ const Poll = (props) => {
             <Grid.Col span={1}></Grid.Col>
           </Grid>
 
-          <Space h={HEIGHT / 26} />
+          <Space h={HEIGHT / 25.3} />
 
           <Grid>
             <Grid.Col span={1}></Grid.Col>
@@ -247,7 +239,7 @@ const Poll = (props) => {
           <b>{mode !== '' ? 'Great choice! Now go to the next page to see what other people thought!' : ''}</b>
           </Skeleton>
 
-          <Space h={HEIGHT * 0.75 / 6.66} />
+          <Space h={HEIGHT * 0.093} />
 
           <Grid gutter="xs">
           <Grid.Col span={12}>
