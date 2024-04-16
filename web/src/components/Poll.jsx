@@ -243,6 +243,10 @@ const Poll = (props) => {
           What do you think makes open spaces such an amazing place to socialize?
           <br></br>
           Why do you gather?
+          <br></br><br></br>
+          <b>Click on one of the themes to cast your vote!</b>
+          <br></br>
+          <b>{mode !== '' ? 'Great choice! Now go to the next page to see what other people thought!' : ''}</b>
           </Skeleton>
 
           <Space h={HEIGHT * 0.75 / 6.66} />
@@ -266,7 +270,7 @@ const Poll = (props) => {
             </Grid.Col>
 
             <Grid.Col span={6}>
-              <Button variant="light" color="orange" fz="xl"
+              <Button variant={mode === '' ? "light" : ''} color="orange" fz="xl"
                 onClick={routeChangeNext}
                 radius={HEIGHT / 80}
                 style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>

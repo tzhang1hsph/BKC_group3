@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton } from '@mantine/core';
+import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton, Box } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
 import BikerProgress from './BikerProgress';
 
@@ -191,12 +191,56 @@ const Intro = (props) => {
           <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Art</Center>
         </div>
 
-        <img src='/assets/avatar.svg' style={{
+        <div style={{
           position: 'absolute',
-          width: '800px',
-          height: '800px',
-          transform: 'translate(-2000px, 1300px)'
-        }}></img>
+          width: `${HEIGHT / 3}px`,
+          height: '100%',
+          left: '2.5%',
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center'
+        }}>
+          <img src='/assets/girl.jpeg' style={{
+            width: 'auto',
+            height: `${HEIGHT / 2}px`,
+            clipPath: `circle(${Math.min(HEIGHT / 8, WIDTH * 0.94 * 9 / 128)}px at 49% 26%)`,
+            transform: `translate(${HEIGHT * 3 / 400}px, ${HEIGHT / 20}px)`
+          }}></img>
+
+          <div style={{
+            backgroundColor: '#fffcf2',
+            borderRadius: `${HEIGHT / 40}px`,
+            height: `${HEIGHT / 2}px`,
+            transform: `translate(0px, -${HEIGHT / 5}px)`
+          }}>
+            <Text ta='left' fz='lg' m='10%'>
+              {hovered1 ? <>
+                <Text fz='xl'><b>PLAY</b></Text>
+                The parks and playgrounds around an open space create opportunities
+                for families and friends to enjoy their time.
+              </> : hovered2 ? <>
+                <Text fz='xl'><b>ENVIRONMENT</b></Text>
+                The environment, including the surrounding trees and greenery,
+                invites people to spend time in their open spaces.
+              </> : hovered3 ? <>
+                <Text fz='xl'><b>FOOD</b></Text>
+                Food, whether it be in a five-star restaurant or a small truck,
+                excites people and helps gather them in the open spaces we often visit.
+              </> : hovered4 ? <>
+                <Text fz='xl'><b>ART</b></Text>
+                Many of our public spaces have murals or sculptures that bring people together.
+                They foster community and learning.
+              </> :
+                <>
+                  Welcome to my city—Boston!
+                  Today, I'll be your guide as we explore the beating heart of our communities:
+                  the open spaces where we gather.
+                  <br></br><br></br>
+                  <b>Hover over a circle to learn more!</b>
+                </>}
+            </Text>
+          </div>
+        </div>
 
         <Grid>
           <Grid.Col offset={8.9512} span={2.749}>

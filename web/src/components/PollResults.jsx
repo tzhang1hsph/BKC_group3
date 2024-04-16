@@ -96,6 +96,8 @@ const PollResults = (props) => {
           Wow! It’s amazing to see the qualities that make open spaces so appealing to different people. As you cycled through the themes and the amazing gatherings across Boston, think about what stood out to you. What you didn’t think of before.
           <br></br>
           The next time you go to an open space, we invite you to explore. Consider what makes your public space beautiful.
+          <br></br><br></br>
+          <b>Click the <span style={{color: 'orange'}}>&#8635;</span> button to restart the story!</b>
           </Skeleton>
 
           <Space h={HEIGHT * 0.75 / 6.66} />
@@ -103,7 +105,6 @@ const PollResults = (props) => {
           <Grid gutter="xs">
           <Grid.Col span={12}>
             <Button
-                variant="light"
                 radius={HEIGHT / 80}
                 color="orange"
                 fz="xl"
@@ -119,8 +120,7 @@ const PollResults = (props) => {
             </Grid.Col>
 
             <Grid.Col span={6}>
-              <Button variant="light" color="orange" fz="xl" 
-                onClick={routeChangeNext}
+              <Button color="lightgray" fz="xl"
                 radius={HEIGHT / 80}
                 style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
             </Grid.Col>
