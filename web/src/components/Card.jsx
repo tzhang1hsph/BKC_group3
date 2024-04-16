@@ -111,22 +111,22 @@ const PolarBarChart = (props) => {
                         <Text>Vehicle Accident Density: {(data['Nearby Vehicle Accidents Per Acre Per Year']).toFixed(2)} vehicle accidents per acre per year</Text>
 
                         <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Food Score: {data['Food Score']}</b></Text>
-                        <Text>Number of Restaurants Within 0.5 km: {data['Number of Nearby Restaurants']}</Text>
+                        <Text>Number of Restaurants Within 0.5 km: {data['Number of Nearby Restaurants'] === 100 ? '≥100' : data['Number of Nearby Restaurants']}</Text>
                         <Text>Near Food Trucks: {data['Near Food Trucks'] ? 'Yes' : 'No'}</Text>
                         <Text>Near Farmers Markets: {data['Near Farmers Markets'] ? 'Yes' : 'No'}</Text>
 
                         <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Art Score: {data['Art Score']}</b></Text>
-                        <Text>Near Murals: {data['Near Murals'] ? 'Yes' : 'No'}</Text>
+                        <Text>Number of Nearby Murals: {data['Number of Nearby Murals']}</Text>
+                        <Text>Number of Nearby Sculptures: {data['Number of Nearby Sculptures']}</Text>
 
                         <Text ta="center" my="xl" fz={rem(30 / 1080 * props.height)}><b>Play Score: {data['Play Score']}</b></Text>
-                        <Text>Has Athletic Field: {data['Has Athletic Field'] ? 'Yes' : 'No'}</Text>
-                        <Text>Has Playground: {data['Has Playground'] ? 'Yes' : 'No'}</Text>
+                        <Text>Play Features: {data['Play Features'].length ? data['Play Features'].join(', ') : 'None'}</Text>
                     </Grid.Col>
                 </Grid>
             </Modal>
 
             <div className="polar-bar-chart">
-                <Text ta="center" fz={rem(24 / 1080 * props.height)}>{props.name}</Text>
+                <Text ta="center" fz={rem(24 / 1080 * props.height)}><b>{props.name}</b></Text>
                 {props.mode === 'all' ?
                     <>
                         <div className="segment" style={playStyle}></div>
