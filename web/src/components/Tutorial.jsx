@@ -9,24 +9,14 @@ import BikerProgress from './BikerProgress';
 const Tutorial = (props) => {
 
   const [mode, setMode] = useState('all');
-
-
+  const [visited, setVisited] = useState({
+    play: false,
+    env: false,
+    food: false,
+    art: false
+  });
 
   const HEIGHT = props.height * 0.94;
-
-  const ref1 = useRef(null)
-  const hovered1 = useHover(ref1)
-
-  const ref2 = useRef(null)
-  const hovered2 = useHover(ref2)
-
-  const ref3 = useRef(null)
-  const hovered3 = useHover(ref3)
-
-  const ref4 = useRef(null)
-  const hovered4 = useHover(ref4)
-
-  // const HEIGHT = 2000;
   const WIDTH = props.width;
 
 
@@ -150,7 +140,10 @@ const Tutorial = (props) => {
                 variant={mode === 'play' ? 'light' : ''}
                 radius={HEIGHT / 80}
                 fz="md"
-                onClick={() => setMode('play')}
+                onClick={() => {
+                  setMode('play');
+                  setVisited({...visited, play: true});
+                }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Play </Button>
@@ -162,7 +155,10 @@ const Tutorial = (props) => {
                 variant={mode === 'env' ? 'light' : ''}
                 radius={HEIGHT / 80}
                 fz="md"
-                onClick={() => setMode('env')}
+                onClick={() => {
+                  setMode('env');
+                  setVisited({...visited, env: true});
+                }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Environment </Button>
@@ -174,7 +170,10 @@ const Tutorial = (props) => {
                 variant={mode === 'art' ? 'light' : ''}
                 radius={HEIGHT / 80}
                 fz="md"
-                onClick={() => setMode('art')}
+                onClick={() => {
+                  setMode('art');
+                  setVisited({...visited, art: true});
+                }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Art </Button>
@@ -186,7 +185,10 @@ const Tutorial = (props) => {
                 variant={mode === 'food' ? 'light' : ''}
                 radius={HEIGHT / 80}
                 fz="md"
-                onClick={() => setMode('food')}
+                onClick={() => {
+                  setMode('food');
+                  setVisited({...visited, food: true});
+                }}
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 16 }}
                 fullWidth
               > Food </Button>
@@ -221,7 +223,7 @@ const Tutorial = (props) => {
 
             <Grid.Col span={6}>
               <Button
-                variant="light"
+                variant={Object.values(visited).every(Boolean) ? "" : "light"}
                 radius={HEIGHT / 80}
                 color="orange"
                 fz="xl"

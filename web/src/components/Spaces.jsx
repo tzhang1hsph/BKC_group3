@@ -303,7 +303,7 @@ const Spaces = (props) => {
 
             <Grid.Col span={6}>
               <Button
-                variant="light"
+                // variant="light"
                 radius={HEIGHT / 80}
                 color="orange"
                 fz="xl"

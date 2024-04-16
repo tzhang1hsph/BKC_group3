@@ -120,7 +120,7 @@ const PollResults = (props) => {
             </Grid.Col>
 
             <Grid.Col span={6}>
-              <Button color="lightgray" fz="xl"
+              <Button disabled fz="xl"
                 radius={HEIGHT / 80}
                 style={{  minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
             </Grid.Col>

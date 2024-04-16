@@ -27,7 +27,11 @@ const TitleCard = (props) => {
 
       <Grid.Col span={9} style={{ minHeight: 0.94 * HEIGHT }}>
         <img
-          style={{ 'margin-left': '-2rem', 'margin-top': '-2.8rem', 'clip-path': 'inset(0 27% 0 0)' }}
+          style={{
+            marginLeft: '-2rem',
+            marginTop: '-2.8rem',
+            clipPath: 'inset(0 27% 0 0)'
+          }}
           src="/assets/Cover.png"
         />
         <Overlay w={0.73 * WIDTH} backgroundOpacity={0}>
@@ -59,7 +63,7 @@ const TitleCard = (props) => {
 
         <Space h={HEIGHT / 15.3} />
 
-        <Button variant='light' color="orange" fz="xl"
+        <Button color="orange" fz="xl"
           onClick={routeChange}
           radius={HEIGHT / 80}
           style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 8 }} fullWidth> CLICK TO BEGIN </Button>
