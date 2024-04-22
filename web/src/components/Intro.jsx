@@ -2,9 +2,6 @@ import React, { useState, useRef } from 'react';
 import { useNavigate } from "react-router-dom";
 import { Button, Center, Overlay, AspectRatio, Image, Space, rem, Text, Grid, Skeleton, Box } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
-import BikerProgress from './BikerProgress';
-
-
 
 const Intro = (props) => {
 
@@ -27,7 +24,7 @@ const Intro = (props) => {
   const ref4 = useRef(null)
   const hovered4 = useHover(ref4)
   
-  const HEIGHT = props.height * 0.94;
+  const HEIGHT = props.height;
   const WIDTH = props.width;
 
   let navigate = useNavigate();
@@ -223,7 +220,7 @@ const Intro = (props) => {
           <img src='/assets/girl.jpeg' style={{
             width: 'auto',
             height: `${HEIGHT / 2}px`,
-            clipPath: `circle(${Math.min(HEIGHT / 8, WIDTH * 0.94 * 9 / 128)}px at 49% 26%)`,
+            clipPath: `circle(${Math.min(HEIGHT / 8, WIDTH * 9 / 128)}px at 49% 26%)`,
             transform: `translate(${HEIGHT * 3 / 400}px, ${HEIGHT / 20}px)`
           }}></img>
 
@@ -268,7 +265,7 @@ const Intro = (props) => {
 
         <Grid>
           <Grid.Col offset={8.9512} span={2.749}>
-            <Space h={0.853 * HEIGHT}></Space>
+            <Space h={0.853 * HEIGHT}/>
             <Grid gutter="xs">
               <Grid.Col span={12}>
                 <Button
