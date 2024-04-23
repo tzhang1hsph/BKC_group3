@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { Button, Image, Space, Text, Grid, Skeleton } from '@mantine/core';
+import { Button, Image, Space, Text, Grid, Skeleton, Center } from '@mantine/core';
 import { useHover } from 'usehooks-ts';
 
 import PolarBarChart from './Card';
@@ -64,114 +64,120 @@ const Spaces = (props) => {
     <div>
       <Grid>
         <Grid.Col span={9 - 72 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
-          <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+          <div className='flex-container' style={{ height: HEIGHT - 8 }}>
+            <Space h={HEIGHT / 12 + 16} />
             <Grid>
-              <Grid.Col span={1}></Grid.Col>
-
-              <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Boston Common"
-                  map={BostonCommon}
-                  hourly={BostonCommonH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
+              <Grid.Col offset={1} span={2.5}>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Boston Common"
+                    map={BostonCommon}
+                    hourly={BostonCommonH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
               </Grid.Col>
 
               <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Chinatown Park"
-                  map={ChinatownPark}
-                  hourly={ChinatownParkH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Chinatown Park"
+                    map={ChinatownPark}
+                    hourly={ChinatownParkH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
               </Grid.Col>
 
               <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="City Hall Plaza"
-                  map={CityHall}
-                  hourly={CityHallH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="City Hall Plaza"
+                    map={CityHall}
+                    hourly={CityHallH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
               </Grid.Col>
 
               <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Dewey Square Parks"
-                  map={DeweySquare}
-                  hourly={DeweySquareH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Dewey Square Parks"
+                    map={DeweySquare}
+                    hourly={DeweySquareH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
               </Grid.Col>
-
-              <Grid.Col span={1}></Grid.Col>
-
-
-              <Grid.Col span={1}></Grid.Col>
-
-              <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Fallon Field"
-                  map={FallonField}
-                  hourly={FallonFieldH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
-              </Grid.Col>
-
-              <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Olmsted Park"
-                  map={OlmstedPark}
-                  hourly={OlmstedParkH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
-              </Grid.Col>
-
-              <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Faneuil Square"
-                  map={FaneuilSquare}
-                  hourly={FaneuilSquareH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
-              </Grid.Col>
-
-              <Grid.Col span={2.5}>
-                <PolarBarChart
-                  mode={mode}
-                  name="Ross Playground"
-                  map={RossPlayground}
-                  hourly={RossPlaygroundH}
-                  height={HEIGHT}
-                />
-                <Space h={HEIGHT / 15}></Space>
-              </Grid.Col>
-
-              <Grid.Col span={1}></Grid.Col>
             </Grid>
 
             <Grid>
-              <Grid.Col span={1}></Grid.Col>
-
-              <Grid.Col span={10}>
-                <BikerProgress progress={0.6} height={HEIGHT} width={WIDTH} />
+              <Grid.Col offset={1} span={2.5}>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Fallon Field"
+                    map={FallonField}
+                    hourly={FallonFieldH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
               </Grid.Col>
 
-              <Grid.Col span={1}></Grid.Col>
+              <Grid.Col span={2.5}>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Olmsted Park"
+                    map={OlmstedPark}
+                    hourly={OlmstedParkH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
+              </Grid.Col>
+
+              <Grid.Col span={2.5}>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Faneuil Square"
+                    map={FaneuilSquare}
+                    hourly={FaneuilSquareH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
+              </Grid.Col>
+
+              <Grid.Col span={2.5}>
+                <Center>
+                  <PolarBarChart
+                    mode={mode}
+                    name="Ross Playground"
+                    map={RossPlayground}
+                    hourly={RossPlaygroundH}
+                    height={HEIGHT}
+                    width={WIDTH}
+                  />
+                </Center>
+              </Grid.Col>
+            </Grid>
+
+            <Grid>
+              <Grid.Col offset={1} span={10}>
+                <BikerProgress progress={0.6} height={HEIGHT} width={WIDTH} />
+              </Grid.Col>
             </Grid>
 
           </div>
@@ -179,7 +185,7 @@ const Spaces = (props) => {
 
 
         <Grid.Col span={3 - 24 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
-          <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+          <div className='flex-container' style={{ height: HEIGHT - 8 }}>
             <Space h={HEIGHT / 8 + HEIGHT / 20 + 20} />
             <div>
               <Text ta="left" fz="xl"><b>Your turn!</b></Text>

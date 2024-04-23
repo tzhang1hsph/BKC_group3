@@ -49,7 +49,7 @@ const Intro = (props) => {
 
   return (
     <div>
-      <div class='background-image' style={{
+      <div className='background-image' style={{
         backgroundImage: 'url(/assets/IntroBackground.png)',
         backgroundColor: '#dddddd',
         backgroundPosition: 'bottom center'
@@ -77,7 +77,7 @@ const Intro = (props) => {
             display: 'flex',
             justifyContent: 'center'
           }}>
-          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Play</Center>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(30 / 1080 * HEIGHT)}>Play</Center>
         </div>
 
         <div style={{
@@ -102,7 +102,7 @@ const Intro = (props) => {
             display: 'flex',
             justifyContent: 'center'
           }}>
-          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Environment</Center>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(30 / 1080 * HEIGHT)}>Environment</Center>
         </div>
 
         <div style={{
@@ -127,7 +127,7 @@ const Intro = (props) => {
             display: 'flex',
             justifyContent: 'center'
           }}>
-          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Food</Center>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(30 / 1080 * HEIGHT)}>Food</Center>
         </div>
 
         <div style={{
@@ -152,30 +152,25 @@ const Intro = (props) => {
             display: 'flex',
             justifyContent: 'center'
           }}>
-          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(33 / 1080 * HEIGHT)}>Art</Center>
+          <Center style={{ fontFamily: 'Engage Regular, sans-serif' }} c='#fffcf2' fz={rem(30 / 1080 * HEIGHT)}>Art</Center>
         </div>
 
-        <div style={{
+        <div className='flex-container' style={{
           position: 'absolute',
-          width: `${HEIGHT / 3}px`,
+          width: `${WIDTH / 6}px`,
           height: '100%',
           left: '2.5%',
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: 'center'
+          justifyContent: 'space-around'
         }}>
-          <img src='/assets/girl.jpeg' style={{
-            width: 'auto',
-            height: `${HEIGHT / 2}px`,
-            clipPath: `circle(${Math.min(HEIGHT / 8, WIDTH * 9 / 128)}px at 49% 26%)`,
-            transform: `translate(${HEIGHT * 3 / 400}px, ${HEIGHT / 20}px)`
+          <img src='/assets/girl.png' style={{
+            width: '100%',
+            height: 'auto'
           }}></img>
 
           <div style={{
             backgroundColor: '#fffcf2',
             borderRadius: `${HEIGHT / 40}px`,
-            height: `${HEIGHT / 1.7}px`,
-            transform: `translate(0px, -${HEIGHT / 6}px)`
+            height: `${HEIGHT / 1.7}px`
           }}>
             <Text ta='left' fz='lg' m='10%'>
               {hovered1 ? <>
@@ -212,7 +207,7 @@ const Intro = (props) => {
 
         <Grid>
           <Grid.Col offset={9 - 72 / WIDTH} span={3 - 24 / WIDTH}>
-            <div class='flex-container' style={{ height: HEIGHT - 8, justifyContent: 'flex-end' }}>
+            <div className='flex-container' style={{ height: HEIGHT - 8, justifyContent: 'flex-end' }}>
               <Grid gutter="xs">
                 <Grid.Col span={12}>
                   <Button

@@ -22,7 +22,7 @@ const TitleCard = (props) => {
 
   return (
     <div>
-      <div class='background-image' style={{
+      <div className='background-image' style={{
         backgroundImage: 'url(/assets/Cover.png)',
         backgroundColor: '#007c9c',
         clipPath: `inset(0% ${(WIDTH * 1 / 4) / (WIDTH - 8) * 100}% 0% 0%)`
@@ -47,7 +47,7 @@ const TitleCard = (props) => {
 
 
           <Grid.Col span={3 - 24 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
-            <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+            <div className='flex-container' style={{ height: HEIGHT - 8 }}>
               <Space h={HEIGHT / 8} />
               <div>
                 <Text ta="left" fz="lg">Boston has <b>453</b> open spaces.</Text>

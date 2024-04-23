@@ -204,13 +204,9 @@ const Poll = (props) => {
             </Grid>
 
             <Grid>
-              <Grid.Col span={1}></Grid.Col>
-
-              <Grid.Col span={10}>
+              <Grid.Col offset={1} span={10}>
                 <BikerProgress progress={0.8} height={HEIGHT} width={WIDTH} />
               </Grid.Col>
-
-              <Grid.Col span={1}></Grid.Col>
             </Grid>
           </div>
         </Grid.Col>

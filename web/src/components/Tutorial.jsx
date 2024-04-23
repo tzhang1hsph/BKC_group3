@@ -39,11 +39,9 @@ const Tutorial = (props) => {
           <Grid.Col span={9 - 72 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
             <div class='flex-container' style={{ height: HEIGHT - 8, justifyContent: 'flex-end' }}>
               <Grid>
-                <Grid.Col span={1}></Grid.Col>
-                <Grid.Col span={10}>
+                <Grid.Col offset={1} span={10}>
                   <BikerProgress progress={0.4} height={HEIGHT} width={WIDTH} />
                 </Grid.Col>
-                <Grid.Col span={1}></Grid.Col>
               </Grid>
             </div>
           </Grid.Col>

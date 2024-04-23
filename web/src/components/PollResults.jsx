@@ -54,7 +54,7 @@ const PollResults = (props) => {
     <div>
       <Grid>
         <Grid.Col span={9 - 72 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
-          <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+          <div className='flex-container' style={{ height: HEIGHT - 8 }}>
             <Space h={HEIGHT / 12 + 16} />
             <Center>
               <PieChart width={HEIGHT * 3 / 4} height={HEIGHT * 2 / 3}>
@@ -73,20 +73,16 @@ const PollResults = (props) => {
             </Center>
 
             <Grid>
-              <Grid.Col span={1}></Grid.Col>
-
-              <Grid.Col span={10}>
+              <Grid.Col offset={1} span={10}>
                 <BikerProgress progress={1} height={HEIGHT} width={WIDTH} />
               </Grid.Col>
-
-              <Grid.Col span={1}></Grid.Col>
             </Grid>
           </div>
         </Grid.Col>
 
 
         <Grid.Col span={3 - 24 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
-          <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+          <div className='flex-container' style={{ height: HEIGHT - 8 }}>
             <Space h={HEIGHT / 8 + HEIGHT / 20 + 20} />
             <div>
               <Text ta="left" fz="xl"><b>Poll Results</b></Text>

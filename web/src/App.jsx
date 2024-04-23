@@ -54,11 +54,11 @@ function App() {
         fontFamily: 'Engage Regular, sans-serif',
       },
       fontSizes: {
-        xs: rem(10 / 1080 * height),
-        sm: rem(11 / 1080 * height),
-        md: rem(20 / 1080 * height),
-        lg: rem(24 / 1080 * height),
-        xl: rem(28 / 1080 * height),
+        xs: rem(Math.min(10 / 1080 * height, 10 / 1920 * width)),
+        sm: rem(Math.min(15 / 1080 * height, 15 / 1920 * width)),
+        md: rem(Math.min(20 / 1080 * height, 20 / 1920 * width)),
+        lg: rem(Math.min(24 / 1080 * height, 24 / 1920 * width)),
+        xl: rem(Math.min(28 / 1080 * height, 28 / 1920 * width))
       },
     }}
   >{
