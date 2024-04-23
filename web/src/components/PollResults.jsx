@@ -109,6 +109,7 @@ const PollResults = (props) => {
                   style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
                 > &#8635; </Button>
               </Grid.Col>
+              
               <Grid.Col span={6}>
                 <Button variant="light" color="orange" fz="xl"
                   onClick={routeChangeBack}

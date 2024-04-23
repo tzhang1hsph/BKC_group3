@@ -22,7 +22,11 @@ const TitleCard = (props) => {
 
   return (
     <div>
-      <div class='background-image' style={{ backgroundImage: 'url(/assets/Cover.png)', backgroundColor: '#007c9c', clipPath: `inset(0% ${(WIDTH * 1 / 4) / (WIDTH - 8) * 100}% 0% 0%)` }}></div>
+      <div class='background-image' style={{
+        backgroundImage: 'url(/assets/Cover.png)',
+        backgroundColor: '#007c9c',
+        clipPath: `inset(0% ${(WIDTH * 1 / 4) / (WIDTH - 8) * 100}% 0% 0%)`
+      }}></div>
       <Overlay backgroundOpacity={0}>
         <Grid>
           <Grid.Col span={9 - 72 / WIDTH}>
