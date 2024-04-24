@@ -15,10 +15,10 @@ const TitleCard = (props) => {
     navigate(path);
   }
 
-  spacesPlot['layout']['height'] = 7 / 12 * HEIGHT;
-  spacesPlot['layout']['width'] = (WIDTH + 8) / 4 - 16;
-  spacesPlot['layout']['legend']['font']['size'] = HEIGHT / 72;
-  spacesPlot['layout']['mapbox']['zoom'] = 2 / 1475 * HEIGHT + 25285 / 2950;
+  spacesPlot.layout.height = 7 / 12 * HEIGHT;
+  spacesPlot.layout.width = (WIDTH + 8) / 4 - 16;
+  spacesPlot.layout.legend.font.size = HEIGHT / 72;
+  spacesPlot.layout.mapbox.zoom = 2 / 1475 * HEIGHT + 25285 / 2950;
 
   return (
     <div>

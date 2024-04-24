@@ -10,6 +10,13 @@ const PolarBarChart = (props) => {
     const [opened, { open, close }] = useDisclosure(false);
     const data = final_data_table[props.name]
 
+    props.map.layout.height = props.height / 2;
+    props.map.layout.width = props.width * 0.45 - 24;
+    props.map.layout.legend.font.size = Math.min(props.height / 72, props.width / 128);
+
+    props.hourly.layout.height = props.height / 2;
+    props.hourly.layout.width = props.width * 0.45 - 24;
+
     const env = data['Environment Score'];
     const food = data['Food Score'];
     const play = data['Play Score'];
@@ -85,17 +92,19 @@ const PolarBarChart = (props) => {
 
     return (
         <>
-            <Modal className="modal" size="90%" opened={opened} onClose={close} radius={props.height / 80} centered>
+            <Modal className="modal" size="100%" opened={opened} onClose={close} radius={props.height / 80} centered>
                 <Title order={1} ta="center" size={rem(Math.min(60 / 1080 * props.height, 60 / 1920 * props.width))}>{props.name}</Title>
                 <Text ta="center" fz='xl'><b>{data['Description']}</b></Text>
                 <Grid>
                     <Grid.Col span={6}>
-                        <img width='auto' height='900px' src={data['Image']} style={{ 'display': 'block', 'margin': 'auto' }}></img>
+                        <img width='100%' height='auto' src={data['Image']} style={{ 'display': 'block', 'margin': 'auto' }}></img>
 
                         <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Activity Score: {data['Activity Score']}</b></Text>
                         <Text>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</Text>
                         <Text>Average Daily Roundtrips at Nearby Bluebike Stations: {data['Daily Roundtrips'].toFixed(2)}</Text>
                         <Text>Proportion of Roundtrips at Nearby Bluebike Stations: {(data['Weighted Roundtrip Ratio'] * 100).toFixed(1)}%</Text>
+                        <br></br>
+                        <Text ta="center"><b>Hourly Bluebike Trips at Nearby Bluebike Stations</b></Text>
                         <Plot data={props.hourly.data} layout={props.hourly.layout} />
 
                         <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Environment Score: {data['Environment Score']}</b></Text>
@@ -104,7 +113,8 @@ const PolarBarChart = (props) => {
                     </Grid.Col>
 
                     <Grid.Col span={6}>
-                        <Plot data={props.map.data} layout={props.map.layout} style={{ 'display': 'block', 'margin': 'auto' }} />
+                    <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Space Map</b></Text>
+                        <Plot data={props.map.data} layout={props.map.layout} />
 
                         <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Safety Score: {data['Safety Score']}</b></Text>
                         <Text>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</Text>
