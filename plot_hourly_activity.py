@@ -77,7 +77,6 @@ def plot_activity(space_name, show=False, verbose=False):
         'Time': False
     }, line_close=True, start_angle=270, width=800, height=600)
     fig.update_layout(
-        title=f'Hourly Bluebike Trips Near {space_name}',
         polar={
             'angularaxis': {
                 'tickmode': 'array',
@@ -85,8 +84,8 @@ def plot_activity(space_name, show=False, verbose=False):
                 'ticktext': HOURS_FORMATTED
             }
         },
-        legend_title_text='',
-        margin={"r":0,"t":50,"l":0,"b":25}
+        font={'family': 'arial', 'color': '#07455d'},
+        legend_title_text=''
     )
     if show:
         fig.show()

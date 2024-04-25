@@ -1,37 +1,22 @@
 #root {
   max-width: 4800px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
   background-color: #fffcf2;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.background-image {
+  background-position: bottom left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card {
@@ -47,44 +32,14 @@
   color: #07455d;
 }
 
-.polar-bar-chart {
-  width: 540px;
-  height: 540px;
-}
-
 .segment {
   position: absolute;
-}
-
-.center-image-container {
-  height: 200px;
-  width: 200px;
-  transform: translate(170px, 170px)
 }
 
 .center-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  clip-path: circle(100px);
-}
-
-.inner-tick-container {
-  position: absolute;
-  height: 275px;
-  width: 275px;
-  transform: translate(132.5px, 132.5px);
-}
-
-.outer-tick-container {
-  position: absolute;
-  height: 350px;
-  width: 350px;
-  transform: translate(95px, 95px);
-}
-
-.ticks {
-  font-size: 15px;
 }
 
 .activity-bar-container {
@@ -92,9 +47,4 @@
   height: 450px;
   width: 450px;
   transform: translate(45px, 45px);
-}
-
-.activity-biker-icon {
-  height: 40px;
-  width: 40px;
 }

@@ -21,14 +21,12 @@ const Poll = (props) => {
 
   async function getVotes() {
     const { data } = await supabase.from("responses").select();
-    // console.log(data);
     setVotes(data);
   }
 
-
   const [mode, setMode] = useState('');
 
-  const HEIGHT = props.height * 0.94;
+  const HEIGHT = props.height;
   const WIDTH = props.width;
 
   let navigate = useNavigate();
@@ -41,13 +39,10 @@ const Poll = (props) => {
   }
 
   const routeChangeNext = () => {
-
-
     if (mode === 'play') {
       let curr = votes[0].count;
       mod(curr, 1);
     }
-
     else if (mode === 'env') {
       let curr = votes[1].count;
       mod(curr, 2);
@@ -60,9 +55,11 @@ const Poll = (props) => {
       let curr = votes[3].count;
       mod(curr, 4);
     }
+
     let path = `/pollresults`;
     navigate(path);
   }
+
   const routeChangeBack = () => {
     let path = `/spaces`;
     navigate(path);
@@ -74,207 +71,194 @@ const Poll = (props) => {
   }
 
   return (
-
     <div>
-      <Space h={HEIGHT / 5} />
-
       <Grid>
-        <Grid.Col offset={0.002} span={9.07} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
+        <Grid.Col span={9 - 72 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
+          <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+            <Space h={HEIGHT / 12 + 16}/>
+            <Grid>
+              <Grid.Col span={1} ></Grid.Col>
 
-          <Grid gutter={HEIGHT / 20}>
-            <Grid.Col span={1} ></Grid.Col>
-
-            <Grid.Col span={5}>
-              <div>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Play.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#fffcf2" backgroundOpacity={mode === 'play' ? 0.8 : 0}>
-                    <Button
-                      color={`rgba(0,124,156,${mode === 'play' ? 1 : 0.8})`}
-                      onClick={() => setMode('play')}
-                      variant={mode === 'play' ? 'light' : ''}
+              <Grid.Col span={5}>
+                <div>
+                  <AspectRatio h={HEIGHT / 3.2}>
+                    <Image
                       radius={HEIGHT / 50}
+                      src="/assets/Play.jpeg"
                       fullWidth
                       h={HEIGHT / 3.2}
-                      fz={rem(50 / 1080 * HEIGHT)}
-                      style={{ fontFamily: 'Engage Regular, sans-serif' }}
-                    > Play </Button>
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
+                    />
 
-            <Grid.Col span={5}>
-              <div>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Environment.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#fffcf2" backgroundOpacity={mode === 'env' ? 0.8 : 0}>
-                    <Button
-                      color={`rgba(90,175,169,${mode === 'env' ? 1 : 0.8})`}
-                      onClick={() => setMode('env')}
-                      variant={mode === 'env' ? 'light' : ''}
+                    <Overlay
+                      h={HEIGHT / 3.2}
                       radius={HEIGHT / 50}
+                      color="#fffcf2" backgroundOpacity={mode === 'play' ? 0.8 : 0}>
+                      <Button
+                        color={`rgba(0,124,156,${mode === 'play' ? 1 : 0.8})`}
+                        onClick={() => setMode('play')}
+                        variant={mode === 'play' ? 'light' : ''}
+                        radius={HEIGHT / 50}
+                        fullWidth
+                        h={HEIGHT / 3.2}
+                        fz={rem(50 / 1080 * HEIGHT)}
+                        style={{ fontFamily: 'Engage Regular, sans-serif' }}
+                      > Play </Button>
+                    </Overlay>
+                  </AspectRatio>
+                </div>
+              </Grid.Col>
+
+              <Grid.Col span={5}>
+                <div>
+                  <AspectRatio h={HEIGHT / 3.2}>
+                    <Image
+                      radius={HEIGHT / 50}
+                      src="/assets/Environment.jpeg"
                       fullWidth
                       h={HEIGHT / 3.2}
-                      fz={rem(50 / 1080 * HEIGHT)}
-                      style={{ fontFamily: 'Engage Regular, sans-serif' }}
-                    > Environment </Button>
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
+                    />
 
-            <Grid.Col span={1}></Grid.Col>
-
-
-            <Grid.Col span={1} ></Grid.Col>
-
-            <Grid.Col span={5}>
-              <div>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Art.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#fffcf2" backgroundOpacity={mode === 'art' ? 0.8 : 0}>
-                    <Button
-                      color={`rgba(227,104,91,${mode === 'art' ? 1 : 0.8})`}
-                      onClick={() => setMode('art')}
-                      variant={mode === 'art' ? 'light' : ''}
+                    <Overlay
+                      h={HEIGHT / 3.2}
                       radius={HEIGHT / 50}
+                      color="#fffcf2" backgroundOpacity={mode === 'env' ? 0.8 : 0}>
+                      <Button
+                        color={`rgba(90,175,169,${mode === 'env' ? 1 : 0.8})`}
+                        onClick={() => setMode('env')}
+                        variant={mode === 'env' ? 'light' : ''}
+                        radius={HEIGHT / 50}
+                        fullWidth
+                        h={HEIGHT / 3.2}
+                        fz={rem(50 / 1080 * HEIGHT)}
+                        style={{ fontFamily: 'Engage Regular, sans-serif' }}
+                      > Environment </Button>
+                    </Overlay>
+                  </AspectRatio>
+                </div>
+              </Grid.Col>
+
+              <Grid.Col span={1}></Grid.Col>
+
+
+              <Grid.Col span={1} ></Grid.Col>
+
+              <Grid.Col span={5}>
+                <div>
+                  <AspectRatio h={HEIGHT / 3.2}>
+                    <Image
+                      radius={HEIGHT / 50}
+                      src="/assets/Art.jpeg"
                       fullWidth
                       h={HEIGHT / 3.2}
-                      fz={rem(50 / 1080 * HEIGHT)}
-                      style={{ fontFamily: 'Engage Regular, sans-serif' }}
-                    > Art </Button>
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
+                    />
 
-            <Grid.Col span={5}>
-              <div>
-                <AspectRatio h={HEIGHT / 3.2}>
-                  <Image
-                    radius={HEIGHT / 50}
-                    src="/assets/Food.jpeg"
-                    fullWidth
-                    h={HEIGHT / 3.2}
-                  />
-
-                  <Overlay
-                    h={HEIGHT / 3.2}
-                    radius={HEIGHT / 50}
-                    color="#fffcf2" backgroundOpacity={mode === 'food' ? 0.8 : 0}>
-                    <Button
-                      color={`rgba(248,156,90,${mode === 'food' ? 1 : 0.8})`}
-                      onClick={() => setMode('food')}
-                      variant={mode === 'food' ? 'light' : ''}
+                    <Overlay
+                      h={HEIGHT / 3.2}
                       radius={HEIGHT / 50}
+                      color="#fffcf2" backgroundOpacity={mode === 'art' ? 0.8 : 0}>
+                      <Button
+                        color={`rgba(227,104,91,${mode === 'art' ? 1 : 0.8})`}
+                        onClick={() => setMode('art')}
+                        variant={mode === 'art' ? 'light' : ''}
+                        radius={HEIGHT / 50}
+                        fullWidth
+                        h={HEIGHT / 3.2}
+                        fz={rem(50 / 1080 * HEIGHT)}
+                        style={{ fontFamily: 'Engage Regular, sans-serif' }}
+                      > Art </Button>
+                    </Overlay>
+                  </AspectRatio>
+                </div>
+              </Grid.Col>
+
+              <Grid.Col span={5}>
+                <div>
+                  <AspectRatio h={HEIGHT / 3.2}>
+                    <Image
+                      radius={HEIGHT / 50}
+                      src="/assets/Food.jpeg"
                       fullWidth
                       h={HEIGHT / 3.2}
-                      fz={rem(50 / 1080 * HEIGHT)}
-                      style={{ fontFamily: 'Engage Regular, sans-serif' }}
-                    > Food </Button>
-                  </Overlay>
-                </AspectRatio>
-              </div>
-            </Grid.Col>
+                    />
 
-            <Grid.Col span={1}></Grid.Col>
-          </Grid>
+                    <Overlay
+                      h={HEIGHT / 3.2}
+                      radius={HEIGHT / 50}
+                      color="#fffcf2" backgroundOpacity={mode === 'food' ? 0.8 : 0}>
+                      <Button
+                        color={`rgba(248,156,90,${mode === 'food' ? 1 : 0.8})`}
+                        onClick={() => setMode('food')}
+                        variant={mode === 'food' ? 'light' : ''}
+                        radius={HEIGHT / 50}
+                        fullWidth
+                        h={HEIGHT / 3.2}
+                        fz={rem(50 / 1080 * HEIGHT)}
+                        style={{ fontFamily: 'Engage Regular, sans-serif' }}
+                      > Food </Button>
+                    </Overlay>
+                  </AspectRatio>
+                </div>
+              </Grid.Col>
 
-          <Space h={HEIGHT / 25.3} />
+              <Grid.Col span={1}></Grid.Col>
+            </Grid>
 
-          <Grid>
-            <Grid.Col span={1}></Grid.Col>
-
-            <Grid.Col span={10}>
-              <BikerProgress progress={0.8} height={HEIGHT} width={WIDTH} />
-            </Grid.Col>
-
-            <Grid.Col span={1}></Grid.Col>
-          </Grid>
-
+            <Grid>
+              <Grid.Col offset={1} span={10}>
+                <BikerProgress progress={0.8} height={HEIGHT} width={WIDTH} />
+              </Grid.Col>
+            </Grid>
+          </div>
         </Grid.Col>
 
 
+        <Grid.Col span={3 - 24 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
+          <div class='flex-container' style={{ height: HEIGHT - 8 }}>
+            <Space h={HEIGHT / 8 + HEIGHT / 20 + 20} />
+            <div>
+              <Text ta="left" fz="xl"><b>Poll</b></Text>
+              <Skeleton ta="left" fz="lg" height={HEIGHT / 2} visible={false}>
+                Now that you’ve learned more about your community, and what parts make it so special, take a step back and think.
+                <br></br>
+                Which theme is most important to you?
+                What do you think makes open spaces such an amazing place to socialize?
+                Why do you gather?
+                <br></br><br></br>
+                <b>{mode !== '' ? 'Great choice! Now go to the next page to see what other people thought!' : 'Click on one of the themes to cast your vote!'}</b>
+              </Skeleton>
+            </div>
 
-        <Grid.Col span={2.8} style={{ minHeight: 8.4 * HEIGHT / 10 }}>
-          <Text ta="left" fz="xl"><b>Poll</b></Text>
+            <Grid gutter="xs">
+              <Grid.Col span={12}>
+                <Button
+                  variant="light"
+                  radius={HEIGHT / 80}
+                  color="orange"
+                  fz="xl"
+                  onClick={restart}
+                  style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
+                > &#8635; </Button>
+              </Grid.Col>
+              <Grid.Col span={6}>
+                <Button variant="light" color="orange" fz="xl"
+                  onClick={routeChangeBack}
+                  radius={HEIGHT / 80}
+                  style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60; </Button>
+              </Grid.Col>
 
-          <Skeleton ta="left" fz="lg" height={HEIGHT / 2} visible={false}>
-          Now that you’ve learned more about your community, and what parts make it so special, take a step back and think.
-          <br></br>
-          Which theme is most important to you?
-          What do you think makes open spaces such an amazing place to socialize?
-          Why do you gather?
-          <br></br><br></br>
-          <b>Click on one of the themes to cast your vote!</b>
-          <br></br>
-          <b>{mode !== '' ? 'Great choice! Now go to the next page to see what other people thought!' : ''}</b>
-          </Skeleton>
-
-          <Space h={HEIGHT * 0.093} />
-
-          <Grid gutter="xs">
-          <Grid.Col span={12}>
-            <Button
-                variant="light"
-                radius={HEIGHT / 80}
-                color="orange"
-                fz="xl"
-                onClick={restart}
-                style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
-              > &#8635; </Button>
-            </Grid.Col>
-            <Grid.Col span={6}>
-              <Button variant="light" color="orange" fz="xl"
-                onClick={routeChangeBack}
-                radius={HEIGHT / 80}
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#60; </Button>
-            </Grid.Col>
-
-            <Grid.Col span={6}>
-              <Button variant={mode === '' ? "light" : ''} color="orange" fz="xl"
-                onClick={routeChangeNext}
-                radius={HEIGHT / 80}
-                style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
-            </Grid.Col>
-          </Grid>
-
-
+              <Grid.Col span={6}>
+                <Button variant={mode === '' ? "light" : ''} color="orange" fz="xl"
+                  onClick={routeChangeNext}
+                  radius={HEIGHT / 80}
+                  style={{ minHeight: HEIGHT / 8 }} fullWidth> &#62; </Button>
+              </Grid.Col>
+            </Grid>
+          </div>
         </Grid.Col>
-
-
 
       </Grid>
 
-    </div>
+    </div >
 
   );
 };
