@@ -199,7 +199,7 @@ const Intro = (props) => {
                   Today, I'll be your guide as we explore the beating heart of our communities:
                   the open spaces where we gather.
                   <br></br><br></br>
-                  <b>Hover over a circle to learn more!</b>
+                  <b>Hover over the circles to learn more about the four themes of gathering!</b>
                 </>}
             </Text>
           </div>

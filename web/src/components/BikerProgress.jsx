@@ -1,19 +1,19 @@
 import React from 'react';
-import { Progress } from '@mantine/core';
+import { Progress, Space } from '@mantine/core';
 
 const BikerProgress = ({ progress, height, width }) => {
     return (
-        <>
+        <div style={{display: 'flex', flexDirection: 'column'}}>
             <img src='/assets/BikerIcon.svg' style={{
-                width: height / 12,
-                height: height / 12,
-                transform: `translate(${(2 * progress - 1) / 3.265 * width - width / 80}px, ${height / 50}px)`
+                width: width / 20,
+                transform: `translate(${width / -24.83 + progress * (0.625 * width - 11)}px, ${0}px)`
             }}></img>
-            <Progress.Root size={height / 480} radius="lg">
+            <Progress.Root size={width / 480} radius={0}>
                 <Progress.Section value={100 * progress} color="#07455d"></Progress.Section>
                 <Progress.Section value={100 * (1 - progress)} color="#b4c7ce"></Progress.Section>
             </Progress.Root>
-        </>
+            <Space h={height / 40} />
+        </div>
     );
 };
 

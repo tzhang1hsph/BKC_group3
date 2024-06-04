@@ -16,11 +16,9 @@ const TitleCard = (props) => {
   }
 
   spacesPlot.layout.height = 7 / 12 * HEIGHT;
-  spacesPlot.layout.width = (WIDTH + 8) / 4 - 16;
+  spacesPlot.layout.width = (WIDTH + 8) / 3 - 16;
   spacesPlot.layout.legend.font.size = HEIGHT / 72;
   spacesPlot.layout.mapbox.zoom = 2 / 1475 * HEIGHT + 25285 / 2950;
-
-  const smallMargin = HEIGHT / 100;
 
   return (
     <div>
@@ -31,7 +29,7 @@ const TitleCard = (props) => {
       }}></div>
       <Overlay backgroundOpacity={0}>
         <Grid>
-          <Grid.Col span={8.5 - 72 / WIDTH}>
+          <Grid.Col span={8 - 64 / WIDTH}>
             <Text ta='left'
               mt={rem(168 / 1080 * HEIGHT)}
               ml={rem(113 / 1080 * HEIGHT)}
@@ -46,9 +44,8 @@ const TitleCard = (props) => {
               fz={rem(36 / 1080 * HEIGHT)}
             >How can gathering spaces change a community?</Text>
           </Grid.Col>
-          {/* <Grid.Col span={smallMargin}></Grid.Col> */}
 
-          <Grid.Col span={3 - 24 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
+          <Grid.Col span={4 - 32 / WIDTH} style={{ minHeight: HEIGHT - 8 }}>
             <div className='flex-container' style={{ height: HEIGHT - 8 }}>
               <Space h={HEIGHT / 8} />
               <div>
@@ -62,7 +59,6 @@ const TitleCard = (props) => {
                 style={{ fontFamily: 'Engage Regular, sans-serif', minHeight: HEIGHT / 8 }} fullWidth> CLICK TO BEGIN </Button>
             </div>
           </Grid.Col>
-          {/* <Grid.Col span={smallMargin}></Grid.Col> */}
 
         </Grid>
       </Overlay>

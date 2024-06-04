@@ -204,8 +204,8 @@ const PolarBarChart = (props) => {
                         height: 2 / 27 * dim,
                         width: 2 / 27 * dim,
                         transform: `translate(
-                            ${4 / 9 * dim * Math.cos(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 60)}px,
-                            ${-4 / 9 * dim * Math.sin(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 60) - 251 / 540 * dim}px
+                            ${0.45 * dim * Math.cos(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 60)}px,
+                            ${-0.45 * dim * Math.sin(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 60) - 251 / 540 * dim}px
                         ) rotate(${activity * Math.PI / 50 - Math.PI / 60}rad)`
                     }}></img>
                 </div>

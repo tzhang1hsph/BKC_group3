@@ -192,10 +192,9 @@ const Spaces = (props) => {
 
               <Skeleton ta="left" fz="lg" height={HEIGHT / 3.5} visible={false}>
                 {mode === 'all' ? <>
-                  Take the time to look through eight open spaces spread across Boston,
-                  and click through what makes each so special. Some of them may be familiar,
-                  but think about what stands out to you, whether it’s the environment,
-                  the playgrounds, the artwork, or the delicious food. Think about the four themes!
+                  Take a look at these eight open spaces spread across Boston and consider what makes each so special.
+                  Think about the four themes—maybe it's the environment, the playgrounds, the artwork, or the delicious food.
+                  Click on the image in the center of each chart for more information about each space.
                 </> : mode === 'play' ? <>
                   This score is calculated based on the number of play features the open space has.
                 </> : mode === 'env' ? <>
