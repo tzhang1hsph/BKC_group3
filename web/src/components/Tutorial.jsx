@@ -17,19 +17,9 @@ const Tutorial = (props) => {
   const WIDTH = props.width;
 
   let navigate = useNavigate();
-  const routeChangeNext = () => {
-    let path = `/spaces`;
-    navigate(path);
-  }
-  const routeChangeBack = () => {
-    let path = `/intro`;
-    navigate(path);
-  }
-
-  const restart = () => {
-    let path = `/`;
-    navigate(path);
-  }
+  const routeChangeNext = () => {navigate(`/spaces`);}
+  const routeChangeBack = () => {navigate('/intro');}
+  const restart = () => {navigate('/');}
 
   return (
     <div>

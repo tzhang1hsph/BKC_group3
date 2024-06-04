@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react'
-import './App.css'
+import { useState, useEffect } from 'react';
+import './App.css';
 import '/public/Engage/Engage.css';
 
 import '@mantine/core/styles.css';
-import Intro from "./components/Intro"
-import TitleCard from "./components/TitleCard"
-import Spaces from "./components/Spaces"
-import Tutorial from "./components/Tutorial"
-
-import Poll from "./components/Poll"
-import PollResults from "./components/PollResults"
+import TitleCard from "./components/TitleCard";
+import Map from './components/Map';
+import Intro from "./components/Intro";
+import Tutorial from "./components/Tutorial";
+import Spaces from "./components/Spaces";
+import Poll from "./components/Poll";
+import PollResults from "./components/PollResults";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -67,6 +67,8 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<TitleCard height={height} width={width} />}>
+            </Route>
+            <Route path="/map" element={<Map height={height} width={width} />}>
             </Route>
             <Route path="/intro" element={<Intro height={height} width={width} />}>
             </Route>

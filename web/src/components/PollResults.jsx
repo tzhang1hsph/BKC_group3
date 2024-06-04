@@ -31,16 +31,10 @@ const PollResults = (props) => {
   const WIDTH = props.width;
 
   let navigate = useNavigate();
-  const routeChangeNext = () => {
-    let path = `/`;
-    navigate(path);
-  }
-
   const routeChangeBack = () => {
     let path = `/poll`;
     navigate(path);
   }
-
   const restart = () => {
     let path = `/`;
     navigate(path);

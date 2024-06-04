@@ -47,18 +47,9 @@ const Spaces = (props) => {
   const hovered4 = useHover(ref4);
 
   let navigate = useNavigate();
-  const routeChangeNext = () => {
-    let path = `/poll`;
-    navigate(path);
-  }
-  const routeChangeBack = () => {
-    let path = `/tutorial`;
-    navigate(path);
-  }
-  const restart = () => {
-    let path = `/`;
-    navigate(path);
-  }
+  const routeChangeNext = () => {navigate(`/poll`);}
+  const routeChangeBack = () => {navigate('/tutorial');}
+  const restart = () => {navigate('/');}
 
   return (
     <div>

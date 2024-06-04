@@ -56,19 +56,10 @@ const Poll = (props) => {
       mod(curr, 4);
     }
 
-    let path = `/pollresults`;
-    navigate(path);
+    navigate('/pollresults');
   }
-
-  const routeChangeBack = () => {
-    let path = `/spaces`;
-    navigate(path);
-  }
-
-  const restart = () => {
-    let path = `/`;
-    navigate(path);
-  }
+  const routeChangeBack = () => {navigate('/spaces');}
+  const restart = () => {navigate('/');}
 
   return (
     <div>

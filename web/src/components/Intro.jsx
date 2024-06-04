@@ -33,19 +33,9 @@ const Intro = (props) => {
   const translateY = y => Math.min(y * HEIGHT / 2798, HEIGHT - ((2798 - y) * WIDTH / 4182));
 
   let navigate = useNavigate();
-  const routeChangeNext = () => {
-    let path = `/tutorial`;
-    navigate(path);
-  }
-  const routeChangeBack = () => {
-    let path = `/`;
-    navigate(path);
-  }
-
-  const restart = () => {
-    let path = `/`;
-    navigate(path);
-  }
+  const routeChangeNext = () => {navigate(`/tutorial`);}
+  const routeChangeBack = () => {navigate('/map');}
+  const restart = () => {navigate('/');}
 
   return (
     <div>
