@@ -138,9 +138,9 @@ const Spaces = (props) => {
                 <Center>
                   <PolarBarChart
                     mode={mode}
-                    name="Olmsted Park"
-                    map={OlmstedPark}
-                    hourly={OlmstedParkH}
+                    name="Faneuil Square"
+                    map={FaneuilSquare}
+                    hourly={FaneuilSquareH}
                     height={HEIGHT}
                     width={WIDTH}
                   />
@@ -151,15 +151,15 @@ const Spaces = (props) => {
                 <Center>
                   <PolarBarChart
                     mode={mode}
-                    name="Faneuil Square"
-                    map={FaneuilSquare}
-                    hourly={FaneuilSquareH}
+                    name="Olmsted Park"
+                    map={OlmstedPark}
+                    hourly={OlmstedParkH}
                     height={HEIGHT}
                     width={WIDTH}
                   />
                 </Center>
               </Grid.Col>
-
+              
               <Grid.Col span={2.5}>
                 <Center>
                   <PolarBarChart
