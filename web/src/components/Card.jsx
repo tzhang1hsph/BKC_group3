@@ -23,7 +23,7 @@ const PolarBarChart = (props) => {
     const art = data['Art Score'];
     const activity = data['Activity Score'];
 
-    const dim = Math.max(540 / 2798 * props.height, 540 / 4182 * props.width);
+    const dim = Math.max(540 / 2798 * props.height * props.size, 540 / 4182 * props.width * props.size);
 
     const playStyle = {
         height: (play * 0.0075 + 1) * 5 / 27 * dim,
@@ -136,8 +136,8 @@ const PolarBarChart = (props) => {
                 </Grid>
             </Modal>
 
-            <div style={{ width: dim, height: dim }}>
-                <Text ta="center" fz='lg'><b>{props.name}</b></Text>
+            <div style={{ width: dim, height: dim * 1.1 }}>
+                <Text ta="center" fz={rem(Math.min(24 / 1080 * props.height * props.size, 24 / 1920 * props.width * props.size))}><b>{props.name}</b></Text>
                 {props.mode === 'all' ?
                     <>
                         <div className="segment" style={playStyle}></div>
@@ -164,8 +164,8 @@ const PolarBarChart = (props) => {
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
-                    <Text fz='xs' className="ticks" position='absolute' style={{
-                        transform: `translate(${11 / 540 * dim}px, -${31 / 54 * dim}px) rotate(2deg)`
+                    <Text fz={rem(Math.min(10 / 1080 * props.height * props.size, 10 / 1920 * props.width * props.size))} className="ticks" position='absolute' style={{
+                        transform: `translate(${13 / 540 * dim}px, -${30 / 54 * dim}px) rotate(3deg)`
                     }}>50</Text>
                 </div>
                 <div style={{
@@ -182,8 +182,8 @@ const PolarBarChart = (props) => {
                             trailColor: 'rgba(0, 0, 0, 0)'
                         })}
                     />
-                    <Text fz='xs' className="ticks" position='absolute' style={{
-                        transform: `translate(${13 / 540 * dim}px, -${77 / 108 * dim}px) rotate(4deg)`
+                    <Text fz={rem(Math.min(10 / 1080 * props.height * props.size, 10 / 1920 * props.width * props.size))} className="ticks" position='absolute' style={{
+                        transform: `translate(${13 / 540 * dim}px, -${75 / 108 * dim}px) rotate(4deg)`
                     }}>100</Text>
                 </div>
                 <div style={{
@@ -201,12 +201,12 @@ const PolarBarChart = (props) => {
                         })}
                     />
                     <img className="activity-biker-icon" src='/assets/BikerIcon.svg' style={{
-                        height: 2 / 27 * dim,
-                        width: 2 / 27 * dim,
+                        height: dim / 7,
+                        width: dim / 7,
                         transform: `translate(
-                            ${0.45 * dim * Math.cos(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 60)}px,
-                            ${-0.45 * dim * Math.sin(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 60) - 251 / 540 * dim}px
-                        ) rotate(${activity * Math.PI / 50 - Math.PI / 60}rad)`
+                            ${0.475 * dim * Math.cos(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 30)}px,
+                            ${-0.475 * dim * Math.sin(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 30) - 265 / 540 * dim}px
+                        ) rotate(${activity * Math.PI / 50 - Math.PI / 30}rad)`
                     }}></img>
                 </div>
                 <div style={{
@@ -215,6 +215,7 @@ const PolarBarChart = (props) => {
                     transform: `translate(${17 / 54 * dim}px, ${17 / 54 * dim}px)`
                 }}>
                     <img className="center-image" style={{
+                        cursor: 'pointer',
                         clipPath: `circle(${5 / 27 * dim}px)`
                     }} src={data['Image']} onClick={open}></img>
                 </div>

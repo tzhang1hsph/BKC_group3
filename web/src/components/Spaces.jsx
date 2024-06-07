@@ -37,15 +37,6 @@ const Spaces = (props) => {
   const HEIGHT = props.height;
   const WIDTH = props.width;
 
-  const ref1 = useRef(null);
-  const hovered1 = useHover(ref1);
-  const ref2 = useRef(null);
-  const hovered2 = useHover(ref2);
-  const ref3 = useRef(null);
-  const hovered3 = useHover(ref3);
-  const ref4 = useRef(null);
-  const hovered4 = useHover(ref4);
-
   let navigate = useNavigate();
   const routeChangeNext = () => {navigate(`/poll`);}
   const routeChangeBack = () => {navigate('/tutorial');}
@@ -67,6 +58,7 @@ const Spaces = (props) => {
                     hourly={BostonCommonH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -80,6 +72,7 @@ const Spaces = (props) => {
                     hourly={ChinatownParkH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -93,6 +86,7 @@ const Spaces = (props) => {
                     hourly={CityHallH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -106,6 +100,7 @@ const Spaces = (props) => {
                     hourly={DeweySquareH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -121,6 +116,7 @@ const Spaces = (props) => {
                     hourly={FallonFieldH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -134,6 +130,7 @@ const Spaces = (props) => {
                     hourly={FaneuilSquareH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -147,6 +144,7 @@ const Spaces = (props) => {
                     hourly={OlmstedParkH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>
@@ -160,6 +158,7 @@ const Spaces = (props) => {
                     hourly={RossPlaygroundH}
                     height={HEIGHT}
                     width={WIDTH}
+                    size={1.1}
                   />
                 </Center>
               </Grid.Col>

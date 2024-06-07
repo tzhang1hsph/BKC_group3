@@ -17,7 +17,7 @@ const Map = (props) => {
     spacesPlot.layout.height = HEIGHT;
     spacesPlot.layout.width = WIDTH;
     spacesPlot.layout.legend.font.size = HEIGHT / 36;
-    spacesPlot.layout.mapbox.zoom = HEIGHT / 480 + 535/60;
+    spacesPlot.layout.mapbox.zoom = HEIGHT / 480 + 535 / 60;
 
     return (
         <div>
@@ -29,7 +29,7 @@ const Map = (props) => {
                 backgroundOpacity={0.7}
             >
                 <Text fz={rem(Math.min(36 / 1080 * HEIGHT, 36 / 1920 * WIDTH))}>Boston has <b>453</b> open spaces.</Text>
-                <Text fz='lg'>Drag and hover on this map to explore them!</Text>
+                <Text fz='lg'>Drag and zoom on this map to explore them!</Text>
             </Overlay>
 
             <Grid>
@@ -43,37 +43,36 @@ const Map = (props) => {
                             >Why do we gather in certain spaces but not others?</Box>
                             <Grid.Col span={12}>
                                 <Button
-                                    variant="light"
                                     radius={HEIGHT / 80}
-                                    color="orange"
-                                    fz="xl"
+                                    color="#ffecdc"
                                     onClick={restart}
                                     style={{ minHeight: HEIGHT / 20, minWidth: WIDTH / 20 }}
-                                > &#8635; </Button>
+                                >
+                                    <Text fz="xl" c="orange"><b>&#8635;</b></Text>
+                                </Button>
                             </Grid.Col>
 
                             <Grid.Col span={6}>
                                 <Button
-                                    variant="light"
                                     radius={HEIGHT / 80}
-                                    color="orange"
-                                    fz="xl"
+                                    color="#ffecdc"
                                     onClick={routeChangeBack}
                                     style={{ minHeight: HEIGHT / 8 }}
                                     fullWidth
-                                > &#60; </Button>
+                                >
+                                    <Text fz="xl" c="orange"><b>&#60;</b></Text>
+                                </Button>
                             </Grid.Col>
 
                             <Grid.Col span={6}>
                                 <Button
-                                    variant="light"
                                     radius={HEIGHT / 80}
                                     color="orange"
-                                    fz="xl"
                                     onClick={routeChangeNext}
-                                    style={{ minHeight: HEIGHT / 8 }}
-                                    fullWidth
-                                > &#62; </Button>
+                                    style={{ minHeight: HEIGHT / 8 }} fullWidth
+                                >
+                                    <Text fz="xl" c="white"><b>&#62;</b></Text>
+                                </Button>
                             </Grid.Col>
                         </Grid>
                     </div>
