@@ -23,8 +23,8 @@ const Intro = (props) => {
   const HEIGHT = props.height;
   const WIDTH = props.width;
 
-  const outerDim = Math.max(570 / 2798 * HEIGHT, 570 / 4182 * WIDTH);
-  const innerDim = Math.max(540 / 2798 * HEIGHT, 540 / 4182 * WIDTH);
+  const OUTERDIM = Math.max(570 / 2798 * HEIGHT, 570 / 4182 * WIDTH);
+  const INNERDIM = Math.max(540 / 2798 * HEIGHT, 540 / 4182 * WIDTH);
 
   const translateX = x => {
     const arr = [x * WIDTH / 4182, (x - 4182 / 2) * HEIGHT / 2798 + WIDTH / 2];
@@ -47,8 +47,8 @@ const Intro = (props) => {
       <Overlay backgroundOpacity={0}>
         <div style={{
           position: 'absolute',
-          height: outerDim,
-          width: outerDim,
+          height: OUTERDIM,
+          width: OUTERDIM,
           clipPath: `circle(50%)`,
           transform: `translate(${translateX(1102.2)}px, ${translateY(1797.6)}px)`,
           background: `radial-gradient(rgba(0, 124, 156, 0) 66.96%, rgba(0, 124, 156, ${hovered1 ? 0.9 : 1}) 66.9%)`
@@ -58,11 +58,11 @@ const Intro = (props) => {
           onMouseEnter={() => setVisited({ ...visited, play: true })}
           style={{
             position: 'absolute',
-            height: innerDim,
-            width: innerDim,
+            height: INNERDIM,
+            width: INNERDIM,
             opacity: `${hovered1 ? 0.9 : 0}`,
             clipPath: `circle(50%)`,
-            transform: `translate(${translateX(1102.2) + (outerDim - innerDim) / 2}px, ${translateY(1797.6) + (outerDim - innerDim) / 2}px)`,
+            transform: `translate(${translateX(1102.2) + (OUTERDIM - INNERDIM) / 2}px, ${translateY(1797.6) + (OUTERDIM - INNERDIM) / 2}px)`,
             backgroundColor: '#007c9c',
             display: 'flex',
             justifyContent: 'center'
@@ -72,8 +72,8 @@ const Intro = (props) => {
 
         <div style={{
           position: 'absolute',
-          height: outerDim,
-          width: outerDim,
+          height: OUTERDIM,
+          width: OUTERDIM,
           clipPath: `circle(50%)`,
           transform: `translate(${translateX(2761.9)}px, ${translateY(1700.6)}px)`,
           background: `radial-gradient(rgba(90, 175, 169, 0) 66.96%, rgba(90, 175, 169, ${hovered2 ? 0.9 : 1}) 66.9%)`
@@ -83,11 +83,11 @@ const Intro = (props) => {
           ref={ref2}
           style={{
             position: 'absolute',
-            height: innerDim,
-            width: innerDim,
+            height: INNERDIM,
+            width: INNERDIM,
             opacity: `${hovered2 ? 0.9 : 0}`,
             clipPath: `circle(50%)`,
-            transform: `translate(${translateX(2761.9) + (outerDim - innerDim) / 2}px, ${translateY(1700.6) + (outerDim - innerDim) / 2}px)`,
+            transform: `translate(${translateX(2761.9) + (OUTERDIM - INNERDIM) / 2}px, ${translateY(1700.6) + (OUTERDIM - INNERDIM) / 2}px)`,
             backgroundColor: '#5aafa9',
             display: 'flex',
             justifyContent: 'center'
@@ -97,8 +97,8 @@ const Intro = (props) => {
 
         <div style={{
           position: 'absolute',
-          height: outerDim,
-          width: outerDim,
+          height: OUTERDIM,
+          width: OUTERDIM,
           clipPath: `circle(50%)`,
           transform: `translate(${translateX(1440.5)}px, ${translateY(1049.3)}px)`,
           background: `radial-gradient(rgba(254, 156, 90, 0) 66.96%, rgba(254, 156, 90, ${hovered3 ? 0.9 : 1}) 66.9%)`
@@ -108,11 +108,11 @@ const Intro = (props) => {
           ref={ref3}
           style={{
             position: 'absolute',
-            height: innerDim,
-            width: innerDim,
+            height: INNERDIM,
+            width: INNERDIM,
             opacity: `${hovered3 ? 0.9 : 0}`,
             clipPath: `circle(50%)`,
-            transform: `translate(${translateX(1440.5) + (outerDim - innerDim) / 2}px, ${translateY(1049.3) + (outerDim - innerDim) / 2}px)`,
+            transform: `translate(${translateX(1440.5) + (OUTERDIM - INNERDIM) / 2}px, ${translateY(1049.3) + (OUTERDIM - INNERDIM) / 2}px)`,
             backgroundColor: '#fe9c5a',
             display: 'flex',
             justifyContent: 'center'
@@ -122,8 +122,8 @@ const Intro = (props) => {
 
         <div style={{
           position: 'absolute',
-          height: outerDim,
-          width: outerDim,
+          height: OUTERDIM,
+          width: OUTERDIM,
           clipPath: `circle(50%)`,
           transform: `translate(${translateX(1858.6)}px, ${translateY(2063.3)}px)`,
           background: `radial-gradient(rgba(227, 104, 91, 0) 66.96%, rgba(227, 104, 91, ${hovered4 ? 0.9 : 1}) 66.9%)`
@@ -133,11 +133,11 @@ const Intro = (props) => {
           ref={ref4}
           style={{
             position: 'absolute',
-            height: innerDim,
-            width: innerDim,
+            height: INNERDIM,
+            width: INNERDIM,
             opacity: `${hovered4 ? 0.9 : 0}`,
             clipPath: `circle(50%)`,
-            transform: `translate(${translateX(1858.6) + (outerDim - innerDim) / 2}px, ${translateY(2063.3) + (outerDim - innerDim) / 2}px)`,
+            transform: `translate(${translateX(1858.6) + (OUTERDIM - INNERDIM) / 2}px, ${translateY(2063.3) + (OUTERDIM - INNERDIM) / 2}px)`,
             backgroundColor: '#e3685b',
             display: 'flex',
             justifyContent: 'center'

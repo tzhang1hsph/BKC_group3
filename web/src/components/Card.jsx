@@ -23,69 +23,69 @@ const PolarBarChart = (props) => {
     const art = data['Art Score'];
     const activity = data['Activity Score'];
 
-    const dim = Math.max(540 / 2798 * props.height * props.size, 540 / 4182 * props.width * props.size);
+    const DIM = Math.max(540 / 2798 * props.height * props.size, 540 / 4182 * props.width * props.size);
 
     const playStyle = {
-        height: (play * 0.0075 + 1) * 5 / 27 * dim,
-        width: (play * 0.0075 + 1) * 5 / 27 * dim,
+        height: (play * 0.0075 + 1) * 5 / 27 * DIM,
+        width: (play * 0.0075 + 1) * 5 / 27 * DIM,
         clipPath: `circle(100% at 100% 100%)`,
-        transform: `translate(${dim / 54 * (17 - play * 0.075)}px, ${dim / 54 * (17 - play * 0.075)}px)`,
+        transform: `translate(${DIM / 54 * (17 - play * 0.075)}px, ${DIM / 54 * (17 - play * 0.075)}px)`,
         backgroundColor: '#007c9c'
     };
 
     const envStyle = {
-        height: (env * 0.0075 + 1) * 5 / 27 * dim,
-        width: (env * 0.0075 + 1) * 5 / 27 * dim,
+        height: (env * 0.0075 + 1) * 5 / 27 * DIM,
+        width: (env * 0.0075 + 1) * 5 / 27 * DIM,
         clipPath: `circle(100% at 0% 100%)`,
-        transform: `translate(${dim / 2}px, ${dim / 54 * (17 - env * 0.075)}px)`,
+        transform: `translate(${DIM / 2}px, ${DIM / 54 * (17 - env * 0.075)}px)`,
         backgroundColor: '#5aafa9'
     };
 
     const foodStyle = {
-        height: (food * 0.0075 + 1) * 5 / 27 * dim,
-        width: (food * 0.0075 + 1) * 5 / 27 * dim,
+        height: (food * 0.0075 + 1) * 5 / 27 * DIM,
+        width: (food * 0.0075 + 1) * 5 / 27 * DIM,
         clipPath: `circle(100% at 0% 0%)`,
-        transform: `translate(${dim / 2}px, ${dim / 2}px)`,
+        transform: `translate(${DIM / 2}px, ${DIM / 2}px)`,
         backgroundColor: '#fe9c5a'
     };
 
     const artStyle = {
-        height: (art * 0.0075 + 1) * 5 / 27 * dim,
-        width: (art * 0.0075 + 1) * 5 / 27 * dim,
+        height: (art * 0.0075 + 1) * 5 / 27 * DIM,
+        width: (art * 0.0075 + 1) * 5 / 27 * DIM,
         clipPath: `circle(100% at 100% 0%)`,
-        transform: `translate(${dim / 54 * (17 - art * 0.075)}px, ${dim / 2}px)`,
+        transform: `translate(${DIM / 54 * (17 - art * 0.075)}px, ${DIM / 2}px)`,
         backgroundColor: '#e3685b'
     };
 
     const playStyleFull = {
-        height: 5 / 27 * dim * (play * 0.015 + 2),
-        width: 5 / 27 * dim * (play * 0.015 + 2),
+        height: 5 / 27 * DIM * (play * 0.015 + 2),
+        width: 5 / 27 * DIM * (play * 0.015 + 2),
         clipPath: `circle(50%)`,
-        transform: `translate(${dim / 54 * (17 - play * 0.075)}px, ${dim / 54 * (17 - play * 0.075)}px)`,
+        transform: `translate(${DIM / 54 * (17 - play * 0.075)}px, ${DIM / 54 * (17 - play * 0.075)}px)`,
         backgroundColor: '#007c9c'
     };
 
     const envStyleFull = {
-        height: 5 / 27 * dim * (env * 0.015 + 2),
-        width: 5 / 27 * dim * (env * 0.015 + 2),
+        height: 5 / 27 * DIM * (env * 0.015 + 2),
+        width: 5 / 27 * DIM * (env * 0.015 + 2),
         clipPath: `circle(50%)`,
-        transform: `translate(${dim / 54 * (17 - env * 0.075)}px, ${dim / 54 * (17 - env * 0.075)}px)`,
+        transform: `translate(${DIM / 54 * (17 - env * 0.075)}px, ${DIM / 54 * (17 - env * 0.075)}px)`,
         backgroundColor: '#5aafa9'
     };
 
     const foodStyleFull = {
-        height: 5 / 27 * dim * (food * 0.015 + 2),
-        width: 5 / 27 * dim * (food * 0.015 + 2),
+        height: 5 / 27 * DIM * (food * 0.015 + 2),
+        width: 5 / 27 * DIM * (food * 0.015 + 2),
         clipPath: `circle(50%)`,
-        transform: `translate(${dim / 54 * (17 - food * 0.075)}px, ${dim / 54 * (17 - food * 0.075)}px)`,
+        transform: `translate(${DIM / 54 * (17 - food * 0.075)}px, ${DIM / 54 * (17 - food * 0.075)}px)`,
         backgroundColor: '#fe9c5a'
     };
 
     const artStyleFull = {
-        height: 5 / 27 * dim * (art * 0.015 + 2),
-        width: 5 / 27 * dim * (art * 0.015 + 2),
+        height: 5 / 27 * DIM * (art * 0.015 + 2),
+        width: 5 / 27 * DIM * (art * 0.015 + 2),
         clipPath: `circle(50%)`,
-        transform: `translate(${dim / 54 * (17 - art * 0.075)}px, ${dim / 54 * (17 - art * 0.075)}px)`,
+        transform: `translate(${DIM / 54 * (17 - art * 0.075)}px, ${DIM / 54 * (17 - art * 0.075)}px)`,
         backgroundColor: '#e3685b'
     };
 
@@ -99,7 +99,7 @@ const PolarBarChart = (props) => {
                     <Grid.Col span={6}>
                         <img width='100%' height='auto' src={data['Image']} style={{ 'display': 'block', 'margin': 'auto' }}></img>
 
-                        <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Activity Score: {data['Activity Score']}</b></Text>
+                        <Text ta="center" mt="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Activity Score: {data['Activity Score']}</b></Text>
                         <Text>Number of Bluebike Stations Within 0.5 km: {data['Number of Nearby Bluebike Stations']}</Text>
                         <Text>Average Daily Roundtrips at Nearby Bluebike Stations: {data['Daily Roundtrips'].toFixed(2)}</Text>
                         <Text>Proportion of Roundtrips at Nearby Bluebike Stations: {(data['Weighted Roundtrip Ratio'] * 100).toFixed(1)}%</Text>
@@ -107,36 +107,36 @@ const PolarBarChart = (props) => {
                         <Text ta="center"><b>Hourly Bluebike Trips at Nearby Bluebike Stations</b></Text>
                         <Plot data={props.hourly.data} layout={props.hourly.layout} />
 
-                        <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Environment Score: {data['Environment Score']}</b></Text>
+                        <Text ta="center" mt="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Environment Score: {data['Environment Score']}</b></Text>
                         <Text>Area: {data['Acres'].toFixed(2)} acres</Text>
                         <Text>Canopy Cover: {(data['Canopy Cover Proportion'] * 100).toFixed(1)}%</Text>
                     </Grid.Col>
 
                     <Grid.Col span={6}>
-                    <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Space Map</b></Text>
+                    <Text ta="center" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Space Map</b></Text>
                         <Plot data={props.map.data} layout={props.map.layout} />
 
-                        <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Safety Score: {data['Safety Score']}</b></Text>
+                        <Text ta="center" mt="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Safety Score: {data['Safety Score']}</b></Text>
                         <Text>Streetlight Cover: {(data['Streetlight Proportion'] * 100).toFixed(1)}%</Text>
                         <Text>Crime Density: {(data['Nearby Crimes Per Acre Per Year']).toFixed(2)} crimes per acre per year</Text>
                         <Text>Vehicle Accident Density: {(data['Nearby Vehicle Accidents Per Acre Per Year']).toFixed(2)} vehicle accidents per acre per year</Text>
 
-                        <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Food Score: {data['Food Score']}</b></Text>
+                        <Text ta="center" mt="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Food Score: {data['Food Score']}</b></Text>
                         <Text>Number of Restaurants Within 0.5 km: {data['Number of Nearby Restaurants'] === 100 ? '≥100' : data['Number of Nearby Restaurants']}</Text>
                         <Text>Near Food Trucks: {data['Near Food Trucks'] ? 'Yes' : 'No'}</Text>
                         <Text>Near Farmers Markets: {data['Near Farmers Markets'] ? 'Yes' : 'No'}</Text>
 
-                        <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Art Score: {data['Art Score']}</b></Text>
+                        <Text ta="center" mt="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Art Score: {data['Art Score']}</b></Text>
                         <Text>Number of Nearby Murals: {data['Number of Nearby Murals']}</Text>
                         <Text>Number of Nearby Sculptures: {data['Number of Nearby Sculptures']}</Text>
 
-                        <Text ta="center" my="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Play Score: {data['Play Score']}</b></Text>
+                        <Text ta="center" mt="xl" fz={rem(Math.min(30 / 1080 * props.height, 30 / 1920 * props.width))}><b>Play Score: {data['Play Score']}</b></Text>
                         <Text>Play Features: {data['Play Features'].length ? data['Play Features'].join(', ') : 'None'}</Text>
                     </Grid.Col>
                 </Grid>
             </Modal>
 
-            <div style={{ width: dim, height: dim * 1.1 }}>
+            <div style={{ width: DIM, height: DIM * 1.1 }}>
                 <Text ta="center" fz={rem(Math.min(24 / 1080 * props.height * props.size, 24 / 1920 * props.width * props.size))}><b>{props.name}</b></Text>
                 {props.mode === 'all' ?
                     <>
@@ -152,9 +152,9 @@ const PolarBarChart = (props) => {
                                 : <div className="segment" style={artStyleFull}></div>}
                 <div style={{
                     position: 'absolute',
-                    height: 55 / 108 * dim,
-                    width: 55 / 108 * dim,
-                    transform: `translate(${53 / 216 * dim}px, ${53 / 216 * dim}px)`
+                    height: 55 / 108 * DIM,
+                    width: 55 / 108 * DIM,
+                    transform: `translate(${53 / 216 * DIM}px, ${53 / 216 * DIM}px)`
                 }}>
                     <CircularProgressbar
                         value={100}
@@ -165,14 +165,14 @@ const PolarBarChart = (props) => {
                         })}
                     />
                     <Text fz={rem(Math.min(10 / 1080 * props.height * props.size, 10 / 1920 * props.width * props.size))} className="ticks" position='absolute' style={{
-                        transform: `translate(${13 / 540 * dim}px, -${30 / 54 * dim}px) rotate(3deg)`
+                        transform: `translate(${13 / 540 * DIM}px, -${30 / 54 * DIM}px) rotate(3deg)`
                     }}>50</Text>
                 </div>
                 <div style={{
                     position: 'absolute',
-                    height: 35 / 54 * dim,
-                    width: 35 / 54 * dim,
-                    transform: `translate(${19 / 108 * dim}px, ${19 / 108 * dim}px)`
+                    height: 35 / 54 * DIM,
+                    width: 35 / 54 * DIM,
+                    transform: `translate(${19 / 108 * DIM}px, ${19 / 108 * DIM}px)`
                 }}>
                     <CircularProgressbar
                         value={100}
@@ -183,14 +183,14 @@ const PolarBarChart = (props) => {
                         })}
                     />
                     <Text fz={rem(Math.min(10 / 1080 * props.height * props.size, 10 / 1920 * props.width * props.size))} className="ticks" position='absolute' style={{
-                        transform: `translate(${13 / 540 * dim}px, -${75 / 108 * dim}px) rotate(4deg)`
+                        transform: `translate(${13 / 540 * DIM}px, -${75 / 108 * DIM}px) rotate(4deg)`
                     }}>100</Text>
                 </div>
                 <div style={{
                     position: 'absolute',
-                    height: 5 / 6 * dim,
-                    width: 5 / 6 * dim,
-                    transform: `translate(${dim / 12}px, ${dim / 12}px)`
+                    height: 5 / 6 * DIM,
+                    width: 5 / 6 * DIM,
+                    transform: `translate(${DIM / 12}px, ${DIM / 12}px)`
                 }}>
                     <CircularProgressbar
                         value={activity}
@@ -201,22 +201,22 @@ const PolarBarChart = (props) => {
                         })}
                     />
                     <img className="activity-biker-icon" src='/assets/BikerIcon.svg' style={{
-                        height: dim / 7,
-                        width: dim / 7,
+                        height: DIM / 7,
+                        width: DIM / 7,
                         transform: `translate(
-                            ${0.475 * dim * Math.cos(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 30)}px,
-                            ${-0.475 * dim * Math.sin(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 30) - 265 / 540 * dim}px
+                            ${0.475 * DIM * Math.cos(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 30)}px,
+                            ${-0.475 * DIM * Math.sin(Math.PI / 2 - activity * Math.PI / 50 + Math.PI / 30) - 265 / 540 * DIM}px
                         ) rotate(${activity * Math.PI / 50 - Math.PI / 30}rad)`
                     }}></img>
                 </div>
                 <div style={{
-                    height: 10 / 27 * dim,
-                    width: 10 / 27 * dim,
-                    transform: `translate(${17 / 54 * dim}px, ${17 / 54 * dim}px)`
+                    height: 10 / 27 * DIM,
+                    width: 10 / 27 * DIM,
+                    transform: `translate(${17 / 54 * DIM}px, ${17 / 54 * DIM}px)`
                 }}>
                     <img className="center-image" style={{
                         cursor: 'pointer',
-                        clipPath: `circle(${5 / 27 * dim}px)`
+                        clipPath: `circle(${5 / 27 * DIM}px)`
                     }} src={data['Image']} onClick={open}></img>
                 </div>
             </div>
